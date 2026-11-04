@@ -1,0 +1,46 @@
+# 9.13 Thomas · Step 6 deposit bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 6 of 8 · Set Deposit Fee"
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 2341DD r=4
+R Progress_segment 110,116,40x4 2341DD r=4
+R Progress_segment 154,116,40x4 2341DD r=4
+R Progress_segment 199,116,40x4 2341DD r=4
+R Progress_segment 244,116,40x4 2341DD r=4
+R Progress_segment 288,116,40x4 E2E8E1 r=4
+R Progress_segment 333,116,40x4 E2E8E1 r=4
+T 20,140,185x31 B26 14231C "Safety deposit"
+F Optional_tag 215,146,60x20 E5E8E3 r=99
+  T 224,150,42x12 B10 4A514D "Optional"
+T 20,179,353x34 R14 68766E "Want extra peace of mind? Ask borrowers to put down a refundable deposit."
+F Choice_card 20,233,353x67 FFFFFF s=E2E8E1/1.5 r=14
+  I Radio 36,256,22x22 B9BCBF
+  T 72,248,80x18 B15 14231C "No deposit"
+  T 72,270,110x15 R12 68766E "Get requests faster"
+F Choice_card 20,310,353x67 FFFFFF s=2341DD/1.5 r=14
+  I Radio 36,332,22x22 2341DD
+  T 72,326,124x18 B15 14231C "Ask for a deposit"
+  T 72,346,194x15 R12 68766E "Refunded in full after a safe return"
+T 20,397,143x16 B13 14231C "Deposit amount (SGD)"
+F Input 20,423,353x56 FFFFFF s=2341DD/1.5 r=14
+  T 38,439,14x24 B20 68766E "$"
+  T 60,436,262x31 B26 14231C "50"
+  T 330,444,26x15 B12 68766E "SGD"
+F Chip 20,489,64x40 FFFFFF s=E2E8E1/1 r=99
+  T 39,501,26x16 B13 14231C "$20"
+F Chip 92,489,64x40 FFFFFF s=E2E8E1/1 r=99
+  T 110,501,27x16 B13 14231C "$30"
+F Chip 164,489,65x41 FFFFFF s=2341DD/1.5 r=99
+  T 184,502,24x16 B13 14231C "$10"
+F Chip 237,489,64x40 FFFFFF s=E2E8E1/1 r=99
+  T 252,501,33x16 B13 14231C "$100"
+F Chip 309,489,64x40 FFFFFF s=E2E8E1/1 r=99
+  T 322,501,37x16 B13 14231C "Other"
+T 20,540,353x30 R12 68766E "Tap a quick amount or type your own. Similar items usually ask for $30 to $60."
+F Notice 20,590,353x84 E8F4EC r=12
+  T 32,602,329x19 B14 14231C "Held by Borro, refunded after a safe return"
+  T 32,626,329x36 R13 68766E "Borrowers pay Borro, not you. You only get paid out if there’s damage."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 100,723,194x18 B15 FFFFFF "Continue with $10 deposit"

@@ -1,0 +1,22 @@
+# 11.5 James · Ask Borro (AI chat) bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "B · Ask me"
+T 54,84,319x15 R11 68766E "About this item: Garment Steamer"
+F Status 20,116,134x23 E8F4EC r=99
+  T 30,121,114x13 B11 1E8E5A "Your item companion"
+F Message_bubble 83,151,290x68 E8F4EC r=16
+  T 97,165,262x20 R15 14231C "How do I use the Garment Steamer?"
+  T 97,191,262x14 R10 68766E "7:45 pm ✓✓"
+F Card 20,231,353x189 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,243,329x22 B16 2341DD "Borro"
+  T 32,275,329x133 R14 14231C "1. Fill the tank with clean water up to the MAX line.\n2. Plug in, switch on and wait about 30 seconds for the ready light.\n3. Hang the blazer and steam from top to bottom, 2–3 cm away.\n4. Switch off, let it cool, then empty the tank."
+F Card 20,432,353x94 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,444,85x70 IMG:speaker_desk2 r=10
+  T 129,444,232x38 B14 14231C "Garment Steamer – Quick-use guide"
+  T 129,487,232x16 R12 68766E "▶ YouTube · 2:14"
+T 20,538,353x15 R11 68766E "Always follow your lender’s care instructions."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Message_composer 20,708,353x48 FFFFFF s=E2E8E1/1 r=99
+    I Add images or documents 33,721,22x22 2341DD
+    T 67,721,259x19 R14 68766E "Ask Borro.."
+    I send 338,721,22x22 2341DD

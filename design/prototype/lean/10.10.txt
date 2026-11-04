@@ -1,0 +1,15 @@
+# 10.10 James · Push · borrowing cancelled bg= NONAV
+I lock-keyhole 18,75,24x24 FFFFFF
+T 18,117,357x26 R19 FFFFFF "Sunday, 18 October"
+T 18,161,357x103 B76 FFFFFF "10:00"
+F iOS_notification 18,282,357x193 FFFFFF@93 r=22
+  F Borro_app_icon 34,298,28x28 IMG:logo_borro
+  T 72,298,255x18 B13 14231C "BORRO"
+  T 337,298,22x13 R11 68766E "now"
+  T 34,338,325x22 B16 14231C "Your borrowing was cancelled"
+  T 34,372,325x57 R14 14231C "Thomas cancelled your steamer borrowing. Your $10 deposit will be returned within 1 working day."
+  T 34,441,325x18 B13 2341DD "3 nearby alternatives are ready for you."
+T 18,493,357x16 R12 FFFFFF "Cancellation details in My Borrowing"
+I ios-signal 299,14,17x16 fFFFFFF
+I ios-wifi-signal 321,14,17x16 fFFFFFF
+I ios-battery-full 343,14,25x16 fFFFFFF

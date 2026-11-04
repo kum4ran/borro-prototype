@@ -1,0 +1,54 @@
+# 10.2 James · Report damage · filled bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Report Damage"
+T 54,84,319x15 R11 68766E "Garment Steamer · Thomas"
+T 20,116,353x38 R14 68766E "Show us what happened. Clear photos help both sides reach a fair outcome."
+R Condition_photo 20,166,112x65 IMG:projector_3 r=10
+T 20,235,112x15 B11 14231C "Front ✓"
+R Condition_photo 140,166,112x65 IMG:speaker_dark r=10
+T 140,235,112x15 B11 14231C "Back ✓"
+R Condition_photo 261,166,112x65 IMG:speaker_dark r=10
+T 261,235,112x15 B11 14231C "Left ✓"
+R Condition_photo 20,258,112x65 IMG:projector_3 r=10
+T 20,327,112x15 B11 14231C "Right ✓"
+R Condition_photo 140,258,112x65 IMG:speaker_dark r=10
+T 140,327,112x15 B11 14231C "Top ✓"
+R Condition_photo 261,258,112x65 IMG:speaker_dark r=10
+T 261,327,112x15 B11 14231C "Bottom ✓"
+T 20,354,353x18 B13 2341DD "+ Add another angle"
+T 20,384,353x19 B14 14231C "Where is the damage?"
+F Status 20,411,41x23 EDF0EC r=99
+  T 30,416,21x13 B11 68766E "Top"
+F Status 67,411,60x23 EDF0EC r=99
+  T 77,416,40x13 B11 68766E "Bottom"
+F Status 133,411,49x23 EDF0EC r=99
+  T 143,416,29x13 B11 68766E "Front"
+F Status 188,411,47x23 EDF0EC r=99
+  T 198,416,27x13 B11 68766E "Back"
+F Status 241,411,67x23 E8F4EC r=99
+  T 251,416,47x13 B11 1E8E5A "Left side"
+F Status 20,440,74x23 EDF0EC r=99
+  T 30,445,54x13 B11 68766E "Right side"
+F Status 100,440,84x23 EDF0EC r=99
+  T 110,445,64x13 B11 68766E "Steam head"
+F Status 190,440,51x23 EDF0EC r=99
+  T 200,445,31x13 B11 68766E "Other"
+T 20,475,353x19 B14 14231C "What kind of damage?"
+F Status 20,502,46x23 E8F4EC r=99
+  T 30,507,26x13 B11 1E8E5A "Dent"
+F Status 72,502,62x23 EDF0EC r=99
+  T 82,507,42x13 B11 68766E "Scratch"
+F Status 140,502,52x23 EDF0EC r=99
+  T 150,507,32x13 B11 68766E "Crack"
+F Status 198,502,86x23 EDF0EC r=99
+  T 208,507,66x13 B11 68766E "Not working"
+F Status 20,531,88x23 EDF0EC r=99
+  T 30,536,68x13 B11 68766E "Missing part"
+F Status 114,531,51x23 EDF0EC r=99
+  T 124,536,31x13 B11 68766E "Other"
+T 20,566,353x18 B13 14231C "Description"
+F Input 20,591,353x86 FFFFFF s=E2E8E1/1 r=10
+  T 33,604,327x60 R15 14231C "The steamer slipped against the table edge. There is a dent on the left side of the body. It still powers on."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 130,723,132x18 B15 FFFFFF "Report to Thomas"

@@ -1,0 +1,18 @@
+# 5.2d James · Payment successful bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Payment successful"
+T 54,84,319x15 R11 68766E "BR-20481 · 18–19 Oct 2026"
+F Success_seal 160,144,74x74 E8F4EC r=99
+  V Symbol 178,163,36x36  s=2341DD/5
+T 20,232,353x32 B24 14231C "Deposit paid"
+T 20,278,353x36 R13 68766E "Your $10.00 deposit is held securely by Borro until the steamer is returned."
+F Card 20,354,353x220 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,366,329x24 B18 14231C "Payment receipt"
+  T 32,400,329x24 R13 68766E "Item  ·  Garment Steamer"
+  T 32,434,329x24 R13 68766E "Amount  ·  $10.00 SGD"
+  T 32,468,329x24 R13 68766E "Method  ·  PayNow"
+  T 32,502,329x24 R13 68766E "Reference  ·  #BR-20481"
+  T 32,536,329x19 R14 14231C "Refunded within 1 working day after return"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Continue 20,708,353x48 2341DD r=99 *
+    T 165,724,63x17 B14 FFFFFF "Continue"

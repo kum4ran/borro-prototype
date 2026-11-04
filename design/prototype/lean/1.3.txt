@@ -1,0 +1,67 @@
+# 1.3 James · Filter menu bg=F7F8F6 NAV
+R Borro_logo 20,59,72x34 IMG:logo_borro
+I heart 351,65,22x22 2341DD
+F Search_field 20,116,267x46 FFFFFF s=E2E8E1/1 r=99
+  V Symbol 32,130,18x18  s=14231C/1.8
+  T 58,130,217x19 R14 68766E "What do you need?"
+F Search_action 295,116,78x46 2341DD r=99
+  T 312,131,45x16 B13 FFFFFF "Search"
+F Urgency_toggle 20,174,99x28 2563EB r=99
+  T 28,182,83x12 B10 FFFFFF "⚡ Need it Now ●"
+I sliders-horizontal 345,179,19x19 14231C
+T 20,214,178x22 B18 000000 "Good things, nearby"
+T 334,214,39x15 R12 2341DD "Sort ↕"
+F Marketplace_item 20,248,170x251 FFFFFF r=12
+  E Avatar 29,257,22x22 IMG:photo_7f80fa37b5
+  T 56,262,56x13 S11 000000 "Thomas ✓"
+  R Item_photo 29,286,152x98 IMG:speaker_concert r=10
+  T 29,391,134x16 B12 14231C "JBL Speaker"
+  V Symbol 166,391,15x15  s=68766E/1.8
+  T 29,414,152x15 R11 14231C "★ 5.0 (10 reviews)"
+  T 29,436,152x14 R10 68766E "Bencoolen St"
+  T 29,457,44x13 S10 68766E "Available"
+  T 29,472,99x18 S13 2341DD "17–25 Oct 2026"
+F Marketplace_item 202,248,170x251 FFFFFF r=12
+  E Avatar 212,257,22x22 IMG:avatar_man3
+  T 238,262,60x13 S11 000000 "Matthew ✓"
+  R Item_photo 212,286,152x98 IMG:item_projector r=10
+  T 212,391,134x16 B12 14231C "Portable Projector"
+  V Symbol 349,391,15x15  s=68766E/1.8
+  T 212,414,152x15 R11 14231C "★ 4.7 (14 reviews)"
+  T 212,436,152x14 R10 68766E "Bras Basah Rd"
+  T 212,457,44x13 S10 68766E "Available"
+  T 212,472,100x18 S13 2341DD "16–23 Oct 2026"
+F Marketplace_item 20,511,170x251 FFFFFF r=12
+  E Avatar 29,520,22x22 IMG:avatar_man3
+  T 56,524,53x13 S11 000000 "Jessica ✓"
+  R Item_photo 29,549,152x98 IMG:screen_1 r=10
+  T 29,654,134x16 B12 14231C "Projector Screen"
+  V Symbol 166,654,15x15  s=68766E/1.8
+  T 29,677,152x15 R11 14231C "★ 4.6 (20 reviews)"
+  T 29,699,152x14 R10 68766E "Plaza Singapura"
+  T 29,720,44x13 S10 68766E "Available"
+  T 29,735,101x18 S13 2341DD "18–20 Oct 2026"
+F Marketplace_item 202,511,170x251 FFFFFF r=12
+  E Avatar 212,520,22x22 IMG:avatar_man3
+  T 238,524,50x13 S11 000000 "Lebron ✓"
+  R Item_photo 212,549,152x98 IMG:football_1 r=10
+  T 212,654,134x16 B12 14231C "Football"
+  V Symbol 349,654,15x15  s=68766E/1.8
+  T 212,677,152x15 R11 14231C "★ 5.0 (10 reviews)"
+  T 212,699,152x14 R10 68766E "West Wing"
+  T 212,720,44x13 S10 68766E "Available"
+  T 212,735,97x18 S13 2341DD "17–21 Oct 2026"
+F Filter_dropdown 123,207,250x222 FFFFFF r=12 sh
+  F Filter_option 135,219,226x48  *
+    T 135,226,212x19 B14 14231C "Location"
+    T 135,246,212x15 R11 68766E "Within 1 km"
+    V Chevron_right 355,237,6x12  s=14231C/1.8
+  T 135,276,212x19 B14 14231C "Rating"
+  T 135,296,212x15 R11 68766E "4 stars & up"
+  V Chevron_right 355,287,6x12  s=14231C/1.8
+  T 135,326,212x19 B14 14231C "Reviews"
+  T 135,346,212x15 R11 68766E "Most reviewed"
+  V Chevron_right 355,337,6x12  s=14231C/1.8
+  T 135,376,212x19 B14 14231C "Availability"
+  T 135,396,212x15 R11 68766E "18–19 Oct"
+  V Chevron_right 355,387,6x12  s=14231C/1.8

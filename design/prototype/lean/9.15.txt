@@ -1,0 +1,25 @@
+# 9.15 Thomas · Step 8 terms bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 8 of 8 · Terms and Conditions "
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 2341DD r=4
+R Progress_segment 110,116,40x4 2341DD r=4
+R Progress_segment 154,116,40x4 2341DD r=4
+R Progress_segment 199,116,40x4 2341DD r=4
+R Progress_segment 244,116,40x4 2341DD r=4
+R Progress_segment 288,116,40x4 2341DD r=4
+R Progress_segment 333,116,40x4 2341DD r=4
+T 20,132,353x35 B26 14231C "One last thing"
+F Card 20,179,353x228 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,191,329x22 B16 14231C "Lending on Borro"
+  T 32,223,329x57 R14 14231C "You confirm that this item is safe, clean and yours to lend. Describe its condition honestly and agree on handover details with your borrower."
+  T 32,290,329x57 R14 14231C "Use the one-time handover code and required condition photos. Deposits are held securely until the safe return is confirmed."
+  T 32,357,329x38 R14 14231C "If something goes wrong, report it through Borro so both sides can resolve it fairly."
+F Checkbox 20,430,23x23 2341DD s=2341DD/1 r=5
+  I check 23,432,17x17 FFFFFF
+T 55,422,318x38 R14 14231C "I agree to the Borro Terms & Conditions and community guidelines."
+T 20,475,353x18 R13 2341DD "Read the full Terms & Conditions ↗"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 142,723,108x18 B15 FFFFFF "Preview listing"

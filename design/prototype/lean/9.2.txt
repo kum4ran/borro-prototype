@@ -1,0 +1,74 @@
+# 9.2 Thomas · My Lending · Sort / Filter bg=F7F8F6 NAV
+R Borro_logo 20,59,72x34 IMG:logo_borro
+T 104,59,235x34 B25 14231C "My Lending"
+I heart 351,65,22x22 2341DD
+F Action 20,116,353x48 2341DD r=99
+  T 147,131,99x18 B15 FFFFFF "+ List an Item"
+F Card 20,176,353x47 FFFFFF s=E2E8E1/0.7 r=12 sh
+  I inbox 32,188,22x22 2341DD
+  T 62,188,237x22 B16 14231C "Borrow Requests"
+  F Status 307,188,28x23 FFF3D9 r=99
+    T 317,193,8x13 B11 92600A "3"
+  I chevron-right 343,188,18x18 14231C
+T 20,235,48x18 B15 2341DD "Active"
+T 86,235,76x18 B15 68766E "Past loans"
+T 180,235,55x18 B15 68766E "Paused"
+I sliders-horizontal 354,235,19x19 14231C
+F Active_listing_card 20,266,353x104 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,277,74x80 IMG:bottle_green r=10
+  T 117,277,222x19 B14 14231C "Water Bottle"
+  I ellipsis 344,277,18x18 14231C
+  F Status 117,301,120x23 FFF3D9 r=99
+    T 127,306,100x13 B11 92600A "Handover pending"
+  T 117,329,245x30 R11 68766E "Handover to Kumaran · Fri, 3:00 PM · Bencoolen St"
+F Active_listing_card 20,382,353x102 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,393,74x80 IMG:photo_c8ecf538e8 r=10
+  T 117,393,222x19 B14 14231C "Speaker"
+  I ellipsis 344,393,18x18 14231C
+  F Status 117,417,61x23 EBEEFC r=99
+    T 127,422,41x13 B11 2341DD "On loan"
+  T 117,445,245x15 R11 68766E "With Maria · Due 2 Nov"
+F Active_listing_card 20,496,353x102 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,507,74x80 IMG:camera_1 r=10
+  T 117,507,222x19 B14 14231C "Camera"
+  I ellipsis 344,507,18x18 14231C
+  F Status 117,531,67x23 FDECE9 r=99
+    T 127,536,47x13 B11 D64545 "Overdue"
+  T 117,559,245x15 R11 68766E "With John · Due 16 Oct"
+F Active_listing_card 20,610,353x104 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,621,74x80 IMG:steamer_main r=10
+  T 117,621,222x19 B14 14231C "Garment Steamer"
+  I ellipsis 344,621,18x18 14231C
+  F Status 117,645,65x23 FFF3D9 r=99
+    T 127,650,45x13 B11 92600A "Pending"
+  T 117,673,245x30 R11 68766E "James requested 18–19 Oct 2026 · Awaiting your reply"
+F Overlay_scrim 0,1,393x852 14231C@33
+  F Sheet 0,375,393x478 FFFFFF
+    T 20,395,110x24 B20 14231C "Sort / Filter"
+    T 317,398,56x17 B14 2341DD "Clear all" *
+    T 20,433,353x19 B14 14231C "Status"
+    F Status_filter 20,466,120x44 FFFFFF s=2341DD/1.5 r=99
+      T 34,480,92x17 B14 14231C "Available ✓  1"
+    F Status_filter 148,466,165x44 FFFFFF s=E2E8E1/1 r=99
+      T 162,480,137x17 R14 000000 "Handover pending  1"
+    F Status_filter 20,518,93x44 FFFFFF s=E2E8E1/1 r=99
+      T 34,532,65x17 R14 000000 "On loan  1"
+    F Status_filter 121,518,99x44 FFFFFF s=E2E8E1/1 r=99
+      T 135,532,71x17 R14 000000 "Overdue  1"
+    F Status_filter 228,518,94x44 FFFFFF s=E2E8E1/1 r=99
+      T 242,532,66x17 R14 000000 "Paused  0"
+    T 20,576,353x19 B14 14231C "Sort by"
+    F Sort_pill 20,609,114x44 FFFFFF s=2341DD/1.5 r=99
+      T 34,622,86x17 B14 14231C "Due soonest"
+    F Sort_pill 142,609,119x44 FFFFFF s=E2E8E1/1 r=99
+      T 156,622,91x17 R14 000000 "Newest listed"
+    F Sort_pill 20,661,111x44 FFFFFF s=E2E8E1/1 r=99
+      T 34,674,83x17 R14 000000 "Oldest listed"
+    F Sort_pill 139,661,96x44 FFFFFF s=E2E8E1/1 r=99
+      T 153,674,68x17 R14 000000 "Name A–Z"
+    F Sort_pill 243,661,129x44 FFFFFF s=E2E8E1/1 r=99
+      T 257,674,101x17 R14 000000 "Most borrowed"
+    F Sort_pill 20,713,118x44 FFFFFF s=E2E8E1/1 r=99
+      T 34,726,90x17 R14 000000 "Highest rated"
+    F Action 20,771,353x48 2341DD r=99 *
+      T 156,786,82x17 B14 FFFFFF "Show 1 item"

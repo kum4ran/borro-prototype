@@ -1,0 +1,21 @@
+# 9.16 Thomas · Listing preview bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,59,319x34 B25 14231C "Preview listing"
+R Item_photo 20,116,353x190 IMG:list_photo3 r=10
+T 20,318,353x34 B25 14231C "Garment Steamer"
+F Status 20,364,149x23 E8F4EC r=99
+  T 30,369,129x13 B11 1E8E5A "Like new · Home & living"
+T 20,399,353x60 R15 14231C "Freshen up your outfit in minutes. Handheld steamer with a 250 ml tank, ready in 30 seconds. Includes a heat-resistant mitt."
+F Card 20,471,353x166 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,483,57x19 R14 68766E "Pickup"
+  T 99,483,262x34 S14 14231C "West Wing Lobby,\n12 Bencoolen St, Singapore 189555"
+  T 32,530,212x19 R14 68766E "Available"
+  T 254,532,107x17 S14 14231C "13–27 Oct 2026"
+  T 32,566,274x19 R14 68766E "Maximum period"
+  T 316,568,45x17 S14 14231C "7 days"
+  T 32,602,293x19 R14 68766E "Safety deposit"
+  T 335,604,26x17 S14 14231C "$10"
+T 20,649,353x18 R13 68766E "3 photos · 3 care instructions · Terms accepted"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 169,723,55x18 B15 FFFFFF "Publish"

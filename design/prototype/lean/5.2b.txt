@@ -1,0 +1,20 @@
+# 5.2b James · PayNow · Scan to pay bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Pay with PayNow"
+T 54,84,319x15 R11 68766E "Deposit · Ref #BR-20481"
+F Card 20,116,353x352 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 36,136,321x22 B18 14241C "Scan to pay $10.00"
+  V Vector 96,172,200x200 FFFFFF
+  V Vector 96,172,200x200 14241C
+  V Vector 172,248,48x48 FFFFFF
+  V Vector 182,258,28x28 7B1E8E
+  T 36,386,321x32 R13 69756E "Open your banking app, choose PayNow and scan this code."
+  T 36,432,321x16 S13 14241C "Code expires in 04:59"
+F Notice 20,480,353x66 E8EBFA r=12
+  T 32,492,329x19 B14 14231C "Amount due · $10.00 SGD"
+  T 32,516,329x18 R13 68766E "To Borro · Ref #BR-20481 · refunded after return"
+F Sticky_actions 0,642,393x132 F7F8F6
+  F I've_paid 20,652,353x48 2341DD r=99 *
+    T 168,668,57x17 B14 FFFFFF "I've paid"
+  F Cancel_payment 20,708,353x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 136,723,120x18 B15 2341DD "Cancel payment"

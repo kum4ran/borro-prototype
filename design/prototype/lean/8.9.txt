@@ -1,0 +1,37 @@
+# 8.9 James · Profile bg=F7F8F6 NAV
+R Borro_logo 20,59,72x34 IMG:logo_borro
+E Avatar 20,116,70x70 IMG:avatar_james
+T 105,116,268x31 B23 14231C "James Chong"
+T 105,152,268x19 R14 68766E "21 · Singapore"
+F Status 105,176,118x23 E8F4EC r=99
+  T 115,181,98x13 B11 1E8E5A "✓ Identity verified"
+T 20,211,353x19 R14 68766E "Co-living, campus days & sharing more."
+F Card 20,242,353x166 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Gauge_track 112,254,170x85  s=E2E8E1/13
+  E Score_arc 112,254,170x85  s=2341DD/13
+  T 82,292,230x34 B25 14231C "72/100"
+  T 156,328,62x18 B13 2341DD "Moderate"
+  I info 222,329,16x16 2341DD
+  T 32,378,329x18 R13 68766E "72/100 · Moderate · Keep sharing thoughtfully."
+F Card 20,420,353x364 FFFFFF s=E2E8E1/0.7 r=12 sh
+  I package 32,442,20x20 2341DD
+  T 64,442,269x20 R15 14231C "My Listings"
+  I chevron-right 345,444,16x16 14231C
+  I handshake 32,492,20x20 2341DD
+  T 64,492,269x20 R15 14231C "My Borrowing"
+  I chevron-right 345,494,16x16 14231C
+  I heart 32,542,20x20 2341DD
+  T 64,542,269x20 R15 14231C "Wishlist"
+  I chevron-right 345,544,16x16 14231C
+  I star 32,592,20x20 2341DD
+  T 64,592,269x20 R15 14231C "Reviews"
+  I chevron-right 345,594,16x16 14231C
+  I credit-card 32,642,20x20 2341DD
+  T 64,642,269x20 R15 14231C "Payment methods"
+  I chevron-right 345,644,16x16 14231C
+  I settings 32,692,20x20 2341DD
+  T 64,692,269x20 R15 14231C "Settings"
+  I chevron-right 345,694,16x16 14231C
+  I circle-help 32,742,20x20 2341DD
+  T 64,742,269x20 R15 14231C "Help"
+  I chevron-right 345,744,16x16 14231C

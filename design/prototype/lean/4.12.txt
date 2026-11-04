@@ -1,0 +1,75 @@
+# 4.12 Thomas · Choose times (pop-up) bg=F6F6F3 NONAV SHEET
+I Chevron left 18,58,24x24 12201A
+T 56,49,162x24 B20 12201A "Review proposal"
+T 56,75,207x16 R12 5E6561 "James & Thomas · Garment Steamer"
+F Status_banner 16,104,361x82 E4F2EC r=12
+  I Clock 30,116,16x16 0B6B4F
+  T 56,116,307x20 B15 0B6B4F "James is waiting for you"
+  T 56,138,307x36 R13 3E4642 "James sent you a proposal. Pick one pick-up and one return time to accept."
+R Item_photo 16,198,361x81 IMG:steamer_main r=10
+F Details_card 16,291,361x204 FFFFFF s=E4E4DF/1 r=12
+  T 33,306,156x24 B18 12201A "Garment Steamer"
+  T 33,340,76x20 R14 5E6561 "Borrower"
+  T 121,340,239x20 S14 12201A "James"
+  T 33,370,76x20 R14 5E6561 "Lender"
+  T 121,370,239x20 S14 12201A "Thomas"
+  T 33,400,76x20 R14 5E6561 "Pick-up"
+  T 121,400,239x20 S14 12201A "Sun 18 Oct · 7, 7:30 pm"
+  T 33,430,76x20 R14 5E6561 "Return"
+  T 121,430,239x20 S14 12201A "Mon 19 Oct · 9, 10, 10:30 am"
+  T 33,460,76x20 R14 5E6561 "Meet at"
+  I Pin 121,462,16x16 12201A
+  T 143,460,149x20 S14 12201A "Block A Security Desk"
+F James_avatar 16,507,40x40 IMG:avatar_james r=20
+T 68,509,49x20 B15 12201A "James"
+T 68,529,106x16 R12 5E6561 "★ 3.5 · 45 reviews"
+T 302,518,75x18 S13 2341DD "View profile"
+F Actions 0,649,393x123 F6F6F3 s=E4E4DF/1
+  F Request_changes 16,660,176x44 FFFFFF s=2341DD/1.5 r=22
+    T 45,672,118x20 S14 2341DD "Request changes"
+  F Chat_with_Arnold 200,660,176x44 FFFFFF s=2341DD/1.5 r=22
+    I Chat icon 220,673,18x18 2341DD
+    T 244,672,114x20 S14 2341DD "Chat with James"
+  F Accept_proposal 16,712,361x48 2341DD r=99
+    T 137,726,119x20 S15 FFFFFF "Accept proposal"
+F Bottom_nav 0,772,393x80 FFFFFF s=E4E4DF/1
+  F Home 8,779,80x52  *
+    I Home icon 36,784,24x24 4A514D
+    T 31,810,34x16 M12 4A514D "Home"
+  F Borro 88,779,80x52  *
+    I Borro icon 116,784,24x24 2341DD
+    T 112,810,33x16 B12 2341DD "Borro"
+  F Lend 168,779,80x52  *
+    I Lend icon 196,784,24x24 4A514D
+    T 194,810,29x16 M12 4A514D "Lend"
+  F You 248,779,80x52  *
+    I You icon 276,784,24x24 4A514D
+    T 277,810,22x16 M12 4A514D "You"
+R Scrim 0,0,393x852 12201A@50
+F Time_picker_sheet 0,432,393x420 FFFFFF
+  T 20,452,184x24 B20 12201A "Choose your times"
+  T 20,480,258x18 R13 5E6561 "Tap one pick-up time and one return time."
+  F Pick-up_options 20,514,353x115 F6F6F3 s=E4E4DF/1 r=16
+    T 35,529,61x20 B16 12201A "Pick-up"
+    T 288,532,70x15 S12 5E6561 "Choose one"
+    F Thu_8_Oct_row 35,559,323x65  s=E4E4DF/1
+      T 35,583,84x18 B14 12201A "Sun 18 Oct"
+      F Time_6_pm 129,570,63x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 142,582,36x20 S15 1B33B8 "7 pm"
+      F Time_7_pm 200,570,86x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 214,582,59x20 S15 1B33B8 "7:30 pm"
+  F Return_options 20,645,353x115 F6F6F3 s=E4E4DF/1 r=16
+    T 35,660,53x20 B16 12201A "Return"
+    T 288,662,70x15 S12 5E6561 "Choose one"
+    F Wed_21_Oct_row 35,690,323x65  s=E4E4DF/1
+      T 35,714,84x18 B14 12201A "Mon 19 Oct"
+      F Time_7_pm 129,701,63x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 142,713,36x20 S15 1B33B8 "9 am"
+      F Time_8_pm 200,701,71x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 214,713,44x20 S15 1B33B8 "10 am"
+      F Time_10_pm 279,701,95x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 292,713,68x20 S15 1B33B8 "10:30 am"
+  F Choose_pick-up_and_ret 20,776,353x48 EDF0EC r=99 *
+    T 99,790,195x20 S15 6B726E "Choose pick-up and return"
+  R Grabber 178,448,36x4 B9BCBF r=2
+  R Close_sheet_(tap_handl 136,438,120x32 FFFFFF@0 *

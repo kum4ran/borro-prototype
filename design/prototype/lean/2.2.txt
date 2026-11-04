@@ -1,0 +1,95 @@
+# 2.2 James · Borrow request · Borrow Now bg=F7F8F6 NAV SHEET
+I chevron-left 20,65,22x22 14231C *
+T 54,59,319x34 B25 14231C "Item details"
+R Item_photo 20,116,353x145 IMG:steamer_main r=10
+R Carousel_dot 178,273,18x5 2341DD r=9
+R Carousel_dot 200,273,5x5 B8C4BB r=9
+R Carousel_dot 210,273,5x5 B8C4BB r=9
+T 20,290,319x31 B23 14231C "Garment Steamer"
+I heart 351,290,22x22 2341DD
+T 20,333,353x57 R14 68766E "Freshen up your outfit in minutes. Lightweight handheld steamer, ready in 30 seconds. Includes a heat-resistant mitt."
+F Status 20,402,88x23 E8F4EC r=99
+  T 30,407,68x13 B11 1E8E5A "Deposit: $10"
+T 108,402,265x16 R12 68766E "Bencoolen St"
+E Avatar 20,437,38x38 IMG:avatar_thomas
+T 68,437,230x20 B15 14231C "Thomas ✓"
+T 68,460,230x15 R11 68766E "★ 5.0 · Credibility 86/100 · High"
+T 308,450,65x13 B11 2341DD "View profile"
+T 20,487,353x18 B13 14231C "October 2026 · Availability"
+F Available_date 20,512,46x30 EDF0EC r=6
+  T 37,520,13x15 R12 68766E "15"
+F Available_date 71,512,46x30 EDF0EC r=6
+  T 87,520,14x15 R12 68766E "16"
+F Available_date 122,512,46x30 E8F4EC r=6
+  T 139,520,13x15 R12 2341DD "17"
+F Available_date 173,512,46x30 E8F4EC r=6
+  T 190,520,13x15 R12 2341DD "18"
+F Available_date 225,512,46x30 E8F4EC r=6
+  T 241,520,14x15 R12 2341DD "19"
+F Available_date 276,512,46x30 E8F4EC r=6
+  T 291,520,15x15 R12 2341DD "20"
+F Available_date 327,512,46x30 E8F4EC r=6
+  T 343,520,13x15 R12 2341DD "21"
+T 20,549,353x14 R10 68766E "Grey dates are busy · View full calendar with Borrow Later"
+F Sticky_actions 0,706,393x68 F7F8F6
+  F Action 20,716,170x48 F5A524 r=99
+    T 51,731,108x18 B15 14231C "⚡ Borrow Now"
+  F Action 200,716,173x48 FFFFFF s=2341DD/1.2 r=99
+    T 239,731,95x18 B15 2341DD "Borrow Later"
+F Overlay_scrim 0,0,393x852 14231C@40
+  F Sheet 0,321,393x531 FFFFFF
+    R Grabber 178,335,36x4 B9BCBF r=2
+    T 20,347,289x24 B20 12201A "Choose your borrowing dates"
+    T 20,375,340x18 R13 5E6561 "Tap the days you want to borrow it."
+    V Footer_divider 0,851,393x1 
+    F Card 20,409,353x260 FFFFFF s=E2E8E1/0.7 r=12 sh
+      I chevron-left 32,421,18x18 14231C
+      T 142,421,110x19 B16 14231C "October 2026"
+      I chevron-right 343,421,18x18 14231C
+      T 49,451,13x17 R14.3 68766E "M"
+      T 98,451,10x17 R14.3 68766E "T"
+      T 142,451,14x17 R14.3 68766E "W"
+      T 192,451,10x17 R14.3 68766E "T"
+      T 239,451,9x17 R14.3 68766E "F"
+      T 286,451,10x17 R14.3 68766E "S"
+      T 332,451,10x17 R14.3 68766E "S"
+      T 193,484,7x17 R14.3 14231C "1"
+      T 239,484,9x17 R14.3 14231C "2"
+      T 286,484,10x17 R14.3 14231C "3"
+      T 332,484,10x17 R14.3 14231C "4"
+      T 51,516,9x17 R14.3 14231C "5"
+      T 98,516,9x17 R14.3 14231C "6"
+      T 145,516,9x17 R14.3 14231C "7"
+      T 192,516,9x17 R14.3 14231C "8"
+      T 239,516,9x17 R14.3 14231C "9"
+      T 282,516,16x17 R14.3 14231C "10"
+      T 330,516,14x17 R14.3 14231C "11"
+      T 48,548,16x17 R14.3 14231C "12"
+      T 94,548,16x17 R14.3 14231C "13"
+      T 142,548,16x17 R14.3 14231C "14"
+      T 188,548,16x17 R14.3 14231C "15"
+      T 236,548,16x17 R14.3 14231C "16"
+      T 283,548,15x17 R14.3 14231C "17"
+      F Day_19 314,542,47x28 2341DD
+        T 330,548,16x17 R14.3 FFFFFF "18"
+      F Day_27 32,574,47x28 2341DD
+        T 48,580,16x17 R14.3 FFFFFF "19"
+      T 94,580,18x17 R14.3 14231C "20"
+      T 142,580,16x17 R14.3 14231C "21"
+      T 188,580,18x17 R14.3 14231C "22"
+      T 234,580,18x17 R14.3 14231C "23"
+      T 282,580,18x17 R14.3 14231C "24"
+      T 328,580,18x17 R14.3 14231C "25"
+      T 46,612,18x17 R14.3 14231C "26"
+      T 94,612,17x17 R14.3 14213C "27"
+      T 140,612,18x17 R14.3 14231C "28"
+      T 188,612,18x17 R14.3 14231C "29"
+      T 234,612,19x17 R14.3 14231C "30"
+      T 282,612,16x17 R14.3 14231C "31"
+      T 32,644,329x13 R11 68766E "Select start and end dates"
+    F Notice 24,685,349x84 E8F4EC r=12
+      T 36,697,325x19 B14 14231C "18 Oct → 19 Oct · 1 day"
+      T 36,721,325x36 R13 68766E "Urgent · Thomas gets an instant notification and must accept."
+    F Action 24,787,349x48 2341DD r=99 *
+      T 148,802,102x18 B15 FFFFFF "Send Request"
+    R Close_sheet_(tap_handl 136,325,120x32 FFFFFF@0 *

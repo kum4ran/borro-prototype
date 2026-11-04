@@ -1,0 +1,45 @@
+# 10.13 James · Find new lender bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Find new lender"
+T 54,84,319x15 R11 68766E "My Borrowing · Steamer replacement"
+F Notice 20,116,353x66 E8F4EC r=12
+  T 32,128,329x19 B14 14231C "Thomas cancelled"
+  T 32,152,329x18 R13 68766E "Unavailable due to personal circumstances."
+T 20,194,353x23 B17 14231C "⌖ Recommended for your dates"
+F Card 20,229,353x125 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,244,30x30 IMG:avatar_thomas
+  T 70,241,240x19 B14 14231C "Leon · 564 m"
+  T 70,262,240x15 R11 2341DD "89/100 · High"
+  T 318,253,43x12 R10 2341DD "⌖ Pinned"
+  R Item_photo 32,285,70x57 IMG:item_projector r=10
+  T 114,296,151x16 B12 14231C "Garment Steamer"
+  T 114,316,151x15 R11 68766E "18–19 Oct · $10 deposit"
+  F Action 277,290,84x48 2341DD r=99
+    T 290,305,57x17 B14 FFFFFF "Request"
+F Card 20,368,353x125 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,383,30x30 IMG:avatar_man3
+  T 70,380,240x19 B14 14231C "Mei Lin · 200 m"
+  T 70,401,240x15 R11 2341DD "87/100 · High"
+  T 318,392,43x12 R10 2341DD "⌖ Pinned"
+  R Item_photo 32,424,70x57 IMG:item_projector r=10
+  T 114,436,151x16 B12 14231C "Garment Steamer"
+  T 114,454,151x15 R11 68766E "18–19 Oct · $10 deposit"
+  F Action 277,428,84x48 2341DD r=99
+    T 290,444,57x17 B14 FFFFFF "Request"
+F Card 20,507,353x125 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,522,30x30 IMG:avatar_man3
+  T 70,519,240x19 B14 14231C "Priya · 350 m"
+  T 70,540,240x15 R11 2341DD "91/100 · High"
+  T 318,531,43x12 R10 2341DD "⌖ Pinned"
+  F Recommended_item 32,563,329x57  *
+    R Item_photo 32,563,70x57 IMG:item_projector r=10
+    T 114,574,151x16 B12 14231C "Garment Steamer"
+    T 114,594,151x15 R11 68766E "18–19 Oct · $10 deposit"
+    F Action 277,568,84x48 2341DD r=99
+      T 290,583,57x17 B14 FFFFFF "Request"
+F Search_action 20,644,353x46 2341DD r=99
+  T 141,658,111x17 B14 FFFFFF "Search for other"
+T 20,702,353x22 B16 14231C "New results nearby"
+F Card 20,736,353x69 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,748,329x19 B14 14231C "Portable steamer · Daniel"
+  T 32,777,329x16 R12 68766E "780 m · Available 18–19 Oct 2026"

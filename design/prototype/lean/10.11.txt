@@ -1,0 +1,32 @@
+# 10.11 James · Borrowing cancelled · alternatives bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Borrowing cancelled"
+T 54,84,319x15 R11 68766E "My Borrowing · Thomas"
+T 20,116,353x28 B21 14231C "Here are 3 nearby alternatives"
+T 20,156,353x38 R14 68766E "Your interview is tomorrow morning. These lenders can help tonight."
+F Card 20,206,353x169 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,218,32x32 IMG:alt_1
+  T 74,218,222x19 B14 14231C "Priya ✓"
+  T 74,240,222x15 R11 68766E "Credibility 91/100 · High"
+  F Status 306,218,55x23 E8F4EC r=99
+    T 316,223,35x13 B11 1E8E5A "350 m"
+  R Item_photo 32,265,95x80 IMG:alt_2 r=10
+  T 139,265,222x19 B14 14231C "Garment Steamer"
+  T 139,292,222x15 R11 68766E "★ 4.9 · Available 18–19 Oct"
+  F Action 139,315,222x48 FFFFFF s=2341DD/1.2 r=99
+    T 220,330,61x18 B15 2341DD "Request"
+F Notice 20,387,353x84 FDECE9 r=12
+  T 32,399,329x19 B14 D64545 "Sorry, your borrowing was cancelled."
+  T 32,423,329x36 R13 68766E "Thomas cancelled: unavailable due to personal circumstances."
+F Card 20,483,353x114 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,495,90x90 IMG:damage_review2 r=10
+  T 134,495,227x22 B16 14231C "Garment Steamer"
+  T 134,524,227x18 R13 14231C "Thomas · Block A Security Desk"
+  F Status 134,549,75x23 EDF0EC r=99
+    T 144,554,55x13 B11 68766E "Cancelled"
+F Notice 20,609,353x84 E8F4EC r=12
+  T 32,621,329x19 B14 14231C "Your deposit is on its way back"
+  T 32,645,329x36 R13 68766E "Your $10 deposit will be returned within 1 working day."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 103,723,187x18 B15 FFFFFF "See 3 nearby alternatives"

@@ -1,0 +1,28 @@
+# 9.14 Thomas · Step 7 care bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 7 of 8 · Care Instructions"
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 2341DD r=4
+R Progress_segment 110,116,40x4 2341DD r=4
+R Progress_segment 154,116,40x4 2341DD r=4
+R Progress_segment 199,116,40x4 2341DD r=4
+R Progress_segment 244,116,40x4 2341DD r=4
+R Progress_segment 288,116,40x4 2341DD r=4
+R Progress_segment 333,116,40x4 E2E8E1 r=4
+T 20,132,353x35 B26 14231C "Help them care for it"
+T 20,179,353x44 R16 68766E "These numbered instructions become your Lender’s Note in the agreement."
+T 20,235,353x18 B13 14231C "Care instruction 1"
+F Input 20,260,353x48 FFFFFF s=E2E8E1/1 r=10
+  T 33,273,327x20 R15 14231C "Use clean water only. Do not add fragrance."
+T 20,320,353x18 B13 14231C "Care instruction 2"
+F Input 20,345,353x48 FFFFFF s=E2E8E1/1 r=10
+  T 33,358,327x20 R15 14231C "Keep the steamer upright while in use."
+T 20,405,353x18 B13 14231C "Care instruction 3"
+F Input 20,430,353x66 FFFFFF s=E2E8E1/1 r=10
+  T 33,443,327x40 R15 14231C "Let it cool, empty the tank and dry it before returning."
+F Action 20,508,353x48 FFFFFF s=2341DD/1.2 r=99
+  T 132,523,128x18 B15 2341DD "+ Add instruction"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 162,723,68x18 B15 FFFFFF "Continue"

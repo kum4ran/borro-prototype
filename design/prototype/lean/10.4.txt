@@ -1,0 +1,33 @@
+# 10.4 James · Damage tracker · evaluating bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Damage report"
+T 54,84,319x15 R11 68766E "Garment Steamer · BR-20481"
+F Notice 20,116,353x84 E8F4EC r=12
+  T 32,128,329x19 B14 14231C "Evaluating damage"
+  T 32,152,329x36 R13 68766E "Our team is reviewing the damage and comparing the condition photos."
+F Card 20,212,353x327 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,224,329x23 B17 14231C "Your report’s progress"
+  F Checkpoint_marker 32,269,36x36 E8F4EC r=99
+    V Symbol 40,277,20x20  s=2341DD/3
+  T 82,266,279x20 B15 14231C "Report submitted"
+  T 82,292,279x16 R12 68766E "Complete"
+  F Checkpoint_marker 32,339,36x36 2341DD r=99
+    T 45,348,10x18 B15 FFFFFF "2"
+  T 82,336,279x20 B15 14231C "Evaluating damage"
+  T 82,362,279x16 R12 2341DD "In progress · Current checkpoint"
+  F Damage_checkpoint 32,397,329x60  *
+    F Checkpoint_marker 32,409,36x36 EDF0EC r=99
+      T 45,418,10x18 B15 68766E "3"
+    T 82,406,279x20 B15 68766E "Verifying information"
+    T 82,432,279x16 R12 68766E "Not started"
+  F Checkpoint_marker 32,479,36x36 EDF0EC r=99
+    T 44,488,11x18 B15 68766E "4"
+  T 82,476,279x20 B15 68766E "Outcome"
+  T 82,502,279x16 R12 68766E "Not started"
+F Notice 20,551,353x102 E8F4EC r=12
+  T 32,563,329x19 B14 000000 "Next update expected by 21 Oct"
+  T 32,587,329x54 R13 68766E "We’ll notify you when the next checkpoint is complete. No repair balance is charged without separate consent."
+T 20,665,353x16 R12 68766E "Submitted 19 Oct 2026 · $10 deposit held during assessment"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99
+    T 134,724,125x17 B14 FFFFFF "Chat with Thomas"

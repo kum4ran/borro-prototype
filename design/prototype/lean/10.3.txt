@@ -1,0 +1,34 @@
+# 10.3 James · Damage tracker · submitted bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Damage report status"
+T 54,84,319x15 R11 68766E "Garment Steamer · Thomas"
+F Notice 20,116,353x84 E8F4EC r=12
+  T 32,128,329x19 B14 000000 "Your report is being reviewed"
+  T 32,152,329x36 R13 68766E "We’ve shared your evidence with Thomas. We’ll keep both of you updated."
+F Card 20,212,353x104 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Condition_photo 32,224,80x80 IMG:photo_7ff1a7e325 r=10
+  T 124,224,237x22 B16 14231C "Dent on steamer body"
+  T 124,253,237x16 R12 68766E "Reported 19 Oct 2026 · BR-20481"
+  F Status 124,276,101x23 E8F4EC r=99
+    T 134,281,81x13 B11 1E8E5A "Left side · Dent"
+F Card 20,328,353x262 FFFFFF s=E2E8E1/0.7 r=12 sh
+  F Checkpoint_symbol 32,351,30x30 2341DD r=99
+    T 44,358,7x16 R13 FFFFFF "1"
+  T 76,346,285x20 B15 14231C "Report submitted"
+  T 76,370,285x16 R12 2341DD "In progress · We’re on it"
+  F Tracker_checkpoint 32,402,329x52  *
+    F Checkpoint_symbol 32,413,30x30 EDF0EC r=99
+      T 43,420,8x16 R13 68766E "2"
+    T 76,418,285x20 B15 68766E "Evaluating damage"
+  F Checkpoint_symbol 32,475,30x30 EDF0EC r=99
+    T 42,482,9x16 R13 68766E "3"
+  T 76,480,285x20 B15 68766E "Verifying information"
+  F Checkpoint_symbol 32,537,30x30 EDF0EC r=99
+    T 42,544,9x16 R13 68766E "4"
+  T 76,542,285x20 B15 68766E "Outcome"
+F Notice 20,602,353x84 E8F4EC r=12
+  T 32,614,329x19 B14 000000 "Next update expected by 21 Oct"
+  T 32,638,329x36 R13 68766E "You can continue chatting with Thomas while we review the records."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 130,723,134x18 B15 FFFFFF "Chat with Thomas"

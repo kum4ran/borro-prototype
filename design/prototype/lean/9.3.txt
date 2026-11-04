@@ -1,0 +1,50 @@
+# 9.3 Thomas · My Lending · Past loans bg=F7F8F6 NAV
+R Borro_logo 20,59,72x34 IMG:logo_borro
+T 104,59,235x34 B25 14231C "My Lending"
+I Wishlist 351,65,22x22 2341DD
+F List_an_item 20,116,353x48 2341DD r=99 *
+  T 147,131,99x18 B15 FFFFFF "+ List an Item"
+F Card 20,174,353x47 FFFFFF s=E2E8E1/0.7 r=12 sh
+  I inbox 32,186,22x22 2341DD
+  T 62,186,237x22 B16 14231C "Borrow Requests"
+  F Status 307,186,28x23 FFF3D9 r=99
+    T 317,191,8x13 B11 92600A "3"
+  I chevron-right 343,186,18x18 14231C
+F Listing_tabs 20,232,215x18  *
+  T 20,232,48x18 B15 68766E "Active"
+  T 86,232,76x18 B15 2341DD "Past loans"
+  T 180,232,55x18 B15 68766E "Paused"
+F Sort_and_filter 354,232,19x19  *
+  I sliders-horizontal 354,232,19x19 14231C
+F Time_period 20,261,83x30 EBEEFC s=2341DD/0.7 r=99
+  T 41,270,41x13 B11 2341DD "All time"
+F Time_period 110,261,83x30 FFFFFF s=E2E8E1/0.7 r=99
+  T 126,270,50x13 M11 68766E "Oct 2026"
+F Time_period 200,261,83x30 FFFFFF s=E2E8E1/0.7 r=99
+  T 216,270,51x13 M11 68766E "Sep 2026"
+F Time_period 290,261,83x30 FFFFFF s=E2E8E1/0.7 r=99
+  T 306,270,52x13 M11 68766E "Aug 2026"
+F Lending_transaction 20,301,353x108 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,315,74x80 IMG:bottle_green r=10
+  T 117,322,222x19 B14 14231C "Water Bottle"
+  I Manage listing 344,322,18x18 14231C
+  E Avatar 117,344,19x19 IMG:avatar_woman2
+  T 141,346,221x15 R11 14231C "Lent to Thomas · 14–21 Oct"
+  F Status 117,366,70x23 E8F4EC r=99
+    T 127,370,50x13 B11 1E8E5A "Returned"
+F Lending_transaction 20,419,353x108 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,433,74x80 IMG:photo_c8ecf538e8 r=10
+  T 117,440,222x19 B14 14231C "Speaker"
+  I Manage listing 344,440,18x18 14231C
+  E Avatar 117,462,19x19 IMG:avatar_woman2
+  T 141,464,221x15 R11 14231C "Lent to Maria · 12–19 Oct"
+  F Status 117,484,70x23 E8F4EC r=99
+    T 127,488,50x13 B11 1E8E5A "Returned"
+F Lending_transaction 20,537,353x108 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,551,74x80 IMG:camera_1 r=10
+  T 117,558,222x19 B14 14231C "Camera"
+  I Manage listing 344,558,18x18 14231C
+  E Avatar 117,580,19x19 IMG:avatar_man3
+  T 141,582,221x15 R11 14231C "Request from John · Cancelled 17 Oct"
+  F Status 117,602,75x23 FDECE9 r=99
+    T 127,606,55x13 B11 D64545 "Cancelled"

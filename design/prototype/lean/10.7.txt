@@ -1,0 +1,25 @@
+# 10.7 Both · Timeline · repair bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Timeline"
+T 54,84,319x15 R11 68766E "Garment Steamer · BR-20481"
+T 20,129,353x12 R10 68766E "Agreed         Meet-up        Lending        Return"
+R Completed_progress 20,116,353x4 2341DD r=4
+R Progress_track 20,116,353x4 E2E8E1 r=4
+F Card 20,157,353x88 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 30,167,78x68 IMG:steamer_main r=10
+  T 120,167,243x50 B18 14231C "Garment Steamer\nCompleted"
+E Avatar 20,257,38x38 IMG:avatar_thomas
+T 68,255,230x42 B15 14231C "Thomas ✓\n★ 4.7 · 47 reviews"
+T 308,270,65x13 B11 2341DD "View profile"
+F Card 20,307,353x96 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,319,329x72 R14 14231C "Pickup  ·  18 Oct · 7:30 pm\nReturn  ·  19 Oct · 10:00 am\n⌖ Block A Security Desk"
+F View_Agreement 20,413,353x48 FFFFFF s=2341DD/1.2 r=99 *
+  T 139,428,115x17 B14 2341DD "View Agreement"
+F Action 20,471,353x48 FFFFFF s=2341DD/1.2 r=99
+  T 68,486,257x17 B14 2341DD "Before / After · View condition photos"
+F Notice 20,529,353x44 E8F4EC r=12
+  T 32,542,329x19 B14 14231C "Deposit Status · Used for repair"
+T 20,583,353x18 B13 2341DD "View damage outcome →" *
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99
+    T 134,724,125x17 B14 FFFFFF "Chat with Thomas"

@@ -1,0 +1,31 @@
+# 9.9 Thomas · Step 2 details bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 2 of 8 · Item Description"
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 2341DD r=4
+R Progress_segment 110,116,40x4 E2E8E1 r=4
+R Progress_segment 154,116,40x4 E2E8E1 r=4
+R Progress_segment 199,116,40x4 E2E8E1 r=4
+R Progress_segment 244,116,40x4 E2E8E1 r=4
+R Progress_segment 288,116,40x4 E2E8E1 r=4
+R Progress_segment 333,116,40x4 E2E8E1 r=4
+T 20,132,353x35 B26 14231C "Tell us about your item"
+T 20,179,353x18 B13 14231C "Item name"
+F Input 20,204,353x48 FFFFFF s=E2E8E1/1 r=10
+  T 33,217,327x20 R15 14231C "Garment Steamer"
+T 20,264,353x18 B13 14231C "Category"
+F Input 20,289,353x48 FFFFFF s=E2E8E1/1 r=10
+  T 33,303,302x20 R15 14231C "Home & living"
+  I chevron-down 343,304,17x17 14231C
+T 20,349,353x18 B13 14231C "Description"
+F Input 20,374,353x86 FFFFFF s=E2E8E1/1 r=10
+  T 33,387,327x60 R15 14231C "Freshen up your outfit in minutes. Handheld steamer with a 250 ml tank, ready in 30 seconds. Includes a heat-resistant mitt."
+T 20,472,353x18 B13 14231C "Condition"
+F Input 20,497,353x48 FFFFFF s=E2E8E1/1 r=10
+  T 33,511,302x20 R15 14231C "Like new"
+  I chevron-down 343,512,17x17 14231C
+T 20,557,353x18 R13 68766E "Used twice. No scratches or leaks."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 162,723,68x18 B15 FFFFFF "Continue"

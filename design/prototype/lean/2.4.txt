@@ -1,0 +1,17 @@
+# 2.4 James · My Borrowing bg=F7F8F6 NAV
+R Borro_logo 20,59,72x34 IMG:logo_borro
+T 104,59,235x34 B25 14231C "My Borrowing"
+I heart 351,65,22x22 2341DD
+T 20,116,48x18 B15 2341DD "Active"
+T 86,116,89x18 B15 68766E "Past Borrow"
+I sliders-horizontal 354,116,19x19 14231C
+T 20,146,353x19 R14 68766E "Every borrow, from first hello to safe return."
+F Card 20,177,353x128 FFFFFF s=E2E8E1/0.7 r=12 sh *
+  R Item_photo 31,188,74x80 IMG:steamer_main r=10
+  T 117,188,222x19 B14 14231C "Garment Steamer"
+  I chevron-right 344,188,18x18 14231C
+  T 117,212,245x30 R11 68766E "Pick up: Sun 18 Oct, 7:30 pm · Block A Security Desk"
+  E Avatar 117,247,19x19 IMG:avatar_man2
+  T 141,247,221x15 R11 14231C "Borrowed from Thomas"
+  F Status 117,271,65x23 FFF3D9 r=99
+    T 127,276,45x13 B11 92600A "Pending"

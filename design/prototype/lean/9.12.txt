@@ -1,0 +1,22 @@
+# 9.12 Thomas · Step 5 period bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 5 of 8 · Borrowing Limit"
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 2341DD r=4
+R Progress_segment 110,116,40x4 2341DD r=4
+R Progress_segment 154,116,40x4 2341DD r=4
+R Progress_segment 199,116,40x4 2341DD r=4
+R Progress_segment 244,116,40x4 E2E8E1 r=4
+R Progress_segment 288,116,40x4 E2E8E1 r=4
+R Progress_segment 333,116,40x4 E2E8E1 r=4
+T 20,132,353x35 B26 14231C "Set a borrowing limit"
+T 20,179,353x44 R16 68766E "Keep each borrow short and sweet. Borrowers can request up to this many days."
+F Card 20,235,353x107 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,247,329x19 R14 14231C "Maximum borrow period"
+  V Vector 35,287,32x32  s=2341DD/1.8
+  T 70,276,253x54 B40 14231C "7 days"
+  V Vector 326,287,32x32  s=2341DD/1.8
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 162,723,68x18 B15 FFFFFF "Continue"

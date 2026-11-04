@@ -1,0 +1,30 @@
+# 5.7 Both · Timeline · agreed bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Timeline"
+T 54,84,319x15 R11 68766E "Garment Steamer · BR-20481"
+F Milestone_track 20,116,84x4 2341DD r=5
+T 44,125,36x12 B10 14231C "Agreed"
+F Milestone_track 110,116,84x4 E2E8E1 r=5
+T 131,125,42x12 S10 68766E "Meet-up"
+F Milestone_track 200,116,84x4 E2E8E1 r=5
+T 222,125,39x12 S10 68766E "Lending"
+F Milestone_track 289,116,84x4 E2E8E1 r=5
+T 315,125,33x12 S10 68766E "Return"
+F Card 20,157,353x88 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 30,167,78x68 IMG:steamer_main r=10
+  T 120,167,243x50 B18 14231C "Garment Steamer\nHandover pending"
+E Avatar 20,255,38x38 IMG:avatar_thomas
+T 68,256,230x35 B15 14231C "Thomas ✓\n★ 5.0 · 10 reviews"
+T 308,268,65x13 B11 2341DD "View profile"
+F Card 20,303,353x96 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,315,329x72 R14 14231C "Pickup  ·  18 Oct · 7:30 pm\nReturn  ·  19 Oct · 10:00 am\n⌖ Block A Security Desk"
+F View_Agreement 20,409,353x48 FFFFFF s=2341DD/1.2 r=99
+  T 139,424,115x17 B14 2341DD "View Agreement"
+F Action 20,467,353x48 FFFFFF s=2341DD/1.2 r=99
+  T 68,482,257x17 B14 2341DD "Before / After · View condition photos"
+F Notice 20,525,353x44 E8F4EC r=12
+  T 32,538,329x19 B14 14231C "Deposit Status · Held safely"
+T 20,579,353x32 R12 68766E "Agreement signed and deposit paid. Meet Thomas at Block A Security Desk on Sun 18 Oct, 7:30 pm."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 144,724,105x17 B14 FFFFFF "Go to handover"

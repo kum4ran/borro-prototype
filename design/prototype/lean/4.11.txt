@@ -1,0 +1,34 @@
+# 4.11 Thomas · Review proposal bg=F6F6F3 NAV
+I Chevron left 18,58,24x24 12201A
+T 56,49,162x24 B20 12201A "Review proposal"
+T 56,75,207x16 R12 5E6561 "James & Thomas · Garment Steamer"
+F Status_banner 16,104,361x82 E4F2EC r=12
+  I Clock 30,116,16x16 0B6B4F
+  T 56,116,307x20 B15 0B6B4F "James is waiting for you"
+  T 56,138,307x36 R13 3E4642 "James sent you a proposal. Pick one pick-up and one return time to accept."
+R Item_photo 16,198,361x81 IMG:steamer_main r=10
+F Details_card 16,291,361x204 FFFFFF s=E4E4DF/1 r=12
+  T 33,306,156x24 B18 12201A "Garment Steamer"
+  T 33,340,76x20 R14 5E6561 "Borrower"
+  T 121,340,239x20 S14 12201A "James"
+  T 33,370,76x20 R14 5E6561 "Lender"
+  T 121,370,239x20 S14 12201A "Thomas"
+  T 33,400,76x20 R14 5E6561 "Pick-up"
+  T 121,400,239x20 S14 12201A "Sun 18 Oct · 7, 7:30 pm"
+  T 33,430,76x20 R14 5E6561 "Return"
+  T 121,430,239x20 S14 12201A "Mon 19 Oct · 9, 10, 10:30 am"
+  T 33,460,76x20 R14 5E6561 "Meet at"
+  I Pin 121,462,16x16 12201A
+  T 143,460,149x20 S14 12201A "Block A Security Desk"
+F James_avatar 16,507,40x40 IMG:avatar_james r=20
+T 68,509,49x20 B15 12201A "James"
+T 68,529,106x16 R12 5E6561 "★ 3.5 · 45 reviews"
+T 302,518,75x18 S13 2341DD "View profile"
+F Actions 0,651,393x123 F6F6F3 s=E4E4DF/1
+  F Request_changes 16,662,176x44 FFFFFF s=2341DD/1.5 r=22 *
+    T 45,674,118x20 S14 2341DD "Request changes"
+  F Chat_with_Arnold 200,662,176x44 FFFFFF s=2341DD/1.5 r=22 *
+    I Chat icon 220,675,18x18 2341DD
+    T 244,674,114x20 S14 2341DD "Chat with James"
+  F Accept_proposal 16,714,361x48 2341DD r=99 *
+    T 137,728,119x20 S15 FFFFFF "Accept proposal"

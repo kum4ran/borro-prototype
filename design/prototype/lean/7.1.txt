@@ -1,0 +1,25 @@
+# 7.1 James · Return code + after photos bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Return handover"
+T 54,84,319x15 R11 68766E "Block A Security Desk"
+T 20,116,353x20 B15 14231C "Garment Steamer"
+T 20,148,353x16 R12 68766E "James · Borrower shows code to Thomas"
+T 20,176,353x19 B14 14231C "My Return Code ⓘ"
+F Code_countdown 134,202,126x126 FFFFFF s=2341DD/4 r=99
+  T 134,244,126x41 B29 14231C "6767"
+  T 134,280,126x14 R10 68766E "refreshes in 0:45"
+T 20,335,353x15 R11 68766E "Refreshes every few minutes"
+F Notice 20,362,353x102 E8F4EC r=12
+  T 32,374,329x19 B14 14231C "ⓘ Meet in person first"
+  T 32,398,329x54 R13 68766E "Show this fresh return code to Thomas only when you meet in person. Thomas enters it on his phone to confirm the return."
+T 20,476,353x23 B17 14231C "Photograph it as you leave it."
+F Additional_photo 20,647,353x44 FFFFFF s=E2E8E1/1 r=10
+  T 32,661,329x16 R12 14231C "＋ ADDITIONAL · Optional"
+T 202,623,170x13 B11 14231C "BACK · ✓ Added"
+R Condition_photo 202,511,170x105 IMG:steamer_shirt3 r=10
+T 20,623,170x13 B11 14231C "FRONT · ✓ Added"
+R Condition_photo 20,511,170x105 IMG:steamer_shirt3 r=10
+T 20,703,353x30 R11 68766E "Return · 19 Oct 2026 · 10:00 am · Clear photos protect both of you. Front and back are required."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 113,724,167x17 B14 FFFFFF "Confirm Return Drop-off"

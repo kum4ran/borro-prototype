@@ -1,0 +1,15 @@
+# 9.17 Thomas · Steamer is live bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,59,319x34 B25 14231C "You’re all set!"
+V Vector 169,158,55x55  s=2341DD/3
+T 20,238,353x39 B29 14231C "Your steamer is live!"
+T 20,297,353x22 R16 68766E "A little less buying. A little more sharing."
+F Card 20,331,353x330 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,343,329x210 IMG:list_photo4 r=10
+  T 32,563,329x22 B16 14231C "Garment Steamer"
+  T 32,598,269x19 R14 68766E "Listing status"
+  T 311,598,50x19 S16 34C759 "Active"
+  T 32,631,329x18 R13 68766E "Bencoolen St · Available 13–27 Oct"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 134,723,125x18 B15 FFFFFF "View My Listings"

@@ -1,0 +1,9 @@
+# 5.2c James · PayNow · Processing payment bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Processing payment"
+T 54,84,319x15 R11 68766E "Deposit · Ref #BR-20481"
+F Success_seal 160,144,74x74 E8EBFA r=99
+  E Spinner 178,163,36x36 2440DE
+T 20,232,353x32 B24 14231C "Confirming your payment"
+T 20,278,353x36 R13 68766E "Waiting for PayNow to confirm your $10.00 deposit. Please don't close the app."
+F Sticky_actions 0,698,393x76 F7F8F6

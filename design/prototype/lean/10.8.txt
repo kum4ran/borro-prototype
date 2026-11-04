@@ -1,0 +1,33 @@
+# 10.8 Both · Post-Borro review · damage bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Post-Borro Review"
+T 54,84,319x15 R11 68766E "Garment Steamer · Damage case"
+F Notice 20,116,353x66 E8F4EC r=12
+  T 32,128,329x19 B14 14231C "Outcome ✓"
+  T 32,152,329x18 R13 68766E "Accidental – both parties agree on compensation."
+F Card 20,194,353x110 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 30,204,90x90 IMG:damage_review2 r=10
+  T 130,204,233x20 B15 14231C "Before"
+  T 130,230,233x18 R13 14231C "Working and in mint condition"
+  T 130,254,233x16 R12 68766E "No dents on steamer case"
+F Card 20,316,353x146 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 30,326,333x19 B14 14231C "After · Dent on steamer body"
+  R Condition_photo 30,355,106x72 IMG:damage_review3 r=10
+  R Condition_photo 144,355,106x72 IMG:speaker_cyl r=10
+  R Condition_photo 257,355,106x72 IMG:speaker_cyl r=10
+  F Video_play 295,376,30x30 14231C@67 r=99
+    I play 302,383,16x16 FFFFFF
+  T 30,437,333x15 R11 68766E "2 photos · 1 video · 0:18"
+F Card 20,474,353x150 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 30,484,333x22 B16 14231C "Repair quote"
+  T 30,520,288x19 R14 68766E "Repair"
+  T 328,520,35x17 S14 14231C "$100"
+  T 30,556,288x19 R14 68766E "Deposit applied"
+  T 328,556,35x17 S14 14231C "−$10"
+  T 30,592,295x19 R14 68766E "Balance to pay"
+  T 335,592,28x17 S14 14231C "$90"
+F Sticky_actions 0,642,393x132 F7F8F6
+  F Action 20,652,353x48 2341DD r=99 *
+    T 142,667,108x18 B15 FFFFFF "Pay Now – $90"
+  F Action 20,708,353x48 FFFFFF s=2341DD/1.2 r=99
+    T 130,723,134x18 B15 2341DD "Chat with Thomas"

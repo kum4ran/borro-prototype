@@ -1,0 +1,41 @@
+# 9.10 Thomas · Step 3 pick-up bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 3 of 8 · Select Location"
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 2341DD r=4
+R Progress_segment 110,116,40x4 2341DD r=4
+R Progress_segment 154,116,40x4 E2E8E1 r=4
+R Progress_segment 199,116,40x4 E2E8E1 r=4
+R Progress_segment 244,116,40x4 E2E8E1 r=4
+R Progress_segment 288,116,40x4 E2E8E1 r=4
+R Progress_segment 333,116,40x4 E2E8E1 r=4
+T 20,132,353x35 B26 14231C "Preferred meeting spot"
+T 20,179,353x18 B13 14231C "Pickup address"
+F Input 20,204,353x48 FFFFFF s=E2E8E1/1 r=10
+  I map-pin 33,217,20x20 14231C
+  T 61,217,299x20 R15 14231C "Bencoolen St, Singapore"
+F Campus_map 20,264,353x250 E8EEE4 r=12
+  E Current_location 186,387,16x16 2341DD s=FFFFFF/3
+  F Map_pin 219,409,73x31 FFFFFF r=8
+    I map-pin 226,416,17x17 1E8E5A
+    T 247,416,38x15 B12 000000 "Blk 48"
+  T 183,334,69x12 R10 68766E "Bras Basah Rd"
+  R Bencoolen_street 103,264,69x298 FFFFFF
+  R Bras_Basah_road 20,289,349x73 FFFFFF
+  R Campus_block 266,446,90x60 D8E1D3 r=8
+  V Campus_block 30,270,85x55 D5DFCF r=8
+  F Map_pin 53,280,70x31 FFFFFF r=8
+    I map-pin 60,287,17x17 1E8E5A
+    T 81,287,35x15 B12 000000 "Blk 12"
+  E Search_radius 92,305,200x180 1E8E5A@8 s=1E8E5A/1.5
+  T 32,478,140x13 R11 68766E "SINGAPORE · BENCOOLEN"
+F Action 20,526,353x48 FFFFFF s=2341DD/1.2 r=99
+  T 152,541,89x18 B15 2341DD "Pick on map"
+T 20,586,353x18 B13 14231C "Meet-up spot"
+F Input 20,611,353x48 FFFFFF s=E2E8E1/1 r=10
+  T 33,624,327x20 R15 14231C "West Wing Lobby"
+T 20,671,353x18 R13 68766E "Your exact pickup details are shared after acceptance."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 162,723,68x18 B15 FFFFFF "Continue"

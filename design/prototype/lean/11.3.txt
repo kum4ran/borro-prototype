@@ -1,0 +1,19 @@
+# 11.3 James · Borrow Later · request sent bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,59,319x34 B25 14231C "Request sent"
+F Success_emblem 154,161,86x86 E8F4EC r=99
+  V Vector 183,194,27x18  s=2341DD/4
+T 20,265,353x72 B27 14231C "Good things are on the way."
+T 20,355,353x22 R16 14231C "Request sent – waiting for Thomas to accept"
+F Card 20,409,353x114 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,421,90x90 IMG:list_photo5 r=10
+  T 136,421,225x22 B16 14231C "Garment Steamer"
+  T 136,451,225x19 R14 14231C "18–19 Oct 2026"
+  F Status 136,478,131x23 FFF3D9 r=99
+    T 146,483,111x13 B11 92600A "Pending acceptance"
+F Notice 20,535,353x84 E8F4EC r=12
+  T 32,547,329x19 B14 14231C "No deposit charged yet"
+  T 32,571,329x36 R13 68766E "We’ll let you know when your lender accepts. Then you can arrange the handover together."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 146,723,102x18 B15 FFFFFF "My Borrowing"

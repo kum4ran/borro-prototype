@@ -1,0 +1,32 @@
+# 5.2 James · Final Agreement bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Final Agreement"
+T 54,84,319x15 R11 68766E "James & Thomas · 18–19 Oct 2026"
+F Card 20,116,353x106 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,128,329x26 B19 14231C "Garment Steamer"
+  T 32,164,329x18 R13 14231C "18 Oct, 7:30 pm → 19 Oct, 10:00 am"
+  T 32,192,329x18 R13 68766E "⌖ Block A Security Desk"
+F Deposit_title_row 20,234,353x24  *
+  T 20,234,173x24 B18 14231C "Safety Deposit: $10"
+  I info 201,238,16x16 68766E
+F Action 20,266,172x48 FFFFFF s=2341DD/1.2 r=99
+  T 56,281,99x18 B15 FFFFFF "PayNow · $10"
+  R image_3 43,260,126x59 IMG:paynow *
+F Action 202,266,172x48 FFFFFF s=2341DD/1.2 r=99
+  R image_1 255,268,65x44 IMG:black_frame
+T 20,322,353x15 R11 68766E "Selecting a payment method authorises your $10 deposit."
+F Card 20,349,353x45 FFFFFF s=E2E8E1/0.7 r=12 sh *
+  T 35,366,136x11 B11 14231C "Instructions From Lender "
+  I External link 342,364,16x16 fFFFFFF
+I Terms_&_Conditions_car 20,406,353x44 FFFFFF s=E2E8E1/0.7 r=12 sh
+  F Terms_heading 32,418,329x20  *
+    T 32,419,134x19 B14 2341DD "Terms & Conditions" *
+    I Chevron 341,418,20x20 fFFFFFF *
+F Checkbox 20,473,23x23 FFFFFF s=B8C4BB/1 r=5
+T 55,465,318x38 R14 14231C "I agree to the Terms & Conditions and the lender's care instructions."
+F Sticky_actions 0,642,393x132 F7F8F6
+  F Action 20,652,353x48 EDF0EC r=99
+    T 128,667,138x18 B15 68766E "Submit Agreement"
+  F Action 20,708,353x48 FFFFFF s=2341DD/1.2 r=99
+    T 170,723,52x18 B15 2341DD "Cancel"
+T 255,59,118x17 S14 2341DD "Suggest changes" *

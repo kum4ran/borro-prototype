@@ -1,0 +1,48 @@
+# 3.4 Thomas · James public profile bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,59,319x34 B25 14231C "Public profile"
+E Avatar 20,116,70x70 IMG:avatar_james
+T 105,116,268x31 B23 14231C "James"
+T 105,152,268x19 R14 68766E "21 · Singapore"
+F Status 105,176,118x23 E8F4EC r=99
+  T 115,181,98x13 B11 1E8E5A "✓ Identity verified"
+F Action 20,211,353x48 2341DD r=99 *
+  T 160,226,72x18 B15 FFFFFF "Chat Now"
+F Card 20,271,353x305 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Gauge_track 112,283,170x85  s=E2E8E1/13
+  E Score_arc 112,283,170x85  s=2341DD/13
+  F Score 82,321,230x54  *
+    T 82,321,230x34 B25 14231C "72/100"
+    T 156,357,62x18 B13 2341DD "Moderate"
+    I info 222,358,16x16 2341DD
+  T 32,407,329x19 B14 14231C "Credibility breakdown"
+  T 32,436,141x13 R11 68766E "Successful transactions"
+  F Progress_track 181,440,138x5 EDF0EC r=9
+    R Progress_value 181,440,109x5 2341DD r=9
+  T 327,436,34x13 B11 14231C "80"
+  T 32,459,141x13 R11 68766E "On-time returns"
+  F Progress_track 181,463,138x5 EDF0EC r=9
+    R Progress_value 181,463,88x5 2341DD r=9
+  T 327,459,34x13 B11 14231C "65"
+  T 32,482,141x13 R11 68766E "Item condition after return"
+  F Progress_track 181,486,138x5 EDF0EC r=9
+    R Progress_value 181,486,106x5 2341DD r=9
+  T 327,482,34x13 B11 14231C "78"
+  T 32,505,141x13 R11 68766E "Communication"
+  F Progress_track 181,509,138x5 EDF0EC r=9
+    R Progress_value 181,509,82x5 2341DD r=9
+  T 327,505,34x13 B11 14231C "60"
+  T 32,528,141x13 R11 68766E "Cancellation rate"
+  F Progress_track 181,532,138x5 EDF0EC r=9
+    R Progress_value 181,532,116x5 2341DD r=9
+  T 327,528,34x13 B11 14231C "85"
+  T 32,551,141x13 R11 68766E "Reviews"
+  F Progress_track 181,555,138x5 EDF0EC r=9
+    R Progress_value 181,555,87x5 2341DD r=9
+  T 327,551,34x13 B11 14231C "64"
+F Card 20,588,353x131 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,604,193x19 R14 68766E "Overall rating"
+  T 235,604,126x17 S14 14231C "★ 3.5 · 45 reviews"
+  T 32,636,329x18 R13 14231C "“Returned the item cleaned.”"
+  T 32,664,329x15 R11 68766E "Kumaran · 12 Oct 2026"
+  T 32,689,329x18 B13 2341DD "See all reviews →" *

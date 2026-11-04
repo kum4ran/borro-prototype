@@ -1,0 +1,30 @@
+# 4.8 James · Proposal sent bg=F6F6F3 NAV
+I Chevron left 18,58,24x24 12201A
+T 56,49,135x24 B20 12201A "Proposal sent"
+T 56,75,207x16 R12 5E6561 "James & Thomas · Garment Steamer"
+F Status_banner 16,104,361x82 E4F2EC r=12
+  I Clock 30,116,16x16 0B6B4F
+  F Banner_text 56,116,307x58  *
+    T 56,116,307x20 B15 0B6B4F "Waiting for Thomas"
+    T 56,138,307x36 R13 3E4642 "Thomas will pick one pick-up and one return time from the options you offered."
+R Item_photo 16,198,361x125 IMG:steamer_main r=10
+F Details_card 16,335,361x204 FFFFFF s=E4E4DF/1 r=12
+  T 33,350,156x24 B18 12201A "Garment Steamer"
+  T 33,384,76x20 R14 5E6561 "Borrower"
+  T 121,384,239x20 S14 12201A "James"
+  T 33,414,76x20 R14 5E6561 "Lender"
+  T 121,414,239x20 S14 12201A "Thomas"
+  T 33,444,76x20 R14 5E6561 "Pick-up"
+  T 121,444,239x20 S14 12201A "Sun 18 Oct · 7, 7:30 pm"
+  T 33,474,76x20 R14 5E6561 "Return"
+  T 121,474,239x20 S14 12201A "Mon 19 Oct · 9, 10, 10:30 am"
+  T 33,504,76x20 R14 5E6561 "Meet at"
+  I Pin 121,506,16x16 12201A
+  T 143,504,149x20 S14 12201A "Block A Security Desk"
+E Avatar 16,551,38x38 IMG:avatar_thomas
+T 66,552,60x20 B15 12201A "Thomas"
+T 66,572,104x16 R12 5E6561 "★ 5.0 · 10 reviews"
+T 302,561,75x18 S13 2341DD "View profile"
+F Actions 0,697,393x77 F6F6F3 s=E4E4DF/1
+  F Edit_proposal 16,710,361x48 2341DD r=99 *
+    T 148,724,96x20 S15 FFFFFF "Edit proposal"

@@ -1,0 +1,35 @@
+# 4.9 James · Chat with Thomas bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Thomas"
+T 54,84,319x15 R11 68766E "★ 5.0 · 10 reviews"
+T 20,116,353x15 R11 68766E "18 OCTOBER 2026"
+F Message_bubble 20,143,290x88 FFFFFF r=16
+  T 34,157,262x40 R15 14231C "Hi James! Meet at Block A Security Desk at 7:30 pm for the steamer?"
+  T 34,203,262x14 R10 68766E "6:42 pm"
+F Message_bubble 83,243,290x88 E8F4EC r=16
+  T 97,257,262x40 R15 14231C "Sure, see you there! I’ll return it tomorrow by 10 am."
+  T 97,303,262x14 R10 68766E "6:43 pm ✓✓"
+F Message_bubble 20,343,290x88 FFFFFF r=16
+  T 34,357,262x40 R15 14231C "Lovely, please take a look at this agreement!"
+  T 34,403,262x14 R10 68766E "6:44 pm"
+F Card 20,443,353x124 FFFFFF s=E2E8E1/0.7 r=12 sh
+  I file-check-2 32,455,30x30 2341DD
+  T 74,455,287x22 B16 14231C "Final Agreement"
+  T 74,481,287x16 R12 68766E "Garment Steamer · Deposit $10"
+  F Action 32,507,329x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 134,522,125x18 B15 2341DD "Open Agreement"
+F Status 20,579,79x23 E8F4EC r=99
+  T 30,584,59x13 B11 1E8E5A "On my way"
+F Status 106,579,61x23 E8F4EC r=99
+  T 116,584,41x13 B11 1E8E5A "Thanks"
+F Status 174,579,92x23 E8F4EC r=99
+  T 184,584,72x13 B11 1E8E5A "See you soon"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Message_composer 20,708,353x48 FFFFFF s=E2E8E1/1 r=99 *
+    I plus 33,721,22x22 2341DD
+    T 67,721,259x19 R14 68766E "Message Thomas…"
+    I send 338,721,22x22 2341DD
+F Speech_bubble 184,645,123x34 2341DD sh *
+  T 214,654,63x16 B13 FFFFFF "Ask Borro"
+F Floating_Ask_Borro 317,634,56x56 FFFFFF s=2341DD/1.5 r=28 sh
+  F Borro_logo 329,646,32x32 IMG:logo_borro

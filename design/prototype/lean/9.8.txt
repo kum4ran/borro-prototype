@@ -1,0 +1,28 @@
+# 9.8 Thomas · List an Item · Step 1 photos bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "List an Item"
+T 54,84,319x15 R11 68766E "Step 1 of 8 · Upload Pictures"
+R Progress_segment 20,116,40x4 2341DD r=4
+R Progress_segment 65,116,40x4 E2E8E1 r=4
+R Progress_segment 110,116,40x4 E2E8E1 r=4
+R Progress_segment 154,116,40x4 E2E8E1 r=4
+R Progress_segment 199,116,40x4 E2E8E1 r=4
+R Progress_segment 244,116,40x4 E2E8E1 r=4
+R Progress_segment 288,116,40x4 E2E8E1 r=4
+R Progress_segment 333,116,40x4 E2E8E1 r=4
+T 20,132,353x70 B26 14231C "Make a great first impression"
+T 20,214,353x44 R16 68766E "Add up to 6 clear photos. Your first photo becomes the cover."
+R Item_photo 20,270,353x195 IMG:list_photo1 r=10
+F Status 20,477,53x23 E8F4EC r=99
+  T 30,482,33x13 B11 1E8E5A "Cover"
+R Item_photo 20,512,111x85 IMG:list_photo2 r=10
+R Item_photo 141,512,111x85 IMG:list_photo2 r=10
+F Add_photo 262,512,111x85 E8F4EC r=12
+  I plus 306,534,22x22 2341DD
+  T 262,560,111x15 R11 14231C "3 of 6 photos"
+F Notice 20,609,353x66 E8F4EC r=12
+  T 32,621,329x19 B14 14231C "Good photos build trust"
+  T 32,645,329x18 R13 68766E "Show the item, accessories and any existing marks."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 162,723,68x18 B15 FFFFFF "Continue"

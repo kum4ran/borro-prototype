@@ -1,0 +1,36 @@
+# 11.4 James · Wishlist bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,62,319x28 B21 14231C "Wishlist"
+T 20,116,353x19 R14 68766E "A little collection of things you love."
+F Marketplace_item 20,147,170x211 FFFFFF r=12
+  E Avatar 29,156,22x22 IMG:photo_7f80fa37b5
+  T 56,160,56x13 S11 000000 "Thomas ✓"
+  R Item_photo 29,185,152x98 IMG:steamer_desk r=10
+  T 29,290,134x16 B12 14231C "Garment Steamer"
+  I heart 166,290,15x15 2341DD
+  T 29,313,152x15 R11 14231C "★ 5.0 (10 reviews)"
+  T 29,335,152x14 R10 68766E "Bencoolen St"
+F Marketplace_item 202,147,170x211 FFFFFF r=12
+  E Avatar 212,156,22x22 IMG:photo_cf751bc1de
+  T 238,160,60x13 S11 000000 "Matthew ✓"
+  R Item_photo 212,185,152x98 IMG:item_projector r=10
+  T 212,290,134x16 B12 14231C "Portable Steamer"
+  I heart 349,290,15x15 2341DD
+  T 212,313,152x15 R11 14231C "★ 4.7 (14 reviews)"
+  T 212,335,152x14 R10 68766E "Bras Basah Rd"
+F Marketplace_item 20,370,170x211 FFFFFF r=12
+  E Avatar 29,379,22x22 IMG:avatar_woman1
+  T 56,384,53x13 S11 000000 "Jessica ✓"
+  R Item_photo 29,408,152x98 IMG:screen_1 r=10
+  T 29,513,134x16 B12 14231C "Steamer Screen"
+  I heart 166,513,15x15 2341DD
+  T 29,536,152x15 R11 14231C "★ 4.6 (20 reviews)"
+  T 29,558,152x14 R10 68766E "Plaza Singapura"
+F Marketplace_item 202,370,170x211 FFFFFF r=12
+  E Avatar 212,379,22x22 IMG:photo_cf751bc1de
+  T 238,384,50x13 S11 000000 "Lebron ✓"
+  R Item_photo 212,408,152x98 IMG:football_1 r=10
+  T 212,513,134x16 B12 14231C "Football"
+  I heart 349,513,15x15 2341DD
+  T 212,536,152x15 R11 14231C "★ 5.0 (10 reviews)"
+  T 212,558,152x14 R10 68766E "West Wing"

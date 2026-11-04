@@ -1,0 +1,33 @@
+# 10.6 Both · Timeline · damage bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Timeline"
+T 54,84,319x15 R11 68766E "Garment Steamer · BR-20481"
+F Milestone_track 20,116,84x4 2341DD r=5
+T 44,125,36x12 S10 68766E "Agreed"
+F Milestone_track 110,116,84x4 2341DD r=5
+T 131,125,42x12 S10 68766E "Meet-up"
+F Milestone_track 200,116,84x4 2341DD r=5
+T 222,125,39x12 S10 68766E "Lending"
+F Milestone_track 289,116,84x4 E2E8E1 r=5
+T 315,125,33x12 S10 68766E "Return"
+T 20,149,279x28 B21 14231C "Garment Steamer"
+F Status 309,149,64x23 EAF0FF r=99
+  T 319,154,44x13 B11 2341DD "Lending"
+F Notice 20,189,353x84 FFF3D9 r=12
+  T 32,201,329x19 B14 14231C "Damage report in progress"
+  T 32,225,329x36 R13 68766E "Report submitted ✓ · Evaluating damage · Next update by 21 Oct"
+T 20,285,353x22 B16 14231C "Condition Before → After"
+R Item_photo 20,319,172x85 IMG:projector_2 r=10
+R Item_photo 202,319,172x85 IMG:projector_2 r=10
+T 20,416,353x16 R12 68766E "Before · Working and in mint condition · 18 Oct"
+R Condition_photo 20,444,172x85 IMG:photo_bab946ba63 r=10
+R Condition_photo 202,444,172x85 IMG:photo_bab946ba63 r=10
+T 20,541,353x16 R12 68766E "After · Dent on steamer body · 19 Oct"
+F Action 20,569,353x48 FFFFFF s=2341DD/1.2 r=99 *
+  T 120,584,154x18 B15 2341DD "Track damage report"
+F Deposit_status 20,629,353x44 E8F4EC r=12
+  I shield-check 32,641,20x20 2341DD
+  T 60,641,301x18 B13 14231C "Deposit · $10 · Held safely"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 138,723,117x18 B15 FFFFFF "Ready to Return"

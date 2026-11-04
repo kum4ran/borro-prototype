@@ -1,0 +1,100 @@
+# 1.4 James · Location map · 1 km bg=F7F8F6 NAV SHEET
+R Borro_logo 20,59,72x34 IMG:logo_borro
+I heart 351,65,22x22 2341DD
+F Search_field 20,116,267x46 FFFFFF s=E2E8E1/1 r=99
+  I search 32,128,18x18 14231C
+  T 58,128,217x19 R14 68766E "What do you need?"
+F Search_button 295,116,78x46 2341DD r=99
+  T 312,131,45x16 B13 FFFFFF "Search"
+T 20,180,52x15 R12 000000 "★ Rating"
+T 82,180,47x15 R12 000000 "Reviews"
+F Urgency_toggle 139,174,99x28 2563EB r=99
+  T 147,182,83x12 B10 FFFFFF "⚡ Need it Now ○"
+I sliders-horizontal 248,178,19x19 14231C
+T 20,214,178x22 B18 000000 "Good things, nearby"
+T 334,214,39x15 R12 2341DD "Sort ↕"
+F Marketplace_item 20,248,170x270 FFFFFF r=12
+  E Avatar 29,257,22x22 IMG:photo_7f80fa37b5
+  T 56,262,56x13 S11 000000 "Thomas ✓"
+  R Item_photo 29,286,152x98 IMG:steamer_desk r=10
+  T 29,391,134x16 B12 14231C "Garment Steamer"
+  I heart 166,391,15x15 68766E
+  T 29,414,152x15 R11 14231C "★ 5.0 (10)"
+  T 29,436,152x14 R10 68766E "Bencoolen St"
+  T 29,457,152x12 R9 2341DD "13–27 Oct 2026"
+  T 29,476,117x14 B10 2563EB "⚡ 120 m | available now"
+F Marketplace_item 202,248,170x270 FFFFFF r=12
+  E Avatar 212,257,22x22 IMG:photo_cf751bc1de
+  T 238,262,60x13 S11 000000 "Matthew ✓"
+  R Item_photo 212,286,152x98 IMG:item_projector r=10
+  T 212,391,134x16 B12 14231C "Portable Projector"
+  I heart 349,391,15x15 68766E
+  T 212,414,152x15 R11 14231C "★ 4.7 (14)"
+  T 212,436,152x14 R10 68766E "Bras Basah Rd"
+  T 212,457,152x12 R9 2341DD "13–27 Oct 2026"
+  T 212,476,44x13 S10 68766E "Available"
+  T 212,491,100x18 S13 2341DD "16–23 Oct 2026"
+F Marketplace_item 20,530,170x270 FFFFFF r=12
+  E Avatar 29,539,22x22 IMG:avatar_woman1
+  T 56,544,53x13 S11 000000 "Jessica ✓"
+  R Item_photo 29,568,152x98 IMG:screen_1 r=10
+  T 29,673,134x16 B12 14231C "Projector Screen"
+  I heart 166,673,15x15 68766E
+  T 29,696,152x15 R11 14231C "★ 4.6 (20)"
+  T 29,718,152x14 R10 68766E "Plaza Singapura"
+  T 29,739,152x12 R9 2341DD "13–27 Oct 2026"
+  T 29,758,44x13 S10 68766E "Available"
+  T 29,773,101x18 S13 2341DD "18–20 Oct 2026"
+F Marketplace_item 202,530,170x270 FFFFFF r=12
+  E Avatar 212,539,22x22 IMG:photo_cf751bc1de
+  T 238,544,50x13 S11 000000 "Lebron ✓"
+  R Item_photo 212,568,152x98 IMG:football_1 r=10
+  T 212,673,134x16 B12 14231C "Football"
+  I heart 349,673,15x15 68766E
+  T 212,696,152x15 R11 14231C "★ 5.0 (10)"
+  T 212,718,152x14 R10 68766E "West Wing"
+  T 212,739,152x12 R9 2341DD "13–27 Oct 2026"
+  T 212,758,44x13 S10 68766E "Available"
+  T 212,773,97x18 S13 2341DD "17–21 Oct 2026"
+F Overlay_scrim 0,0,393x852 14231C@40
+  F Bottom_sheet 0,149,393x703 FFFFFF
+    R Drag_handle 178,161,38x4 B8C4BB r=9
+    T 22,181,327x28 B21 14231C "Find it close to you"
+    I x 349,184,22x22 14231C
+    T 22,225,349x18 B13 14231C "Location"
+    F Input 22,250,349x48 FFFFFF s=E2E8E1/1 r=10
+      I search 35,263,20x20 14231C
+      T 63,263,295x20 R15 68766E "Search location…"
+    F Campus_map 22,314,349x250 E8EEE4 r=12
+      E Current_location 188,437,16x16 2341DD s=FFFFFF/3
+      F Map_pin 221,459,73x31 FFFFFF r=8
+        I map-pin 228,466,17x17 1E8E5A
+        T 249,466,38x15 B12 000000 "Blk 48"
+      T 185,384,69x12 R10 68766E "Bras Basah Rd"
+      R Bencoolen_street 105,314,69x298 FFFFFF
+      R Bras_Basah_road 22,339,349x73 FFFFFF
+      R Campus_block 268,496,90x60 D8E1D3 r=8
+      V Campus_block 32,320,85x55 D5DFCF r=8
+      F Map_pin 55,330,70x31 FFFFFF r=8
+        I map-pin 62,337,17x17 1E8E5A
+        T 83,337,35x15 B12 000000 "Blk 12"
+      E Search_radius 94,355,200x180 1E8E5A@8 s=1E8E5A/1.5
+      T 34,528,140x13 R11 68766E "SINGAPORE · BENCOOLEN"
+    T 22,580,349x18 B13 14231C "Search radius"
+    R Track 34,622,244x6 E4E4DF r=3
+    R Track_fill 34,622,162x6 2341DD r=3
+    E Stop_250_m 30,621,8x8 2341DD
+    T 22,644,33x11 M9 5E6561 "Current"
+    E Stop_500_m 111,621,8x8 2341DD
+    T 101,644,28x11 M9 5E6561 "500 m"
+    E Stop_1_km 192,621,8x8 2341DD
+    T 186,644,20x11 B9 2341DD "1 km"
+    E Stop_2_km 274,621,8x8 C9CBD1
+    T 267,644,34x11 M9 5E6561 "Custom"
+    E Thumb 186,614,22x22 FFFFFF s=2341DD/3 sh
+    T 22,676,349x18 R13 68766E "✓ Searching within 1 km of Bencoolen St"
+    F Action 22,710,349x48 2341DD r=99 *
+      T 170,725,52x18 B15 FFFFFF "Search"
+    F Action 22,774,349x48 FFFFFF s=2341DD/1.2 r=99 *
+      T 170,789,52x18 B15 2341DD "Cancel"
+    R Close_sheet_(tap_handl 136,151,120x32 FFFFFF@0 *

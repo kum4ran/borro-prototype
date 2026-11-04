@@ -1,0 +1,52 @@
+# 3.6 Thomas · James all reviews bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,59,319x34 B25 14231C "James’ Reviews"
+E Avatar 20,116,70x70 IMG:avatar_james
+T 105,116,268x31 B23 14231C "James"
+T 105,152,268x19 R14 68766E "21 · Singapore"
+F Status 105,176,118x23 E8F4EC r=99
+  T 115,181,98x13 B11 1E8E5A "✓ Identity verified"
+F Card 20,211,353x204 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,223,329x19 B14 14231C "72/100 · Moderate"
+  T 32,252,329x19 B14 14231C "Credibility breakdown"
+  T 32,280,141x13 R11 68766E "Successful transactions"
+  F Progress_track 181,284,138x5 EDF0EC r=9
+    R Progress_value 181,284,109x5 2341DD r=9
+  T 327,280,34x13 B11 14231C "80"
+  T 32,302,141x13 R11 68766E "On-time returns"
+  F Progress_track 181,306,138x5 EDF0EC r=9
+    R Progress_value 181,306,88x5 2341DD r=9
+  T 327,302,34x13 B11 14231C "65"
+  T 32,324,141x13 R11 68766E "Item condition after return"
+  F Progress_track 181,328,138x5 EDF0EC r=9
+    R Progress_value 181,328,106x5 2341DD r=9
+  T 327,324,34x13 B11 14231C "78"
+  T 32,346,141x13 R11 68766E "Communication"
+  F Progress_track 181,350,138x5 EDF0EC r=9
+    R Progress_value 181,350,82x5 2341DD r=9
+  T 327,346,34x13 B11 14231C "60"
+  T 32,368,141x13 R11 68766E "Cancellation rate"
+  F Progress_track 181,372,138x5 EDF0EC r=9
+    R Progress_value 181,372,116x5 2341DD r=9
+  T 327,368,34x13 B11 14231C "85"
+  T 32,390,141x13 R11 68766E "Reviews"
+  F Progress_track 181,394,138x5 EDF0EC r=9
+    R Progress_value 181,394,87x5 2341DD r=9
+  T 327,390,34x13 B11 14231C "64"
+T 20,427,147x22 B18 000000 "Detailed reviews"
+T 252,427,121x16 B13 000000 "★ 3.5 (45 reviews)"
+F Card 20,461,353x85 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,473,62x17 B14 000000 "Kumaran"
+  T 282,473,79x18 R15 92600A "★★★★☆"
+  T 32,496,329x18 R13 14231C "Returned the item cleaned."
+  T 32,519,329x15 R11 68766E "12 Oct 2026"
+F Card 20,558,353x85 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,570,39x17 B14 000000 "Maria"
+  T 282,570,79x18 R15 92600A "★★★☆☆"
+  T 32,593,329x18 R13 14231C "Good communication, but the return was a little late."
+  T 32,616,329x15 R11 68766E "8 Oct 2026"
+F Card 20,655,353x85 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,667,44x17 B14 000000 "Regen"
+  T 282,667,79x18 R15 92600A "★★★★☆"
+  T 32,690,329x18 R13 14231C "Careful with my drill. He would lend the item again."
+  T 32,713,329x15 R11 68766E "2 Oct 2026"

@@ -1,0 +1,41 @@
+# 10.12 James · Nearby alternatives bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Nearby alternatives"
+T 54,84,319x15 R11 68766E "Garment Steamer · 18–19 Oct"
+T 20,116,353x19 R14 68766E "Here are 3 nearby alternatives. No need to start over."
+F Card 20,147,353x169 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,159,32x32 IMG:alt_3
+  T 74,159,222x19 B14 14231C "Leon ✓"
+  T 74,181,222x15 R11 68766E "Credibility 89/100 · High"
+  F Status 306,159,55x23 E8F4EC r=99
+    T 316,164,35x13 B11 1E8E5A "564 m"
+  R Item_photo 32,206,95x80 IMG:alt_2 r=10
+  T 139,206,222x19 B14 14231C "Garment Steamer"
+  T 139,233,222x15 R11 68766E "★ 4.9 · Available 18–19 Oct"
+  F Action 139,256,222x48 FFFFFF s=2341DD/1.2 r=99
+    T 220,271,61x18 B15 2341DD "Request"
+F Card 20,328,353x169 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,340,32x32 IMG:alt_3
+  T 74,340,222x19 B14 14231C "Mei Lin ✓"
+  T 74,362,222x15 R11 68766E "Credibility 87/100 · High"
+  F Status 306,340,55x23 E8F4EC r=99
+    T 316,345,35x13 B11 1E8E5A "200 m"
+  R Item_photo 32,387,95x80 IMG:alt_2 r=10
+  T 139,387,222x19 B14 14231C "Garment Steamer"
+  T 139,414,222x15 R11 68766E "★ 4.9 · Available 18–19 Oct"
+  F Action 139,437,222x48 FFFFFF s=2341DD/1.2 r=99
+    T 220,452,61x18 B15 2341DD "Request"
+F Card 20,509,353x169 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,521,32x32 IMG:alt_1
+  T 74,521,222x19 B14 14231C "Priya ✓"
+  T 74,543,222x15 R11 68766E "Credibility 91/100 · High"
+  F Status 306,521,55x23 E8F4EC r=99
+    T 316,526,35x13 B11 1E8E5A "350 m"
+  R Item_photo 32,568,95x80 IMG:alt_2 r=10
+  T 139,568,222x19 B14 14231C "Garment Steamer"
+  T 139,595,222x15 R11 68766E "★ 4.9 · Available 18–19 Oct"
+  F Action 139,618,222x48 FFFFFF s=2341DD/1.2 r=99
+    T 220,633,61x18 B15 2341DD "Request"
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 129,723,135x18 B15 FFFFFF "Find a New Lender"

@@ -1,0 +1,26 @@
+# 5.1 Thomas · Agreement sent bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Final Agreement"
+T 54,84,319x15 R11 68766E "James · Borrower / Thomas · Lender"
+F Agreement_summary 20,116,353x87 FFFFFF r=12
+  T 32,128,329x23 B17 14231C "Garment Steamer"
+  T 32,155,329x16 R12 14231C "18 Oct 2026, 7:30 pm → 19 Oct, 10:00 am"
+  T 32,175,329x16 R12 68766E "⌖ Block A Security Desk"
+T 20,215,173x24 B18 14231C "Safety Deposit: $10"
+I info 201,219,16x16 68766E
+F Payment_receipt 20,251,353x71 E8F4EC s=B7D9C5/1 r=12
+  I check-circle 32,264,20x20 1E8E5A
+  T 62,263,299x22 B16 000000 "Deposit paid · $10 via PayNow"
+  T 32,291,329x19 B14 000000 "Ref #BR-20481"
+F Numbered_care_instruct 20,334,353x85 FFFFFF s=E2E8E1/0.7 r=12
+  T 32,346,329x19 B14 14231C "Thomas's care instructions"
+  T 32,371,329x36 R13 68766E "1. Use clean water only. 2. Let it cool before packing and empty the tank. 3. Return the heat-resistant mitt."
+I Terms_&_Conditions_car 20,431,353x44 FFFFFF s=E2E8E1/0.7 r=12 sh
+  F Terms_heading 32,443,329x20  *
+    T 32,444,134x19 B14 2341DD "Terms & Conditions" *
+    I Chevron 341,443,20x20 fFFFFFF *
+F Sticky_actions 0,642,393x132 F7F8F6
+  F Action 20,652,353x48 2341DD r=99
+    T 143,668,107x17 B14 FFFFFF "Edit Agreement"
+  F Action 20,708,353x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 139,724,115x17 B14 2341DD "Chat with James"

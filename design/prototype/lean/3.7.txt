@@ -1,0 +1,43 @@
+# 3.7 Thomas · Accept James' request? (dialog) bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Borrow Requests"
+T 54,84,319x15 R11 68766E "Thomas · 3 new requests"
+F Card 20,116,353x211 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,128,38x38 IMG:avatar_james
+  T 80,130,281x35 B15 14231C "James ✓\n72/100 · Moderate"
+  T 32,176,329x20 R15 14231C "James wants to borrow Garment Steamer"
+  T 32,206,329x18 R13 68766E "18–19 Oct 2026"
+  F Status 32,234,156x23 FFF3D9 r=99
+    T 42,239,136x13 B11 92600A "⚡ URGENT – Borrow Now"
+  F Action 32,267,155x48 2341DD r=99
+    T 85,282,50x17 B14 FFFFFF "Accept"
+  F Action 203,267,158x48 FFFFFF s=D64545/1.2 r=99
+    T 260,282,44x17 B14 D64545 "Reject"
+F Card 20,339,353x211 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,351,38x38 IMG:avatar_man3
+  T 80,352,281x35 B15 14231C "Mei ✓\n86/100 · High"
+  T 32,399,329x20 R15 14231C "Mei wants to borrow Garment Steamer"
+  T 32,429,329x18 R13 68766E "20–21 Oct 2026"
+  F Status 32,457,156x23 FFF3D9 r=99
+    T 42,462,136x13 B11 92600A "⚡ URGENT – Borrow Now"
+  F Action 32,490,155x48 2341DD r=99
+    T 85,506,50x17 B14 FFFFFF "Accept"
+  F Action 203,490,158x48 FFFFFF s=D64545/1.2 r=99
+    T 260,506,44x17 B14 D64545 "Reject"
+F Card 20,562,353x178 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Avatar 32,574,38x38 IMG:avatar_man3
+  T 80,576,281x35 B15 14231C "Darren ✓\n86/100 · High"
+  T 32,622,329x20 R15 14231C "Darren wants to borrow Garment Steamer"
+  T 32,652,329x18 R13 68766E "20–21 Oct 2026"
+  F Action 32,680,155x48 2341DD r=99
+    T 85,696,50x17 B14 FFFFFF "Accept"
+  F Action 203,680,158x48 FFFFFF s=D64545/1.2 r=99
+    T 260,696,44x17 B14 D64545 "Reject"
+F Overlay_scrim 0,0,393x852 14231C@33 r=28
+F Confirmation_dialog_(A 17,301,345x301 FFFFFF r=20
+  T 39,328,301x31 B23 14231C "Accept James’ request?"
+  T 39,377,301x66 B16 68766E "Accept James’ request for 18–19 Oct? You’ll arrange the pickup together after confirming."
+  F Action 39,461,301x48 2341DD r=99 *
+    T 160,476,60x18 B15 FFFFFF "Confirm"
+  F Action 39,527,301x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 164,542,52x18 B15 2341DD "Cancel"

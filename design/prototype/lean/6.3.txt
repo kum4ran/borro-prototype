@@ -1,0 +1,41 @@
+# 6.3 Thomas · Name the photo (sheet) bg=F7F8F6 NAV SHEET
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Drop-off"
+T 54,84,319x15 R11 68766E "Block A Security Desk"
+T 20,116,353x20 B15 14231C "Garment Steamer"
+T 20,148,353x19 B14 14231C "My Lender Code ⓘ"
+F Code_countdown 134,174,126x126 FFFFFF s=2341DD/4 r=99
+  T 134,216,126x41 B29 14231C "6767"
+  V Elapsed_time_·_clockwi 136,176,122x122  s=CFD6D3/4
+  E Elapsed_perimeter_·_fi 194,296,4x4 CFD6D3
+  T 134,252,126x14 R10 68766E "refreshes in 0:45"
+T 113,307,151x15 R11 68766E "Refreshes every few minutes"
+I info 268,308,12x12 68766E
+T 20,334,353x23 B17 14231C "Photograph it as you leave it."
+F photo-box 20,369,353x210 FFFFFF s=ACACAC/1 r=12
+  I Upload cloud 98,462,24x24 fFFFFFF
+  T 132,465,164x18 B15 2341DD "Add Additional Photos"
+T 20,583,353x26 B11 14231C "POSITION · Edit\n"
+I Edit 2 242,582,16x16 fFFFFFF
+F prev-btn 118,617,24x24 EDF0EC r=20
+  I chevron-left 122,621,16x16 68766E
+F Frame 154,617,24x24 EDF0EC r=12
+  T 164,622,6x15 B12 68766E "1"
+F Frame 184,617,24x24 EDF0EC r=12
+  T 192,622,8x15 B12 68766E "2"
+F Frame 214,617,24x24 2341DD r=12
+  T 222,622,8x15 B12 FFFFFF "3"
+F next-btn 250,617,24x24 EDF0EC r=20
+  I chevron-right 254,621,16x16 68766E
+T 20,689,353x15 R11 68766E "Clear photos protect both of you. Front and back are required."
+F Overlay_scrim -4,-26,397x666 14231C@33
+F Sheet 0,465,393x309 F3F3F3
+  T 20,505,156x24 B20 14231C "Name of picture"
+  F Card 20,544,349x84 FFFFFF s=E2E8E1/0.7 r=12 sh
+    T 32,556,325x60 R15 14231C "Example: Left Side  - speaker\n\n"
+  F Action 20,643,353x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 146,658,100x17 B14 2341DD "Cancel Upload"
+  F Action 20,706,353x48 2341DD r=99 *
+    T 144,722,106x17 B14 FFFFFF "Confirm upload"
+  R Drag_handle 178,474,38x4 B8C4BB r=9
+  R Close_sheet_(tap_handl 137,465,120x32 FFFFFF@0 *

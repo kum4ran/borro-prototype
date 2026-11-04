@@ -1,0 +1,31 @@
+# 4.14 Both · Handover confirmed bg=F6F6F3 NAV
+I Chevron left 18,58,24x24 12201A
+T 56,49,201x24 B20 12201A "Handover confirmed"
+T 56,75,207x16 R12 5E6561 "James & Thomas · Garment Steamer"
+F Status_banner 16,104,361x64 E4F2EC r=12
+  I Check 30,116,16x16 0B6B4F
+  T 56,116,307x20 B15 0B6B4F "Both confirmed"
+  T 56,138,307x18 R13 3E4642 "Thomas and James confirmed this arrangement."
+R Item_photo 16,180,361x125 IMG:steamer_main r=10
+F Details_card 16,317,361x204 FFFFFF s=E4E4DF/1 r=12
+  T 33,332,156x24 B18 12201A "Garment Steamer"
+  T 33,366,76x20 R14 5E6561 "Borrower"
+  T 121,366,239x20 S14 12201A "James"
+  T 33,396,76x20 R14 5E6561 "Lender"
+  T 121,396,239x20 S14 12201A "Thomas"
+  T 33,426,76x20 R14 5E6561 "Pick-up"
+  T 121,426,239x20 S14 12201A "Sun 18 Oct · 7:30 pm"
+  T 33,456,76x20 R14 5E6561 "Return"
+  T 121,456,239x20 S14 12201A "Mon 19 Oct · 10:00 am"
+  T 33,486,76x20 R14 5E6561 "Meet at"
+  I Pin 121,488,16x16 12201A
+  T 143,486,149x20 S14 12201A "Block A Security Desk"
+E Avatar 16,533,38x38 IMG:avatar_thomas
+T 66,534,60x20 B15 12201A "Thomas"
+T 66,554,104x16 R12 5E6561 "★ 5.0 · 10 reviews"
+T 302,543,75x18 S13 2341DD "View profile"
+F Actions 0,639,393x135 F6F6F3 s=E4E4DF/1
+  F Chat_with_Thomas 16,652,361x48 FFFFFF s=2341DD/1.5 r=24 *
+    T 130,666,133x20 S15 2341DD "Chat with Thomas"
+  F View_Final_Agreement 16,710,361x48 2341DD r=99 *
+    T 117,724,159x20 S15 FFFFFF "View Final Agreement"

@@ -1,0 +1,15 @@
+# 8.5 Thomas · Push · rate James bg= NONAV
+I lock-keyhole 18,75,24x24 FFFFFF
+T 18,117,357x26 R19 FFFFFF "Monday, 19 October"
+T 18,161,357x103 B76 FFFFFF "11:05"
+F iOS_notification 18,282,357x174 FFFFFF@93 r=22
+  F Borro_app_icon 34,298,28x28 IMG:logo_borro
+  T 72,298,255x18 B13 14231C "BORRO"
+  T 337,298,22x13 R11 68766E "now"
+  T 34,338,325x22 B16 14231C "How was James with your steamer?"
+  T 34,372,325x38 R14 14231C "Return confirmed. Tap to rate James. Your review updates his credibility score."
+  T 34,422,325x18 B13 2341DD "James · Garment Steamer · 18–19 Oct"
+T 18,474,357x16 R12 FFFFFF "Tap to respond"
+I ios-signal 299,14,17x16 fFFFFFF
+I ios-wifi-signal 321,14,17x16 fFFFFFF
+I ios-battery-full 343,14,25x16 fFFFFFF

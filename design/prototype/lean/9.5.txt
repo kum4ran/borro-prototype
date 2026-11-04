@@ -1,0 +1,61 @@
+# 9.5 Thomas · Manage listing menu bg=F7F8F6 NAV SHEET
+R Borro_logo 20,59,72x34 IMG:logo_borro
+T 104,59,235x34 B25 14231C "My Lending"
+I heart 351,65,22x22 2341DD
+F Action 20,116,353x48 2341DD r=99
+  T 147,131,99x18 B15 FFFFFF "+ List an Item"
+F Card 20,176,353x47 FFFFFF s=E2E8E1/0.7 r=12 sh
+  I inbox 32,188,22x22 2341DD
+  T 62,188,237x22 B16 14231C "Borrow Requests"
+  F Status 307,188,28x23 FFF3D9 r=99
+    T 317,193,8x13 B11 92600A "3"
+  I chevron-right 343,188,18x18 14231C
+T 20,235,48x18 B15 2341DD "Active"
+T 86,235,76x18 B15 68766E "Past loans"
+T 180,235,55x18 B15 68766E "Paused"
+I sliders-horizontal 354,235,19x19 14231C
+F Active_listing_card 20,266,353x104 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,277,74x80 IMG:bottle_green r=10
+  T 117,277,222x19 B14 14231C "Water Bottle"
+  I ellipsis 344,277,18x18 14231C
+  F Status 117,301,120x23 FFF3D9 r=99
+    T 127,306,100x13 B11 92600A "Handover pending"
+  T 117,329,245x30 R11 68766E "Handover to Kumaran · Fri, 3:00 PM · Bencoolen St"
+F Active_listing_card 20,382,353x102 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,393,74x80 IMG:photo_c8ecf538e8 r=10
+  T 117,393,222x19 B14 14231C "Speaker"
+  I ellipsis 344,393,18x18 14231C
+  F Status 117,417,61x23 EBEEFC r=99
+    T 127,422,41x13 B11 2341DD "On loan"
+  T 117,445,245x15 R11 68766E "With Maria · Due 2 Nov"
+F Active_listing_card 20,496,353x102 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,507,74x80 IMG:camera_1 r=10
+  T 117,507,222x19 B14 14231C "Camera"
+  I ellipsis 344,507,18x18 14231C
+  F Status 117,531,67x23 FDECE9 r=99
+    T 127,536,47x13 B11 D64545 "Overdue"
+  T 117,559,245x15 R11 68766E "With John · Due 16 Oct"
+F Active_listing_card 20,610,353x104 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 31,621,74x80 IMG:steamer_main r=10
+  T 117,621,222x19 B14 14231C "Garment Steamer"
+  I ellipsis 344,621,18x18 14231C
+  F Status 117,645,65x23 FFF3D9 r=99
+    T 127,650,45x13 B11 92600A "Pending"
+  T 117,673,245x30 R11 68766E "James requested 18–19 Oct 2026 · Awaiting your reply"
+F Overlay_scrim 0,0,393x852 14231C@40
+  F Bottom_sheet 0,475,393x377 FFFFFF
+    R Drag_handle 22,487,38x4 B8C4BB r=9
+    T 22,507,349x28 B21 14231C "Manage Speaker"
+    F Listing_action 22,551,349x48  *
+      I pencil 22,564,22x22 2341DD
+      T 58,564,313x22 B16 14231C "Edit Listing"
+    F Listing_action 22,615,349x48  *
+      I pause 22,628,22x22 2341DD
+      T 58,628,313x22 B16 14231C "Pause Listing"
+    I star 22,692,22x22 2341DD
+    T 58,692,313x22 B16 14231C "Mark as Important"
+    F Listing_action 22,743,349x48  *
+      I trash-2 22,756,22x22 68766E
+      T 58,756,313x22 B16 68766E "Delete"
+    T 22,807,349x15 R11 68766E "You can delete this item after it’s returned."
+    R Close_sheet_(tap_handl 0,477,120x32 FFFFFF@0 *

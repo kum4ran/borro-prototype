@@ -1,0 +1,49 @@
+# 1.2 James · Home · Need it Now on bg=F7F8F6 NAV
+R Borro_logo 20,59,72x34 IMG:logo_borro
+I heart 351,65,22x22 2341DD
+F Search_field 20,116,267x46 FFFFFF s=E2E8E1/1 r=99
+  I search 32,128,18x18 14231C
+  T 58,128,217x19 R14 68766E "What do you need?"
+F Search_button 295,116,78x46 2341DD r=99
+  T 312,131,45x16 B13 FFFFFF "Search"
+F Urgency_toggle 20,174,99x28 2563EB r=99
+  T 28,182,83x12 B10 FFFFFF "⚡ Need it Now ●"
+I sliders-horizontal 345,179,19x19 14231C *
+T 20,214,168x22 B18 000000 "Available right now"
+T 224,218,149x15 M12 68766E "4 results · all of Singapore"
+F Marketplace_item 20,248,170x232 FFFFFF r=12
+  E Avatar 29,257,22x22 IMG:photo_7f80fa37b5
+  T 56,262,60x13 S11 000000 "Kumaran ✓"
+  R Item_photo 29,286,152x98 IMG:speaker_concert r=10
+  T 29,391,134x16 B12 14231C "JBL Speaker"
+  I heart 166,391,15x15 68766E
+  T 29,414,152x15 R11 14231C "★ 5.0 (10 reviews)"
+  T 29,436,152x14 R10 68766E "Bencoolen St"
+  T 29,457,152x14 B10 2563EB "⚡ 400 m | available now"
+F Marketplace_item 202,248,170x232 FFFFFF r=12
+  E Avatar 212,257,22x22 IMG:avatar_man3
+  T 238,262,32x13 S11 000000 "Mei ✓"
+  R Item_photo 212,286,152x98 IMG:photo_7854425d76 r=10
+  T 212,391,134x16 B12 14231C "Xiaomi Steamer"
+  I heart 349,391,15x15 68766E
+  T 212,414,152x15 R11 14231C "★ 4.7 (18 reviews)"
+  T 212,436,152x14 R10 68766E "Tampines Hub"
+  T 212,457,152x14 B10 2563EB "⚡ 16.8 km | available now"
+F Marketplace_item 20,492,170x232 FFFFFF r=12
+  E Avatar 29,501,22x22 IMG:avatar_thomas
+  T 56,506,56x13 S11 000000 "Thomas ✓"
+  R Item_photo 29,530,152x98 IMG:steamer_desk r=10
+  T 29,635,134x16 B12 14231C "Garment Steamer"
+  I heart 166,635,15x15 68766E
+  T 29,658,152x15 R11 14231C "★ 5.0 (10 reviews)"
+  T 29,680,152x14 R10 68766E "Bencoolen St"
+  T 29,701,152x14 B10 2563EB "⚡ 120 m | available now"
+F Marketplace_item 202,492,170x232 FFFFFF r=12
+  E Avatar 212,501,22x22 IMG:avatar_man5
+  T 238,506,54x13 S11 000000 "Andrew ✓"
+  R Item_photo 212,530,152x98 IMG:camera_1 r=10
+  T 212,635,134x16 B12 14231C "Digital Camera"
+  I heart 349,635,15x15 68766E
+  T 212,658,152x15 R11 14231C "★ 4.9 (31 reviews)"
+  T 212,680,152x14 R10 68766E "Punggol Waterway"
+  T 212,701,152x14 B10 2563EB "⚡ 13.5 km | available now"

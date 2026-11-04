@@ -1,0 +1,34 @@
+# 6.19 Both · Handover summary bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Handover summary"
+T 54,84,319x15 R11 68766E "Garment Steamer · BR-20481"
+F Notice 20,116,353x84 E8F4EC r=12
+  T 32,128,329x19 B14 14231C "✓ Both confirmed"
+  T 32,152,329x36 R13 68766E "Thomas and James confirmed the in-person collection."
+F Card 20,212,353x200 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,224,80x83 IMG:steamer_main r=10
+  T 124,224,237x26 B19 14231C "Garment Steamer"
+  T 124,255,237x18 R13 14231C "Thomas → James"
+  F Status 124,278,66x23 EAF0FF r=99
+    T 134,283,46x13 B11 2341DD "Ongoing"
+  T 32,317,329x24 R13 14231C "Pickup  ·  18 Oct 2026 · 7:30 pm"
+  T 32,351,329x24 R13 14231C "Return  ·  19 Oct 2026 · 10:00 am"
+  T 32,385,329x15 R11 68766E "Block A Security Desk"
+F Card 20,424,353x284 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,436,329x20 B15 14231C "Condition records · Both confirmed"
+  T 32,464,143x16 B13 000000 "Thomas · ✓ Submitted"
+  T 284,464,77x12 R10 68766E "18 Oct · 7:28 pm"
+  R Item_photo 32,486,160x70 IMG:steamer_main r=10
+  R Item_photo 202,486,160x70 IMG:steamer_shirt3 r=10
+  T 32,562,329x14 R10 68766E "FRONT ✓ · BACK ✓"
+  T 32,584,133x16 B13 000000 "James · ✓ Submitted"
+  T 285,584,76x12 R10 68766E "18 Oct · 7:31 pm"
+  R Item_photo 32,606,160x70 IMG:steamer_main r=10
+  R Item_photo 202,606,160x70 IMG:steamer_shirt3 r=10
+  T 32,682,329x14 R10 68766E "FRONT ✓ · BACK ✓"
+F Notice 20,720,353x84 E8F4EC r=12
+  T 32,732,329x19 B14 14231C "Deposit · $10 · Held safely"
+  T 32,756,329x36 R13 68766E "Held securely by Borro until the steamer is successfully returned."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 148,724,97x17 B14 FFFFFF "View Timeline"

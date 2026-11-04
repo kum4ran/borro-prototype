@@ -1,0 +1,51 @@
+# 4.10 James · Chat attachment menu bg=F7F8F6 NAV SHEET
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Thomas"
+T 54,84,319x15 R11 68766E "★ 5.0 · 10 reviews"
+T 20,116,353x15 R11 68766E "18 October 2026"
+F Message_bubble 20,143,290x88 FFFFFF r=16
+  T 34,157,262x40 R15 14231C "Hi James! Meet at Block A Security Desk at 7:30 pm for the steamer?"
+  T 34,203,262x14 R10 68766E "6:42 pm"
+F Message_bubble 83,243,290x68 E8F4EC r=16
+  T 97,257,262x20 R15 14231C "Sure, see you at the security desk!"
+  T 97,283,262x14 R10 68766E "6:43 pm ✓✓"
+F Message_bubble 20,323,290x88 FFFFFF r=16
+  T 34,337,262x40 R15 14231C "Lovely, please take a look at this agreement!"
+  T 34,383,262x14 R10 68766E "6:44 pm"
+F Card 20,423,353x124 FFFFFF s=E2E8E1/0.7 r=12 sh
+  I file-check-2 32,435,30x30 2341DD
+  T 74,435,287x22 B16 14231C "Final Agreement"
+  T 74,461,287x16 R12 68766E "Garment Steamer · Deposit $10"
+  F Action 32,487,329x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 134,502,125x18 B15 2341DD "Open Agreement"
+F Quick_reply 20,559,79x23 E8F4EC r=99
+  T 30,564,59x13 B11 1E8E5A "On my way"
+F Quick_reply 106,559,61x23 E8F4EC r=99
+  T 116,564,41x13 B11 1E8E5A "Thanks"
+F Sticky_actions 0,702,393x72 F7F8F6
+  V Symbol 31,723,22x22  s=2341DD/1.8
+  F Composer_field 72,712,249x44 FFFFFF s=E2E8E1/1 r=99
+    T 84,724,225x19 R14 68766E "Message Thomas…"
+  F Send 329,712,44x44 2341DD r=99
+    V Symbol 340,723,22x22  s=FFFFFF/1.8
+F Chat_bubble 184,649,123x34 2341DD sh
+  T 197,658,97x16 B13 FFFFFF "chat with borro"
+F Borro_logo_circle 317,638,56x56 FFFFFF s=2341DD/1.5 r=28 sh
+  F Borro_logo 329,650,32x32 IMG:logo_borro
+F Overlay_scrim 0,0,393x774 14231C@33
+  F Sheet 0,574,393x200 FFFFFF
+    T 20,594,187x24 B20 14231C "Add an attachment"
+    F Attachment_target 37,632,48x48 E8F4EC r=12
+      V Symbol 50,645,22x22  s=2341DD/1.8
+    T 44,688,34x15 R12 000000 "Photo"
+    F Attachment_target 127,632,48x48 E8F4EC r=12
+      V Symbol 140,645,22x22  s=2341DD/1.8
+    T 135,688,33x15 R12 000000 "Video"
+    F Attachment_target 218,632,48x48 E8F4EC r=12
+      V Symbol 231,645,22x22  s=2341DD/1.8
+    T 219,688,45x15 R12 000000 "Camera"
+    F Attachment_target 308,632,48x48 E8F4EC r=12
+      V Symbol 321,645,22x22  s=2341DD/1.8
+    T 307,688,49x15 R12 000000 "Location"
+    R Grabber 178,584,36x4 B9BCBF r=2
+    R Close_sheet_(tap_handl 136,574,120x32 FFFFFF@0 *

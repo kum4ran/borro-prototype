@@ -1,0 +1,16 @@
+# 10.9 Both · Repair balance paid bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Post-Borro Review"
+T 54,84,319x15 R11 68766E "Garment Steamer · Damage case"
+V Vector 170,141,53x53  s=2341DD/3
+T 20,218,353x39 B29 14231C "All settled."
+T 20,275,353x22 R16 14231C "Your $90 repair balance is paid."
+F Notice 20,319,353x66 E8F4EC r=12
+  T 32,331,329x19 B14 14231C "✓ Payment successful – $90 via PayNow"
+  T 32,355,329x18 R13 68766E "Ref #BR-20481-R · 21 Oct 2026"
+F Notice 20,397,353x66 E8F4EC r=12
+  T 32,409,329x19 B14 14231C "Outcome ✓ · Case closed"
+  T 32,433,329x18 R13 68766E "Accidental – both parties agree on compensation."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 98,723,198x18 B15 FFFFFF "View completed borrowing"

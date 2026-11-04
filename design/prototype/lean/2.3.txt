@@ -1,0 +1,22 @@
+# 2.3 James · Request sent · waiting for Thomas bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Request sent"
+T 54,84,319x15 R11 68766E "Borrow Now · Lender approval"
+F Result_seal 156,128,76x76 FFF3D9 r=99
+  V Symbol 176,148,35x35  s=92600A/1.8
+T 20,212,347x32 B24 14231C "Waiting for Thomas"
+T 20,252,347x18 R13 68766E "We’ll notify you when Thomas responds."
+F Card 20,300,353x339 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,312,329x110 IMG:steamer_main r=10
+  T 32,432,329x26 B19 14231C "Garment Steamer"
+  F Status 32,468,142x23 2341DD r=99
+    T 42,473,122x13 B11 FFFFFF "URGENT - Borrow Now"
+  T 32,501,329x24 R13 14231C "Borrower  ·  James"
+  T 32,535,329x24 R13 14231C "Lender  ·  Thomas"
+  T 32,569,329x24 R13 14231C "Requested dates  ·  18 → 19 Oct 2026"
+  T 32,603,329x24 R13 14231C "Duration  ·  1 day"
+F Sticky_actions 0,642,393x132 F7F8F6
+  F Action 20,652,353x48 2341DD r=99
+    T 134,668,125x17 B14 FFFFFF "Chat with Thomas"
+  F Action 20,708,353x48 FFFFFF s=2341DD/1.2 r=99 *
+    T 130,724,133x17 B14 2341DD "View My Borrowing"

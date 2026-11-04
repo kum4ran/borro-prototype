@@ -1,0 +1,19 @@
+# 7.5 Both · Return confirmed bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C
+T 54,54,319x28 B21 14231C "Return · Lender"
+T 54,84,319x15 R11 68766E "Block A Security Desk"
+V Vector 167,148,58x58  s=2341DD/3
+T 20,232,353x36 B27 14231C "Return confirmed"
+T 20,288,353x22 R16 68766E "Both sides’ return records are saved."
+F Card 20,334,353x276 FFFFFF s=E2E8E1/0.7 r=12 sh
+  R Item_photo 32,346,329x180 IMG:steamer_main r=10
+  T 32,540,207x19 R14 68766E "Condition photos"
+  T 249,540,112x17 S14 14231C "Front ✓ · Back ✓"
+  T 32,576,201x19 R14 68766E "Time"
+  T 243,576,118x17 S14 14231C "19 Oct · 10:00 am"
+F Notice 20,622,353x66 E8F4EC r=12
+  T 32,634,329x19 B14 14231C "Return record saved"
+  T 32,658,329x18 R13 68766E "Your $10 deposit will be refunded automatically."
+F Sticky_actions 0,698,393x76 F7F8F6
+  F Action 20,708,353x48 2341DD r=99 *
+    T 128,723,136x18 B15 FFFFFF "View return status"

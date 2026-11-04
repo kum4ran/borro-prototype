@@ -1,0 +1,38 @@
+# 4.7 James · Times chosen bg=F7F8F6 NAV
+I Back 20,65,22x22 14231C
+T 54,52,319x29 B22 14231C "Arrange handover"
+T 54,82,319x18 R13 68766E "Thomas · Garment Steamer"
+F Availability_field 16,116,361x88 FFFFFF s=E5E8E3/1 r=18
+  V Calendar 30,133,15x17  s=3D49FF/1.8
+  T 53,133,223x16 B15 14231C "Pick-up"
+  F Count_pill 284,130,63x22 EEEEE9 r=12
+    T 294,133,43x16 S12 3E4642 "2 times"
+  V Expand_times 355,139,8x4  s=14231C/1.8
+  F Date_and_availability 30,158,333x40  s=E5E8E3/1
+    T 30,170,96x16 B13 14231C "Sun 18 Oct"
+    F Time_option 134,166,45x24 E7EAFB r=30
+      T 142,170,29x15 S12 1B33B8 "7 pm"
+    F Time_option 183,166,64x24 E7EAFB r=30
+      T 191,170,48x15 S12 1B33B8 "7:30 pm"
+F Availability_field 16,216,361x88 FFFFFF s=E5E8E3/1 r=18
+  V Calendar 30,233,15x17  s=3D49FF/1.8
+  T 53,233,223x16 B15 14231C "Return"
+  F Count_pill 284,230,63x22 EEEEE9 r=12
+    T 294,233,43x16 S12 3E4642 "3 times"
+  V Expand_times 355,239,8x4  s=14231C/1.8
+  F Tue_3_Nov_return_avail 30,258,333x40  s=E5E8E3/1
+    T 30,270,96x16 B13 14231C "Mon 19 Oct"
+    F Time_option 134,266,45x24 E8EAFF r=30
+      T 142,270,29x15 S12 233BDE "9 am"
+    F Time_option 183,266,51x24 E8EAFF r=30
+      T 191,270,35x15 S12 233BDE "10 am"
+    F Time_option 238,266,70x24 E8EAFF r=30
+      T 246,270,54x15 S12 233BDE "10:30 am"
+T 16,316,361x18 B15 162C32 "Meeting address"
+F Address_field 16,341,361x48 FFFFFF s=D1D6DB/1 r=14
+  V Location_pin 32,357,13x17  s=162C32/2
+  T 59,356,302x17 M14 162C32 "Block A Security Desk"
+F Pick_on_map_button 16,401,361x44 FFFFFF s=3D49FF/1.7 r=30 *
+  T 152,414,89x18 B15 3D49FF "Pick on map"
+F Send_proposal_button_· 16,720,361x48 2341DD r=99 *
+  T 140,734,113x19 B16 FFFFFF "Send Proposal"

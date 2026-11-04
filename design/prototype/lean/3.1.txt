@@ -1,0 +1,15 @@
+# 3.1 Thomas · Push · new request bg= NONAV
+I lock-keyhole 18,75,24x24 FFFFFF
+T 18,117,357x26 R19 FFFFFF "Sunday, 18 October"
+T 18,161,357x103 B76 FFFFFF "10:00"
+F iOS_notification 18,282,357x196 FFFFFF@93 r=22
+  F Borro_app_icon 34,298,28x28 IMG:logo_borro
+  T 72,298,255x18 B13 14231C "BORRO"
+  T 337,298,22x13 R11 68766E "now"
+  T 34,338,325x44 B16 14231C "James wants to borrow your Garment Steamer"
+  T 34,394,325x38 R14 14231C "Borrow Now (urgent) · 18–19 Oct. Tap to review his profile and respond."
+  T 34,444,325x18 B13 2341DD "James · 72/100 credibility · ★ 3.5 (45 reviews)"
+T 18,496,357x16 R12 FFFFFF "Tap to respond"
+I ios-signal 299,14,17x16 fFFFFFF
+I ios-wifi-signal 321,14,17x16 fFFFFFF
+I ios-battery-full 343,14,25x16 fFFFFFF

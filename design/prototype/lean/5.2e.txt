@@ -1,0 +1,21 @@
+# 5.2e Both · Terms & Conditions bg=F7F8F6 NAV
+I chevron-left 20,65,22x22 14231C *
+T 54,54,319x28 B21 14231C "Terms & Conditions"
+T 54,84,319x15 R11 68766E "Borro lending agreement · Garment Steamer"
+T 20,116,353x76 R13 68766E "These terms apply to every borrowing on Borro, including James borrowing Thomas's Garment Steamer (18–19 Oct 2026). Submitting the Final Agreement means both members accept them."
+F Terms_list 20,204,353x764 FFFFFF s=E2E8E1/0.7 r=12
+  T 33,217,328x20 B14 14231C "1. Using the item"
+  T 33,241,328x57 R13 68766E "Use the item only as described in the listing, and follow the lender's care instructions in the agreement."
+  T 33,314,328x20 B14 14231C "2. Returning on time"
+  T 33,338,328x76 R13 68766E "Return the item at the agreed place and time (19 Oct, 10:00 am, Block A Security Desk) with all accessories, such as the heat-resistant mitt. Late returns lower the borrower's credibility score."
+  T 33,430,328x20 B14 14231C "3. Photos and handover codes"
+  T 33,454,328x57 R13 68766E "Both members photograph the item at pick-up and at return. Share one-time codes only when you meet in person. Codes refresh every few minutes."
+  T 33,527,328x20 B14 14231C "4. Safety deposit"
+  T 33,551,328x76 R13 68766E "The $10 deposit is held by Borro. It is refunded within 1 working day after a successful return, or in full if the borrowing is cancelled or the lender does not show up."
+  T 33,643,328x20 B14 14231C "5. Damage and repairs"
+  T 33,667,328x95 R13 68766E "Report damage in the app as soon as it happens. Borro compares both members' photos. If damage is confirmed, the deposit goes toward the repair quote, and any remaining balance needs the borrower's separate payment consent."
+  T 33,778,328x20 B14 14231C "6. Cancellations"
+  T 33,802,328x57 R13 68766E "Either member can cancel before the handover. The other member is told why, and the deposit is returned."
+  T 33,875,328x20 B14 14231C "7. Disputes"
+  T 33,899,328x57 R13 68766E "If members cannot agree, Borro reviews the photo records, chat and agreement, and shares a decision within 3 working days."
+T 20,980,353x17 R12 68766E "Last updated 1 Oct 2026"
