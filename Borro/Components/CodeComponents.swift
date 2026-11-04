@@ -153,6 +153,7 @@ struct PhotoPager: View {
             IconButton(icon: .chevronLeft, size: Size.iconTiny, tint: .inkSecondary, label: "Previous photo") {
                 if current > 0 { onSelect(current - 1) }
             }
+            .background(Color.track, in: Circle().inset(by: Space.x10))
             .accessibilityIdentifier("prevPhoto")
             ForEach(filled.indices, id: \.self) { i in
                 Button { onSelect(i) } label: {
@@ -160,7 +161,7 @@ struct PhotoPager: View {
                         .font(.m(.s11))
                         .foregroundStyle(filled[i] ? Color.surface : (i == current ? Color.brand : Color.inkSecondary))
                         .frame(width: Size.pagerDot, height: Size.pagerDot)
-                        .background(filled[i] ? Color.brand : Color.clear, in: Circle())
+                        .background(filled[i] ? Color.brand : Color.track, in: Circle())
                         .overlay(Circle().strokeBorder(i == current && !filled[i] ? Color.brand : .clear, lineWidth: Size.buttonStroke))
                         .padding(Space.x4)
                         .contentShape(Rectangle())
@@ -172,6 +173,7 @@ struct PhotoPager: View {
             IconButton(icon: .chevronRight, size: Size.iconTiny, tint: .inkSecondary, label: "Next photo") {
                 if current < filled.count - 1 { onSelect(current + 1) }
             }
+            .background(Color.track, in: Circle().inset(by: Space.x10))
             .accessibilityIdentifier("nextPhoto")
         }
         .padding(.vertical, -Space.x8)

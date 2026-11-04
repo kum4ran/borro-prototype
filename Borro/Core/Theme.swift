@@ -217,11 +217,11 @@ enum Size {
     static let payButton: CGFloat = 40
     static let payLogo: CGFloat = 26
     static let stepBar: CGFloat = 3
-    static let codeRing: CGFloat = 108
-    static let codeRingStroke: CGFloat = 3
+    static let codeRing: CGFloat = 126
+    static let codeRingStroke: CGFloat = 4
     static let moreButton: CGFloat = 27
-    static let photoSlot: CGFloat = 175
-    static let pagerDot: CGFloat = 22
+    static let photoSlot: CGFloat = 210
+    static let pagerDot: CGFloat = 24
     static let photoMenu: CGFloat = 220
     static let photoMenuTop: CGFloat = 330
     static let nameField: CGFloat = 48

@@ -127,7 +127,7 @@ struct PhotoStepPage<Top: View>: View {
             Text("Garment Steamer").font(.b(.s14)).foregroundStyle(Color.ink)
             top()
             VStack(alignment: .leading, spacing: Space.x4) {
-                Text(flow.heading).font(.b(.s16)).foregroundStyle(Color.ink)
+                Text(flow.heading).font(.b(.s17)).foregroundStyle(Color.ink)
                 if flow != .dropOff {
                     Text(PhotoRules.requirementLine).font(.r(.s10)).foregroundStyle(Color.inkSecondary)
                 }
@@ -228,7 +228,6 @@ struct ReadyToSubmitSheet: View {
     var body: some View {
         SheetContainer(title: "Ready to submit?") {
             VStack(alignment: .leading, spacing: Space.x14) {
-                ResultSealIcon(icon: .shieldCheck)
                 Text("Your \(codeWord) code and required front\(PhotoRules.backRequired ? "/back" : "") photos are ready.")
                     .font(.r(.s14)).foregroundStyle(Color.ink)
                 Text("These condition records protect both members. Check that the photos are clear.")
