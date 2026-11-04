@@ -17,9 +17,7 @@ struct S3_7_AcceptJamesRequestDialogView: View {
                         appState.setStatus(.handoverPending)
                         router.go(.s3_8)
                     }
-                    SecondaryButton(title: "Cancel") {
-                        router.dismissOverlay()
-                    }
+                    SecondaryButton(title: "Cancel") { router.go(.s3_3) }
                 }
             }
             .padding(Space.x24)
