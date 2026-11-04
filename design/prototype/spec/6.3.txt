@@ -22,7 +22,8 @@ FRAM 'Content viewport' 0,108 393x666 V gap=12.0 pad=8.0,20.0,18.0,20.0
       TEXT 'Code' 134,216 126x41 fill=#14231C Inter 700 29 lh=40.6 ls=0.0 C "6767"
       VECT 'Elapsed time · clockwise from bottom' 136,176 122x122 stroke=#CFD6D3/4.0
       ELLI 'Elapsed perimeter · finished seam' 194,296 4x4 fill=#CFD6D3 op=0.00
-      TEXT 'Countdown label' 134,252 126x14 fill=#68766E Inter 400 10 lh=14.0 ls=0.0 C "refreshes in 0:45"
+      INST 'Countdown label' 134,252 126x14 [tap]
+        TEXT 'Countdown label' 134,252 126x14 fill=#68766E Inter 400 10 lh=14.0 ls=0.0 C "refreshes in 0:45"
     FRAM 'Copy' 20,307 353x15 H gap=4.0 pad=0,0,0,0
       TEXT 'Copy text' 113,307 151x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Refreshes every few minutes"
       FRAM 'info' 268,308 12x12

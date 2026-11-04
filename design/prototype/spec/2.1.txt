@@ -46,10 +46,22 @@ FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.
       TEXT 'Label' 63,724 84x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Borrow Now"
     FRAM 'Action' 201,708 172x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
       TEXT 'Label' 243,724 89x17 fill=#2341DD Inter 700 14 lh=16.9 ls=0.0 L "Borrow Later"
-FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0
-  RECT 'Home indicator' 132,834 130x4 fill=#14231C r=8
-  TEXT 'Navigation destination' 287,812 90x15 fill=#68766E [tap] Inter 500 10 lh=12.1 ls=0.0 C "You"
-  TEXT 'Navigation destination' 196,812 90x15 fill=#68766E [tap] Inter 500 10 lh=12.1 ls=0.0 C "Lend"
-  TEXT 'Navigation destination' 106,812 90x15 fill=#2341DD [tap] Inter 700 10 lh=12.1 ls=0.0 C "Borro"
-  TEXT 'Navigation destination' 16,812 90x15 fill=#68766E [tap] Inter 500 10 lh=12.1 ls=0.0 C "Home"
-  VECT 'Navigation symbols' 51,786 289x22 stroke=#68766E/1.600000023841858
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

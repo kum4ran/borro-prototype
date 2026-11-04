@@ -1,46 +1,53 @@
 # 3.5 Thomas · Credibility score info bg=F7F8F6 NAV
 I chevron-left 20,65,22x22 14231C
-T 54,54,319x28 B21 14231C "Public profile"
-T 54,84,319x15 R11 68766E ""
+T 54,59,319x34 B25 14231C "Public profile"
 E Avatar 20,116,70x70 IMG:avatar_james
 T 105,116,268x31 B23 14231C "James"
-T 105,151,268x18 R13 68766E "21 · Singapore · West Wing Hall"
-T 105,173,268x15 R11 2341DD "Identity verified ✓"
-F Action 20,200,353x48 2341DD r=99
-  T 163,216,67x17 B14 FFFFFF "Chat Now"
-F Card 20,260,353x321 FFFFFF s=E2E8E1/0.7 r=12 sh
-  E Gauge_track 112,272,170x85  s=E2E8E1/13
-  E Score_arc 112,272,170x85  s=2341DD/13
-  T 62,312,270x32 B24 14231C "72/100 · Moderate"
-  T 62,346,270x18 R13 2341DD "Credibility score ⓘ"
-  T 32,396,329x19 B14 14231C "Credibility breakdown"
-  T 32,424,183x13 R11 68766E "Successful transactions"
-  F Progress_track 225,428,136x5 EDF0EC r=9
-    R Progress_value 225,428,80x5 2341DD r=9
-  T 32,446,183x13 R11 68766E "On-time returns"
-  F Progress_track 225,450,136x5 EDF0EC r=9
-    R Progress_value 225,450,65x5 2341DD r=9
-  T 32,468,183x13 R11 68766E "Item condition after return"
-  F Progress_track 225,472,136x5 EDF0EC r=9
-    R Progress_value 225,472,85x5 2341DD r=9
-  T 32,490,183x13 R11 68766E "Communication"
-  F Progress_track 225,494,136x5 EDF0EC r=9
-    R Progress_value 225,494,70x5 2341DD r=9
-  T 32,512,183x13 R11 68766E "Identity verified ✓"
-  F Progress_track 225,516,136x5 EDF0EC r=9
-    R Progress_value 225,516,100x5 2341DD r=9
-  T 32,534,183x13 R11 68766E "Cancellation rate"
-  F Progress_track 225,538,136x5 EDF0EC r=9
-    R Progress_value 225,538,90x5 2341DD r=9
-  T 32,556,183x13 R11 68766E "Reviews"
-  F Progress_track 225,560,136x5 EDF0EC r=9
-    R Progress_value 225,560,70x5 2341DD r=9
-F Card 20,593,353x96 FFFFFF s=E2E8E1/0.7 r=12 sh
-  T 32,605,329x19 B14 14231C "★ 3.5 (45 reviews)"
-  T 32,634,329x18 R13 14231C "“Friendly and easy to arrange with.”"
-  T 32,662,329x15 R11 68766E "Thomas · 12 Oct 2026"
-F Credibility_tooltip 20,356,353x201 14231C r=12 sh
-  T 38,374,317x22 B16 FFFFFF "How credibility is calculated"
-  T 38,406,317x57 R14 FFFFFF "Your score reflects successful transactions, on-time returns, item condition, communication, identity verification and cancellation history."
-  T 38,473,317x38 R14 FFFFFF "Stars are reviewers’ average rating — not the same as your credibility score."
-  T 38,521,317x18 B13 AEE5C4 "72/100 · Moderate"
+T 105,152,268x19 R14 68766E "21 · Singapore"
+F Status 105,176,118x23 E8F4EC r=99
+  T 115,181,98x13 B11 1E8E5A "✓ Identity verified"
+F Action 20,211,353x48 2341DD r=99 *
+  T 160,226,72x18 B15 FFFFFF "Chat Now"
+F Card 20,271,353x305 FFFFFF s=E2E8E1/0.7 r=12 sh
+  E Gauge_track 112,283,170x85  s=E2E8E1/13
+  E Score_arc 112,283,170x85  s=2341DD/13
+  F Score 82,321,230x54  *
+    T 82,321,230x34 B25 14231C "72/100"
+    T 156,357,62x18 B13 2341DD "Moderate"
+    I info 222,358,16x16 2341DD
+  T 32,407,329x19 B14 14231C "Credibility breakdown"
+  T 32,436,141x13 R11 68766E "Successful transactions"
+  F Progress_track 181,440,138x5 EDF0EC r=9
+    R Progress_value 181,440,109x5 2341DD r=9
+  T 327,436,34x13 B11 14231C "80"
+  T 32,459,141x13 R11 68766E "On-time returns"
+  F Progress_track 181,463,138x5 EDF0EC r=9
+    R Progress_value 181,463,88x5 2341DD r=9
+  T 327,459,34x13 B11 14231C "65"
+  T 32,482,141x13 R11 68766E "Item condition after return"
+  F Progress_track 181,486,138x5 EDF0EC r=9
+    R Progress_value 181,486,106x5 2341DD r=9
+  T 327,482,34x13 B11 14231C "78"
+  T 32,505,141x13 R11 68766E "Communication"
+  F Progress_track 181,509,138x5 EDF0EC r=9
+    R Progress_value 181,509,82x5 2341DD r=9
+  T 327,505,34x13 B11 14231C "60"
+  T 32,528,141x13 R11 68766E "Cancellation rate"
+  F Progress_track 181,532,138x5 EDF0EC r=9
+    R Progress_value 181,532,116x5 2341DD r=9
+  T 327,528,34x13 B11 14231C "85"
+  T 32,551,141x13 R11 68766E "Reviews"
+  F Progress_track 181,555,138x5 EDF0EC r=9
+    R Progress_value 181,555,87x5 2341DD r=9
+  T 327,551,34x13 B11 14231C "64"
+F Card 20,588,353x131 FFFFFF s=E2E8E1/0.7 r=12 sh
+  T 32,604,193x19 R14 68766E "Overall rating"
+  T 235,604,126x17 S14 14231C "★ 3.5 · 45 reviews"
+  T 32,636,329x18 R13 14231C "“Returned the item cleaned.”"
+  T 32,664,329x15 R11 68766E "Kumaran · 12 Oct 2026"
+  T 32,689,329x18 B13 2341DD "See all reviews →" *
+F Credibility_tooltip 20,381,353x201 14231C r=12 sh
+  T 38,399,317x22 B16 FFFFFF "How credibility is calculated"
+  T 38,431,317x57 R14 FFFFFF "Your score reflects successful transactions, on-time returns, item condition, communication, identity verification and cancellation history."
+  T 38,498,317x38 R14 FFFFFF "Stars are reviewers’ average rating — not the same as your credibility score."
+  T 38,546,317x18 B13 AEE5C4 "72/100 · Moderate"

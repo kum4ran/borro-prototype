@@ -114,10 +114,10 @@ FRAM 'Time picker sheet' 0,432 393x420 fill=#FFFFFF r=24/24/0/0 V gap=16.0 pad=1
       TEXT 'Choose one' 288,532 70x15 fill=#5E6561 Inter 600 12 lh=14.5 ls=0.0 L "Choose one"
     FRAM 'Thu 8 Oct row' 35,559 323x65 stroke=#E4E4DF/1.0 H gap=10.0 pad=10.0,0,10.0,0
       TEXT 'Date' 35,583 84x18 fill=#12201A Inter 700 14 lh=18.0 ls=0.0 L "Sun 18 Oct"
-      FRAM 'Times' 129,570 157x44 H gap=8.0 pad=0,0,0,0
-        FRAM 'Time 6 pm' 129,570 63x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+      FRAM 'Times' 129,570 229x44 H gap=8.0 pad=0,0,0,0
+        FRAM 'Time 7 pm' 129,570 63x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
           TEXT 'Time' 142,582 36x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "7 pm"
-        FRAM 'Time 7 pm' 200,570 86x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+        FRAM 'Time 7:30 pm' 200,570 86x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
           TEXT 'Time' 214,582 59x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "7:30 pm"
   FRAM 'Return options' 20,645 353x115 fill=#F6F6F3 stroke=#E4E4DF/1.0 r=16 V gap=2.0 pad=14.0,14.0,4.0,14.0
     FRAM 'Group header' 35,660 323x28 H gap=8.0 pad=0,0,8.0,0
@@ -125,13 +125,17 @@ FRAM 'Time picker sheet' 0,432 393x420 fill=#FFFFFF r=24/24/0/0 V gap=16.0 pad=1
       TEXT 'Choose one' 288,662 70x15 fill=#5E6561 Inter 600 12 lh=14.5 ls=0.0 L "Choose one"
     FRAM 'Wed 21 Oct row' 35,690 323x65 stroke=#E4E4DF/1.0 H gap=10.0 pad=10.0,0,10.0,0
       TEXT 'Date' 35,714 84x18 fill=#12201A Inter 700 14 lh=18.0 ls=0.0 L "Mon 19 Oct"
-      FRAM 'Times' 129,701 245x44 H gap=8.0 pad=0,0,0,0
-        FRAM 'Time 7 pm' 129,701 63x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+      FRAM 'Times' 129,701 229x44 H gap=8.0 pad=0,0,0,0
+        FRAM 'Time 9 am' 129,701 63x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
           TEXT 'Time' 142,713 36x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "9 am"
-        FRAM 'Time 8 pm' 200,701 71x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+        FRAM 'Time 10 am' 200,701 71x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
           TEXT 'Time' 214,713 44x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "10 am"
-        FRAM 'Time 10 pm' 279,701 95x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+        FRAM 'Time 10:30 am' 279,701 95x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
           TEXT 'Time' 292,713 68x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "10:30 am"
+        FRAM 'Time 11 am' 382,701 68x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 396,713 41x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "11 am"
+        FRAM 'Time 11:30 am' 458,701 92x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 472,713 65x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "11:30 am"
   FRAM 'Choose pick-up and return' 20,776 353x48 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0 [tap]
     TEXT 'Label' 99,790 195x20 fill=#6B726E Inter 600 15 lh=20.0 ls=0.0 L "Choose pick-up and return"
   RECT 'Grabber' 178,448 36x4 fill=#B9BCBF r=2

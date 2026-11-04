@@ -54,21 +54,25 @@ F Time_picker_sheet 0,432,393x420 FFFFFF
     T 288,532,70x15 S12 5E6561 "Choose one"
     F Thu_8_Oct_row 35,559,323x65  s=E4E4DF/1
       T 35,583,84x18 B14 12201A "Sun 18 Oct"
-      F Time_6_pm 129,570,63x44 FFFFFF s=D5D8DD/1.5 r=22 *
+      F Time_7_pm 129,570,63x44 FFFFFF s=D5D8DD/1.5 r=22 *
         T 142,582,36x20 S15 1B33B8 "7 pm"
-      F Time_7_pm 200,570,86x44 FFFFFF s=D5D8DD/1.5 r=22 *
+      F Time_7:30_pm 200,570,86x44 FFFFFF s=D5D8DD/1.5 r=22 *
         T 214,582,59x20 S15 1B33B8 "7:30 pm"
   F Return_options 20,645,353x115 F6F6F3 s=E4E4DF/1 r=16
     T 35,660,53x20 B16 12201A "Return"
     T 288,662,70x15 S12 5E6561 "Choose one"
     F Wed_21_Oct_row 35,690,323x65  s=E4E4DF/1
       T 35,714,84x18 B14 12201A "Mon 19 Oct"
-      F Time_7_pm 129,701,63x44 FFFFFF s=D5D8DD/1.5 r=22 *
+      F Time_9_am 129,701,63x44 FFFFFF s=D5D8DD/1.5 r=22 *
         T 142,713,36x20 S15 1B33B8 "9 am"
-      F Time_8_pm 200,701,71x44 FFFFFF s=D5D8DD/1.5 r=22 *
+      F Time_10_am 200,701,71x44 FFFFFF s=D5D8DD/1.5 r=22 *
         T 214,713,44x20 S15 1B33B8 "10 am"
-      F Time_10_pm 279,701,95x44 FFFFFF s=D5D8DD/1.5 r=22 *
+      F Time_10:30_am 279,701,95x44 FFFFFF s=D5D8DD/1.5 r=22 *
         T 292,713,68x20 S15 1B33B8 "10:30 am"
+      F Time_11_am 382,701,68x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 396,713,41x20 S15 1B33B8 "11 am"
+      F Time_11:30_am 458,701,92x44 FFFFFF s=D5D8DD/1.5 r=22 *
+        T 472,713,65x20 S15 1B33B8 "11:30 am"
   F Choose_pick-up_and_ret 20,776,353x48 EDF0EC r=99 *
     T 99,790,195x20 S15 6B726E "Choose pick-up and return"
   R Grabber 178,448,36x4 B9BCBF r=2

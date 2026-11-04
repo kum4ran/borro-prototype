@@ -110,51 +110,56 @@ FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 
       TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
   RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8
 FRAM 'Overlay scrim' 0,0 393x852 fill=#14231C@0.40 V gap=0 pad=0,0,0,0
-  FRAM 'Bottom sheet' 0,149 393x703 fill=#FFFFFF r=24/24/0/0 V gap=16.0 pad=32.0,22.0,30.0,22.0
-    RECT 'Drag handle' 178,161 38x4 fill=#B8C4BB r=9
-    FRAM 'Sheet header' 22,181 349x28 H gap=0 pad=0,0,0,0
-      TEXT 'Copy' 22,181 327x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Find it close to you"
-      FRAM 'x' 349,184 22x22
-        VECT 'Vector' 354,190 11x11 stroke=#14231C/1.7999999523162842
-    FRAM 'Form field' 22,225 349x73 V gap=7.0 pad=0,0,0,0
-      TEXT 'Copy' 22,225 349x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Location"
-      FRAM 'Input' 22,250 349x48 fill=#FFFFFF stroke=#E2E8E1/1.0 r=10 H gap=8.0 pad=13.0,13.0,13.0,13.0
-        FRAM 'search' 35,263 20x20
-          VECT 'Vector' 38,266 15x15 stroke=#14231C/1.7999999523162842
-        TEXT 'Copy' 63,263 295x20 fill=#68766E Inter 400 15 lh=20.2 ls=0.0 L "Search location…"
-    FRAM 'Campus map' 22,314 349x250 fill=#E8EEE4 r=12
-      ELLI 'Current location' 188,437 16x16 fill=#2341DD stroke=#FFFFFF/3.0
-      FRAM 'Map pin' 221,459 73x31 fill=#FFFFFF r=8 H gap=4.0 pad=7.0,7.0,7.0,7.0
-        FRAM 'map-pin' 228,466 17x17
-          VECT 'Vector' 231,467 11x14 stroke=#1E8E5A/1.7999999523162842
-        TEXT 'Pin label' 249,466 38x15 fill=#000000 Inter 700 12 lh=14.5 ls=0.0 L "Blk 48"
-      TEXT 'Road name' 185,384 69x12 fill=#68766E Inter 400 10 lh=12.1 ls=0.0 L "Bras Basah Rd"
-      RECT 'Bencoolen street' 105,314 69x298 fill=#FFFFFF
-      RECT 'Bras Basah road' 22,339 349x73 fill=#FFFFFF
-      RECT 'Campus block' 268,496 90x60 fill=#D8E1D3 r=8
-      VECT 'Campus block' 32,320 85x55 fill=#D5DFCF r=8
-      FRAM 'Map pin' 55,330 70x31 fill=#FFFFFF r=8 H gap=4.0 pad=7.0,7.0,7.0,7.0
-        FRAM 'map-pin' 62,337 17x17
-          VECT 'Vector' 65,338 11x14 stroke=#1E8E5A/1.7999999523162842
-        TEXT 'Pin label' 83,337 35x15 fill=#000000 Inter 700 12 lh=14.5 ls=0.0 L "Blk 12"
-      ELLI 'Search radius' 94,355 200x180 fill=#1E8E5A@0.08 stroke=#1E8E5A/1.5
-      TEXT 'Campus name' 34,528 140x13 fill=#68766E Inter 400 11 lh=13.3 ls=0.0 L "SINGAPORE · BENCOOLEN"
-    TEXT 'Copy' 22,580 349x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Search radius"
-    FRAM 'Radius options' 22,614 349x46
-      RECT 'Track' 34,622 244x6 fill=#E4E4DF r=3
-      RECT 'Track fill' 34,622 162x6 fill=#2341DD r=3
-      ELLI 'Stop 250 m' 30,621 8x8 fill=#2341DD
-      TEXT 'Label 250 m' 22,644 33x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "Current"
-      ELLI 'Stop 500 m' 111,621 8x8 fill=#2341DD
-      TEXT 'Label 500 m' 101,644 28x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "500 m"
-      ELLI 'Stop 1 km' 192,621 8x8 fill=#2341DD
-      TEXT 'Label 1 km' 186,644 20x11 fill=#2341DD Inter 700 9 lh=10.9 ls=0.0 L "1 km"
-      ELLI 'Stop 2 km' 274,621 8x8 fill=#C9CBD1
-      TEXT 'Label 2 km' 267,644 34x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "Custom"
-      ELLI 'Thumb' 186,614 22x22 fill=#FFFFFF stroke=#2341DD/3.0 shadow=#000000@0.25 0,2 r5
+  FRAM 'Bottom sheet' 0,85 393x767 fill=#FFFFFF r=24/24/0/0 V gap=16.0 pad=32.0,22.0,30.0,22.0
+    RECT 'Drag handle' 178,97 38x4 fill=#B8C4BB r=9
+    FRAM 'Sheet header' 22,117 349x28 H gap=0 pad=0,0,0,0
+      TEXT 'Copy' 22,117 327x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Find it close to you"
+      FRAM 'x' 349,120 22x22
+        VECT 'Vector' 354,126 11x11 stroke=#14231C/1.7999999523162842
+    FRAM 'Form field' 22,161 349x73 V gap=7.0 pad=0,0,0,0
+      TEXT 'Copy' 22,161 349x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Location"
+      FRAM 'Input' 22,186 349x48 fill=#FFFFFF stroke=#E2E8E1/1.0 r=10 H gap=8.0 pad=13.0,13.0,13.0,13.0
+        FRAM 'search' 35,199 20x20
+          VECT 'Vector' 38,202 15x15 stroke=#14231C/1.7999999523162842
+        TEXT 'Copy' 63,199 295x20 fill=#68766E Inter 400 15 lh=20.2 ls=0.0 L "Search location…"
+    FRAM 'Campus map' 22,250 349x250 fill=#E8EEE4 r=12
+      ELLI 'Current location' 188,373 16x16 fill=#2341DD stroke=#FFFFFF/3.0
+      FRAM 'Map pin' 221,395 73x31 fill=#FFFFFF r=8 H gap=4.0 pad=7.0,7.0,7.0,7.0
+        FRAM 'map-pin' 228,402 17x17
+          VECT 'Vector' 231,403 11x14 stroke=#1E8E5A/1.7999999523162842
+        TEXT 'Pin label' 249,402 38x15 fill=#000000 Inter 700 12 lh=14.5 ls=0.0 L "Blk 48"
+      TEXT 'Road name' 185,320 69x12 fill=#68766E Inter 400 10 lh=12.1 ls=0.0 L "Bras Basah Rd"
+      RECT 'Bencoolen street' 105,250 69x298 fill=#FFFFFF
+      RECT 'Bras Basah road' 22,275 349x73 fill=#FFFFFF
+      RECT 'Campus block' 268,432 90x60 fill=#D8E1D3 r=8
+      VECT 'Campus block' 32,256 85x55 fill=#D5DFCF r=8
+      FRAM 'Map pin' 55,266 70x31 fill=#FFFFFF r=8 H gap=4.0 pad=7.0,7.0,7.0,7.0
+        FRAM 'map-pin' 62,273 17x17
+          VECT 'Vector' 65,274 11x14 stroke=#1E8E5A/1.7999999523162842
+        TEXT 'Pin label' 83,273 35x15 fill=#000000 Inter 700 12 lh=14.5 ls=0.0 L "Blk 12"
+      ELLI 'Search radius' 94,291 200x180 fill=#1E8E5A@0.08 stroke=#1E8E5A/1.5
+      TEXT 'Campus name' 34,464 140x13 fill=#68766E Inter 400 11 lh=13.3 ls=0.0 L "SINGAPORE · BENCOOLEN"
+    TEXT 'Copy' 22,516 349x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Search radius"
+    FRAM 'Radius options' 22,550 349x46
+      RECT 'Track' 33,558 327x6 fill=#E4E4DF r=3
+      RECT 'Track fill' 33,558 164x6 fill=#2341DD r=3
+      ELLI 'Stop 250 m' 29,557 8x8 fill=#2341DD
+      TEXT 'Label 250 m' 22,580 33x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "Current"
+      ELLI 'Stop 500 m' 111,557 8x8 fill=#2341DD
+      TEXT 'Label 500 m' 101,580 28x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "500 m"
+      ELLI 'Stop 1 km' 193,557 8x8 fill=#2341DD
+      TEXT 'Label 1 km' 187,580 20x11 fill=#2341DD Inter 700 9 lh=10.9 ls=0.0 L "1 km"
+      ELLI 'Stop 2 km' 274,557 8x8 fill=#C9CBD1
+      TEXT 'Label 2 km' 268,580 21x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "2 km"
+      ELLI 'Stop 5 km' 356,557 8x8 fill=#C9CBD1
+      TEXT 'Label 5 km' 350,580 21x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "5 km"
+      ELLI 'Thumb' 186,550 22x22 fill=#FFFFFF stroke=#2341DD/3.0 shadow=#000000@0.25 0,2 r5
+    FRAM 'Custom radius input' 22,612 349x48 fill=#FFFFFF stroke=#E2E8E1/1.0 r=10 H gap=8.0 pad=13.0,13.0,13.0,13.0
+      TEXT 'Copy' 35,625 292x20 fill=#68766E Inter 400 15 lh=20.2 ls=0.0 L "Custom radius, e.g. 1.5"
+      TEXT 'Copy' 335,625 23x20 fill=#68766E Inter 700 15 lh=20.2 ls=0.0 L "km"
     TEXT 'Copy' 22,676 349x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "✓ Searching within 1 km of Bencoolen St"
     FRAM 'Action' 22,710 349x48 fill=#2341DD r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
       TEXT 'Label' 170,725 52x18 fill=#FFFFFF Inter 700 15 lh=18.2 ls=0.0 L "Search"
     FRAM 'Action' 22,774 349x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
       TEXT 'Label' 170,789 52x18 fill=#2341DD Inter 700 15 lh=18.2 ls=0.0 L "Cancel"
-    RECT 'Close sheet (tap handle)' 136,151 120x32 fill=#FFFFFF@0.00 [tap]
+    RECT 'Close sheet (tap handle)' 136,87 120x32 fill=#FFFFFF@0.00 [tap]

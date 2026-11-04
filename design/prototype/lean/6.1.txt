@@ -8,7 +8,8 @@ F Code_countdown 134,174,126x126 FFFFFF s=2341DD/4 r=99
   T 134,216,126x41 B29 14231C "6767"
   V Elapsed_time_·_clockwi 136,176,122x122  s=CFD6D3/4
   E Elapsed_perimeter_·_fi 194,296,4x4 CFD6D3
-  T 134,252,126x14 R10 68766E "refreshes in 0:45"
+  I Countdown_label 134,252,126x14  *
+    T 134,252,126x14 R10 68766E "refreshes in 0:45"
 T 113,307,151x15 R11 68766E "Refreshes every few minutes"
 I info 268,308,12x12 68766E *
 T 20,334,353x23 B17 14231C "Photograph it as you leave it."

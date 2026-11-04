@@ -21,7 +21,8 @@ FRAM 'Content viewport' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
     TEXT 'Copy' 20,176 353x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 C "My Return Code ⓘ"
     FRAM 'Code countdown' 134,202 126x126 fill=#FFFFFF stroke=#2341DD/4.0 r=99 V gap=0 pad=0,0,0,0
       TEXT 'Code' 134,244 126x41 fill=#14231C Inter 700 29 lh=40.6 ls=0.0 C "6767"
-      TEXT 'Countdown label' 134,280 126x14 fill=#68766E Inter 400 10 lh=14.0 ls=0.0 C "refreshes in 0:45"
+      INST 'Countdown label' 134,280 126x14 [tap]
+        TEXT 'Countdown label' 134,280 126x14 fill=#68766E Inter 400 10 lh=14.0 ls=0.0 C "refreshes in 0:45"
     TEXT 'Copy' 20,335 353x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 C "Refreshes every few minutes"
   FRAM 'Notice' 20,362 353x102 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
     TEXT 'Copy' 32,374 329x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "ⓘ Meet in person first"

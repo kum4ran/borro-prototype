@@ -57,44 +57,49 @@ F Marketplace_item 202,530,170x270 FFFFFF r=12
   T 212,758,44x13 S10 68766E "Available"
   T 212,773,97x18 S13 2341DD "17–21 Oct 2026"
 F Overlay_scrim 0,0,393x852 14231C@40
-  F Bottom_sheet 0,149,393x703 FFFFFF
-    R Drag_handle 178,161,38x4 B8C4BB r=9
-    T 22,181,327x28 B21 14231C "Find it close to you"
-    I x 349,184,22x22 14231C
-    T 22,225,349x18 B13 14231C "Location"
-    F Input 22,250,349x48 FFFFFF s=E2E8E1/1 r=10
-      I search 35,263,20x20 14231C
-      T 63,263,295x20 R15 68766E "Search location…"
-    F Campus_map 22,314,349x250 E8EEE4 r=12
-      E Current_location 188,437,16x16 2341DD s=FFFFFF/3
-      F Map_pin 221,459,73x31 FFFFFF r=8
-        I map-pin 228,466,17x17 1E8E5A
-        T 249,466,38x15 B12 000000 "Blk 48"
-      T 185,384,69x12 R10 68766E "Bras Basah Rd"
-      R Bencoolen_street 105,314,69x298 FFFFFF
-      R Bras_Basah_road 22,339,349x73 FFFFFF
-      R Campus_block 268,496,90x60 D8E1D3 r=8
-      V Campus_block 32,320,85x55 D5DFCF r=8
-      F Map_pin 55,330,70x31 FFFFFF r=8
-        I map-pin 62,337,17x17 1E8E5A
-        T 83,337,35x15 B12 000000 "Blk 12"
-      E Search_radius 94,355,200x180 1E8E5A@8 s=1E8E5A/1.5
-      T 34,528,140x13 R11 68766E "SINGAPORE · BENCOOLEN"
-    T 22,580,349x18 B13 14231C "Search radius"
-    R Track 34,622,244x6 E4E4DF r=3
-    R Track_fill 34,622,162x6 2341DD r=3
-    E Stop_250_m 30,621,8x8 2341DD
-    T 22,644,33x11 M9 5E6561 "Current"
-    E Stop_500_m 111,621,8x8 2341DD
-    T 101,644,28x11 M9 5E6561 "500 m"
-    E Stop_1_km 192,621,8x8 2341DD
-    T 186,644,20x11 B9 2341DD "1 km"
-    E Stop_2_km 274,621,8x8 C9CBD1
-    T 267,644,34x11 M9 5E6561 "Custom"
-    E Thumb 186,614,22x22 FFFFFF s=2341DD/3 sh
+  F Bottom_sheet 0,85,393x767 FFFFFF
+    R Drag_handle 178,97,38x4 B8C4BB r=9
+    T 22,117,327x28 B21 14231C "Find it close to you"
+    I x 349,120,22x22 14231C
+    T 22,161,349x18 B13 14231C "Location"
+    F Input 22,186,349x48 FFFFFF s=E2E8E1/1 r=10
+      I search 35,199,20x20 14231C
+      T 63,199,295x20 R15 68766E "Search location…"
+    F Campus_map 22,250,349x250 E8EEE4 r=12
+      E Current_location 188,373,16x16 2341DD s=FFFFFF/3
+      F Map_pin 221,395,73x31 FFFFFF r=8
+        I map-pin 228,402,17x17 1E8E5A
+        T 249,402,38x15 B12 000000 "Blk 48"
+      T 185,320,69x12 R10 68766E "Bras Basah Rd"
+      R Bencoolen_street 105,250,69x298 FFFFFF
+      R Bras_Basah_road 22,275,349x73 FFFFFF
+      R Campus_block 268,432,90x60 D8E1D3 r=8
+      V Campus_block 32,256,85x55 D5DFCF r=8
+      F Map_pin 55,266,70x31 FFFFFF r=8
+        I map-pin 62,273,17x17 1E8E5A
+        T 83,273,35x15 B12 000000 "Blk 12"
+      E Search_radius 94,291,200x180 1E8E5A@8 s=1E8E5A/1.5
+      T 34,464,140x13 R11 68766E "SINGAPORE · BENCOOLEN"
+    T 22,516,349x18 B13 14231C "Search radius"
+    R Track 33,558,327x6 E4E4DF r=3
+    R Track_fill 33,558,164x6 2341DD r=3
+    E Stop_250_m 29,557,8x8 2341DD
+    T 22,580,33x11 M9 5E6561 "Current"
+    E Stop_500_m 111,557,8x8 2341DD
+    T 101,580,28x11 M9 5E6561 "500 m"
+    E Stop_1_km 193,557,8x8 2341DD
+    T 187,580,20x11 B9 2341DD "1 km"
+    E Stop_2_km 274,557,8x8 C9CBD1
+    T 268,580,21x11 M9 5E6561 "2 km"
+    E Stop_5_km 356,557,8x8 C9CBD1
+    T 350,580,21x11 M9 5E6561 "5 km"
+    E Thumb 186,550,22x22 FFFFFF s=2341DD/3 sh
+    F Custom_radius_input 22,612,349x48 FFFFFF s=E2E8E1/1 r=10
+      T 35,625,292x20 R15 68766E "Custom radius, e.g. 1.5"
+      T 335,625,23x20 B15 68766E "km"
     T 22,676,349x18 R13 68766E "✓ Searching within 1 km of Bencoolen St"
     F Action 22,710,349x48 2341DD r=99 *
       T 170,725,52x18 B15 FFFFFF "Search"
     F Action 22,774,349x48 FFFFFF s=2341DD/1.2 r=99 *
       T 170,789,52x18 B15 2341DD "Cancel"
-    R Close_sheet_(tap_handl 136,151,120x32 FFFFFF@0 *
+    R Close_sheet_(tap_handl 136,87,120x32 FFFFFF@0 *

@@ -7,7 +7,8 @@ T 20,148,353x16 R12 68766E "James · Borrower shows code to Thomas"
 T 20,176,353x19 B14 14231C "My Return Code ⓘ"
 F Code_countdown 134,202,126x126 FFFFFF s=2341DD/4 r=99
   T 134,244,126x41 B29 14231C "6767"
-  T 134,280,126x14 R10 68766E "refreshes in 0:45"
+  I Countdown_label 134,280,126x14  *
+    T 134,280,126x14 R10 68766E "refreshes in 0:45"
 T 20,335,353x15 R11 68766E "Refreshes every few minutes"
 F Notice 20,362,353x102 E8F4EC r=12
   T 32,374,329x19 B14 14231C "ⓘ Meet in person first"

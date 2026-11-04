@@ -1448,32 +1448,56 @@
   {
    "from": "3.5",
    "fromId": "701:124",
-   "node": "Navigation destination",
-   "nodeId": "701:192",
+   "node": "Action",
+   "nodeId": "981:298",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
-    "to": "8.9",
-    "toId": "691:7051"
+    "to": "4.9",
+    "toId": "691:5576"
    }
   },
   {
    "from": "3.5",
    "fromId": "701:124",
-   "node": "Navigation destination",
-   "nodeId": "701:193",
+   "node": "Score",
+   "nodeId": "981:254",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
-    "to": "9.1",
-    "toId": "708:170"
+    "to": "3.5",
+    "toId": "701:124"
    }
   },
   {
    "from": "3.5",
    "fromId": "701:124",
-   "node": "Navigation destination",
-   "nodeId": "701:194",
+   "node": "Copy",
+   "nodeId": "981:297",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "navigate",
+    "to": "3.6",
+    "toId": "691:5308"
+   }
+  },
+  {
+   "from": "3.5",
+   "fromId": "701:124",
+   "node": "Navigation item",
+   "nodeId": "973:245",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "navigate",
+    "to": "1.1",
+    "toId": "691:4139"
+   }
+  },
+  {
+   "from": "3.5",
+   "fromId": "701:124",
+   "node": "Navigation item",
+   "nodeId": "973:249",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -1484,13 +1508,25 @@
   {
    "from": "3.5",
    "fromId": "701:124",
-   "node": "Navigation destination",
-   "nodeId": "701:195",
+   "node": "Navigation item",
+   "nodeId": "973:253",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
-    "to": "1.1",
-    "toId": "691:4139"
+    "to": "9.1",
+    "toId": "708:170"
+   }
+  },
+  {
+   "from": "3.5",
+   "fromId": "701:124",
+   "node": "Navigation item",
+   "nodeId": "973:257",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "navigate",
+    "to": "8.9",
+    "toId": "691:7051"
    }
   },
   {
@@ -1869,7 +1905,7 @@
    "from": "4.6",
    "fromId": "701:951",
    "node": "Navigation item",
-   "nodeId": "701:955",
+   "nodeId": "973:264",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -1881,7 +1917,7 @@
    "from": "4.6",
    "fromId": "701:951",
    "node": "Navigation item",
-   "nodeId": "701:959",
+   "nodeId": "973:268",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -1893,7 +1929,7 @@
    "from": "4.6",
    "fromId": "701:951",
    "node": "Navigation item",
-   "nodeId": "701:963",
+   "nodeId": "973:272",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -1905,7 +1941,7 @@
    "from": "4.6",
    "fromId": "701:951",
    "node": "Navigation item",
-   "nodeId": "701:967",
+   "nodeId": "973:276",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -2396,7 +2432,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2408,7 +2444,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2420,7 +2456,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2432,7 +2468,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2444,7 +2480,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2456,7 +2492,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2468,7 +2504,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 6 pm",
+   "node": "Time 7 pm",
    "nodeId": "701:1585",
    "trigger": "ON_CLICK",
    "action": {
@@ -2511,7 +2547,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2523,7 +2559,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2535,7 +2571,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2547,7 +2583,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2559,7 +2595,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2571,7 +2607,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2583,7 +2619,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 7:30 pm",
    "nodeId": "701:1587",
    "trigger": "ON_CLICK",
    "action": {
@@ -2626,7 +2662,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2638,7 +2674,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2650,7 +2686,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2662,7 +2698,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2674,7 +2710,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2686,7 +2722,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2698,7 +2734,55 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
+   "nodeId": "701:1617",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:237",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 9 am",
+   "nodeId": "701:1617",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:238",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 9 am",
+   "nodeId": "701:1617",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:239",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 9 am",
+   "nodeId": "701:1617",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:240",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2710,7 +2794,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2722,7 +2806,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 7 pm",
+   "node": "Time 9 am",
    "nodeId": "701:1617",
    "trigger": "ON_CLICK",
    "action": {
@@ -2765,31 +2849,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
-   "nodeId": "701:1619",
-   "trigger": "ON_CLICK",
-   "action": {
-    "type": "set",
-    "var": "rt1 fill",
-    "value": "#2340D9"
-   }
-  },
-  {
-   "from": "4.12",
-   "fromId": "701:1464",
-   "node": "Time 8 pm",
-   "nodeId": "701:1619",
-   "trigger": "ON_CLICK",
-   "action": {
-    "type": "set",
-    "var": "rt1 text",
-    "value": "#FFFFFF"
-   }
-  },
-  {
-   "from": "4.12",
-   "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2801,7 +2861,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2813,7 +2873,31 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
+   "nodeId": "701:1619",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt1 fill",
+    "value": "#2340D9"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10 am",
+   "nodeId": "701:1619",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt1 text",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2825,7 +2909,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2837,7 +2921,55 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
+   "nodeId": "701:1619",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:237",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10 am",
+   "nodeId": "701:1619",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:238",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10 am",
+   "nodeId": "701:1619",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:239",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10 am",
+   "nodeId": "701:1619",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:240",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2849,7 +2981,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2861,7 +2993,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 8 pm",
+   "node": "Time 10 am",
    "nodeId": "701:1619",
    "trigger": "ON_CLICK",
    "action": {
@@ -2904,31 +3036,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
-   "nodeId": "701:1621",
-   "trigger": "ON_CLICK",
-   "action": {
-    "type": "set",
-    "var": "rt2 fill",
-    "value": "#2340D9"
-   }
-  },
-  {
-   "from": "4.12",
-   "fromId": "701:1464",
-   "node": "Time 10 pm",
-   "nodeId": "701:1621",
-   "trigger": "ON_CLICK",
-   "action": {
-    "type": "set",
-    "var": "rt2 text",
-    "value": "#FFFFFF"
-   }
-  },
-  {
-   "from": "4.12",
-   "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
    "trigger": "ON_CLICK",
    "action": {
@@ -2940,7 +3048,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
    "trigger": "ON_CLICK",
    "action": {
@@ -2952,7 +3060,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
    "trigger": "ON_CLICK",
    "action": {
@@ -2964,7 +3072,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
    "trigger": "ON_CLICK",
    "action": {
@@ -2976,7 +3084,79 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
+   "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt2 fill",
+    "value": "#2340D9"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10:30 am",
+   "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt2 text",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10:30 am",
+   "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:237",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10:30 am",
+   "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:238",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10:30 am",
+   "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:239",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10:30 am",
+   "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:240",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
    "trigger": "ON_CLICK",
    "action": {
@@ -2988,7 +3168,7 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
    "trigger": "ON_CLICK",
    "action": {
@@ -3000,8 +3180,382 @@
   {
    "from": "4.12",
    "fromId": "701:1464",
-   "node": "Time 10 pm",
+   "node": "Time 10:30 am",
    "nodeId": "701:1621",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "if",
+    "blocks": [
+     {
+      "when": {
+       "fn": "EQUALS",
+       "args": [
+        "$pick-up selected",
+        true
+       ]
+      },
+      "do": [
+       {
+        "type": "set",
+        "var": "both selected",
+        "value": true
+       },
+       {
+        "type": "set",
+        "var": "button fill",
+        "value": "#2340D9"
+       },
+       {
+        "type": "set",
+        "var": "button text",
+        "value": "#FFFFFF"
+       },
+       {
+        "type": "set",
+        "var": "button label",
+        "value": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt0 fill",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt0 text",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt1 fill",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt1 text",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt2 fill",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt2 text",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:237",
+    "value": "#2340D9"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:238",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:239",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:240",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "return chosen",
+    "value": null
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "return selected",
+    "value": true
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11 am",
+   "nodeId": "948:241",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "if",
+    "blocks": [
+     {
+      "when": {
+       "fn": "EQUALS",
+       "args": [
+        "$pick-up selected",
+        true
+       ]
+      },
+      "do": [
+       {
+        "type": "set",
+        "var": "both selected",
+        "value": true
+       },
+       {
+        "type": "set",
+        "var": "button fill",
+        "value": "#2340D9"
+       },
+       {
+        "type": "set",
+        "var": "button text",
+        "value": "#FFFFFF"
+       },
+       {
+        "type": "set",
+        "var": "button label",
+        "value": null
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt0 fill",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt0 text",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt1 fill",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt1 text",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt2 fill",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "rt2 text",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:237",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:238",
+    "value": "#1B33B8"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:239",
+    "value": "#2340D9"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "948:240",
+    "value": "#FFFFFF"
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "return chosen",
+    "value": null
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "set",
+    "var": "return selected",
+    "value": true
+   }
+  },
+  {
+   "from": "4.12",
+   "fromId": "701:1464",
+   "node": "Time 11:30 am",
+   "nodeId": "948:243",
    "trigger": "ON_CLICK",
    "action": {
     "type": "if",
@@ -4594,32 +5148,20 @@
   {
    "from": "2.1",
    "fromId": "691:4767",
-   "node": "Navigation destination",
-   "nodeId": "691:4817",
+   "node": "Navigation item",
+   "nodeId": "973:283",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
-    "to": "8.9",
-    "toId": "691:7051"
+    "to": "1.1",
+    "toId": "691:4139"
    }
   },
   {
    "from": "2.1",
    "fromId": "691:4767",
-   "node": "Navigation destination",
-   "nodeId": "691:4818",
-   "trigger": "ON_CLICK",
-   "action": {
-    "type": "navigate",
-    "to": "9.1",
-    "toId": "708:170"
-   }
-  },
-  {
-   "from": "2.1",
-   "fromId": "691:4767",
-   "node": "Navigation destination",
-   "nodeId": "691:4819",
+   "node": "Navigation item",
+   "nodeId": "973:287",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -4630,13 +5172,25 @@
   {
    "from": "2.1",
    "fromId": "691:4767",
-   "node": "Navigation destination",
-   "nodeId": "691:4820",
+   "node": "Navigation item",
+   "nodeId": "973:291",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
-    "to": "1.1",
-    "toId": "691:4139"
+    "to": "9.1",
+    "toId": "708:170"
+   }
+  },
+  {
+   "from": "2.1",
+   "fromId": "691:4767",
+   "node": "Navigation item",
+   "nodeId": "973:295",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "navigate",
+    "to": "8.9",
+    "toId": "691:7051"
    }
   },
   {
@@ -4920,1349 +5474,15 @@
   {
    "from": "6.1",
    "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.1",
-   "fromId": "691:6129",
-   "node": "6.1 Thomas · Drop-off · lender code",
-   "nodeId": "691:6129",
+   "node": "Countdown label",
+   "nodeId": "955:565",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "6.1",
-    "toId": "920:247",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -6340,6 +5560,20 @@
   {
    "from": "6.2",
    "fromId": "703:434",
+   "node": "Countdown label",
+   "nodeId": "955:567",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
+   }
+  },
+  {
+   "from": "6.2",
+   "fromId": "703:434",
    "node": "Navigation item",
    "nodeId": "703:551",
    "trigger": "ON_CLICK",
@@ -6412,1349 +5646,15 @@
   {
    "from": "6.6",
    "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6",
-   "fromId": "703:765",
-   "node": "6.6 Thomas · Add additional photos",
-   "nodeId": "703:765",
+   "node": "Countdown label",
+   "nodeId": "955:569",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "6.6",
-    "toId": "920:505",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -7868,6 +5768,20 @@
   {
    "from": "6.7",
    "fromId": "703:1074",
+   "node": "Countdown label",
+   "nodeId": "955:571",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
+   }
+  },
+  {
+   "from": "6.7",
+   "fromId": "703:1074",
    "node": "Action 7",
    "nodeId": "I703:1156;5621:50116;703:1198",
    "trigger": "ON_CLICK",
@@ -7952,6 +5866,20 @@
   {
    "from": "6.8",
    "fromId": "703:1403",
+   "node": "Countdown label",
+   "nodeId": "955:573",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
+   }
+  },
+  {
+   "from": "6.8",
+   "fromId": "703:1403",
    "node": "Action",
    "nodeId": "703:1505",
    "trigger": "ON_CLICK",
@@ -8031,6 +5959,20 @@
     "type": "navigate",
     "to": "8.9",
     "toId": "691:7051"
+   }
+  },
+  {
+   "from": "6.9",
+   "fromId": "703:1718",
+   "node": "Countdown label",
+   "nodeId": "955:575",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -9080,6 +7022,20 @@
   {
    "from": "6.3",
    "fromId": "704:166",
+   "node": "Countdown label",
+   "nodeId": "955:577",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
+   }
+  },
+  {
+   "from": "6.3",
+   "fromId": "704:166",
    "node": "Navigation item",
    "nodeId": "704:265",
    "trigger": "ON_CLICK",
@@ -9188,1349 +7144,15 @@
   {
    "from": "6.4",
    "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.4",
-   "fromId": "704:484",
-   "node": "6.4 Thomas · Front photo added",
-   "nodeId": "704:484",
+   "node": "Countdown label",
+   "nodeId": "955:579",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "6.4",
-    "toId": "920:332",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -10712,1349 +7334,15 @@
   {
    "from": "6.5",
    "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5",
-   "fromId": "704:792",
-   "node": "6.5 Thomas · Back photo (empty)",
-   "nodeId": "704:792",
+   "node": "Countdown label",
+   "nodeId": "955:581",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "6.5",
-    "toId": "920:419",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -12172,1349 +7460,15 @@
   {
    "from": "7.1",
    "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "7.1",
-   "fromId": "691:6651",
-   "node": "7.1 James · Return code + after photos",
-   "nodeId": "691:6651",
+   "node": "Countdown label",
+   "nodeId": "955:583",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "7.1",
-    "toId": "920:764",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -14517,7 +8471,7 @@
    "from": "9.1",
    "fromId": "708:170",
    "node": "Navigation item",
-   "nodeId": "708:258",
+   "nodeId": "973:302",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14529,7 +8483,7 @@
    "from": "9.1",
    "fromId": "708:170",
    "node": "Navigation item",
-   "nodeId": "708:262",
+   "nodeId": "973:306",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14541,7 +8495,19 @@
    "from": "9.1",
    "fromId": "708:170",
    "node": "Navigation item",
-   "nodeId": "708:270",
+   "nodeId": "973:310",
+   "trigger": "ON_CLICK",
+   "action": {
+    "type": "navigate",
+    "to": "9.1",
+    "toId": "708:170"
+   }
+  },
+  {
+   "from": "9.1",
+   "fromId": "708:170",
+   "node": "Navigation item",
+   "nodeId": "973:314",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14553,7 +8519,7 @@
    "from": "9.2",
    "fromId": "708:275",
    "node": "Navigation item",
-   "nodeId": "708:363",
+   "nodeId": "973:321",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14565,7 +8531,7 @@
    "from": "9.2",
    "fromId": "708:275",
    "node": "Navigation item",
-   "nodeId": "708:367",
+   "nodeId": "973:325",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14577,7 +8543,7 @@
    "from": "9.2",
    "fromId": "708:275",
    "node": "Navigation item",
-   "nodeId": "708:371",
+   "nodeId": "973:329",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14589,7 +8555,7 @@
    "from": "9.2",
    "fromId": "708:275",
    "node": "Navigation item",
-   "nodeId": "708:375",
+   "nodeId": "973:333",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14661,7 +8627,7 @@
    "from": "9.3",
    "fromId": "708:414",
    "node": "Navigation item",
-   "nodeId": "708:501",
+   "nodeId": "973:340",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14673,7 +8639,7 @@
    "from": "9.3",
    "fromId": "708:414",
    "node": "Navigation item",
-   "nodeId": "708:505",
+   "nodeId": "973:344",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14685,7 +8651,7 @@
    "from": "9.3",
    "fromId": "708:414",
    "node": "Navigation item",
-   "nodeId": "708:509",
+   "nodeId": "973:348",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14697,7 +8663,7 @@
    "from": "9.3",
    "fromId": "708:414",
    "node": "Navigation item",
-   "nodeId": "708:513",
+   "nodeId": "973:352",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14721,7 +8687,7 @@
    "from": "9.4",
    "fromId": "708:518",
    "node": "Navigation item",
-   "nodeId": "708:605",
+   "nodeId": "973:359",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14733,7 +8699,7 @@
    "from": "9.4",
    "fromId": "708:518",
    "node": "Navigation item",
-   "nodeId": "708:609",
+   "nodeId": "973:363",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14745,7 +8711,7 @@
    "from": "9.4",
    "fromId": "708:518",
    "node": "Navigation item",
-   "nodeId": "708:613",
+   "nodeId": "973:367",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14757,7 +8723,7 @@
    "from": "9.4",
    "fromId": "708:518",
    "node": "Navigation item",
-   "nodeId": "708:617",
+   "nodeId": "973:371",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14889,7 +8855,7 @@
    "from": "9.6",
    "fromId": "708:775",
    "node": "Navigation item",
-   "nodeId": "708:863",
+   "nodeId": "973:378",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14901,7 +8867,7 @@
    "from": "9.6",
    "fromId": "708:775",
    "node": "Navigation item",
-   "nodeId": "708:867",
+   "nodeId": "973:382",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14913,7 +8879,7 @@
    "from": "9.6",
    "fromId": "708:775",
    "node": "Navigation item",
-   "nodeId": "708:871",
+   "nodeId": "973:386",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -14925,7 +8891,7 @@
    "from": "9.6",
    "fromId": "708:775",
    "node": "Navigation item",
-   "nodeId": "708:875",
+   "nodeId": "973:390",
    "trigger": "ON_CLICK",
    "action": {
     "type": "navigate",
@@ -16862,6 +10828,20 @@
   {
    "from": "6.3a",
    "fromId": "736:170",
+   "node": "Countdown label",
+   "nodeId": "955:585",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
+   }
+  },
+  {
+   "from": "6.3a",
+   "fromId": "736:170",
    "node": "Navigation item",
    "nodeId": "736:269",
    "trigger": "ON_CLICK",
@@ -16953,6 +10933,20 @@
     "type": "navigate",
     "to": "6.5",
     "toId": "704:792"
+   }
+  },
+  {
+   "from": "6.3b",
+   "fromId": "736:486",
+   "node": "Countdown label",
+   "nodeId": "955:587",
+   "trigger": "AFTER_TIMEOUT",
+   "timeout": 1.0,
+   "action": {
+    "type": "navigate",
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -17054,1349 +11048,15 @@
   {
    "from": "6.5a",
    "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.5a",
-   "fromId": "736:804",
-   "node": "6.5a Thomas · Back photo added",
-   "nodeId": "736:804",
+   "node": "Countdown label",
+   "nodeId": "955:589",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "6.5a",
-    "toId": "920:592",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
@@ -18574,1349 +11234,15 @@
   {
    "from": "6.6a",
    "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
-   "trigger": "AFTER_TIMEOUT",
-   "timeout": 1.0,
-   "action": {
-    "type": "if",
-    "blocks": [
-     {
-      "when": {
-       "fn": "EQUALS",
-       "args": [
-        "$code timer",
-        null
-       ]
-      },
-      "do": [
-       {
-        "type": "set",
-        "var": "code timer",
-        "value": null
-       }
-      ]
-     }
-    ]
-   }
-  },
-  {
-   "from": "6.6a",
-   "fromId": "736:1115",
-   "node": "6.6a Thomas · Extra photo added",
-   "nodeId": "736:1115",
+   "node": "Countdown label",
+   "nodeId": "955:591",
    "trigger": "AFTER_TIMEOUT",
    "timeout": 1.0,
    "action": {
     "type": "navigate",
-    "to": "6.6a",
-    "toId": "920:679",
-    "tickTwin": true
+    "to": "955:247",
+    "toId": "955:247",
+    "navigation": "CHANGE_TO"
    }
   },
   {
