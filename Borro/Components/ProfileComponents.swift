@@ -35,7 +35,7 @@ struct PushNotificationScreen: View {
                     }
                     .multilineTextAlignment(.leading)
                     .padding(Space.x16)
-                    .background(Color.surface.opacity(0.93), in: RoundedRectangle(cornerRadius: Radius.r22))
+                    .background(Color.surface.opacity(Opacity.pushCard), in: RoundedRectangle(cornerRadius: Radius.r22))
                     .contentShape(Rectangle())
                 }
                 .buttonStyle(PressStyle())

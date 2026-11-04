@@ -11,7 +11,7 @@ struct S7_5_ReturnConfirmedView: View {
         } content: {
             IconView(icon: .check, size: Size.sealIcon)
                 .foregroundStyle(Color.brand)
-                .frame(width: Size.seal - Space.x24, height: Size.seal - Space.x24)
+                .frame(width: Size.returnSeal, height: Size.returnSeal)
                 .overlay(Circle().strokeBorder(Color.brand, lineWidth: Size.buttonStroke))
                 .frame(maxWidth: .infinity)
             VStack(spacing: Space.x8) {
@@ -21,7 +21,7 @@ struct S7_5_ReturnConfirmedView: View {
             .frame(maxWidth: .infinity)
             VStack(alignment: .leading, spacing: Space.x10) {
                 PhotoView(photo: .steamerMain)
-                    .frame(height: Size.summaryPhoto * 1.5)
+                    .frame(height: Size.returnPhoto)
                     .clipShape(RoundedRectangle(cornerRadius: Radius.photo))
                 KeyValueRow(key: "Condition photos", value: "Front ✓ · Back ✓")
                 KeyValueRow(key: "Time", value: "19 Oct · \(appState.returnTime)")

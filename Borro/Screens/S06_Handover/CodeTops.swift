@@ -64,7 +64,7 @@ struct LenderCodeEntryTop: View {
                 .accessibilityIdentifier("codeMessage")
         }
         .onChange(of: typed) { _, code in
-            guard code.count == 4 else { return }
+            guard code.count == Scenario.codeLength else { return }
             if appState.submitLenderCode(code) {
                 appState.markCollected()
                 router.go(.s6_14)
@@ -91,7 +91,7 @@ struct BorrowerCodeEntryTop: View {
                 Text("Ask James to show his return code.").font(.r(.s10)).foregroundStyle(Color.inkSecondary)
             }
             .onChange(of: typed) { _, code in
-                if code.count == 4, !appState.submitBorrowerCode(code) { typed = "" }
+                if code.count == Scenario.codeLength, !appState.submitBorrowerCode(code) { typed = "" }
             }
         }
     }

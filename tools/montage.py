@@ -3,7 +3,7 @@
 import sys
 from PIL import Image
 out, codes = sys.argv[1], sys.argv[2:]
-ims = [Image.open(f"Docs/screens/compare/{c}.png") for c in codes]
+ims = [Image.open(f"Docs/screens/compare/{c}.jpg") for c in codes]
 scale = float(__import__("os").environ.get("SCALE", "0.5"))
 ims = [i.resize((int(i.width * scale), int(i.height * scale))) for i in ims]
 w = sum(i.width for i in ims) + 8 * (len(ims) - 1)

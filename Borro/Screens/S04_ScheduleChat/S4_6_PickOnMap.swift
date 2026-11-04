@@ -35,12 +35,12 @@ struct MeetingPointMap: View {
             .overlay {
                 GeometryReader { proxy in
                     let w = proxy.size.width, h = proxy.size.height
-                    Circle().fill(Color.pendingFill.opacity(0.6))
+                    Circle().fill(Color.pendingFill.opacity(Opacity.softFill))
                         .overlay(Circle().strokeBorder(Color.amber, lineWidth: Size.stroke))
-                        .frame(width: w * 0.5).position(x: w * 0.38, y: h * 0.45)
-                    Circle().fill(Color.peachFill.opacity(0.5))
+                        .frame(width: w * MapGeometry.areaSize).position(x: w * MapGeometry.borrowerArea.x, y: h * MapGeometry.borrowerArea.y)
+                    Circle().fill(Color.peachFill.opacity(Opacity.peachFill))
                         .overlay(Circle().strokeBorder(Color.dangerSoft, lineWidth: Size.stroke))
-                        .frame(width: w * 0.5).position(x: w * 0.62, y: h * 0.55)
+                        .frame(width: w * MapGeometry.areaSize).position(x: w * MapGeometry.lenderArea.x, y: h * MapGeometry.lenderArea.y)
                 }
                 .allowsHitTesting(false)
             }

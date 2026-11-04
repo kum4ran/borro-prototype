@@ -57,6 +57,8 @@ struct Agreement: Hashable {
 }
 
 struct Review: Identifiable, Hashable {
+    static let maxStars = 5
+
     let id: String
     let author: String
     let stars: Int

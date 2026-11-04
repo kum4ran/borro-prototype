@@ -46,8 +46,8 @@ struct DamageBeforeAfter: View {
 
     private func pair(_ a: Photo, _ b: Photo) -> some View {
         HStack(spacing: Space.x8) {
-            PhotoView(photo: a).frame(height: Size.recordPhoto + Space.x16).clipShape(RoundedRectangle(cornerRadius: Radius.r8))
-            PhotoView(photo: b).frame(height: Size.recordPhoto + Space.x16).clipShape(RoundedRectangle(cornerRadius: Radius.r8))
+            PhotoView(photo: a).frame(height: Size.beforeAfterPhoto).clipShape(RoundedRectangle(cornerRadius: Radius.r8))
+            PhotoView(photo: b).frame(height: Size.beforeAfterPhoto).clipShape(RoundedRectangle(cornerRadius: Radius.r8))
         }
     }
 }

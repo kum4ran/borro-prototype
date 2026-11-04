@@ -5,22 +5,13 @@ DerivedData/
 xcuserdata/
 *.xcscmblueprint
 *.xccheckout
+.DS_Store
 
 # Secrets
 .figma_token
 
-# OS
-.DS_Store
-
-# Design scratch
-docs/screens/*.png
-!docs/screens/README.md
-
-# Large pulled artefacts from the old Screens-page pipeline (regenerable via tools/figma_pull.mjs)
-.tmp/
-design/figma/nodes.json
-design/figma/png/
-design/figma/frames/
-docs/screens/qa/
-docs/screens/compare/
-docs/screens/qc/
+# Full-size simulator screenshots (the committed side-by-sides are Docs/screens/compare/*.jpg)
+Docs/screens/app/
+Docs/screens/se/
+Docs/screens/compare/*.png
+Docs/screens/se-xxxl/

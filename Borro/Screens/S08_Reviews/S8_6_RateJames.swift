@@ -13,7 +13,7 @@ struct S8_6_RateJamesView: View {
                      appState.submitThomasReview()
                      router.go(.s8_7)
                  })
-        .onAppear { if !appState.jamesReviewComplete { appState.rateJames(5) } }
+        .onAppear { if !appState.jamesReviewComplete { appState.rateJames(Review.maxStars) } }
     }
 }
 

@@ -22,7 +22,7 @@ struct S9_12_Step5PeriodView: View {
 
     private func stepButton(_ symbol: String) -> some View {
         Text(symbol).font(.r(.s22)).foregroundStyle(Color.brand)
-            .frame(width: Size.icon + Space.x4, height: Size.icon + Space.x4)
+            .frame(width: Size.stepperButton, height: Size.stepperButton)
             .overlay(Circle().strokeBorder(Color.brand, lineWidth: Size.buttonStroke))
             .frame(minWidth: Size.hitTarget, minHeight: Size.hitTarget)
     }

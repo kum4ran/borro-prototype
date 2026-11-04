@@ -45,6 +45,8 @@ struct RootView: View {
         .sheet(isPresented: $showsDemoMenu) {
             DemoMenu()
         }
+        // The brief asks for Dynamic Type up to xxxLarge; accessibility sizes above that are capped.
+        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
     }
 
     private var sheetBinding: Binding<Bool> {

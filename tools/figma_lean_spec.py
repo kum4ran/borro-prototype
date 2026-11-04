@@ -1,6 +1,6 @@
 import json,os,sys
 S=sys.argv[1]; OUT=sys.argv[2]
-names=json.load(open(sys.argv[3]))  # photo name -> imageRef
+names=json.load(open(sys.argv[3]))  # design/prototype/photo-names.json: photo name -> imageRef
 ref2name={v:k for k,v in names.items()}
 page=json.load(open(S+'/figma/proto.json'))['nodes']['377:1195']['document']
 def hexc(c,o=1):

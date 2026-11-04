@@ -14,7 +14,7 @@ struct RatePage: View {
             BackAppBar(title: "Rate \(person.name)", subtitle: "A little feedback goes a long way")
         } content: {
             HStack(spacing: Space.x14) {
-                Avatar(photo: person.photo, size: Size.avatarProfile - Space.x6)
+                Avatar(photo: person.photo, size: Size.avatarLarge)
                 VStack(alignment: .leading, spacing: Space.x2) {
                     Text("Rate \(person.name)").font(.b(.s21)).foregroundStyle(Color.ink)
                     Text("Garment Steamer").font(.r(.s12)).foregroundStyle(Color.inkSecondary)
@@ -25,6 +25,8 @@ struct RatePage: View {
                 ForEach(AppState.reviewCategories, id: \.self) { category in
                     HStack {
                         Text("\(category)*").font(.s(.s12)).foregroundStyle(Color.ink)
+                            .lineLimit(1)
+                            .minimumScaleFactor(Size.titleMinScale)
                         Spacer()
                         StarRow(value: stars[category] ?? 0) { onStar($0, category) }
                             .accessibilityLabel(category)
@@ -60,7 +62,7 @@ struct StarRow: View {
 
     var body: some View {
         HStack(spacing: 0) {
-            ForEach(1...5, id: \.self) { i in
+            ForEach(1...Review.maxStars, id: \.self) { i in
                 Button { onTap(i) } label: {
                     IconView(icon: .star, size: Size.starSize, filled: i <= value)
                         .foregroundStyle(i <= value ? Color.amber : Color.inkSecondary)
@@ -73,7 +75,7 @@ struct StarRow: View {
             }
         }
         .accessibilityElement(children: .contain)
-        .accessibilityValue("\(value) of 5")
+        .accessibilityValue("\(value) of \(Review.maxStars)")
     }
 }
 

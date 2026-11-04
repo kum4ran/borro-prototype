@@ -13,4 +13,4 @@ for code in sys.argv[1:]:
     app = app.resize((round(app.width * H / app.height), H))
     out = Image.new("RGB", (fig.width + app.width + 12, H), "white")
     out.paste(fig, (0, 0)); out.paste(app, (fig.width + 12, 0))
-    out.save(f"Docs/screens/compare/{code}.png")
+    out.save(f"Docs/screens/compare/{code}.jpg", quality=72)

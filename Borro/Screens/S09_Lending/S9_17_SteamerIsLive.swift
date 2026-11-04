@@ -8,7 +8,7 @@ struct S9_17_SteamerIsLiveView: View {
         ScreenScaffold {
             BigBackAppBar(title: "You’re all set!")
         } content: {
-            IconView(icon: .shieldCheck, size: Size.seal / 2).foregroundStyle(Color.brand).frame(maxWidth: .infinity)
+            IconView(icon: .shieldCheck, size: Size.liveBadge).foregroundStyle(Color.brand).frame(maxWidth: .infinity)
             VStack(spacing: Space.x8) {
                 Text("Your steamer is live!").font(.b(.s24)).foregroundStyle(Color.ink)
                 Text("A little less buying. A little more sharing.").font(.r(.s14)).foregroundStyle(Color.inkSecondary)

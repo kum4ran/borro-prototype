@@ -12,6 +12,9 @@ struct PrimaryButton: View {
         Button(action: action) {
             Text(title)
                 .font(.b(.s14))
+                .lineLimit(1)
+                .minimumScaleFactor(Size.titleMinScale)
+                .padding(.horizontal, Space.x8)
                 .foregroundStyle(enabled ? Color.surface : Color.inkDisabled)
                 .frame(maxWidth: .infinity, minHeight: Size.button)
                 .background(enabled ? fill : Color.buttonDisabled, in: Capsule())
@@ -35,6 +38,9 @@ struct SecondaryButton: View {
         Button(action: action) {
             Text(title)
                 .font(.b(.s14))
+                .lineLimit(1)
+                .minimumScaleFactor(Size.titleMinScale)
+                .padding(.horizontal, Space.x8)
                 .foregroundStyle(tint)
                 .frame(maxWidth: .infinity, minHeight: Size.button)
                 .background(Color.surface, in: Capsule())
@@ -110,7 +116,7 @@ struct IconButton: View {
 /// Dims slightly while pressed, like Figma's prototype hover.
 struct PressStyle: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
-        configuration.label.opacity(configuration.isPressed ? Size.pressedOpacity : 1)
+        configuration.label.opacity(configuration.isPressed ? Opacity.pressed : 1)
     }
 }
 

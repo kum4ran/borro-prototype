@@ -33,7 +33,7 @@ struct DamageReportPage: View {
                 Text(filled ? MockData.damageDescription : "Describe what happened…")
                     .font(.r(.s14))
                     .foregroundStyle(filled ? Color.ink : Color.inkSecondary)
-                    .frame(maxWidth: .infinity, minHeight: Size.multilineField - Space.x20, alignment: .topLeading)
+                    .frame(maxWidth: .infinity, minHeight: Size.damageField, alignment: .topLeading)
                     .padding(Space.x12)
                     .background(Color.surface, in: RoundedRectangle(cornerRadius: Radius.photo))
                     .overlay(RoundedRectangle(cornerRadius: Radius.photo).strokeBorder(Color.stroke, lineWidth: Size.stroke))

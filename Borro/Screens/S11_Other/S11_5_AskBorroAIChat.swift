@@ -23,7 +23,7 @@ struct S11_5_AskBorroAIChatView: View {
             if messages.count == 1 {
                 BorroReply(text: MockData.askBorroAnswer)
                 HStack(spacing: Space.x12) {
-                    PhotoView(photo: .steamerDesk).frame(width: Size.avatarLarge, height: Size.avatarLarge - Space.x16)
+                    PhotoView(photo: .steamerDesk).frame(width: Size.guideThumb.width, height: Size.guideThumb.height)
                         .clipShape(RoundedRectangle(cornerRadius: Radius.r8))
                     VStack(alignment: .leading, spacing: Space.x4) {
                         Text("Garment Steamer – Quick-use guide").font(.b(.s13)).foregroundStyle(Color.ink)

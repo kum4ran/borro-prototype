@@ -237,6 +237,17 @@ enum Size {
     static let listingThumb: CGFloat = 60
     static let damageTile: CGFloat = 62
     static let checkpoint: CGFloat = 28
+    static let resultIcon: CGFloat = 46
+    static let liveBadge: CGFloat = 38
+    static let returnPhoto: CGFloat = 135
+    static let returnSeal: CGFloat = 52
+    static let hiddenField: CGFloat = 1
+    static let beforeAfterPhoto: CGFloat = 76
+    static let damageField: CGFloat = 76
+    static let stepperButton: CGFloat = 26
+    static let listingStepBar: CGFloat = 4
+    static let guideThumb = CGSize(width: 64, height: 48)
+    static let titleMinScale: CGFloat = 0.7
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70
@@ -273,9 +284,21 @@ enum Size {
     static let hairline: CGFloat = 0.7
     static let buttonStroke: CGFloat = 1.2
     static let tabIcon: CGFloat = 21
-    static let pressedOpacity: Double = 0.75
     static let iconStroke: CGFloat = 1.8
     static let codeBox = CGSize(width: 58, height: 60)
+}
+
+/// Opacity values used in the Figma frames.
+enum Opacity {
+    static let pressed: Double = 0.75
+    static let glass: Double = 0.7
+    static let road: Double = 0.85
+    static let radiusFill: Double = 0.08
+    static let softFill: Double = 0.6
+    static let peachFill: Double = 0.5
+    static let tintedStroke: Double = 0.3
+    static let pushCard: Double = 0.93
+    static let hitOnly: Double = 0.01
 }
 
 enum Shadow {

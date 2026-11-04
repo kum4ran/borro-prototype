@@ -15,6 +15,8 @@ struct AppTabBar: View {
                         IconView(icon: tab.icon, size: Size.tabIcon)
                         Text(tab.title)
                             .font(tab == active ? .b(.s10) : .m(.s10))
+                            .lineLimit(1)
+                            .fixedSize()
                     }
                     .foregroundStyle(tab == active ? Color.brand : Color.inkSecondary)
                     .frame(maxWidth: .infinity, minHeight: Size.hitTarget)

@@ -142,6 +142,7 @@ enum MockData {
         "Let it cool, empty the tank and dry it before returning.",
     ]
     static let listingAvailability = "13–27 Oct 2026"
+    static let listingAvailableDays = Set(13...27)
     static let maxBorrowDays = "7 days"
 
     // MARK: Damage and cancellation (section 10)

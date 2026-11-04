@@ -31,6 +31,16 @@ struct SheetContainer<Content: View>: View {
     @Environment(Router.self) private var router
 
     var body: some View {
+        // Scrolls only when large text outgrows the sheet's Figma height.
+        ViewThatFits(in: .vertical) {
+            stack
+            ScrollView { stack }.scrollIndicators(.hidden)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
+        .background(Color.surface)
+    }
+
+    private var stack: some View {
         VStack(alignment: .leading, spacing: Space.x12) {
             if showsHandle {
                 SheetHandle().padding(.bottom, -Space.x16)
@@ -57,8 +67,7 @@ struct SheetContainer<Content: View>: View {
         }
         .padding(.horizontal, Space.gutter)
         .padding(.bottom, Space.x16)
-        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
-        .background(Color.surface)
+        .frame(maxWidth: .infinity, alignment: .top)
     }
 }
 

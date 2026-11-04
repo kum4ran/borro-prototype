@@ -8,7 +8,7 @@ struct S8_2_RateThomasView: View {
     var body: some View {
         RatePage(person: MockData.thomas, comment: nil, stars: appState.thomasCategoryStars,
                  complete: false, onStar: { _, _ in
-                     appState.rateThomas(5)
+                     appState.rateThomas(Review.maxStars)
                      router.go(.s8_3)
                  }, onSubmit: {})
     }

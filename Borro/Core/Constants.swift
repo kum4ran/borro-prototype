@@ -3,6 +3,7 @@ import Foundation
 /// Fixed scenario facts (brief section 4). Never use `Date()`; the story runs on these.
 enum Scenario {
     static let reference = "BR-20481"
+    static let codeLength = 4
     static let lenderCode = "6767"      // Thomas shows it at drop-off, James types it on 6.11
     static let borrowerCode = "8482"    // James shows it at return, Thomas types it on 7.2
     static let codeRefreshSeconds = 45

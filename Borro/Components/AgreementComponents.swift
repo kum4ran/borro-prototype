@@ -56,7 +56,7 @@ struct DepositPaidPanel: View {
         .padding(Space.x12)
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(paid ? Color.successFill : Color.pendingFill, in: RoundedRectangle(cornerRadius: Radius.card))
-        .overlay(RoundedRectangle(cornerRadius: Radius.card).strokeBorder(paid ? Color.success.opacity(0.3) : .clear))
+        .overlay(RoundedRectangle(cornerRadius: Radius.card).strokeBorder(paid ? Color.success.opacity(Opacity.tintedStroke) : .clear))
         .accessibilityElement(children: .combine)
         .accessibilityIdentifier("depositPanel")
     }

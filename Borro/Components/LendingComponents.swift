@@ -116,7 +116,7 @@ struct ListingStepHeader: View {
             BackAppBar(title: "List an Item", subtitle: "Step \(step) of 8 · \(caption)", backTo: backTo)
             HStack(spacing: Space.x4) {
                 ForEach(1...8, id: \.self) { i in
-                    Capsule().fill(i <= step ? Color.brand : Color.track).frame(height: Size.stepBar + 1)
+                    Capsule().fill(i <= step ? Color.brand : Color.track).frame(height: Size.listingStepBar)
                 }
             }
             .padding(.horizontal, Space.gutter)

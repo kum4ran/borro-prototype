@@ -23,11 +23,15 @@ struct BackAppBar<Trailing: View>: View {
                 Text(title)
                     .font(.b(.s21))
                     .foregroundStyle(Color.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(Size.titleMinScale)
                     .accessibilityAddTraits(.isHeader)
                 if let subtitle {
                     Text(subtitle)
                         .font(.r(.s11))
                         .foregroundStyle(Color.inkSecondary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(Size.titleMinScale)
                 }
             }
             Spacer(minLength: 0)
@@ -60,7 +64,7 @@ struct BrandAppBar: View {
                     .font(.b(.s25))
                     .foregroundStyle(Color.ink)
                     .lineLimit(1)
-                    .minimumScaleFactor(0.7)
+                    .minimumScaleFactor(Size.titleMinScale)
                     .accessibilityAddTraits(.isHeader)
             }
             Spacer(minLength: 0)

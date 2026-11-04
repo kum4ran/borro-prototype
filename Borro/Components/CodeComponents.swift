@@ -24,17 +24,22 @@ struct CodeCircle: View {
             .accessibilityIdentifier("codeInfoButton")
             VStack(spacing: Space.x2) {
                 Text(code).font(.b(.s29)).foregroundStyle(Color.ink)
+                    .lineLimit(1)
+                    .minimumScaleFactor(Size.titleMinScale)
                     .accessibilityIdentifier("codeDigits")
                 Text(appState.codeTimerLabel).font(.r(.s10)).lineSpacing(Space.x4).foregroundStyle(Color.inkSecondary)
+                    .lineLimit(1)
+                    .minimumScaleFactor(Size.titleMinScale)
                     .monospacedDigit()
                     .accessibilityIdentifier("codeTimer")
             }
+            .frame(maxWidth: Size.codeRing - Space.x24)
             .frame(width: Size.codeRing, height: Size.codeRing)
             .overlay(Circle().strokeBorder(Color.brand, lineWidth: Size.codeRingStroke))
             .accessibilityElement(children: .combine)
             HStack(spacing: Space.x4) {
                 Text("Refreshes every few minutes").font(.r(.s10))
-                IconView(icon: .info, size: Size.iconTiny - Space.x4)
+                IconView(icon: .info, size: Size.iconInfo - Space.x4)
             }
             .foregroundStyle(Color.inkSecondary)
         }
@@ -60,16 +65,16 @@ struct CodeBoxes: View {
                     .keyboardType(.numberPad)
                     .textContentType(.oneTimeCode)
                     .focused($focused)
-                    .frame(width: 1, height: 1)
-                    .opacity(0.01)
+                    .frame(width: Size.hiddenField, height: Size.hiddenField)
+                    .opacity(Opacity.hitOnly)
                     .accessibilityIdentifier("codeField")
                     .onChange(of: input.wrappedValue) { _, new in
-                        let clean = String(new.filter(\.isNumber).prefix(4))
+                        let clean = String(new.filter(\.isNumber).prefix(Scenario.codeLength))
                         if clean != new { input.wrappedValue = clean }
                     }
             }
             HStack(spacing: Space.x12) {
-                ForEach(0..<4, id: \.self) { i in
+                ForEach(0..<Scenario.codeLength, id: \.self) { i in
                     let chars = Array(digits)
                     Text(i < chars.count ? String(chars[i]) : "")
                         .font(.inter(.semibold, .s40))
@@ -196,7 +201,7 @@ struct PhotoOptionsMenu: View {
         .padding(.vertical, Space.x6)
         .frame(width: Size.photoMenu)
         .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: Radius.r14))
-        .background(Color.surface.opacity(0.7), in: RoundedRectangle(cornerRadius: Radius.r14))
+        .background(Color.surface.opacity(Opacity.glass), in: RoundedRectangle(cornerRadius: Radius.r14))
         .raisedShadow()
     }
 

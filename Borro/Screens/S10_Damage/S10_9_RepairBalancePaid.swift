@@ -8,7 +8,7 @@ struct S10_9_RepairBalancePaidView: View {
         ScreenScaffold {
             BackAppBar(title: "Post-Borro Review", subtitle: "Garment Steamer · Damage case", backTo: .s10_8)
         } content: {
-            IconView(icon: .checkCircle, size: Size.seal * 0.6).foregroundStyle(Color.brand)
+            IconView(icon: .checkCircle, size: Size.resultIcon).foregroundStyle(Color.brand)
                 .frame(maxWidth: .infinity).padding(.top, Space.x24)
             VStack(spacing: Space.x8) {
                 Text("All settled.").font(.b(.s29)).foregroundStyle(Color.ink)

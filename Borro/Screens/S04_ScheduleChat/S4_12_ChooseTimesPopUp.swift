@@ -30,15 +30,26 @@ struct S4_12_ChooseTimesPopUpView: View {
                 Spacer()
                 Text("Choose one").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
             }
-            HStack(spacing: Space.x8) {
-                Text(day).font(.b(.s13)).foregroundStyle(Color.ink).fixedSize()
-                ForEach(options) { option in
-                    BigTimePill(label: option.label, selected: selected == option) { choose(option) }
+            // One row as in Figma; stacks when large text no longer fits.
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: Space.x8) {
+                    Text(day).font(.b(.s13)).foregroundStyle(Color.ink).fixedSize()
+                    pills(options, selected: selected, choose: choose)
+                    Spacer(minLength: 0)
                 }
-                Spacer(minLength: 0)
+                VStack(alignment: .leading, spacing: Space.x8) {
+                    Text(day).font(.b(.s13)).foregroundStyle(Color.ink)
+                    FlowLayout(spacing: Space.x8) { pills(options, selected: selected, choose: choose) }
+                }
             }
         }
         .panel(.surfaceSunk, padding: Space.x14, radius: Radius.r16)
+    }
+
+    private func pills(_ options: [TimeOption], selected: TimeOption?, choose: @escaping (TimeOption) -> Void) -> some View {
+        ForEach(options) { option in
+            BigTimePill(label: option.label, selected: selected == option) { choose(option) }
+        }
     }
 }
 
