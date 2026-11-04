@@ -99,6 +99,11 @@ enum MockData {
         CredibilityFactor(label: "Reviews", score: 64),
     ]
 
+    // MARK: Review comments (8.3, 8.6)
+
+    static let reviewOfThomas = "So helpful and clear with the arrangements. Thank you!"
+    static let reviewOfJames = "James returned the steamer clean and on time. Thank you!"
+
     // MARK: Chat (4.9)
 
     static let chat = [

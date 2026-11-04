@@ -228,6 +228,9 @@ enum Size {
     static let sheetIcon: CGFloat = 32
     static let photoThumb: CGFloat = 104
     static let recordPhoto: CGFloat = 60
+    static let starSize: CGFloat = 24
+    static let starHit: CGFloat = 44
+    static let profileRow: CGFloat = 46
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70

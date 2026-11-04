@@ -62,6 +62,8 @@ final class AppState {
         dropOffSaved = false
         collected = false
         returnCodeVerified = false
+        thomasCategoryStars = [:]
+        jamesCategoryStars = [:]
     }
 
     // MARK: Status
@@ -236,6 +238,24 @@ final class AppState {
 
     // MARK: Reviews
 
-    func rateThomas(_ stars: Int) { jamesRatingOfThomas = stars }
-    func rateJames(_ stars: Int) { thomasRatingOfJames = stars }
+    /// Five rated categories per review (8.2, 8.6).
+    static let reviewCategories = ["Overall rating", "Item condition", "Arrangement", "Punctuality", "Friendliness"]
+    private(set) var thomasCategoryStars: [String: Int] = [:]
+    private(set) var jamesCategoryStars: [String: Int] = [:]
+
+    /// Fills every category (Figma's single "Five star controls" tap) or sets one.
+    func rateThomas(_ stars: Int, category: String? = nil) {
+        if let category { thomasCategoryStars[category] = stars }
+        else { for c in Self.reviewCategories { thomasCategoryStars[c] = stars } }
+        jamesRatingOfThomas = thomasCategoryStars["Overall rating"] ?? stars
+    }
+
+    func rateJames(_ stars: Int, category: String? = nil) {
+        if let category { jamesCategoryStars[category] = stars }
+        else { for c in Self.reviewCategories { jamesCategoryStars[c] = stars } }
+        thomasRatingOfJames = jamesCategoryStars["Overall rating"] ?? stars
+    }
+
+    var thomasReviewComplete: Bool { Self.reviewCategories.allSatisfy { (thomasCategoryStars[$0] ?? 0) > 0 } }
+    var jamesReviewComplete: Bool { Self.reviewCategories.allSatisfy { (jamesCategoryStars[$0] ?? 0) > 0 } }
 }

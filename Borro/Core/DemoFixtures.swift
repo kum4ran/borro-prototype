@@ -37,7 +37,7 @@ extension AppState {
         if reached(.s7_5) { setStatus(.returned) }
         if reached(.s8_3) { rateThomas(5) }
         if reached(.s8_8) { depositRefunded() }
-        if reached(.s8_7) || screen == .s8_8 || screen == .s8_9 { rateJames(4) }
+        if reached(.s8_6) { rateJames(5) }
         switchRole(to: screen.role)
         clearRoleBanner()
     }
