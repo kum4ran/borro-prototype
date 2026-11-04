@@ -13,7 +13,7 @@ Demo build: no backend, no network, no persistence. Everything runs on mock data
 
 1. Open `Borro.xcodeproj` in Xcode 15 or later (built with Xcode 26.2).
 2. Pick an iPhone simulator (iOS 17+) and press **Run**.
-3. On a real iPhone: target **Borro** → Signing & Capabilities → choose your team. The bundle id is `com.borro.prototype`; change it if your team rejects it.
+3. On a real iPhone: target **Borro** → Signing & Capabilities → choose your team. The bundle id is `com.tjandera.borro`; change it if your team rejects it.
 
 From the command line (simulator):
 
@@ -31,7 +31,7 @@ tools/build.sh --no-assets
 
 - **Demo menu**: long-press the status bar. Jump to the first screen of any section, or to any frame. The app state is set to match that point in the story. **Reset demo** restores the launch state.
 - **Role switch**: the phone plays both James and Thomas. When the story moves to the other person a banner says "Now viewing as Thomas".
-- **Open a frame directly**: `xcrun simctl launch booted com.borro.prototype -startScreen 5.2`.
+- **Open a frame directly**: `xcrun simctl launch booted com.tjandera.borro -startScreen 5.2`.
 
 The story path: Home → Need it Now → Filter → 1 km → steamer → Borrow Now → My Borrowing → tap the card (Thomas's phone) → accept → arrange handover → PayNow → handover codes and photos (6767, then 8482 at return) → reviews → refund.
 

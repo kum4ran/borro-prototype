@@ -15,8 +15,8 @@ codes=("$@")
 OUT=${OUT:-Docs/screens/app}
 mkdir -p "$OUT" Docs/screens/compare
 for c in $codes; do
-  xcrun simctl terminate "$DEVICE" com.borro.prototype 2>/dev/null
-  xcrun simctl launch "$DEVICE" com.borro.prototype -startScreen "$c" >/dev/null
+  xcrun simctl terminate "$DEVICE" com.tjandera.borro 2>/dev/null
+  xcrun simctl launch "$DEVICE" com.tjandera.borro -startScreen "$c" >/dev/null
   sleep ${WAIT:-2.5}
   xcrun simctl io "$DEVICE" screenshot "$OUT/$c.png" >/dev/null 2>&1
 done
