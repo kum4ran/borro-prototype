@@ -28,7 +28,10 @@ extension AppState {
         if [.s6_15, .s6_16, .s6_18].contains(screen) || reached(.s6_19) { addPhoto(.extra, to: .collection) }
         if reached(.s6_19) { setStatus(.onLoan) }
         if reached(.s7_1) { setStatus(.returnPending) }
-        if reached(.s7_2a) { addPhoto(.front, to: .returned) }
+        if reached(.s7_2a) {
+            _ = submitBorrowerCode(Scenario.borrowerCode)
+            addPhoto(.front, to: .returned)
+        }
         if [.s7_2c, .s7_2d, .s7_3, .s7_4].contains(screen) || reached(.s7_5) { addPhoto(.back, to: .returned) }
         if [.s7_3, .s7_4].contains(screen) || reached(.s7_5) { addPhoto(.extra, to: .returned) }
         if reached(.s7_5) { setStatus(.returned) }

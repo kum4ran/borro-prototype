@@ -35,6 +35,7 @@ final class AppState {
     private(set) var agreedToTerms = false
     private(set) var dropOffSaved = false
     private(set) var collected = false
+    private(set) var returnCodeVerified = false
 
     // Reviews
     private(set) var jamesRatingOfThomas = 0
@@ -60,6 +61,7 @@ final class AppState {
         agreedToTerms = false
         dropOffSaved = false
         collected = false
+        returnCodeVerified = false
     }
 
     // MARK: Status
@@ -214,7 +216,10 @@ final class AppState {
     }
 
     /// Validates the borrower code Thomas types on 7.2.
-    func submitBorrowerCode(_ code: String) -> Bool { code == Scenario.borrowerCode }
+    func submitBorrowerCode(_ code: String) -> Bool {
+        returnCodeVerified = code == Scenario.borrowerCode
+        return returnCodeVerified
+    }
 
     func clearCodeError() { codeAttemptFailed = false }
 
