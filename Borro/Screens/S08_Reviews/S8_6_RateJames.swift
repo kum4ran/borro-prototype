@@ -9,7 +9,10 @@ struct S8_6_RateJamesView: View {
         RatePage(person: MockData.james, comment: MockData.reviewOfJames, stars: appState.jamesCategoryStars,
                  complete: appState.jamesReviewComplete,
                  onStar: { appState.rateJames($0, category: $1) },
-                 onSubmit: { router.go(.s8_7) })
+                 onSubmit: {
+                     appState.submitThomasReview()
+                     router.go(.s8_7)
+                 })
         .onAppear { if !appState.jamesReviewComplete { appState.rateJames(5) } }
     }
 }

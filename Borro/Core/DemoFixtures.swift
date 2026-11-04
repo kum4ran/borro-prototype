@@ -38,6 +38,7 @@ extension AppState {
         if reached(.s8_3) { rateThomas(5) }
         if reached(.s8_8) { depositRefunded() }
         if reached(.s8_6) { rateJames(5) }
+        if reached(.s8_7) { submitThomasReview() }
         switchRole(to: screen.role)
         clearRoleBanner()
     }

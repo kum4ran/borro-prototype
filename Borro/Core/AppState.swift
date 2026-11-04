@@ -65,6 +65,7 @@ final class AppState {
         thomasCategoryStars = [:]
         jamesCategoryStars = [:]
         wishlistRemoved = []
+        thomasReviewSubmitted = false
     }
 
     // MARK: Status
@@ -279,6 +280,9 @@ final class AppState {
         else { for c in Self.reviewCategories { jamesCategoryStars[c] = stars } }
         thomasRatingOfJames = jamesCategoryStars["Overall rating"] ?? stars
     }
+
+    private(set) var thomasReviewSubmitted = false
+    func submitThomasReview() { thomasReviewSubmitted = true }
 
     var thomasReviewComplete: Bool { Self.reviewCategories.allSatisfy { (thomasCategoryStars[$0] ?? 0) > 0 } }
     var jamesReviewComplete: Bool { Self.reviewCategories.allSatisfy { (jamesCategoryStars[$0] ?? 0) > 0 } }

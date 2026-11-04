@@ -61,6 +61,22 @@ struct BorrowTimeline: View {
             if let note = content.note {
                 Text(note).font(.r(.s12)).foregroundStyle(Color.inkSecondary)
             }
+            if appState.deposit == .refunded && !appState.thomasReviewSubmitted {
+                // Simulated jump: Thomas still has to rate James (8.5).
+                TapArea(accessibilityLabel: "Thomas’s phone: How was James with your steamer?") { router.go(.s8_5) } label: {
+                    HStack(spacing: Space.x10) {
+                        BorroAppIcon()
+                        VStack(alignment: .leading, spacing: Space.x2) {
+                            Text("Meanwhile, on Thomas’s phone").font(.b(.s12)).foregroundStyle(Color.ink)
+                            Text("How was James with your steamer?").font(.r(.s12)).foregroundStyle(Color.inkSecondary)
+                        }
+                        Spacer()
+                        IconView(icon: .chevronRight, size: Size.iconSmall).foregroundStyle(Color.ink)
+                    }
+                    .panel(.brandMist)
+                }
+                .accessibilityIdentifier("thomasPushBanner")
+            }
         } actions: {
             PrimaryButton(title: content.action, identifier: "timelineActionButton") { content.perform(appState, router) }
         }
