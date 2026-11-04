@@ -5,6 +5,7 @@ import SwiftUI
 struct ScreenScaffold<Header: View, Content: View, Actions: View>: View {
     var contentSpacing: CGFloat = Space.x12
     var topPadding: CGFloat = Space.x8
+    var gutter: CGFloat = Space.gutter
     @ViewBuilder var header: () -> Header
     @ViewBuilder var content: () -> Content
     @ViewBuilder var actions: () -> Actions
@@ -14,7 +15,7 @@ struct ScreenScaffold<Header: View, Content: View, Actions: View>: View {
             VStack(alignment: .leading, spacing: contentSpacing) {
                 content()
             }
-            .padding(.horizontal, Space.gutter)
+            .padding(.horizontal, gutter)
             .padding(.top, topPadding)
             .padding(.bottom, Space.aboveTabBar)
             .frame(maxWidth: .infinity, alignment: .leading)
@@ -26,7 +27,7 @@ struct ScreenScaffold<Header: View, Content: View, Actions: View>: View {
         .safeAreaInset(edge: .bottom, spacing: 0) {
             if Actions.self != EmptyView.self {
                 VStack(spacing: Space.x8) { actions() }
-                    .padding(.horizontal, Space.gutter)
+                    .padding(.horizontal, gutter)
                     .padding(.top, Space.x10)
                     .padding(.bottom, Space.aboveTabBar)
                     .background(Color.canvas)
@@ -37,9 +38,10 @@ struct ScreenScaffold<Header: View, Content: View, Actions: View>: View {
 }
 
 extension ScreenScaffold where Actions == EmptyView {
-    init(contentSpacing: CGFloat = Space.x12, topPadding: CGFloat = Space.x8,
+    init(contentSpacing: CGFloat = Space.x12, topPadding: CGFloat = Space.x8, gutter: CGFloat = Space.gutter,
          @ViewBuilder header: @escaping () -> Header, @ViewBuilder content: @escaping () -> Content) {
-        self.init(contentSpacing: contentSpacing, topPadding: topPadding, header: header, content: content) { EmptyView() }
+        self.init(contentSpacing: contentSpacing, topPadding: topPadding, gutter: gutter,
+                  header: header, content: content) { EmptyView() }
     }
 }
 
@@ -138,9 +140,8 @@ struct DotRow: View {
     let value: String
 
     var body: some View {
-        Text("\(label)  ·  \(value)")
+        (Text("\(label)  ·  ").foregroundStyle(Color.inkSecondary) + Text(value).font(.b(.s13)).foregroundStyle(Color.ink))
             .font(.r(.s13))
-            .foregroundStyle(Color.ink)
             .frame(maxWidth: .infinity, minHeight: Space.x24, alignment: .leading)
     }
 }

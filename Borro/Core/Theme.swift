@@ -35,6 +35,8 @@ extension Color {
     static let canvas = Color(rgb: 0xF7F8F6)         // screen background
     static let surface = Color(rgb: 0xFFFFFF)
     static let surfaceSunk = Color(rgb: 0xF6F6F3)
+    static let surfaceWarm = Color(rgb: 0xEEEEE9)
+    static let peachFill = Color(rgb: 0xFCE3D0)
     static let track = Color(rgb: 0xEDF0EC)          // progress tracks, muted fills
     static let stroke = Color(rgb: 0xE2E8E1)         // card and field borders
     static let strokeSoft = Color(rgb: 0xE5E8E3)
@@ -62,6 +64,7 @@ extension Color {
     static let success = Color(rgb: 0x1E8E5A)
     static let successDeep = Color(rgb: 0x0B6B4F)
     static let successMint = Color(rgb: 0xE4F2EC)
+    static let tooltipMint = Color(rgb: 0xAEE5C4)
     static let danger = Color(rgb: 0xD64545)
     static let dangerSoft = Color(rgb: 0xE07474)
     static let dangerFill = Color(rgb: 0xFDECE9)
@@ -150,6 +153,8 @@ enum Space {
 
     /// Side margin: 393 pt frame, 353 pt content.
     static let gutter: CGFloat = 20
+    /// Section 4 frames use 361 pt content.
+    static let gutterNarrow: CGFloat = 16
     /// Gap between the sticky action area and the tab bar.
     static let aboveTabBar: CGFloat = 18
 }
@@ -189,6 +194,37 @@ enum Size {
     static let avatarLarge: CGFloat = 64
     static let avatarHuge: CGFloat = 96
     static let thumb: CGFloat = 74
+    static let requestThumb: CGFloat = 70
+    static let tooltipTop: CGFloat = 330
+    static let logoAspect: CGFloat = 72.0 / 34.0
+    static let bigPill: CGFloat = 36
+    static let dayColumn: CGFloat = 96
+    static let summaryPhoto: CGFloat = 90
+    static let summaryLabel: CGFloat = 76
+    static let wheelRow: CGFloat = 32
+    static let wheelRowSmall: CGFloat = 22
+    static let wheelColumn: CGFloat = 56
+    static let selectRow: CGFloat = 52
+    static let mapPinStroke: CGFloat = 1.7
+    static let meetingMap: CGFloat = 200
+    static let bubbleMaxWidth: CGFloat = 250
+    static let fab: CGFloat = 50
+    static let attachmentTile: CGFloat = 48
+    static let lockIcon: CGFloat = 24
+    static let appIcon: CGFloat = 28
+    static let avatarProfile: CGFloat = 70
+    static let gaugeStroke: CGFloat = 13
+    static let gaugeWidth: CGFloat = 170
+    static let iconInfo: CGFloat = 16
+    static let factorLabel: CGFloat = 141
+    static let factorValue: CGFloat = 34
+    static let thumbHeight: CGFloat = 80
+    static let detailPhoto: CGFloat = 145
+    static let cardPhoto: CGFloat = 110
+    static let seal: CGFloat = 76
+    static let sealIcon: CGFloat = 35
+    static let avatarMini: CGFloat = 19
+    static let avatarMedium: CGFloat = 38
     static let listingPhoto: CGFloat = 98
     static let mapHeight: CGFloat = 250
     static let pinIcon: CGFloat = 17
@@ -198,6 +234,7 @@ enum Size {
     static let mapRadiusStroke: CGFloat = 1.5
     static let mapDot: CGFloat = 16
     static let mapDotStroke: CGFloat = 3
+    static let calendarCell: CGFloat = 28
     static let filterRow: CGFloat = 48
     static let filterMenuWidth: CGFloat = 250
     static let filterMenuTop: CGFloat = 163

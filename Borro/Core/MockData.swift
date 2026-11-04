@@ -12,7 +12,9 @@ enum MockData {
 
     static let thomas = User(
         id: "thomas", name: "Thomas", fullName: "Thomas", photo: .thomas,
-        rating: "5.0", reviewCount: 10, area: Scenario.area)
+        rating: "5.0", reviewCount: 10, credibility: 86, credibilityLabel: "High", area: Scenario.area)
+
+    static let steamerDescription = "Freshen up your outfit in minutes. Lightweight handheld steamer, ready in 30 seconds. Includes a heat-resistant mitt."
 
     // CONFLICT: Figma reuses avatars across lenders (Matthew and Lebron share one on 1.1,
     // 1.3 labels the JBL lender "Thomas"). Each lender gets one fixed avatar here.
@@ -20,7 +22,8 @@ enum MockData {
     static let matthew = User(id: "matthew", name: "Matthew", fullName: "Matthew", photo: .matthew)
     static let jessica = User(id: "jessica", name: "Jessica", fullName: "Jessica", photo: .jessica)
     static let lebron = User(id: "lebron", name: "Lebron", fullName: "Lebron", photo: .lebron)
-    static let mei = User(id: "mei", name: "Mei", fullName: "Mei", photo: .mei)
+    static let mei = User(id: "mei", name: "Mei", fullName: "Mei", photo: .mei, credibility: 86, credibilityLabel: "High")
+    static let darren = User(id: "darren", name: "Darren", fullName: "Darren", photo: .manOne, credibility: 86, credibilityLabel: "High")
     static let andrew = User(id: "andrew", name: "Andrew", fullName: "Andrew", photo: .andrew)
 
     // MARK: Listings
@@ -74,6 +77,11 @@ enum MockData {
         request: request, pickUp: Scenario.pickUp, returnBy: Scenario.returnShort,
         place: Scenario.meetUpPlace, deposit: Scenario.depositAmount)
 
+    /// Other requests on 3.2 (only James's leads anywhere).
+    static let otherRequests: [(user: User, dates: String, urgent: Bool)] = [
+        (mei, "20–21 Oct 2026", true), (darren, "20–21 Oct 2026", false),
+    ]
+
     // MARK: Reviews and credibility
 
     static let jamesReviews = [
@@ -91,16 +99,34 @@ enum MockData {
         CredibilityFactor(label: "Reviews", score: 64),
     ]
 
+    // MARK: Chat (4.9)
+
+    static let chat = [
+        ChatMessage(id: "c1", text: "Hi James! Meet at \(Scenario.meetUpPlace) at \(Scenario.pickUpTime) for the steamer?", time: "6:42 pm", mine: false),
+        // CONFLICT: Figma says "return it tomorrow by 10 am"; the scenario return time wins.
+        ChatMessage(id: "c2", text: "Sure, see you there! I’ll return it tomorrow by \(Scenario.returnTime).", time: "6:43 pm", mine: true, read: true),
+        ChatMessage(id: "c3", text: "Lovely, please take a look at this agreement!", time: "6:44 pm", mine: false),
+    ]
+
     // MARK: Meet-up time pills (Figma collection "Borro times")
 
+    static let pickUpDay = "Sun 18 Oct"
+    static let returnDay = "Mon 19 Oct"
+
     static let pickUpOptions = [
-        TimeOption(id: "up0", label: "7:00 pm", value: "Sun 18 Oct · 7:00 pm"),
-        TimeOption(id: "up1", label: "7:30 pm", value: "Sun 18 Oct · 7:30 pm"),
+        TimeOption(id: "up0", label: "7 pm", day: pickUpDay, time: "7:00 pm"),
+        TimeOption(id: "up1", label: "7:30 pm", day: pickUpDay, time: "7:30 pm"),
     ]
 
+    // CONFLICT: Figma offers 9 am, 10 am and 10:30 am. The scenario return is Monday 11:00 pm,
+    // so the middle pill is the scenario time (Scenario.returnTime) with one slot either side.
     static let returnOptions = [
-        TimeOption(id: "rt0", label: "9:00 am", value: "Mon 19 Oct · 9:00 am"),
-        TimeOption(id: "rt1", label: "10:00 am", value: "Mon 19 Oct · 10:00 am"),
-        TimeOption(id: "rt2", label: "10:30 am", value: "Mon 19 Oct · 10:30 am"),
+        TimeOption(id: "rt0", label: "10 pm", day: returnDay, time: "10:00 pm"),
+        TimeOption(id: "rt1", label: Scenario.returnPill, day: returnDay, time: Scenario.returnTime),
+        TimeOption(id: "rt2", label: "11:30 pm", day: returnDay, time: "11:30 pm"),
     ]
+
+    /// Pill lists as one line ("7, 7:30 pm" / "10, 11, 11:30 pm").
+    static let pickUpOffer = "7, 7:30 pm"
+    static let returnOffer = "10, 11, 11:30 pm"
 }

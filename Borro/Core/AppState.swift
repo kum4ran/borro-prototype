@@ -61,9 +61,9 @@ final class AppState {
     /// Borrower line on My Borrowing (2.4). Strings from the Figma "borrower detail" variable.
     var borrowerDetail: String {
         let place = Scenario.meetUpPlace
-        let ret = "Mon 19 Oct, \(Scenario.returnTime)"
+        let ret = "Mon 19 Oct, \(returnTime)"
         switch status {
-        case .pending, .handoverPending: return "Pick up: Sun 18 Oct, 7:30 pm · \(place)"
+        case .pending, .handoverPending: return "Pick up: Sun 18 Oct, \(pickUpTime) · \(place)"
         case .onLoan: return "Return by: \(ret) · \(place)"
         case .returnPending: return "Returning: \(ret) · \(place)"
         case .returned: return "Returned: \(ret) · \(place)"
@@ -72,10 +72,10 @@ final class AppState {
 
     /// Lender line on My Lending (9.x). Strings from the Figma "lender detail" variable.
     var lenderDetail: String {
-        let due = "Mon 19 Oct, \(Scenario.returnTimeCaps)"
+        let due = "Mon 19 Oct, \(returnTime.uppercased())"
         switch status {
         case .pending: return "James requested \(Scenario.borrowDatesShort) · Awaiting your reply"
-        case .handoverPending: return "Handover to James · Sun 18 Oct, 7:30 PM · \(Scenario.meetUpPlace)"
+        case .handoverPending: return "Handover to James · Sun 18 Oct, \(pickUpTime.uppercased()) · \(Scenario.meetUpPlace)"
         case .onLoan: return "With James · Due \(due)"
         case .returnPending: return "Awaiting return from James · Due \(due)"
         case .returned: return "Returned by James · \(due)"
@@ -129,11 +129,12 @@ final class AppState {
     var bothTimesChosen: Bool { pickUpChoice != nil && returnChoice != nil }
     var timesButtonLabel: String { bothTimesChosen ? "Confirm times" : "Choose pick-up and return" }
 
-    /// Pick-up shown on 4.7 and later. Defaults to the scenario value before a choice is made.
+    /// Agreed pick-up, shown on 4.14 and later. The scenario value until Thomas picks a pill.
     var pickUpLabel: String { pickUpChoice?.value ?? Scenario.pickUp }
-    /// CONFLICT: the return pills in Figma are morning slots; the scenario return is 11:00 pm.
-    /// Until a pill is chosen the scenario value shows.
+    var pickUpTime: String { pickUpChoice?.time ?? Scenario.pickUpTime }
+    /// Agreed return. Scenario.returnTime until Thomas picks a pill.
     var returnLabel: String { returnChoice?.value ?? Scenario.returnShort }
+    var returnTime: String { returnChoice?.time ?? Scenario.returnTime }
 
     // MARK: Code countdown
 

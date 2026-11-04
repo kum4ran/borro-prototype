@@ -19,12 +19,15 @@ enum Scenario {
     static let borrowDates = "18 Oct to 19 Oct 2026"
     static let borrowDatesShort = "18–19 Oct 2026"
     static let pickUp = "Sun 18 Oct · 7:30 pm"
+    static let pickUpTime = "7:30 pm"
     static let pickUpLong = "Sunday 18 Oct 2026, 7:30 pm"
 
     // CONFLICT: Figma shows 10:00 am on 5.2, the status strings and the Borro times default.
     // The scenario says Monday 19 Oct, 11:00 pm. Team has not decided. Change it here, in one line.
     static let returnTime = "11:00 pm"
     static let returnTimeCaps = "11:00 PM"
+    static let returnPill = "11 pm"
+    static let returnTime24 = "23"
     static let returnShort = "Mon 19 Oct · \(returnTime)"
     static let returnLong = "Monday 19 Oct 2026, \(returnTime)"
 
