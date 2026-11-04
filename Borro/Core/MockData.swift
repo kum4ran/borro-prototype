@@ -99,6 +99,51 @@ enum MockData {
         CredibilityFactor(label: "Reviews", score: 64),
     ]
 
+    // MARK: My Lending (section 9). Other listings Thomas lends out.
+
+    struct LendingRow: Identifiable, Hashable {
+        let id: String
+        let title: String
+        let photo: Photo
+        let chip: String
+        let chipTone: BorrowStatus.Tone?   // nil = red (overdue, cancelled)
+        let detail: String
+        var person: Photo?
+    }
+
+    static let maria = User(id: "maria", name: "Maria", fullName: "Maria", photo: .mei)
+    static let john = User(id: "john", name: "John", fullName: "John", photo: .lebron)
+
+    static let activeLending = [
+        LendingRow(id: "bottle", title: "Water Bottle", photo: .bottle, chip: "Handover pending", chipTone: .amber,
+                   detail: "Handover to Kumaran · Fri, 3:00 PM · Bencoolen St"),
+        LendingRow(id: "speaker", title: "Speaker", photo: .extraC8e, chip: "On loan", chipTone: .blue,
+                   detail: "With Maria · Due 2 Nov"),
+        LendingRow(id: "camera", title: "Camera", photo: .camera, chip: "Overdue", chipTone: nil,
+                   detail: "With John · Due 16 Oct"),
+    ]
+
+    // CONFLICT: Figma's past loans say "Lent to Thomas" on Thomas's own list. Borrower changed to Kumaran.
+    static let pastLending = [
+        LendingRow(id: "bottle", title: "Water Bottle", photo: .bottle, chip: "Returned", chipTone: .green,
+                   detail: "Lent to Kumaran · 14–21 Oct", person: .kumaran),
+        LendingRow(id: "speaker", title: "Speaker", photo: .extraC8e, chip: "Returned", chipTone: .green,
+                   detail: "Lent to Maria · 12–19 Oct", person: .mei),
+        LendingRow(id: "camera", title: "Camera", photo: .camera, chip: "Cancelled", chipTone: nil,
+                   detail: "Request from John · Cancelled 17 Oct", person: .lebron),
+    ]
+
+    // MARK: List an Item (9.8–9.17)
+
+    static let listingDescription = "Freshen up your outfit in minutes. Handheld steamer with a 250 ml tank, ready in 30 seconds. Includes a heat-resistant mitt."
+    static let careInstructions = [
+        "Use clean water only. Do not add fragrance.",
+        "Keep the steamer upright while in use.",
+        "Let it cool, empty the tank and dry it before returning.",
+    ]
+    static let listingAvailability = "13–27 Oct 2026"
+    static let maxBorrowDays = "7 days"
+
     // MARK: Review comments (8.3, 8.6)
 
     static let reviewOfThomas = "So helpful and clear with the arrangements. Thank you!"

@@ -762,7 +762,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s9_4: return nil
         case .s9_5: return nil
         case .s9_6: return nil
-        case .s9_7: return .lend
+        case .s9_7: return nil
         case .s9_8: return .lend
         case .s9_9: return .lend
         case .s9_10: return .lend
@@ -894,7 +894,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s9_4: return .sheet(height: 433)
         case .s9_5: return .sheet(height: 377)
         case .s9_6: return .sheet(height: 271)
-        case .s9_7: return .page
+        case .s9_7: return .overlay
         case .s9_8: return .page
         case .s9_9: return .page
         case .s9_10: return .page

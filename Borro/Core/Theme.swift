@@ -231,6 +231,10 @@ enum Size {
     static let starSize: CGFloat = 24
     static let starHit: CGFloat = 44
     static let profileRow: CGFloat = 46
+    static let filterPill: CGFloat = 36
+    static let multilineField: CGFloat = 96
+    static let listingHero: CGFloat = 150
+    static let listingThumb: CGFloat = 60
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70

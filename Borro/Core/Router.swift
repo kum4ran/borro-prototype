@@ -49,6 +49,7 @@ final class Router {
             overlay = nil
             sheet = screen
         case .overlay:
+            sheet = nil
             overlay = screen
         case .page, .push:
             sheet = nil
@@ -120,7 +121,7 @@ final class Router {
         .s5_2a: .s5_2, .s5_3: .s5_2, .s5_4: .s5_2,
         .s6_2: .s6_1, .s6_3: .s6_1, .s6_3a: .s6_5, .s6_3b: .s6_6, .s6_7: .s6_4, .s6_8: .s6_4,
         .s6_9: .s6_6, .s6_13: .s6_11, .s6_16: .s6_15, .s6_17: .s6_14, .s6_18: .s6_15,
-        .s7_4: .s7_3, .s9_2: .s9_1, .s9_4: .s9_3, .s9_5: .s9_1, .s9_6: .s9_1,
+        .s7_4: .s7_3, .s9_2: .s9_1, .s9_4: .s9_3, .s9_5: .s9_1, .s9_6: .s9_1, .s9_7: .s9_1,
         .s11_1: .s2_1, .s11_2: .s2_1,
     ]
 }
