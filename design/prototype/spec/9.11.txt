@@ -1,0 +1,149 @@
+# 9.11 Thomas · Step 4 availability  (708:1214)  section: 9 · My Lending and List an Item
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22 [tap]
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "List an Item"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Step 4 of 8 · Item Availability"
+FRAM 'Scrollable content' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Step progress' 20,116 353x4 H gap=5.0 pad=0,0,0,0
+    RECT 'Progress segment' 20,116 40x4 fill=#2341DD r=4
+    RECT 'Progress segment' 65,116 40x4 fill=#2341DD r=4
+    RECT 'Progress segment' 110,116 40x4 fill=#2341DD r=4
+    RECT 'Progress segment' 154,116 40x4 fill=#2341DD r=4
+    RECT 'Progress segment' 199,116 40x4 fill=#E2E8E1 r=4
+    RECT 'Progress segment' 244,116 40x4 fill=#E2E8E1 r=4
+    RECT 'Progress segment' 288,116 40x4 fill=#E2E8E1 r=4
+    RECT 'Progress segment' 333,116 40x4 fill=#E2E8E1 r=4
+  TEXT 'Copy' 20,132 353x35 fill=#14231C Inter 700 26 lh=35.1 ls=0.0 L "When is it available?"
+  TEXT 'Copy' 20,179 353x44 fill=#68766E Inter 400 16 lh=21.6 ls=0.0 L "Choose the dates your steamer can be borrowed."
+  FRAM 'Card' 20,235 353x260 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'October calendar' 32,247 329x236 V gap=10.0 pad=0,0,0,0
+      FRAM 'Month' 32,247 329x19 H gap=0 pad=0,0,0,0
+        FRAM 'chevron-left' 32,247 18x18
+          VECT 'Vector' 39,252 4x9 stroke=#14231C/1.7999999523162842
+        TEXT 'Month label' 142,247 110x19 fill=#14231C Inter 700 16 lh=19.4 ls=0.0 L "October 2026"
+        FRAM 'chevron-right' 343,247 18x18
+          VECT 'Vector' 350,252 4x9 stroke=#14231C/1.7999999523162842
+      FRAM 'Weekdays' 32,276 329x19 H gap=0 pad=0,0,0,0
+        FRAM 'Day M' 32,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'M' 49,277 13x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "M"
+        FRAM 'Day T' 79,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'T' 98,277 10x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "T"
+        FRAM 'Day W' 126,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'W' 142,277 14x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "W"
+        FRAM 'Day T' 173,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'T' 192,277 10x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "T"
+        FRAM 'Day F' 220,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'F' 239,277 9x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "F"
+        FRAM 'Day S' 267,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'S' 286,277 10x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "S"
+        FRAM 'Day S' 314,276 47x19 H gap=0 pad=0,0,0,0
+          TEXT 'S' 332,277 10x17 fill=#68766E Inter 400 14.3 lh=17.3 ls=0.0 C "S"
+      FRAM 'Calendar grid' 32,305 329x155 V gap=3.75 pad=0,0,0,0
+        FRAM 'Week 1' 32,305 329x28 H gap=0 pad=0,0,0,0
+          FRAM 'Empty' 32,305 47x28 H gap=0 pad=0,0,0,0
+          FRAM 'Empty' 79,305 47x28 H gap=0 pad=0,0,0,0
+          FRAM 'Empty' 126,305 47x28 H gap=0 pad=0,0,0,0
+          FRAM 'Day 1' 173,305 47x28 H gap=0 pad=0,0,0,0
+            TEXT '1' 193,310 7x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "1"
+          FRAM 'Day 2' 220,305 47x28 H gap=0 pad=0,0,0,0
+            TEXT '2' 239,310 9x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "2"
+          FRAM 'Day 3' 267,305 47x28 H gap=0 pad=0,0,0,0
+            TEXT '3' 286,310 10x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "3"
+          FRAM 'Day 4' 314,305 47x28 H gap=0 pad=0,0,0,0
+            TEXT '4' 332,310 10x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "4"
+        FRAM 'Week 2' 32,337 329x28 H gap=0 pad=0,0,0,0
+          FRAM 'Day 5' 32,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '5' 51,342 9x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "5"
+          FRAM 'Day 6' 79,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '6' 98,342 9x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "6"
+          FRAM 'Day 7' 126,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '7' 145,342 9x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "7"
+          FRAM 'Day 8' 173,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '8' 192,342 9x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "8"
+          FRAM 'Day 9' 220,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '9' 239,342 9x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "9"
+          FRAM 'Day 10' 267,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '10' 282,342 16x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "10"
+          FRAM 'Day 11' 314,337 47x28 H gap=0 pad=0,0,0,0
+            TEXT '11' 330,342 14x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "11"
+        FRAM 'Week 3' 32,368 329x28 H gap=0 pad=0,0,0,0
+          FRAM 'Day 12' 32,368 47x28 H gap=0 pad=0,0,0,0
+            TEXT '12' 48,374 16x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "12"
+          FRAM 'Day 13' 79,368 47x28 fill=#2341DD r=8/0/0/8 H gap=0 pad=0,0,0,0
+            TEXT '13' 94,374 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "13"
+          FRAM 'Day 14' 126,368 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '14' 142,374 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "14"
+          FRAM 'Day 15' 173,368 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '15' 188,374 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "15"
+          FRAM 'Day 16' 220,368 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '16' 236,374 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "16"
+          FRAM 'Day 17' 267,368 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '17' 283,374 15x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "17"
+          FRAM 'Day 18' 314,368 47x28 fill=#2341DD r=0/8/8/0 H gap=0 pad=0,0,0,0
+            TEXT '18' 330,374 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "18"
+        FRAM 'Week 4' 32,400 329x28 H gap=0 pad=0,0,0,0
+          FRAM 'Day 19' 32,400 47x28 fill=#2341DD r=8/0/0/8 H gap=0 pad=0,0,0,0
+            TEXT '19' 48,406 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "19"
+          FRAM 'Day 20' 79,400 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '20' 94,406 18x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "20"
+          FRAM 'Day 21' 126,400 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '21' 142,406 16x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "21"
+          FRAM 'Day 22' 173,400 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '22' 188,406 18x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "22"
+          FRAM 'Day 23' 220,400 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '23' 234,406 18x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "23"
+          FRAM 'Day 24' 267,400 47x28 fill=#2341DD H gap=0 pad=0,0,0,0
+            TEXT '24' 282,406 18x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "24"
+          FRAM 'Day 25' 314,400 47x28 fill=#2341DD r=0/8/8/0 H gap=0 pad=0,0,0,0
+            TEXT '25' 328,406 18x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "25"
+        FRAM 'Week 5' 32,432 329x28 H gap=0 pad=0,0,0,0
+          FRAM 'Day 26' 32,432 47x28 fill=#2341DD r=8/0/0/8 H gap=0 pad=0,0,0,0
+            TEXT '26' 46,438 18x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "26"
+          FRAM 'Day 27' 79,432 47x28 fill=#2341DD r=0/8/8/0 H gap=0 pad=0,0,0,0
+            TEXT '27' 94,438 17x17 fill=#FFFFFF Inter 400 14.3 lh=17.3 ls=0.0 C "27"
+          FRAM 'Day 28' 126,432 47x28 H gap=0 pad=0,0,0,0
+            TEXT '28' 140,438 18x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "28"
+          FRAM 'Day 29' 173,432 47x28 H gap=0 pad=0,0,0,0
+            TEXT '29' 188,438 18x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "29"
+          FRAM 'Day 30' 220,432 47x28 H gap=0 pad=0,0,0,0
+            TEXT '30' 234,438 19x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "30"
+          FRAM 'Day 31' 267,432 47x28 H gap=0 pad=0,0,0,0
+            TEXT '31' 282,438 16x17 fill=#14231C Inter 400 14.3 lh=17.3 ls=0.0 C "31"
+          FRAM 'Empty' 314,432 47x28 H gap=0 pad=0,0,0,0
+      TEXT 'Calendar legend' 32,470 329x13 fill=#68766E Inter 400 11 lh=13.3 ls=0.0 L "Select start and end dates"
+  FRAM 'Notice' 20,507 353x66 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
+    TEXT 'Copy' 32,519 329x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "Available 13–27 Oct 2026"
+    TEXT 'Copy' 32,543 329x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "Tap available dates to block them out."
+FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Action' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
+    TEXT 'Label' 162,723 68x18 fill=#FFFFFF Inter 700 15 lh=18.2 ls=0.0 L "Continue"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 229,808 25x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

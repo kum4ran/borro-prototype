@@ -1,0 +1,130 @@
+# 4.2 James · Pick-up dates (pop-up)  (701:284)  section: 4 · Schedule and chat
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,52 319x49 V gap=2.0 pad=0,0,0,0
+    TEXT 'Title' 54,52 319x29 fill=#14231C Inter 700 22 lh=28.6 ls=0.0 L "Arrange handover"
+    TEXT 'Subtitle' 54,82 319x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "Thomas · Garment Steamer"
+TEXT 'Tagline' 20,116 353x19 fill=#68766E Inter 400 14 lh=18.9 ls=0.0 L "A convenient place. A time that works for both."
+FRAM 'Date selection section' 16,142 361x286 fill=#FFFFFF stroke=#E5E8E3/1.0 r=18 V gap=12.0 pad=16.0,16.0,16.0,16.0
+  TEXT 'Pickup section label' 32,158 57x18 fill=#162C32 Inter 700 15 lh=18.2 ls=0.0 L "Pick-up"
+  FRAM 'Pick-up row' 32,188 329x66 fill=#FFFFFF stroke=#D1D6DB/1.0 r=14 H gap=12.0 pad=0,14.0,0,14.0
+    FRAM 'calendar' 46,211 20x20
+      VECT 'Vector' 48,213 15x17 stroke=#3D49FF/2.0
+    FRAM 'Pick-up label group' 78,212 241x19 V gap=1.0 pad=0,0,0,0
+      TEXT 'Pick-up value' 78,212 158x19 fill=#162C32 Inter 500 16 lh=19.4 ls=0.0 L "Select date and time"
+    FRAM 'chevron-down' 331,213 16x16
+      VECT 'Vector' 335,219 8x4 stroke=#708187/2.0
+  TEXT 'Return section label' 32,266 50x18 fill=#162C32 Inter 700 15 lh=18.2 ls=0.0 L "Return"
+  FRAM 'Return row' 32,296 329x66 fill=#EEEFEB r=14 H gap=12.0 pad=0,14.0,0,14.0
+    FRAM 'calendar' 46,319 20x20
+      VECT 'Vector' 48,321 15x17 stroke=#3D49FF/2.0
+    FRAM 'Return label group' 78,320 241x19 V gap=1.0 pad=0,0,0,0
+      TEXT 'Return value' 78,320 158x19 fill=#708187 Inter 500 16 lh=19.4 ls=0.0 L "Select date and time"
+    FRAM 'chevron-down' 331,321 16x16
+      VECT 'Vector' 335,327 8x4 stroke=#708187/2.0
+  TEXT 'Helper text' 32,374 329x38 fill=#708187 Inter 400 14 lh=18.9 ls=0.0 L "Choose pick-up first. Return times open up after\nit."
+FRAM 'Meeting address' 16,444 361x73 V gap=7.0 pad=0,0,0,0
+  TEXT 'Address label' 16,444 361x18 fill=#162C32 Inter 700 15 lh=18.0 ls=0.0 L "Meeting address"
+  FRAM 'Address field' 16,469 361x48 fill=#FFFFFF stroke=#DADDDC/1.0 r=14 H gap=14.0 pad=0,16.0,0,16.0
+    FRAM 'map-pin' 32,483 20x20
+      VECT 'Vector' 35,485 13x17 stroke=#162C32/2.0
+    TEXT 'Selected address' 66,484 79x18 fill=#708187 Inter 500 15 lh=18.2 ls=0.0 L "Not set yet"
+FRAM 'Pick on map button' 16,529 361x44 fill=#FFFFFF stroke=#3D49FF/1.7000000476837158 r=24 H gap=0 pad=0,0,0,0
+  TEXT 'Button label' 152,542 89x18 fill=#3D49FF Inter 700 15 lh=18.2 ls=0.0 L "Pick on map"
+TEXT 'Footer info' 16,700 361x15 fill=#708187 Inter 400 11 lh=14.9 ls=0.0 L "Choose a meeting address and time to continue."
+FRAM 'Send proposal button' 16,720 361x48 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0
+  TEXT 'Button label' 140,734 113x19 fill=#4A524F Inter 700 16 lh=19.4 ls=0.0 L "Send Proposal"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8
+RECT 'Scrim' 0,0 393x852 fill=#12201A op=0.50
+FRAM 'Sheet' 0,212 393x640 fill=#FFFFFF r=24/24/0/0
+  RECT 'Grabber' 178,226 36x4 fill=#B9BCBF r=2
+  TEXT 'Title' 20,238 136x24 fill=#12201A Inter 700 20 lh=24.0 ls=0.0 L "Pick-up dates"
+  TEXT 'Instructions' 20,266 340x18 fill=#5E6561 Inter 400 13 lh=18.0 ls=0.0 L "Tap the day you can pick it up."
+  VECT 'Chevron left' 26,312 6x12 stroke=#23272F/2.4000000953674316
+  VECT 'Chevron right' 361,312 6x12 stroke=#23272F/2.4000000953674316
+  TEXT 'Month' 0,315 393x22 fill=#23272F Inter 700 18.5 lh=22.0 ls=0.0 C "October 2026"
+  TEXT 'Weekday M' 21,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "M"
+  TEXT 'Weekday T' 66,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "T"
+  TEXT 'Weekday W' 112,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "W"
+  TEXT 'Weekday T' 157,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "T"
+  TEXT 'Weekday F' 203,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "F"
+  TEXT 'Weekday S' 248,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "S"
+  TEXT 'Weekday S' 294,347 30x22 fill=#8B8E95 Inter 700 17 lh=22.0 ls=0.0 C "S"
+  TEXT 'Day 1' 157,385 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "1"
+  TEXT 'Day 2' 203,385 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "2"
+  TEXT 'Day 3' 248,385 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "3"
+  TEXT 'Day 4' 293,385 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "4"
+  TEXT 'Day 5' 21,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "5"
+  TEXT 'Day 6' 66,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "6"
+  TEXT 'Day 7' 112,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "7"
+  RECT 'Borrower available 8' 152,412 41x33 fill=#FBF8E4 r=11
+  TEXT 'Day 8' 157,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "8"
+  RECT 'Borrower available 9' 197,412 41x33 fill=#FBF8E4 r=11
+  TEXT 'Day 9' 203,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "9"
+  TEXT 'Day 10' 244,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "10"
+  TEXT 'Day 11' 289,418 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "11"
+  TEXT 'Day 12' 16,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "12"
+  TEXT 'Day 13' 62,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "13"
+  TEXT 'Day 14' 107,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "14"
+  RECT 'Borrower available 15' 147,446 41x33 fill=#FBF8E4 r=11
+  TEXT 'Day 15' 153,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "15"
+  RECT 'Borrower available 16' 193,446 41x33 fill=#FBF8E4 r=11
+  TEXT 'Day 16' 198,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "16"
+  TEXT 'Day 17' 243,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "17"
+  RECT 'Common availability 18' 289,447 31x31 stroke=#23272F/1.7000000476837158 r=8
+  TEXT 'Day 18' 289,451 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "18"
+  RECT 'Common availability 19' 17,480 31x31 stroke=#23272F/1.7000000476837158 r=8
+  TEXT 'Day 19' 18,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "19"
+  TEXT 'Day 20' 62,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "20"
+  RECT 'Lender available 21' 101,479 41x33 fill=#FCEADC r=11
+  TEXT 'Day 21' 107,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "21"
+  TEXT 'Day 22' 153,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "22"
+  TEXT 'Day 23' 198,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "23"
+  TEXT 'Day 24' 243,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "24"
+  TEXT 'Day 25' 289,484 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "25"
+  TEXT 'Day 26' 16,518 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "26"
+  TEXT 'Day 27' 62,518 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "27"
+  TEXT 'Day 28' 107,518 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "28"
+  TEXT 'Day 29' 153,518 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "29"
+  TEXT 'Day 30' 198,518 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "30"
+  TEXT 'Day 31' 243,518 30x22 fill=#23272F Inter 400 18.5 lh=22.0 ls=0.0 C "31"
+  RECT 'Common key' 27,557 10x10 stroke=#23272F/1.7000000476837158 r=2.5
+  TEXT 'Common label' 42,555 107x16 fill=#23272F Inter 400 11.3 lh=16.0 ls=0.0 L "Common availability"
+  RECT 'Borrower key' 155,557 10x10 fill=#FBEFCC r=2
+  TEXT 'Borrower label' 168,555 99x16 fill=#23272F Inter 400 11.3 lh=16.0 ls=0.0 L "Borrower available"
+  RECT 'Lender key' 272,557 10x10 fill=#FCE3D0 r=2
+  TEXT 'Lender label' 285,555 88x16 fill=#23272F Inter 400 11.3 lh=16.0 ls=0.0 L "Lender available"
+  RECT 'Footer divider' 0,722 393x1 fill=#E4E4DF
+  TEXT 'Selected summary' 20,744 68x16 fill=#12201A Inter 600 13 lh=16.0 ls=0.0 L "Sun 18 Oct"
+  TEXT 'Link' 337,741 36x17 fill=#2341DD Inter 600 14 lh=16.9 ls=0.0 L "Clear"
+  RECT 'Primary button' 20,780 353x52 fill=#2341DD r=26 [tap]
+  TEXT 'Button label' 20,796 353x20 fill=#FFFFFF Inter 700 16 lh=20.0 ls=0.0 C "Next · set times"
+  RECT 'Close sheet (tap handle)' 136,216 120x32 fill=#FFFFFF@0.00 [tap]

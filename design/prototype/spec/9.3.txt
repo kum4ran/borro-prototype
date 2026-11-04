@@ -1,0 +1,103 @@
+# 9.3 Thomas · My Lending · Past loans  (708:414)  section: 9 · My Lending and List an Item
+FRAM 'Lending header' 0,0 393x108 V gap=0 pad=0,0,0,0
+  FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+    TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+    FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+      FRAM 'Cellular signal' 299,14 17x16
+        VECT 'Signal' 299,18 16x10 fill=#14231C
+      FRAM 'Wi-Fi' 321,14 17x16
+        VECT 'Signal' 322,17 15x10 fill=#14231C
+      FRAM 'Battery' 343,14 25x16
+        VECT 'Charge' 343,17 24x10 fill=#14231C
+  FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+    RECT 'Borro logo' 20,59 72x34 fill=img:f9069e3e60:FIT
+    TEXT 'Page heading' 104,59 235x34 fill=#14231C Inter 700 25 lh=33.8 ls=0.0 L "My Lending"
+    FRAM 'Wishlist' 351,65 22x22
+      VECT 'Heart' 353,69 18x16 stroke=#2341DD/1.7999999523162842
+FRAM 'History content' 0,108 393x666 V gap=10.0 pad=8.0,20.0,12.0,20.0
+  FRAM 'List an item' 20,116 353x48 fill=#2341DD r=99 H gap=0 pad=0,0,0,0 [tap]
+    TEXT 'Action label' 147,131 99x18 fill=#FFFFFF Inter 700 15 lh=18.2 ls=0.0 L "+ List an Item"
+  FRAM 'Card' 20,174 353x47 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Requests shortcut' 32,186 329x23 H gap=8.0 pad=0,0,0,0
+      FRAM 'inbox' 32,186 22x22
+        VECT 'Vector' 34,190 18x15 stroke=#2341DD/1.7999999523162842
+      TEXT 'Copy' 62,186 237x22 fill=#14231C Inter 700 16 lh=21.6 ls=0.0 L "Borrow Requests"
+      FRAM 'Status' 307,186 28x23 fill=#FFF3D9 r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+        TEXT 'Status label' 317,191 8x13 fill=#92600A Inter 700 11 lh=13.3 ls=0.0 L "3"
+      FRAM 'chevron-right' 343,186 18x18
+        VECT 'Vector' 350,190 4x9 stroke=#14231C/1.7999999523162842
+  FRAM 'Listing toolbar' 20,231 353x20 H gap=0 pad=0,0,0,0
+    FRAM 'Listing tabs' 20,232 215x18 H gap=18.0 pad=0,0,0,0 [tap]
+      TEXT 'Active tab' 20,232 48x18 fill=#68766E Inter 700 15 lh=18.2 ls=0.0 L "Active"
+      TEXT 'Selected history tab' 86,232 76x18 fill=#2341DD Inter 700 15 lh=18.2 ls=0.0 L "Past loans"
+      TEXT 'Paused tab' 180,232 55x18 fill=#68766E Inter 700 15 lh=18.2 ls=0.0 L "Paused"
+    FRAM 'Sort and filter' 354,232 19x19 H gap=6.0 pad=0,0,0,0 [tap]
+      FRAM 'sliders-horizontal' 354,232 19x19
+        VECT 'Vector' 359,234 14x14 stroke=#14231C/1.7999999523162842
+  FRAM 'Horizontal timeline' 20,261 353x30 H gap=7.0 pad=0,0,0,0
+    FRAM 'Time period' 20,261 83x30 fill=#EBEEFC stroke=#2341DD/0.699999988079071 r=99 H gap=0 pad=0,0,0,0
+      TEXT 'Period label' 41,270 41x13 fill=#2341DD Inter 700 11 lh=13.3 ls=0.0 L "All time"
+    FRAM 'Time period' 110,261 83x30 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=99 H gap=0 pad=0,0,0,0
+      TEXT 'Period label' 126,270 50x13 fill=#68766E Inter 500 11 lh=13.3 ls=0.0 L "Oct 2026"
+    FRAM 'Time period' 200,261 83x30 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=99 H gap=0 pad=0,0,0,0
+      TEXT 'Period label' 216,270 51x13 fill=#68766E Inter 500 11 lh=13.3 ls=0.0 L "Sep 2026"
+    FRAM 'Time period' 290,261 83x30 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=99 H gap=0 pad=0,0,0,0
+      TEXT 'Period label' 306,270 52x13 fill=#68766E Inter 500 11 lh=13.3 ls=0.0 L "Aug 2026"
+  FRAM 'Lending transaction' 20,301 353x108 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 H gap=12.0 pad=11.0,11.0,11.0,11.0 shadow=#14231C@0.03 0,3 r12
+    RECT 'Item photo' 31,315 74x80 fill=img:5da35c97d1:FILL r=10
+    FRAM 'Transaction details' 117,322 245x67 V gap=3.0 pad=0,0,0,0
+      FRAM 'Listing name' 117,322 245x19 H gap=5.0 pad=0,0,0,0
+        TEXT 'Item name' 117,322 222x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "Water Bottle"
+        FRAM 'Manage listing' 344,322 18x18
+          VECT 'More' 347,330 12x2 stroke=#14231C/1.7999999523162842
+      FRAM 'Counterparty' 117,344 245x19 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 117,344 19x19 fill=img:4cdb833329:FILL
+        TEXT 'Borrower' 141,346 221x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "Lent to Thomas · 14–21 Oct"
+      FRAM 'Status and timestamp' 117,366 245x23 H gap=6.0 pad=0,0,0,0
+        FRAM 'Status' 117,366 70x23 fill=#E8F4EC r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+          TEXT 'Status label' 127,370 50x13 fill=#1E8E5A Inter 700 11 lh=13.3 ls=0.0 L "Returned"
+  FRAM 'Lending transaction' 20,419 353x108 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 H gap=12.0 pad=11.0,11.0,11.0,11.0 shadow=#14231C@0.03 0,3 r12
+    RECT 'Item photo' 31,433 74x80 fill=img:c8ecf538e8:FILL r=10
+    FRAM 'Transaction details' 117,440 245x67 V gap=3.0 pad=0,0,0,0
+      FRAM 'Listing name' 117,440 245x19 H gap=5.0 pad=0,0,0,0
+        TEXT 'Item name' 117,440 222x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "Speaker"
+        FRAM 'Manage listing' 344,440 18x18
+          VECT 'More' 347,448 12x2 stroke=#14231C/1.7999999523162842
+      FRAM 'Counterparty' 117,462 245x19 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 117,462 19x19 fill=img:4cdb833329:FILL
+        TEXT 'Borrower' 141,464 221x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "Lent to Maria · 12–19 Oct"
+      FRAM 'Status and timestamp' 117,484 245x23 H gap=6.0 pad=0,0,0,0
+        FRAM 'Status' 117,484 70x23 fill=#E8F4EC r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+          TEXT 'Status label' 127,488 50x13 fill=#1E8E5A Inter 700 11 lh=13.3 ls=0.0 L "Returned"
+  FRAM 'Lending transaction' 20,537 353x108 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 H gap=12.0 pad=11.0,11.0,11.0,11.0 shadow=#14231C@0.03 0,3 r12
+    RECT 'Item photo' 31,551 74x80 fill=img:3fe46fd5e9:FILL r=10
+    FRAM 'Transaction details' 117,558 245x67 V gap=3.0 pad=0,0,0,0
+      FRAM 'Listing name' 117,558 245x19 H gap=5.0 pad=0,0,0,0
+        TEXT 'Item name' 117,558 222x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "Camera"
+        FRAM 'Manage listing' 344,558 18x18
+          VECT 'More' 347,566 12x2 stroke=#14231C/1.7999999523162842
+      FRAM 'Counterparty' 117,580 245x19 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 117,580 19x19 fill=img:17b90d6ec1:FILL
+        TEXT 'Borrower' 141,582 221x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "Request from John · Cancelled 17 Oct"
+      FRAM 'Status and timestamp' 117,602 245x23 H gap=6.0 pad=0,0,0,0
+        FRAM 'Status' 117,602 75x23 fill=#FDECE9 r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+          TEXT 'Status label' 127,606 55x13 fill=#D64545 Inter 700 11 lh=13.3 ls=0.0 L "Cancelled"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'Destination icon' 51,784 21x21
+        VECT 'Symbol' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'Destination icon' 141,784 21x21
+        VECT 'Symbol' 143,787 18x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'Destination icon' 231,784 21x21
+        VECT 'Symbol' 233,786 17x18 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 229,808 25x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'Destination icon' 321,784 21x21
+        VECT 'Symbol' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

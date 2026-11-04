@@ -1,0 +1,51 @@
+# 5.2d James · Payment successful  (902:385)  section: 5 · Lending agreement
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Payment successful"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "BR-20481 · 18–19 Oct 2026"
+FRAM 'Content viewport' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Success heading' 20,116 353x226 V gap=14.0 pad=28.0,0,28.0,0
+    FRAM 'Success seal' 160,144 74x74 fill=#E8F4EC r=99 H gap=0 pad=0,0,0,0
+      VECT 'Symbol' 178,163 36x36 stroke=#2341DD/5.0
+    TEXT 'Copy' 20,232 353x32 fill=#14231C Inter 700 24 lh=32.4 ls=0.0 C "Deposit paid"
+    TEXT 'Copy' 20,278 353x36 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 C "Your $10.00 deposit is held securely by Borro until the steamer is returned."
+  FRAM 'Card' 20,354 353x220 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    TEXT 'Copy' 32,366 329x24 fill=#14231C Inter 700 18 lh=24.3 ls=0.0 L "Payment receipt"
+    TEXT 'Detail row' 32,400 329x24 fill=#68766E Inter 400 13 lh=19.5 ls=0.0 L "Item  ·  Garment Steamer"
+    TEXT 'Detail row' 32,434 329x24 fill=#68766E Inter 400 13 lh=19.5 ls=0.0 L "Amount  ·  $10.00 SGD"
+    TEXT 'Detail row' 32,468 329x24 fill=#68766E Inter 400 13 lh=19.5 ls=0.0 L "Method  ·  PayNow"
+    TEXT 'Detail row' 32,502 329x24 fill=#68766E Inter 400 13 lh=19.5 ls=0.0 L "Reference  ·  #BR-20481"
+    TEXT 'Copy' 32,536 329x19 fill=#14231C Inter 400 14 lh=18.9 ls=0.0 L "Refunded within 1 working day after return"
+FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Continue' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+    TEXT 'Label' 165,724 63x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Continue"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

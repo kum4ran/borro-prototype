@@ -1,0 +1,22 @@
+# 3.1 Thomas · Push · new request  (691:5139)  section: 3 · Lender decides (Thomas)
+FRAM 'lock-keyhole' 18,75 24x24
+  VECT 'Vector' 21,77 18x20 stroke=#FFFFFF/1.7999999523162842
+TEXT 'Copy' 18,117 357x26 fill=#FFFFFF Inter 400 19 lh=25.6 ls=0.0 C "Sunday, 18 October"
+TEXT 'Copy' 18,161 357x103 fill=#FFFFFF Inter 700 76 lh=102.6 ls=0.0 C "10:00"
+FRAM 'iOS notification' 18,282 357x196 fill=#FFFFFF@0.93 r=22 V gap=12.0 pad=16.0,16.0,16.0,16.0
+  FRAM 'Notification identity' 34,298 325x28 H gap=10.0 pad=0,0,0,0
+    FRAM 'Borro app icon' 34,298 28x28 fill=img:f9069e3e60:STRETCH H gap=0 pad=0,0,0,0
+    TEXT 'Copy' 72,298 255x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "BORRO"
+    TEXT 'Recency' 337,298 22x13 fill=#68766E Inter 400 11 lh=13.3 ls=0.0 L "now"
+  TEXT 'Copy' 34,338 325x44 fill=#14231C Inter 700 16 lh=21.6 ls=0.0 L "James wants to borrow your Garment Steamer"
+  TEXT 'Copy' 34,394 325x38 fill=#14231C Inter 400 14 lh=18.9 ls=0.0 L "Borrow Now (urgent) · 18–19 Oct. Tap to review his profile and respond."
+  TEXT 'Copy' 34,444 325x18 fill=#2341DD Inter 700 13 lh=17.6 ls=0.0 L "James · 72/100 credibility · ★ 3.5 (45 reviews)"
+TEXT 'Copy' 18,496 357x16 fill=#FFFFFF Inter 400 12 lh=16.2 ls=0.0 C "Tap to respond"
+RECT 'Home indicator' 132,838 130x4 fill=#FFFFFF r=9
+FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+  FRAM 'ios-signal' 299,14 17x16
+    VECT 'Vector' 299,18 16x10 fill=#FFFFFF
+  FRAM 'ios-wifi-signal' 321,14 17x16
+    VECT 'Vector' 322,17 15x10 fill=#FFFFFF
+  FRAM 'ios-battery-full' 343,14 25x16
+    VECT 'Vector' 343,17 24x10 fill=#FFFFFF

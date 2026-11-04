@@ -1,0 +1,72 @@
+# 8.8 Both · Timeline · deposit refunded  (691:6764)  section: 8 · Reviews and refund
+FRAM 'Status bar' 0,0 393x44
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Timeline"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Garment Steamer · BR-20481"
+FRAM 'Content viewport' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Timeline body' 20,116 353x453 V gap=10.0 pad=0,0,0,0
+    FRAM 'Timeline progress' 20,116 353x31 H gap=6.0 pad=0,0,10.0,0
+      FRAM 'Progress milestone' 20,116 84x21 V gap=5.0 pad=0,0,0,0
+        FRAM 'Milestone track' 20,116 84x4 fill=#2341DD r=5 H gap=0 pad=0,0,0,0
+        TEXT 'Milestone label' 44,125 36x12 fill=#14231C Inter 600 10 lh=12.1 ls=0.0 L "Agreed"
+      FRAM 'Progress milestone' 110,116 84x21 V gap=5.0 pad=0,0,0,0
+        FRAM 'Milestone track' 110,116 84x4 fill=#2341DD r=5 H gap=0 pad=0,0,0,0
+        TEXT 'Milestone label' 131,125 42x12 fill=#14231C Inter 600 10 lh=12.1 ls=0.0 L "Meet-up"
+      FRAM 'Progress milestone' 200,116 84x21 V gap=5.0 pad=0,0,0,0
+        FRAM 'Milestone track' 200,116 84x4 fill=#2341DD r=5 H gap=0 pad=0,0,0,0
+        TEXT 'Milestone label' 222,125 39x12 fill=#14231C Inter 600 10 lh=12.1 ls=0.0 L "Lending"
+      FRAM 'Progress milestone' 289,116 84x21 V gap=5.0 pad=0,0,0,0
+        FRAM 'Milestone track' 289,116 84x4 fill=#2341DD r=5 H gap=0 pad=0,0,0,0
+        TEXT 'Milestone label' 315,125 33x12 fill=#14231C Inter 700 10 lh=12.1 ls=0.0 L "Return"
+    FRAM 'Card' 20,157 353x88 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=10.0,10.0,10.0,10.0 shadow=#14231C@0.03 0,3 r12
+      FRAM 'Borrowing item' 30,167 333x68 H gap=12.0 pad=0,0,0,0
+        RECT 'Item photo' 30,167 78x68 fill=img:db01c9bada:FILL r=10
+        TEXT 'Item and status' 120,167 243x50 fill=#14231C Inter 700 18 lh=25.2 ls=0.0 L "Garment Steamer\nCompleted"
+    FRAM 'Member' 20,255 353x38 H gap=10.0 pad=0,0,0,0
+      ELLI 'Avatar' 20,255 38x38 fill=img:2fbf534e76:FILL
+      TEXT 'Member details' 68,264 230x21 fill=#14231C Inter 700 15 lh=21.0 ls=0.0 L "Thomas ✓ ★ 5.0 · 10 reviews"
+      TEXT 'Profile action' 308,268 65x13 fill=#2341DD Inter 700 11 lh=13.3 ls=0.0 L "View profile"
+    FRAM 'Card' 20,303 353x96 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+      TEXT 'Handover details' 32,315 329x72 fill=#14231C Inter 400 14 lh=23.8 ls=0.0 L "Pickup  ·  18 Oct · 7:30 pm\nReturn  ·  19 Oct · 10:00 am\n⌖ Block A Security Desk"
+    FRAM 'Agreement' 20,409 353x48 H gap=8.0 pad=0,0,0,0
+      FRAM 'View Agreement' 20,409 353x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 139,424 115x17 fill=#2341DD Inter 700 14 lh=16.9 ls=0.0 L "View Agreement"
+    FRAM 'Action' 20,467 353x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0
+      TEXT 'Label' 68,482 257x17 fill=#2341DD Inter 700 14 lh=16.9 ls=0.0 L "Before / After · View condition photos"
+    FRAM 'Notice' 20,525 353x44 fill=#E8F4EC r=12 V gap=0 pad=12.0,12.0,12.0,12.0
+      TEXT 'Copy' 32,538 329x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "Deposit Status · Refunded"
+FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Timeline actions' 20,708 353x48 H gap=10.0 pad=0,0,0,0
+    FRAM 'Action' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+      TEXT 'Label' 122,724 150x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Back to My Borrowing"
+    FRAM 'Assistant target' 253,708 120x48 H gap=0 pad=0,0,0,0
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,785 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,785 21x21
+        VECT 'Vector' 53,787 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,809 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,785 21x21
+        VECT 'Vector' 143,788 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,809 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,785 21x21
+        VECT 'Vector' 233,787 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,809 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,785 21x21
+        VECT 'Vector' 325,788 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,809 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,828 130x4 fill=#14231C r=8

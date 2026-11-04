@@ -1,0 +1,62 @@
+# 1.5 James · Results · steamer within 1 km  (691:4657)  section: 1 · Discover (James)
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  RECT 'Borro logo' 20,59 72x34 fill=img:f9069e3e60:FIT
+  FRAM 'heart' 351,65 22x22
+    VECT 'Vector' 353,69 18x16 stroke=#2341DD/1.7999999523162842
+FRAM 'Scrollable content' 0,108 393x666 V gap=12.0 pad=8.0,20.0,10.0,20.0
+  FRAM 'Search' 20,116 353x46 H gap=8.0 pad=0,0,0,0
+    FRAM 'Search field' 20,116 267x46 fill=#FFFFFF stroke=#E2E8E1/1.0 r=99 H gap=8.0 pad=12.0,12.0,12.0,12.0
+      FRAM 'search' 32,128 18x18
+        VECT 'Vector' 34,130 14x14 stroke=#14231C/1.7999999523162842
+      TEXT 'Copy' 58,128 217x19 fill=#14231C Inter 400 14 lh=18.9 ls=0.0 L "Garment steamer"
+    FRAM 'Search button' 295,116 78x46 fill=#2341DD r=99 H gap=0 pad=0,0,0,0
+      TEXT 'Search label' 312,131 45x16 fill=#FFFFFF Inter 700 13 lh=15.7 ls=0.0 L "Search"
+  FRAM 'Discovery controls' 20,174 353x28 H gap=10.0 pad=0,0,0,0
+    FRAM 'Urgency toggle' 20,174 99x28 fill=#2563EB r=99 H gap=0 pad=8.0,8.0,8.0,8.0
+      TEXT 'Toggle label' 28,182 83x12 fill=#FFFFFF Inter 700 10 lh=12.1 ls=0.0 L "⚡ Need it Now ●"
+    FRAM 'sliders-horizontal' 345,179 19x19
+      VECT 'Vector' 350,181 14x14 stroke=#14231C/1.7999999523162842
+  FRAM 'Nearby heading' 20,214 353x22 H gap=0 pad=0,0,0,0
+    TEXT 'Section title' 20,214 226x22 fill=#000000 Inter 700 18 lh=21.8 ls=0.0 L "Steamers near Bencoolen"
+    TEXT '1 result' 331,218 42x15 fill=#68766E Inter 500 12 lh=14.5 ls=0.0 L "1 result"
+  FRAM 'Item grid row' 20,248 353x232 H gap=12.0 pad=0,0,0,0
+    FRAM 'Marketplace item' 20,248 353x232 fill=#FFFFFF r=12 V gap=7.0 pad=9.0,9.0,9.0,9.0 [tap]
+      FRAM 'Lender' 29,257 335x22 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 29,257 22x22 fill=img:7f80fa37b5:FILL
+        TEXT 'Lender name' 56,262 56x13 fill=#000000 Inter 600 11 lh=13.3 ls=0.0 L "Thomas ✓"
+      RECT 'Item photo' 29,286 335x98 fill=img:23d141208d:FILL r=10
+      FRAM 'Item heading' 29,391 335x16 H gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 29,391 317x16 fill=#14231C Inter 700 12 lh=16.2 ls=0.0 L "Garment Steamer"
+        FRAM 'heart' 349,391 15x15
+          VECT 'Vector' 350,393 13x11 stroke=#68766E/1.7999999523162842
+      TEXT 'Copy' 29,414 335x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "★ 5.0 (10 reviews)"
+      TEXT 'Copy' 29,436 335x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "Bencoolen St"
+      TEXT 'Copy' 29,457 335x14 fill=#2563EB Inter 700 10 lh=13.5 ls=0.0 L "⚡ 120 m | available now"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

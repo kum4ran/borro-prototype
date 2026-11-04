@@ -1,0 +1,75 @@
+# 10.3 James · Damage tracker · submitted  (708:1942)  section: 10 · Damage and cancellation
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22 [tap]
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Damage report status"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Garment Steamer · Thomas"
+FRAM 'Scrollable content' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Notice' 20,116 353x84 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
+    TEXT 'Copy' 32,128 329x19 fill=#000000 Inter 700 14 lh=18.9 ls=0.0 L "Your report is being reviewed"
+    TEXT 'Copy' 32,152 329x36 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "We’ve shared your evidence with Thomas. We’ll keep both of you updated."
+  FRAM 'Card' 20,212 353x104 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Report item' 32,224 329x80 H gap=12.0 pad=0,0,0,0
+      RECT 'Condition photo' 32,224 80x80 fill=img:7ff1a7e325:FILL r=10
+      FRAM 'Report summary' 124,224 237x75 V gap=7.0 pad=0,0,0,0
+        TEXT 'Copy' 124,224 237x22 fill=#14231C Inter 700 16 lh=21.6 ls=0.0 L "Dent on steamer body"
+        TEXT 'Copy' 124,253 237x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "Reported 19 Oct 2026 · BR-20481"
+        FRAM 'Status' 124,276 101x23 fill=#E8F4EC r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+          TEXT 'Status label' 134,281 81x13 fill=#1E8E5A Inter 700 11 lh=13.3 ls=0.0 L "Left side · Dent"
+  FRAM 'Card' 20,328 353x262 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Tracker checkpoint' 32,340 329x52 H gap=14.0 pad=0,0,0,0
+      FRAM 'Checkpoint symbol' 32,351 30x30 fill=#2341DD r=99 H gap=0 pad=0,0,0,0
+        TEXT 'Step number' 44,358 7x16 fill=#FFFFFF Inter 400 13 lh=15.7 ls=0.0 L "1"
+      FRAM 'Checkpoint copy' 76,346 285x39 V gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 76,346 285x20 fill=#14231C Inter 700 15 lh=20.2 ls=0.0 L "Report submitted"
+        TEXT 'Copy' 76,370 285x16 fill=#2341DD Inter 400 12 lh=16.2 ls=0.0 L "In progress · We’re on it"
+    FRAM 'Tracker checkpoint' 32,402 329x52 H gap=14.0 pad=0,0,0,0 [tap]
+      FRAM 'Checkpoint symbol' 32,413 30x30 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0
+        TEXT 'Step number' 43,420 8x16 fill=#68766E Inter 400 13 lh=15.7 ls=0.0 L "2"
+      FRAM 'Checkpoint copy' 76,418 285x20 V gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 76,418 285x20 fill=#68766E Inter 700 15 lh=20.2 ls=0.0 L "Evaluating damage"
+    FRAM 'Tracker checkpoint' 32,464 329x52 H gap=14.0 pad=0,0,0,0
+      FRAM 'Checkpoint symbol' 32,475 30x30 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0
+        TEXT 'Step number' 42,482 9x16 fill=#68766E Inter 400 13 lh=15.7 ls=0.0 L "3"
+      FRAM 'Checkpoint copy' 76,480 285x20 V gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 76,480 285x20 fill=#68766E Inter 700 15 lh=20.2 ls=0.0 L "Verifying information"
+    FRAM 'Tracker checkpoint' 32,526 329x52 H gap=14.0 pad=0,0,0,0
+      FRAM 'Checkpoint symbol' 32,537 30x30 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0
+        TEXT 'Step number' 42,544 9x16 fill=#68766E Inter 400 13 lh=15.7 ls=0.0 L "4"
+      FRAM 'Checkpoint copy' 76,542 285x20 V gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 76,542 285x20 fill=#68766E Inter 700 15 lh=20.2 ls=0.0 L "Outcome"
+  FRAM 'Notice' 20,602 353x84 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
+    TEXT 'Copy' 32,614 329x19 fill=#000000 Inter 700 14 lh=18.9 ls=0.0 L "Next update expected by 21 Oct"
+    TEXT 'Copy' 32,638 329x36 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "You can continue chatting with Thomas while we review the records."
+FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Action' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
+    TEXT 'Label' 130,723 134x18 fill=#FFFFFF Inter 700 15 lh=18.2 ls=0.0 L "Chat with Thomas"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

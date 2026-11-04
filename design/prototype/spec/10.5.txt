@@ -1,0 +1,71 @@
+# 10.5 James · Damage tracker · verifying  (708:2089)  section: 10 · Damage and cancellation
+GROU 'Group 7' 0,0 393x852
+  FRAM 'Status bar' 0,0 393x44 H gap=5.0 pad=0,25.0,0,25.0
+    TEXT 'Time' 25,14 274x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+    FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+      FRAM 'ios-signal' 299,14 17x16
+        VECT 'Device status' 299,18 16x10 fill=#14231C
+      FRAM 'ios-wifi-signal' 321,14 17x16
+        VECT 'Vector' 322,17 15x10 fill=#14231C
+      FRAM 'ios-battery-full' 343,14 25x16
+        VECT 'Vector' 343,17 24x10 fill=#14231C
+  FRAM 'App bar' 0,44 393x64 H gap=0 pad=0,20.0,0,20.0
+    FRAM 'Back' 20,54 34x44 H gap=0 pad=0,0,0,0 [tap]
+      VECT 'Back symbol' 20,69 8x14 stroke=#14231C/1.7999999523162842
+    TEXT 'Page heading' 54,50 319x52 fill=#14231C Inter 700 21 lh=26.2 ls=0.0 L "Damage report\nGarment Steamer · BR-20481"
+  FRAM 'Content viewport' 0,108 393x598 V gap=12.0 pad=8.0,20.0,18.0,20.0
+    FRAM 'Notice' 20,116 353x84 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
+      TEXT 'Copy' 32,128 329x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "Verifying information"
+      TEXT 'Copy' 32,152 329x36 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "We are checking the handover records and repair information with both members."
+    FRAM 'Card' 20,212 353x327 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+      TEXT 'Copy' 32,224 329x23 fill=#14231C Inter 700 17 lh=23.0 ls=0.0 L "Your report’s progress"
+      FRAM 'Damage checkpoint' 32,257 329x60 H gap=14.0 pad=0,0,0,0
+        FRAM 'Checkpoint marker' 32,269 36x36 fill=#E8F4EC r=99 V gap=0 pad=0,0,0,0
+          VECT 'Symbol' 40,277 20x20 stroke=#2341DD/3.0
+        FRAM 'Checkpoint detail' 82,266 279x41 V gap=5.0 pad=0,0,0,0
+          TEXT 'Copy' 82,266 279x20 fill=#14231C Inter 700 15 lh=20.2 ls=0.0 L "Report submitted"
+          TEXT 'Copy' 82,292 279x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "Complete"
+      FRAM 'Damage checkpoint' 32,327 329x60 H gap=14.0 pad=0,0,0,0
+        FRAM 'Checkpoint marker' 32,339 36x36 fill=#E8F4EC r=99 V gap=0 pad=0,0,0,0
+          VECT 'Symbol' 40,347 20x20 stroke=#2341DD/3.0
+        FRAM 'Checkpoint detail' 82,336 279x41 V gap=5.0 pad=0,0,0,0
+          TEXT 'Copy' 82,336 279x20 fill=#14231C Inter 700 15 lh=20.2 ls=0.0 L "Evaluating damage"
+          TEXT 'Copy' 82,362 279x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "Complete"
+      FRAM 'Damage checkpoint' 32,397 329x60 H gap=14.0 pad=0,0,0,0
+        FRAM 'Checkpoint marker' 32,409 36x36 fill=#2341DD r=99 V gap=0 pad=0,0,0,0
+          TEXT 'Step' 45,418 10x18 fill=#FFFFFF Inter 700 15 lh=18.2 ls=0.0 L "3"
+        FRAM 'Checkpoint detail' 82,406 279x41 V gap=5.0 pad=0,0,0,0
+          TEXT 'Copy' 82,406 279x20 fill=#14231C Inter 700 15 lh=20.2 ls=0.0 L "Verifying information"
+          TEXT 'Copy' 82,432 279x16 fill=#2341DD Inter 400 12 lh=16.2 ls=0.0 L "In progress · Current checkpoint"
+      FRAM 'Damage checkpoint' 32,467 329x60 H gap=14.0 pad=0,0,0,0 [tap]
+        FRAM 'Checkpoint marker' 32,479 36x36 fill=#EDF0EC r=99 V gap=0 pad=0,0,0,0
+          TEXT 'Step' 44,488 11x18 fill=#68766E Inter 700 15 lh=18.2 ls=0.0 L "4"
+        FRAM 'Checkpoint detail' 82,476 279x41 V gap=5.0 pad=0,0,0,0
+          TEXT 'Copy' 82,476 279x20 fill=#68766E Inter 700 15 lh=20.2 ls=0.0 L "Outcome"
+          TEXT 'Copy' 82,502 279x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "Not started"
+    FRAM 'Notice' 20,551 353x102 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
+      TEXT 'Copy' 32,563 329x19 fill=#000000 Inter 700 14 lh=18.9 ls=0.0 L "Next update expected by 21 Oct"
+      TEXT 'Copy' 32,587 329x54 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "We’ll notify you when the next checkpoint is complete. No repair balance is charged without separate consent."
+    TEXT 'Copy' 20,665 353x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "Submitted 19 Oct 2026 · $10 deposit held during assessment"
+  FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+    FRAM 'Action' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0
+      TEXT 'Label' 134,724 125x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Chat with Thomas"
+  FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+    FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+      FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'house' 51,784 21x21
+          VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+        TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+      FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'handshake' 141,784 21x21
+          VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+        TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+      FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'package-open' 231,784 21x21
+          VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+        TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+      FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'user-round' 321,784 21x21
+          VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+        TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+    RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

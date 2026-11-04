@@ -1,0 +1,55 @@
+# 3.9 James · Request accepted  (691:5405)  section: 3 · Lender decides (Thomas)
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Request Accepted"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Borrow Now · Lender approval"
+FRAM 'Content viewport' 0,108 393x534 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Request result' 20,116 347x172 V gap=8.0 pad=12.0,0,12.0,0
+    FRAM 'Result seal' 156,128 76x76 fill=#E8F4EC r=99 H gap=0 pad=0,0,0,0
+      VECT 'Symbol' 176,148 35x35 stroke=#2341DD/5.0
+    TEXT 'Copy' 20,212 347x32 fill=#14231C Inter 700 24 lh=32.4 ls=0.0 C "Approved by Thomas"
+    TEXT 'Copy' 20,252 347x36 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 C " Next, agree on a pickup time and meeting place together."
+  FRAM 'Card' 20,300 353x339 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    RECT 'Item photo' 32,312 329x110 fill=img:db01c9bada:FILL r=10
+    TEXT 'Copy' 32,432 329x26 fill=#14231C Inter 700 19 lh=25.6 ls=0.0 L "Garment Steamer"
+    FRAM 'Status' 32,468 142x23 fill=#2341DD r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+      TEXT 'Status label' 42,473 122x13 fill=#FFFFFF Inter 700 11 lh=13.3 ls=0.0 L "URGENT - Borrow Now"
+    TEXT 'Detail row' 32,501 329x24 fill=#14231C Inter 400 13 lh=19.5 ls=0.0 L "Borrower  ·  James"
+    TEXT 'Detail row' 32,535 329x24 fill=#14231C Inter 400 13 lh=19.5 ls=0.0 L "Lender  ·  Thomas"
+    TEXT 'Detail row' 32,569 329x24 fill=#14231C Inter 400 13 lh=19.5 ls=0.0 L "Requested dates  ·  18 → 19 Oct 2026"
+    TEXT 'Detail row' 32,603 329x24 fill=#14231C Inter 400 13 lh=19.5 ls=0.0 L "Duration  ·  1 day"
+FRAM 'Sticky actions' 0,642 393x132 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Action' 20,652 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+    TEXT 'Label' 134,668 124x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Arrange handover"
+  FRAM 'Action' 20,708 353x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+    TEXT 'Label' 130,724 133x17 fill=#2341DD Inter 700 14 lh=16.9 ls=0.0 L "View My Borrowing"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

@@ -1,0 +1,160 @@
+# 1.4 James · Location map · 1 km  (691:4492)  section: 1 · Discover (James)
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  RECT 'Borro logo' 20,59 72x34 fill=img:f9069e3e60:FIT
+  FRAM 'heart' 351,65 22x22
+    VECT 'Vector' 353,69 18x16 stroke=#2341DD/1.7999999523162842
+FRAM 'Scrollable content' 0,108 393x666 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Search' 20,116 353x46 H gap=8.0 pad=0,0,0,0
+    FRAM 'Search field' 20,116 267x46 fill=#FFFFFF stroke=#E2E8E1/1.0 r=99 H gap=8.0 pad=12.0,12.0,12.0,12.0
+      FRAM 'search' 32,128 18x18
+        VECT 'Vector' 34,130 14x14 stroke=#14231C/1.7999999523162842
+      TEXT 'Copy' 58,128 217x19 fill=#68766E Inter 400 14 lh=18.9 ls=0.0 L "What do you need?"
+    FRAM 'Search button' 295,116 78x46 fill=#2341DD r=99 H gap=0 pad=0,0,0,0
+      TEXT 'Search label' 312,131 45x16 fill=#FFFFFF Inter 700 13 lh=15.7 ls=0.0 L "Search"
+  FRAM 'Discovery controls' 20,174 353x28 H gap=10.0 pad=0,0,0,0
+    TEXT 'Rating filter' 20,180 52x15 fill=#000000 Inter 400 12 lh=14.5 ls=0.0 L "★ Rating"
+    TEXT 'Reviews filter' 82,180 47x15 fill=#000000 Inter 400 12 lh=14.5 ls=0.0 L "Reviews"
+    FRAM 'Urgency toggle' 139,174 99x28 fill=#2563EB r=99 H gap=0 pad=8.0,8.0,8.0,8.0
+      TEXT 'Toggle label' 147,182 83x12 fill=#FFFFFF Inter 700 10 lh=12.1 ls=0.0 L "⚡ Need it Now ○"
+    FRAM 'sliders-horizontal' 248,178 19x19
+      VECT 'Vector' 250,181 14x14 stroke=#14231C/1.7999999523162842
+  FRAM 'Nearby heading' 20,214 353x22 H gap=0 pad=0,0,0,0
+    TEXT 'Section title' 20,214 178x22 fill=#000000 Inter 700 18 lh=21.8 ls=0.0 L "Good things, nearby"
+    TEXT 'Sort' 334,214 39x15 fill=#2341DD Inter 400 12 lh=14.5 ls=0.0 L "Sort ↕"
+  FRAM 'Item grid row' 20,248 353x270 H gap=12.0 pad=0,0,0,0
+    FRAM 'Marketplace item' 20,248 170x270 fill=#FFFFFF r=12 V gap=7.0 pad=9.0,9.0,9.0,9.0
+      FRAM 'Lender' 29,257 152x22 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 29,257 22x22 fill=img:7f80fa37b5:FILL
+        TEXT 'Lender name' 56,262 56x13 fill=#000000 Inter 600 11 lh=13.3 ls=0.0 L "Thomas ✓"
+      RECT 'Item photo' 29,286 152x98 fill=img:23d141208d:FILL r=10
+      FRAM 'Item heading' 29,391 152x16 H gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 29,391 134x16 fill=#14231C Inter 700 12 lh=16.2 ls=0.0 L "Garment Steamer"
+        FRAM 'heart' 166,391 15x15
+          VECT 'Vector' 168,393 13x11 stroke=#68766E/1.7999999523162842
+      TEXT 'Copy' 29,414 152x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "★ 5.0 (10)"
+      TEXT 'Copy' 29,436 152x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "Bencoolen St"
+      TEXT 'Copy' 29,457 152x12 fill=#2341DD Inter 400 9 lh=12.2 ls=0.0 L "13–27 Oct 2026"
+      TEXT 'Availability now' 29,476 117x14 fill=#2563EB Inter 700 10 lh=13.5 ls=0.0 L "⚡ 120 m | available now"
+    FRAM 'Marketplace item' 202,248 170x270 fill=#FFFFFF r=12 V gap=7.0 pad=9.0,9.0,9.0,9.0
+      FRAM 'Lender' 212,257 152x22 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 212,257 22x22 fill=img:cf751bc1de:FILL
+        TEXT 'Lender name' 238,262 60x13 fill=#000000 Inter 600 11 lh=13.3 ls=0.0 L "Matthew ✓"
+      RECT 'Item photo' 212,286 152x98 fill=img:05e625e4de:FILL r=10
+      FRAM 'Item heading' 212,391 152x16 H gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 212,391 134x16 fill=#14231C Inter 700 12 lh=16.2 ls=0.0 L "Portable Projector"
+        FRAM 'heart' 349,391 15x15
+          VECT 'Vector' 350,393 13x11 stroke=#68766E/1.7999999523162842
+      TEXT 'Copy' 212,414 152x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "★ 4.7 (14)"
+      TEXT 'Copy' 212,436 152x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "Bras Basah Rd"
+      TEXT 'Copy' 212,457 152x12 fill=#2341DD Inter 400 9 lh=12.2 ls=0.0 L "13–27 Oct 2026"
+      FRAM 'Availability' 212,476 152x33 V gap=2.0 pad=0,0,0,0
+        TEXT 'Availability label' 212,476 44x13 fill=#68766E Inter 600 10 lh=13.0 ls=0.0 L "Available"
+        TEXT 'Availability dates' 212,491 100x18 fill=#2341DD Inter 600 13 lh=18.0 ls=0.0 L "16–23 Oct 2026"
+  FRAM 'Item grid row' 20,530 353x270 H gap=12.0 pad=0,0,0,0
+    FRAM 'Marketplace item' 20,530 170x270 fill=#FFFFFF r=12 V gap=7.0 pad=9.0,9.0,9.0,9.0
+      FRAM 'Lender' 29,539 152x22 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 29,539 22x22 fill=img:0db0f773ca:FILL
+        TEXT 'Lender name' 56,544 53x13 fill=#000000 Inter 600 11 lh=13.3 ls=0.0 L "Jessica ✓"
+      RECT 'Item photo' 29,568 152x98 fill=img:a7c6e8a65c:FILL r=10
+      FRAM 'Item heading' 29,673 152x16 H gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 29,673 134x16 fill=#14231C Inter 700 12 lh=16.2 ls=0.0 L "Projector Screen"
+        FRAM 'heart' 166,673 15x15
+          VECT 'Vector' 168,675 13x11 stroke=#68766E/1.7999999523162842
+      TEXT 'Copy' 29,696 152x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "★ 4.6 (20)"
+      TEXT 'Copy' 29,718 152x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "Plaza Singapura"
+      TEXT 'Copy' 29,739 152x12 fill=#2341DD Inter 400 9 lh=12.2 ls=0.0 L "13–27 Oct 2026"
+      FRAM 'Availability' 29,758 152x33 V gap=2.0 pad=0,0,0,0
+        TEXT 'Availability label' 29,758 44x13 fill=#68766E Inter 600 10 lh=13.0 ls=0.0 L "Available"
+        TEXT 'Availability dates' 29,773 101x18 fill=#2341DD Inter 600 13 lh=18.0 ls=0.0 L "18–20 Oct 2026"
+    FRAM 'Marketplace item' 202,530 170x270 fill=#FFFFFF r=12 V gap=7.0 pad=9.0,9.0,9.0,9.0
+      FRAM 'Lender' 212,539 152x22 H gap=5.0 pad=0,0,0,0
+        ELLI 'Avatar' 212,539 22x22 fill=img:cf751bc1de:FILL
+        TEXT 'Lender name' 238,544 50x13 fill=#000000 Inter 600 11 lh=13.3 ls=0.0 L "Lebron ✓"
+      RECT 'Item photo' 212,568 152x98 fill=img:fce2267cf0:FILL r=10
+      FRAM 'Item heading' 212,673 152x16 H gap=3.0 pad=0,0,0,0
+        TEXT 'Copy' 212,673 134x16 fill=#14231C Inter 700 12 lh=16.2 ls=0.0 L "Football"
+        FRAM 'heart' 349,673 15x15
+          VECT 'Vector' 350,675 13x11 stroke=#68766E/1.7999999523162842
+      TEXT 'Copy' 212,696 152x15 fill=#14231C Inter 400 11 lh=14.9 ls=0.0 L "★ 5.0 (10)"
+      TEXT 'Copy' 212,718 152x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "West Wing"
+      TEXT 'Copy' 212,739 152x12 fill=#2341DD Inter 400 9 lh=12.2 ls=0.0 L "13–27 Oct 2026"
+      FRAM 'Availability' 212,758 152x33 V gap=2.0 pad=0,0,0,0
+        TEXT 'Availability label' 212,758 44x13 fill=#68766E Inter 600 10 lh=13.0 ls=0.0 L "Available"
+        TEXT 'Availability dates' 212,773 97x18 fill=#2341DD Inter 600 13 lh=18.0 ls=0.0 L "17–21 Oct 2026"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8
+FRAM 'Overlay scrim' 0,0 393x852 fill=#14231C@0.40 V gap=0 pad=0,0,0,0
+  FRAM 'Bottom sheet' 0,149 393x703 fill=#FFFFFF r=24/24/0/0 V gap=16.0 pad=32.0,22.0,30.0,22.0
+    RECT 'Drag handle' 178,161 38x4 fill=#B8C4BB r=9
+    FRAM 'Sheet header' 22,181 349x28 H gap=0 pad=0,0,0,0
+      TEXT 'Copy' 22,181 327x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Find it close to you"
+      FRAM 'x' 349,184 22x22
+        VECT 'Vector' 354,190 11x11 stroke=#14231C/1.7999999523162842
+    FRAM 'Form field' 22,225 349x73 V gap=7.0 pad=0,0,0,0
+      TEXT 'Copy' 22,225 349x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Location"
+      FRAM 'Input' 22,250 349x48 fill=#FFFFFF stroke=#E2E8E1/1.0 r=10 H gap=8.0 pad=13.0,13.0,13.0,13.0
+        FRAM 'search' 35,263 20x20
+          VECT 'Vector' 38,266 15x15 stroke=#14231C/1.7999999523162842
+        TEXT 'Copy' 63,263 295x20 fill=#68766E Inter 400 15 lh=20.2 ls=0.0 L "Search location…"
+    FRAM 'Campus map' 22,314 349x250 fill=#E8EEE4 r=12
+      ELLI 'Current location' 188,437 16x16 fill=#2341DD stroke=#FFFFFF/3.0
+      FRAM 'Map pin' 221,459 73x31 fill=#FFFFFF r=8 H gap=4.0 pad=7.0,7.0,7.0,7.0
+        FRAM 'map-pin' 228,466 17x17
+          VECT 'Vector' 231,467 11x14 stroke=#1E8E5A/1.7999999523162842
+        TEXT 'Pin label' 249,466 38x15 fill=#000000 Inter 700 12 lh=14.5 ls=0.0 L "Blk 48"
+      TEXT 'Road name' 185,384 69x12 fill=#68766E Inter 400 10 lh=12.1 ls=0.0 L "Bras Basah Rd"
+      RECT 'Bencoolen street' 105,314 69x298 fill=#FFFFFF
+      RECT 'Bras Basah road' 22,339 349x73 fill=#FFFFFF
+      RECT 'Campus block' 268,496 90x60 fill=#D8E1D3 r=8
+      VECT 'Campus block' 32,320 85x55 fill=#D5DFCF r=8
+      FRAM 'Map pin' 55,330 70x31 fill=#FFFFFF r=8 H gap=4.0 pad=7.0,7.0,7.0,7.0
+        FRAM 'map-pin' 62,337 17x17
+          VECT 'Vector' 65,338 11x14 stroke=#1E8E5A/1.7999999523162842
+        TEXT 'Pin label' 83,337 35x15 fill=#000000 Inter 700 12 lh=14.5 ls=0.0 L "Blk 12"
+      ELLI 'Search radius' 94,355 200x180 fill=#1E8E5A@0.08 stroke=#1E8E5A/1.5
+      TEXT 'Campus name' 34,528 140x13 fill=#68766E Inter 400 11 lh=13.3 ls=0.0 L "SINGAPORE · BENCOOLEN"
+    TEXT 'Copy' 22,580 349x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Search radius"
+    FRAM 'Radius options' 22,614 349x46
+      RECT 'Track' 34,622 244x6 fill=#E4E4DF r=3
+      RECT 'Track fill' 34,622 162x6 fill=#2341DD r=3
+      ELLI 'Stop 250 m' 30,621 8x8 fill=#2341DD
+      TEXT 'Label 250 m' 22,644 33x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "Current"
+      ELLI 'Stop 500 m' 111,621 8x8 fill=#2341DD
+      TEXT 'Label 500 m' 101,644 28x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "500 m"
+      ELLI 'Stop 1 km' 192,621 8x8 fill=#2341DD
+      TEXT 'Label 1 km' 186,644 20x11 fill=#2341DD Inter 700 9 lh=10.9 ls=0.0 L "1 km"
+      ELLI 'Stop 2 km' 274,621 8x8 fill=#C9CBD1
+      TEXT 'Label 2 km' 267,644 34x11 fill=#5E6561 Inter 500 9 lh=10.9 ls=0.0 L "Custom"
+      ELLI 'Thumb' 186,614 22x22 fill=#FFFFFF stroke=#2341DD/3.0 shadow=#000000@0.25 0,2 r5
+    TEXT 'Copy' 22,676 349x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "✓ Searching within 1 km of Bencoolen St"
+    FRAM 'Action' 22,710 349x48 fill=#2341DD r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
+      TEXT 'Label' 170,725 52x18 fill=#FFFFFF Inter 700 15 lh=18.2 ls=0.0 L "Search"
+    FRAM 'Action' 22,774 349x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
+      TEXT 'Label' 170,789 52x18 fill=#2341DD Inter 700 15 lh=18.2 ls=0.0 L "Cancel"
+    RECT 'Close sheet (tap handle)' 136,151 120x32 fill=#FFFFFF@0.00 [tap]

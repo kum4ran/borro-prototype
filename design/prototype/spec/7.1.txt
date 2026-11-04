@@ -1,0 +1,59 @@
+# 7.1 James · Return code + after photos  (691:6651)  section: 7 · Return
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Return handover"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Block A Security Desk"
+FRAM 'Content viewport' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  TEXT 'Copy' 20,116 353x20 fill=#14231C Inter 700 15 lh=20.2 ls=0.0 L "Garment Steamer"
+  TEXT 'Copy' 20,148 353x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "James · Borrower shows code to Thomas"
+  FRAM 'One-time code' 20,176 353x174 V gap=7.0 pad=0,0,0,0
+    TEXT 'Copy' 20,176 353x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 C "My Return Code ⓘ"
+    FRAM 'Code countdown' 134,202 126x126 fill=#FFFFFF stroke=#2341DD/4.0 r=99 V gap=0 pad=0,0,0,0
+      TEXT 'Code' 134,244 126x41 fill=#14231C Inter 700 29 lh=40.6 ls=0.0 C "6767"
+      TEXT 'Countdown label' 134,280 126x14 fill=#68766E Inter 400 10 lh=14.0 ls=0.0 C "refreshes in 0:45"
+    TEXT 'Copy' 20,335 353x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 C "Refreshes every few minutes"
+  FRAM 'Notice' 20,362 353x102 fill=#E8F4EC r=12 V gap=5.0 pad=12.0,12.0,12.0,12.0
+    TEXT 'Copy' 32,374 329x19 fill=#14231C Inter 700 14 lh=18.9 ls=0.0 L "ⓘ Meet in person first"
+    TEXT 'Copy' 32,398 329x54 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "Show this fresh return code to Thomas only when you meet in person. Thomas enters it on his phone to confirm the return."
+  TEXT 'Copy' 20,476 353x23 fill=#14231C Inter 700 17 lh=23.0 ls=0.0 L "Photograph it as you leave it."
+  FRAM 'Condition photo records' 20,511 353x180
+    FRAM 'Additional photo' 20,647 353x44 fill=#FFFFFF stroke=#E2E8E1/1.0 r=10 H gap=0 pad=12.0,12.0,12.0,12.0
+      TEXT 'Copy' 32,661 329x16 fill=#14231C Inter 400 12 lh=16.2 ls=0.0 L "＋ ADDITIONAL · Optional"
+    TEXT 'Photo requirement' 202,623 170x13 fill=#14231C Inter 700 11 lh=13.3 ls=0.0 L "BACK · ✓ Added"
+    RECT 'Condition photo' 202,511 170x105 fill=img:51facc6959:FILL r=10
+    TEXT 'Photo requirement' 20,623 170x13 fill=#14231C Inter 700 11 lh=13.3 ls=0.0 L "FRONT · ✓ Added"
+    RECT 'Condition photo' 20,511 170x105 fill=img:51facc6959:FILL r=10
+  TEXT 'Copy' 20,703 353x30 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Return · 19 Oct 2026 · 10:00 am · Clear photos protect both of you. Front and back are required."
+FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Action' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+    TEXT 'Label' 113,724 167x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Confirm Return Drop-off"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,785 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,785 21x21
+        VECT 'Vector' 53,787 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,809 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,785 21x21
+        VECT 'Vector' 143,788 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,809 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,785 21x21
+        VECT 'Vector' 233,787 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,809 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,785 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,785 21x21
+        VECT 'Vector' 325,788 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,809 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,828 130x4 fill=#14231C r=8

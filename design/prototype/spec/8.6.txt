@@ -1,0 +1,88 @@
+# 8.6 Thomas · Rate James  (691:6963)  section: 8 · Reviews and refund
+FRAM 'Status bar' 0,0 393x44 H gap=5.0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 274x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Device status' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Rate James"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "A little feedback goes a long way"
+FRAM 'Content viewport' 0,108 393x590 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Lender identity' 20,116 353x72 H gap=16.0 pad=0,0,0,0
+    ELLI 'Avatar' 20,116 72x72 fill=img:778954769e:FILL
+    TEXT 'Rating context' 108,116 265x69 fill=#14231C Inter 700 24 lh=34.8 ls=0.0 L "Rate James\nGarment Steamer\n18–19 Oct 2026"
+  FRAM 'Rating criteria' 20,200 353x252 V gap=8.0 pad=0,0,0,0
+    FRAM 'Rating criterion' 20,200 353x44 H gap=4.0 pad=0,0,0,0
+      TEXT 'Criterion' 20,214 125x15 fill=#000000 Inter 600 12 lh=14.5 ls=0.0 L "Overall rating*"
+      FRAM 'Five star controls' 149,200 224x44 H gap=1.0 pad=0,0,0,0
+        TEXT 'Star control' 149,200 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 194,200 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 239,200 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 284,200 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 329,200 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+    FRAM 'Rating criterion' 20,252 353x44 H gap=4.0 pad=0,0,0,0
+      TEXT 'Criterion' 20,266 125x15 fill=#000000 Inter 600 12 lh=14.5 ls=0.0 L "Item condition*"
+      FRAM 'Five star controls' 149,252 224x44 H gap=1.0 pad=0,0,0,0
+        TEXT 'Star control' 149,252 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 194,252 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 239,252 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 284,252 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 329,252 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+    FRAM 'Rating criterion' 20,304 353x44 H gap=4.0 pad=0,0,0,0
+      TEXT 'Criterion' 20,318 125x15 fill=#000000 Inter 600 12 lh=14.5 ls=0.0 L "Arrangement*"
+      FRAM 'Five star controls' 149,304 224x44 H gap=1.0 pad=0,0,0,0
+        TEXT 'Star control' 149,304 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 194,304 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 239,304 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 284,304 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 329,304 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+    FRAM 'Rating criterion' 20,356 353x44 H gap=4.0 pad=0,0,0,0
+      TEXT 'Criterion' 20,370 125x15 fill=#000000 Inter 600 12 lh=14.5 ls=0.0 L "Punctuality*"
+      FRAM 'Five star controls' 149,356 224x44 H gap=1.0 pad=0,0,0,0
+        TEXT 'Star control' 149,356 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 194,356 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 239,356 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 284,356 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 329,356 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+    FRAM 'Rating criterion' 20,408 353x44 H gap=4.0 pad=0,0,0,0
+      TEXT 'Criterion' 20,422 125x15 fill=#000000 Inter 600 12 lh=14.5 ls=0.0 L "Friendliness*"
+      FRAM 'Five star controls' 149,408 224x44 H gap=1.0 pad=0,0,0,0
+        TEXT 'Star control' 149,408 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 194,408 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 239,408 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 284,408 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+        TEXT 'Star control' 329,408 44x44 fill=#F5A524 Inter 400 29 lh=35.1 ls=0.0 C "★"
+  TEXT 'Copy' 20,464 353x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "* Required"
+  TEXT 'Copy' 20,492 353x18 fill=#14231C Inter 700 13 lh=17.6 ls=0.0 L "Comment (optional)"
+  FRAM 'Card' 20,522 353x64 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    TEXT 'Copy' 32,534 329x40 fill=#14231C Inter 400 15 lh=20.2 ls=0.0 L "James returned the steamer clean and on time. Thank you!"
+  TEXT 'Copy' 20,598 353x18 fill=#2341DD Inter 400 13 lh=17.6 ls=0.0 L "Your ratings update James's credibility score."
+FRAM 'Sticky actions' 0,698 393x76 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Action' 20,708 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+    TEXT 'Label' 146,724 102x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Submit Review"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#2341DD Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

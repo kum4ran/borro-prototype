@@ -1,0 +1,100 @@
+# 4.10 James · Chat attachment menu  (701:1267)  section: 4 · Schedule and chat
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Thomas"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "★ 5.0 · 10 reviews"
+FRAM 'Content viewport' 0,108 393x594 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Conversation' 20,116 353x466 V gap=12.0 pad=0,0,0,0
+    TEXT 'Copy' 20,116 353x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 C "18 October 2026"
+    FRAM 'Message row' 20,143 353x88 H gap=0 pad=0,0,0,0
+      FRAM 'Message bubble' 20,143 290x88 fill=#FFFFFF r=16 V gap=6.0 pad=14.0,14.0,14.0,14.0
+        TEXT 'Message' 34,157 262x40 fill=#14231C Inter 400 15 lh=20.2 ls=0.0 L "Hi James! Meet at Block A Security Desk at 7:30 pm for the steamer?"
+        TEXT 'Timestamp' 34,203 262x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "6:42 pm"
+    FRAM 'Sent message' 20,243 353x68 H gap=0 pad=0,0,0,0
+      FRAM 'Message bubble' 83,243 290x68 fill=#E8F4EC r=16 V gap=6.0 pad=14.0,14.0,14.0,14.0
+        TEXT 'Message' 97,257 262x20 fill=#14231C Inter 400 15 lh=20.2 ls=0.0 L "Sure, see you at the security desk!"
+        TEXT 'Timestamp' 97,283 262x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "6:43 pm ✓✓"
+    FRAM 'Message row' 20,323 353x88 H gap=0 pad=0,0,0,0
+      FRAM 'Message bubble' 20,323 290x88 fill=#FFFFFF r=16 V gap=6.0 pad=14.0,14.0,14.0,14.0
+        TEXT 'Message' 34,337 262x40 fill=#14231C Inter 400 15 lh=20.2 ls=0.0 L "Lovely, please take a look at this agreement!"
+        TEXT 'Timestamp' 34,383 262x14 fill=#68766E Inter 400 10 lh=13.5 ls=0.0 L "6:44 pm"
+    FRAM 'Card' 20,423 353x124 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+      FRAM 'Agreement attachment' 32,435 329x42 H gap=12.0 pad=0,0,0,0
+        FRAM 'file-check-2' 32,435 30x30
+          VECT 'Symbol' 37,437 20x25 stroke=#2341DD/1.7999999523162842
+        FRAM 'Agreement label' 74,435 287x42 V gap=4.0 pad=0,0,0,0
+          TEXT 'Agreement preview' 74,435 287x22 fill=#14231C Inter 700 16 lh=21.6 ls=0.0 L "Final Agreement"
+          TEXT 'Agreement details' 74,461 287x16 fill=#68766E Inter 400 12 lh=16.2 ls=0.0 L "Garment Steamer · Deposit $10"
+      FRAM 'Action' 32,487 329x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
+        TEXT 'Label' 134,502 125x18 fill=#2341DD Inter 700 15 lh=18.2 ls=0.0 L "Open Agreement"
+    FRAM 'Quick replies' 20,559 353x23 H gap=7.0 pad=0,0,0,0
+      FRAM 'Quick reply' 20,559 79x23 fill=#E8F4EC r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+        TEXT 'Label' 30,564 59x13 fill=#1E8E5A Inter 700 11 lh=13.3 ls=0.0 L "On my way"
+      FRAM 'Quick reply' 106,559 61x23 fill=#E8F4EC r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+        TEXT 'Label' 116,564 41x13 fill=#1E8E5A Inter 700 11 lh=13.3 ls=0.0 L "Thanks"
+FRAM 'Sticky actions' 0,702 393x72 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Message composer' 20,712 353x44 H gap=8.0 pad=0,0,0,0
+    FRAM 'Attach' 20,712 44x44 H gap=0 pad=0,0,0,0
+      VECT 'Symbol' 31,723 22x22 stroke=#2341DD/1.7999999523162842
+    FRAM 'Composer field' 72,712 249x44 fill=#FFFFFF stroke=#E2E8E1/1.0 r=99 H gap=0 pad=12.0,12.0,12.0,12.0
+      TEXT 'Copy' 84,724 225x19 fill=#68766E Inter 400 14 lh=18.9 ls=0.0 L "Message Thomas…"
+    FRAM 'Send' 329,712 44x44 fill=#2341DD r=99 H gap=0 pad=0,0,0,0
+      VECT 'Symbol' 340,723 22x22 stroke=#FFFFFF/1.7999999523162842
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8
+FRAM 'Floating Ask Borro' 184,638 189x56 H gap=10.0 pad=0,0,0,0
+  FRAM 'Chat bubble' 184,649 123x34 fill=#2341DD r=14/14/4/14 V gap=0 pad=8.0,13.0,8.0,13.0 shadow=#14231C@0.08 0,4 r12
+    TEXT 'Bubble text' 197,658 97x16 fill=#FFFFFF Inter 700 13 lh=15.7 ls=0.0 L "chat with borro"
+  FRAM 'Borro logo circle' 317,638 56x56 fill=#FFFFFF stroke=#2341DD/1.5 r=28 H gap=0 pad=0,0,0,0 shadow=#14231C@0.08 0,6 r16
+    FRAM 'Borro logo' 329,650 32x32 fill=img:f9069e3e60:STRETCH H gap=0 pad=0,0,0,0
+FRAM 'Overlay scrim' 0,0 393x774 fill=#14231C@0.33 V gap=0 pad=0,0,0,0
+  FRAM 'Sheet' 0,574 393x200 fill=#FFFFFF r=24/24/0/0 V gap=14.0 pad=20.0,20.0,20.0,20.0
+    FRAM 'Sheet heading' 20,594 353x24 H gap=0 pad=0,0,0,0
+      TEXT 'Title' 20,594 187x24 fill=#14231C Inter 700 20 lh=24.2 ls=0.0 L "Add an attachment"
+    FRAM 'Attachment options' 20,632 353x71 H gap=8.0 pad=0,0,0,0
+      FRAM 'Attachment option' 20,632 82x71 V gap=8.0 pad=0,0,0,0
+        FRAM 'Attachment target' 37,632 48x48 fill=#E8F4EC r=12 H gap=0 pad=0,0,0,0
+          VECT 'Symbol' 50,645 22x22 stroke=#2341DD/1.7999999523162842
+        TEXT 'Label' 44,688 34x15 fill=#000000 Inter 400 12 lh=14.5 ls=0.0 L "Photo"
+      FRAM 'Attachment option' 110,632 82x71 V gap=8.0 pad=0,0,0,0
+        FRAM 'Attachment target' 127,632 48x48 fill=#E8F4EC r=12 H gap=0 pad=0,0,0,0
+          VECT 'Symbol' 140,645 22x22 stroke=#2341DD/1.7999999523162842
+        TEXT 'Label' 135,688 33x15 fill=#000000 Inter 400 12 lh=14.5 ls=0.0 L "Video"
+      FRAM 'Attachment option' 200,632 82x71 V gap=8.0 pad=0,0,0,0
+        FRAM 'Attachment target' 218,632 48x48 fill=#E8F4EC r=12 H gap=0 pad=0,0,0,0
+          VECT 'Symbol' 231,645 22x22 stroke=#2341DD/1.7999999523162842
+        TEXT 'Label' 219,688 45x15 fill=#000000 Inter 400 12 lh=14.5 ls=0.0 L "Camera"
+      FRAM 'Attachment option' 291,632 82x71 V gap=8.0 pad=0,0,0,0
+        FRAM 'Attachment target' 308,632 48x48 fill=#E8F4EC r=12 H gap=0 pad=0,0,0,0
+          VECT 'Symbol' 321,645 22x22 stroke=#2341DD/1.7999999523162842
+        TEXT 'Label' 307,688 49x15 fill=#000000 Inter 400 12 lh=14.5 ls=0.0 L "Location"
+    RECT 'Grabber' 178,584 36x4 fill=#B9BCBF r=2
+    RECT 'Close sheet (tap handle)' 136,574 120x32 fill=#FFFFFF@0.00 [tap]

@@ -1,0 +1,134 @@
+# 4.3 James · Pick-up times (pop-up)  (701:429)  section: 4 · Schedule and chat
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,52 319x49 V gap=2.0 pad=0,0,0,0
+    TEXT 'Title' 54,52 319x29 fill=#14231C Inter 700 22 lh=28.6 ls=0.0 L "Arrange handover"
+    TEXT 'Subtitle' 54,82 319x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "Thomas · Garment Steamer"
+TEXT 'Tagline' 20,116 353x19 fill=#68766E Inter 400 14 lh=18.9 ls=0.0 L "A convenient place. A time that works for both."
+FRAM 'Date selection section' 16,142 361x286 fill=#FFFFFF stroke=#E5E8E3/1.0 r=18 V gap=12.0 pad=16.0,16.0,16.0,16.0
+  TEXT 'Pickup section label' 32,158 57x18 fill=#162C32 Inter 700 15 lh=18.2 ls=0.0 L "Pick-up"
+  FRAM 'Pick-up row' 32,188 329x66 fill=#FFFFFF stroke=#D1D6DB/1.0 r=14 H gap=12.0 pad=0,14.0,0,14.0
+    FRAM 'calendar' 46,211 20x20
+      VECT 'Vector' 48,213 15x17 stroke=#3D49FF/2.0
+    FRAM 'Pick-up label group' 78,212 241x19 V gap=1.0 pad=0,0,0,0
+      TEXT 'Pick-up value' 78,212 158x19 fill=#162C32 Inter 500 16 lh=19.4 ls=0.0 L "Select date and time"
+    FRAM 'chevron-down' 331,213 16x16
+      VECT 'Vector' 335,219 8x4 stroke=#708187/2.0
+  TEXT 'Return section label' 32,266 50x18 fill=#162C32 Inter 700 15 lh=18.2 ls=0.0 L "Return"
+  FRAM 'Return row' 32,296 329x66 fill=#EEEFEB r=14 H gap=12.0 pad=0,14.0,0,14.0
+    FRAM 'calendar' 46,319 20x20
+      VECT 'Vector' 48,321 15x17 stroke=#3D49FF/2.0
+    FRAM 'Return label group' 78,320 241x19 V gap=1.0 pad=0,0,0,0
+      TEXT 'Return value' 78,320 158x19 fill=#708187 Inter 500 16 lh=19.4 ls=0.0 L "Select date and time"
+    FRAM 'chevron-down' 331,321 16x16
+      VECT 'Vector' 335,327 8x4 stroke=#708187/2.0
+  TEXT 'Helper text' 32,374 329x38 fill=#708187 Inter 400 14 lh=18.9 ls=0.0 L "Choose pick-up first. Return times open up after\nit."
+FRAM 'Meeting address' 16,444 361x73 V gap=7.0 pad=0,0,0,0
+  TEXT 'Address label' 16,444 361x18 fill=#162C32 Inter 700 15 lh=18.0 ls=0.0 L "Meeting address"
+  FRAM 'Address field' 16,469 361x48 fill=#FFFFFF stroke=#DADDDC/1.0 r=14 H gap=14.0 pad=0,16.0,0,16.0
+    FRAM 'map-pin' 32,483 20x20
+      VECT 'Vector' 35,485 13x17 stroke=#162C32/2.0
+    TEXT 'Selected address' 66,484 79x18 fill=#708187 Inter 500 15 lh=18.2 ls=0.0 L "Not set yet"
+FRAM 'Pick on map button' 16,529 361x44 fill=#FFFFFF stroke=#3D49FF/1.7000000476837158 r=24 H gap=0 pad=0,0,0,0
+  TEXT 'Button label' 152,542 89x18 fill=#3D49FF Inter 700 15 lh=18.2 ls=0.0 L "Pick on map"
+TEXT 'Footer info' 16,700 361x15 fill=#708187 Inter 400 11 lh=14.9 ls=0.0 L "Choose a meeting address and time to continue."
+FRAM 'Send proposal button' 16,720 361x48 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0
+  TEXT 'Button label' 140,734 113x19 fill=#4A524F Inter 700 16 lh=19.4 ls=0.0 L "Send Proposal"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8
+RECT 'Scrim' 0,0 393x852 fill=#12201A op=0.50
+FRAM 'Sheet' 0,252 393x600 fill=#FFFFFF r=24/24/0/0
+  RECT 'Grabber' 178,266 36x4 fill=#B9BCBF r=2
+  VECT 'Chevron left' 24,286 6x12 stroke=#12201A/2.200000047683716
+  TEXT 'Title' 50,278 136x24 fill=#12201A Inter 700 20 lh=24.0 ls=0.0 L "Pick-up times"
+  TEXT 'Instructions' 50,306 323x18 fill=#5E6561 Inter 400 13 lh=18.0 ls=0.0 L "Pick a day, then add the times you can do."
+  RECT 'Time wheel' 20,396 190x150 fill=#F6F6F3 r=16
+  RECT 'Wheel highlight' 28,451 174x40 fill=#E7EAFB r=12
+  TEXT 'Colon' 105,457 20x28 fill=#1B33B8 Inter 700 22 lh=28.0 ls=0.0 C ":"
+  TEXT 'Active day' 226,432 80x20 fill=#12201A Inter 700 15 lh=20.0 ls=0.0 L "Sun 18 Oct"
+  RECT 'Add button' 226,460 147x44 fill=#2341DD r=22
+  TEXT 'Add label' 226,472 147x20 fill=#FFFFFF Inter 700 14 lh=20.0 ls=0.0 C "Add 6:00 pm"
+  RECT 'Times card' 20,562 353x124 fill=#F6F6F3 stroke=#E4E4DF/1.0 r=16
+  RECT 'Time chip' 34,608 98x36 fill=#FFFFFF stroke=#2341DD/1.5 r=18
+  TEXT 'Chip label' 48,616 56x20 fill=#1B33B8 Inter 600 14 lh=20.0 ls=0.0 L "7:00 pm"
+  TEXT 'Remove' 111,615 11x20 fill=#1B33B8 Inter 700 16 lh=20.0 ls=0.0 L "×"
+  RECT 'Time chip' 140,608 97x36 fill=#FFFFFF stroke=#2341DD/1.5 r=18
+  TEXT 'Chip label' 154,616 56x20 fill=#1B33B8 Inter 600 14 lh=20.0 ls=0.0 L "7:30 pm"
+  TEXT 'Remove' 216,615 11x20 fill=#1B33B8 Inter 700 16 lh=20.0 ls=0.0 L "×"
+  RECT 'Footer divider' 0,722 393x1 fill=#E4E4DF
+  TEXT 'Selected summary' 20,744 66x16 fill=#12201A Inter 600 13 lh=16.0 ls=0.0 L "2 selected"
+  TEXT 'Link' 296,741 77x17 fill=#2341DD Inter 600 14 lh=16.9 ls=0.0 L "Clear times"
+  RECT 'Primary button' 20,780 353x52 fill=#2341DD r=26 [tap]
+  TEXT 'Button label' 20,796 353x20 fill=#FFFFFF Inter 700 16 lh=20.0 ls=0.0 C "Done"
+  FRAM 'Hour' 20,396 95x150
+    TEXT 'Hour 16' 20,396 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "16"
+    TEXT 'Hour 17' 20,426 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "17"
+    TEXT 'Hour 18' 20,456 95x30 fill=#1B33B8 Inter 700 24 lh=30.0 ls=0.0 C "18"
+    TEXT 'Hour 19' 20,486 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "19"
+    TEXT 'Hour 20' 20,516 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "20"
+    TEXT 'Hour 21' 20,546 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "21"
+    TEXT 'Hour 22' 20,576 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "22"
+    TEXT 'Hour 23' 20,606 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "23"
+    TEXT 'Hour 00' 20,636 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "00"
+    TEXT 'Hour 01' 20,666 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "01"
+    TEXT 'Hour 02' 20,696 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "02"
+    TEXT 'Hour 03' 20,726 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "03"
+    TEXT 'Hour 04' 20,756 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "04"
+    TEXT 'Hour 05' 20,786 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "05"
+    TEXT 'Hour 06' 20,816 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "06"
+    TEXT 'Hour 07' 20,846 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "07"
+    TEXT 'Hour 08' 20,876 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "08"
+    TEXT 'Hour 09' 20,906 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "09"
+    TEXT 'Hour 10' 20,936 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "10"
+    TEXT 'Hour 11' 20,966 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "11"
+    TEXT 'Hour 12' 20,996 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "12"
+    TEXT 'Hour 13' 20,1026 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "13"
+    TEXT 'Hour 14' 20,1056 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "14"
+    TEXT 'Hour 15' 20,1086 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "15"
+  FRAM 'Minute' 115,396 95x150
+    TEXT 'Minute 50' 115,396 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "50"
+    TEXT 'Minute 55' 115,426 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "55"
+    TEXT 'Minute 00' 115,456 95x30 fill=#1B33B8 Inter 700 24 lh=30.0 ls=0.0 C "00"
+    TEXT 'Minute 05' 115,486 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "05"
+    TEXT 'Minute 10' 115,516 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "10"
+    TEXT 'Minute 15' 115,546 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "15"
+    TEXT 'Minute 20' 115,576 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "20"
+    TEXT 'Minute 25' 115,606 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "25"
+    TEXT 'Minute 30' 115,636 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "30"
+    TEXT 'Minute 35' 115,666 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "35"
+    TEXT 'Minute 40' 115,696 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "40"
+    TEXT 'Minute 45' 115,726 95x30 fill=#12201A op=0.22 Inter 500 18 lh=24.0 ls=0.0 C "45"
+  FRAM 'Day tabs (scroll)' 0,336 393x44
+    RECT 'Date tab' 20,336 108x44 fill=#2341DD stroke=#2341DD/1.5 r=22
+    TEXT 'Tab label' 20,348 108x20 fill=#FFFFFF Inter 600 14 lh=20.0 ls=0.0 C "Sun 18 Oct · 2"
+  TEXT 'Times title' 34,576 200x17 fill=#12201A Inter 700 14 lh=16.9 ls=0.0 L "Times for Sun 18 Oct"
+  TEXT 'Times count' 239,578 120x15 fill=#5E6561 Inter 600 12 lh=14.5 ls=0.0 R "2 times added"
+  TEXT 'Times hint' 34,656 250x15 fill=#5E6561 Inter 400 12 lh=14.5 ls=0.0 L "Tap a time to remove it."
+  RECT 'Close sheet (tap handle)' 136,256 120x32 fill=#FFFFFF@0.00 [tap]

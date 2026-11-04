@@ -1,0 +1,73 @@
+# 3.2 Thomas · Borrow Requests  (700:125)  section: 3 · Lender decides (Thomas)
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Borrow Requests"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "Thomas · 3 new requests"
+FRAM 'Content viewport' 0,108 393x666 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Card' 20,116 353x211 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Member' 32,128 329x38 H gap=10.0 pad=0,0,0,0
+      ELLI 'Avatar' 32,128 38x38 fill=img:778954769e:FILL
+      TEXT 'Member details' 80,130 281x35 fill=#14231C Inter 700 15 lh=21.0 ls=0.0 L "James ✓\n72/100 · Moderate"
+    TEXT 'Copy' 32,176 329x20 fill=#14231C [tap] Inter 400 15 lh=20.2 ls=0.0 L "James wants to borrow Garment Steamer"
+    TEXT 'Copy' 32,206 329x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "18–19 Oct 2026"
+    FRAM 'Status' 32,234 156x23 fill=#FFF3D9 r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+      TEXT 'Status label' 42,239 136x13 fill=#92600A Inter 700 11 lh=13.3 ls=0.0 L "⚡ URGENT – Borrow Now"
+    FRAM 'Accept or reject' 32,267 329x48 H gap=16.0 pad=0,0,0,0
+      FRAM 'Action' 32,267 155x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 85,282 50x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Accept"
+      FRAM 'Action' 203,267 158x48 fill=#FFFFFF stroke=#D64545/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 260,282 44x17 fill=#D64545 Inter 700 14 lh=16.9 ls=0.0 L "Reject"
+  FRAM 'Card' 20,339 353x211 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Member' 32,351 329x38 H gap=10.0 pad=0,0,0,0
+      ELLI 'Avatar' 32,351 38x38 fill=img:f7b66a6e16:FILL
+      TEXT 'Member details' 80,352 281x35 fill=#14231C Inter 700 15 lh=21.0 ls=0.0 L "Mei ✓\n86/100 · High"
+    TEXT 'Copy' 32,399 329x20 fill=#14231C Inter 400 15 lh=20.2 ls=0.0 L "Mei wants to borrow Garment Steamer"
+    TEXT 'Copy' 32,429 329x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "20–21 Oct 2026"
+    FRAM 'Status' 32,457 156x23 fill=#FFF3D9 r=99 H gap=0 pad=5.0,10.0,5.0,10.0
+      TEXT 'Status label' 42,462 136x13 fill=#92600A Inter 700 11 lh=13.3 ls=0.0 L "⚡ URGENT – Borrow Now"
+    FRAM 'Accept or reject' 32,490 329x48 H gap=16.0 pad=0,0,0,0
+      FRAM 'Action' 32,490 155x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 85,506 50x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Accept"
+      FRAM 'Action' 203,490 158x48 fill=#FFFFFF stroke=#D64545/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 260,506 44x17 fill=#D64545 Inter 700 14 lh=16.9 ls=0.0 L "Reject"
+  FRAM 'Card' 20,562 353x178 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Member' 32,574 329x38 H gap=10.0 pad=0,0,0,0
+      ELLI 'Avatar' 32,574 38x38 fill=img:11a7b84aa9:FILL
+      TEXT 'Member details' 80,576 281x35 fill=#14231C Inter 700 15 lh=21.0 ls=0.0 L "Darren ✓\n86/100 · High"
+    TEXT 'Copy' 32,622 329x20 fill=#14231C Inter 400 15 lh=20.2 ls=0.0 L "Darren wants to borrow Garment Steamer"
+    TEXT 'Copy' 32,652 329x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "20–21 Oct 2026"
+    FRAM 'Accept or reject' 32,680 329x48 H gap=16.0 pad=0,0,0,0
+      FRAM 'Action' 32,680 155x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 85,696 50x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Accept"
+      FRAM 'Action' 203,680 158x48 fill=#FFFFFF stroke=#D64545/1.2000000476837158 r=99 H gap=0 pad=0,12.0,0,12.0
+        TEXT 'Label' 260,696 44x17 fill=#D64545 Inter 700 14 lh=16.9 ls=0.0 L "Reject"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 229,808 25x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

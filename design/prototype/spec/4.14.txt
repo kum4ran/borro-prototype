@@ -1,0 +1,88 @@
+# 4.14 Both · Handover confirmed  (701:1718)  section: 4 · Schedule and chat
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=8.0,28.0,0,28.0
+  TEXT 'Time' 28,16 43x20 fill=#12201A Inter 700 15 lh=20.0 ls=0.0 L "10:00"
+  FRAM 'System icons' 293,18 72x16 H gap=6.0 pad=0,0,0,0
+    FRAM 'Signal' 293,20 18x12
+      VECT 'Vector' 293,28 3x4 fill=#12201A
+      VECT 'Vector' 298,26 3x6 fill=#12201A
+      VECT 'Vector' 303,23 3x9 fill=#12201A
+      VECT 'Vector' 308,20 3x12 fill=#12201A
+    FRAM 'Wi-Fi' 317,18 16x16
+      VECT 'Vector' 318,20 13x3 stroke=#12201A/1.7999999523162842
+      VECT 'Vector' 321,23 8x2 stroke=#12201A/1.7999999523162842
+      VECT 'Vector' 324,27 2x2 fill=#12201A
+    FRAM 'Battery' 339,20 26x12
+      VECT 'Vector' 340,20 22x11 stroke=#12201A/1.0 op=0.40
+      VECT 'Vector' 341,22 19x8 fill=#12201A
+      VECT 'Vector' 363,24 2x4 fill=#12201A op=0.40
+FRAM 'Header' 0,44 393x56 H gap=4.0 pad=4.0,16.0,8.0,8.0
+  FRAM 'Back' 8,48 44x44 H gap=0 pad=0,0,0,0
+    FRAM 'Chevron left' 18,58 24x24
+      VECT 'Vector' 26,63 7x14 stroke=#12201A/2.0
+  FRAM 'Title block' 56,49 207x42 V gap=2.0 pad=0,0,0,0
+    TEXT 'Title' 56,49 201x24 fill=#12201A Inter 700 20 lh=24.0 ls=0.0 L "Handover confirmed"
+    TEXT 'Subtitle' 56,75 207x16 fill=#5E6561 Inter 400 12 lh=16.0 ls=0.0 L "James & Thomas · Garment Steamer"
+FRAM 'Content' 0,100 393x539 V gap=12.0 pad=4.0,16.0,12.0,16.0
+  FRAM 'Status banner' 16,104 361x64 fill=#E4F2EC r=12 H gap=10.0 pad=12.0,14.0,12.0,14.0
+    FRAM 'Check' 30,116 16x16
+      VECT 'Vector' 33,121 9x6 stroke=#0B6B4F/2.5
+    FRAM 'Banner text' 56,116 307x40 V gap=2.0 pad=0,0,0,0
+      TEXT 'Banner title' 56,116 307x20 fill=#0B6B4F Inter 700 15 lh=20.0 ls=0.0 L "Both confirmed"
+      TEXT 'Banner body' 56,138 307x18 fill=#3E4642 Inter 400 13 lh=18.0 ls=0.0 L "Thomas and James confirmed this arrangement."
+  RECT 'Item photo' 16,180 361x125 fill=img:db01c9bada:FILL r=10
+  FRAM 'Details card' 16,317 361x204 fill=#FFFFFF stroke=#E4E4DF/1.0 r=12 V gap=10.0 pad=14.0,16.0,14.0,16.0
+    TEXT 'Item name' 33,332 156x24 fill=#12201A Inter 700 18 lh=24.0 ls=0.0 L "Garment Steamer"
+    FRAM 'Borrower row' 33,366 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,366 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Borrower"
+      FRAM 'Value' 121,366 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,366 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "James"
+    FRAM 'Lender row' 33,396 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,396 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Lender"
+      FRAM 'Value' 121,396 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,396 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Thomas"
+    FRAM 'Pick-up row' 33,426 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,426 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Pick-up"
+      FRAM 'Value' 121,426 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,426 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Sun 18 Oct · 7:30 pm"
+    FRAM 'Return row' 33,456 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,456 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Return"
+      FRAM 'Value' 121,456 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,456 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Mon 19 Oct · 10:00 am"
+    FRAM 'Meet at row' 33,486 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,486 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Meet at"
+      FRAM 'Value' 121,486 239x20 V gap=2.0 pad=0,0,0,0
+        FRAM 'Meet at' 121,486 171x20 H gap=6.0 pad=0,0,0,0
+          FRAM 'Pin' 121,488 16x16
+            VECT 'Vector' 124,490 9x12 stroke=#12201A/1.3333333730697632
+            VECT 'Vector' 127,493 3x3 stroke=#12201A/1.3333333730697632
+          TEXT 'Value' 143,486 149x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Block A Security Desk"
+  FRAM 'Lender row' 16,533 361x38 H gap=12.0 pad=0,0,0,0
+    ELLI 'Avatar' 16,533 38x38 fill=img:2fbf534e76:FILL
+    FRAM 'Name block' 66,534 224x36 V gap=0 pad=0,0,0,0
+      TEXT 'Name' 66,534 60x20 fill=#12201A Inter 700 15 lh=20.0 ls=0.0 L "Thomas"
+      TEXT 'Rating' 66,554 104x16 fill=#5E6561 Inter 400 12 lh=16.0 ls=0.0 L "★ 5.0 · 10 reviews"
+    TEXT 'View profile' 302,543 75x18 fill=#2341DD Inter 600 13 lh=18.0 ls=0.0 L "View profile"
+FRAM 'Actions' 0,639 393x135 fill=#F6F6F3 stroke=#E4E4DF/1.0 V gap=10.0 pad=12.0,16.0,16.0,16.0
+  FRAM 'Chat with Thomas' 16,652 361x48 fill=#FFFFFF stroke=#2341DD/1.5 r=24 H gap=0 pad=0,0,0,0 [tap]
+    TEXT 'Label' 130,666 133x20 fill=#2341DD Inter 600 15 lh=20.0 ls=0.0 L "Chat with Thomas"
+  FRAM 'View Final Agreement' 16,710 361x48 fill=#2341DD r=99 H gap=0 pad=0,0,0,0 [tap]
+    TEXT 'Label' 117,724 159x20 fill=#FFFFFF Inter 600 15 lh=20.0 ls=0.0 L "View Final Agreement"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

@@ -1,0 +1,138 @@
+# 4.12 Thomas · Choose times (pop-up)  (701:1464)  section: 4 · Schedule and chat
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=8.0,28.0,0,28.0
+  TEXT 'Time' 28,16 43x20 fill=#12201A Inter 700 15 lh=20.0 ls=0.0 L "10:00"
+  FRAM 'System icons' 293,18 72x16 H gap=6.0 pad=0,0,0,0
+    FRAM 'Signal' 293,20 18x12
+      VECT 'Vector' 293,28 3x4 fill=#12201A
+      VECT 'Vector' 298,26 3x6 fill=#12201A
+      VECT 'Vector' 303,23 3x9 fill=#12201A
+      VECT 'Vector' 308,20 3x12 fill=#12201A
+    FRAM 'Wi-Fi' 317,18 16x16
+      VECT 'Vector' 318,20 13x3 stroke=#12201A/1.7999999523162842
+      VECT 'Vector' 321,23 8x2 stroke=#12201A/1.7999999523162842
+      VECT 'Vector' 324,27 2x2 fill=#12201A
+    FRAM 'Battery' 339,20 26x12
+      VECT 'Vector' 340,20 22x11 stroke=#12201A/1.0 op=0.40
+      VECT 'Vector' 341,22 19x8 fill=#12201A
+      VECT 'Vector' 363,24 2x4 fill=#12201A op=0.40
+FRAM 'Header' 0,44 393x56 H gap=4.0 pad=4.0,16.0,8.0,8.0
+  FRAM 'Back' 8,48 44x44 H gap=0 pad=0,0,0,0
+    FRAM 'Chevron left' 18,58 24x24
+      VECT 'Vector' 26,63 7x14 stroke=#12201A/2.0
+  FRAM 'Title block' 56,49 207x42 V gap=2.0 pad=0,0,0,0
+    TEXT 'Title' 56,49 162x24 fill=#12201A Inter 700 20 lh=24.0 ls=0.0 L "Review proposal"
+    TEXT 'Subtitle' 56,75 207x16 fill=#5E6561 Inter 400 12 lh=16.0 ls=0.0 L "James & Thomas · Garment Steamer"
+FRAM 'Content' 0,100 393x549 V gap=12.0 pad=4.0,16.0,12.0,16.0
+  FRAM 'Status banner' 16,104 361x82 fill=#E4F2EC r=12 H gap=10.0 pad=12.0,14.0,12.0,14.0
+    FRAM 'Clock' 30,116 16x16
+      VECT 'Vector' 32,118 12x12 stroke=#0B6B4F/1.4666666984558105
+      VECT 'Vector' 38,121 2x5 stroke=#0B6B4F/1.4666666984558105
+    FRAM 'Banner text' 56,116 307x58 V gap=2.0 pad=0,0,0,0
+      TEXT 'Banner title' 56,116 307x20 fill=#0B6B4F Inter 700 15 lh=20.0 ls=0.0 L "James is waiting for you"
+      TEXT 'Banner body' 56,138 307x36 fill=#3E4642 Inter 400 13 lh=18.0 ls=0.0 L "James sent you a proposal. Pick one pick-up and one return time to accept."
+  RECT 'Item photo' 16,198 361x81 fill=img:db01c9bada:FILL r=10
+  FRAM 'Details card' 16,291 361x204 fill=#FFFFFF stroke=#E4E4DF/1.0 r=12 V gap=10.0 pad=14.0,16.0,14.0,16.0
+    TEXT 'Item name' 33,306 156x24 fill=#12201A Inter 700 18 lh=24.0 ls=0.0 L "Garment Steamer"
+    FRAM 'Borrower row' 33,340 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,340 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Borrower"
+      FRAM 'Value' 121,340 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,340 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "James"
+    FRAM 'Lender row' 33,370 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,370 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Lender"
+      FRAM 'Value' 121,370 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,370 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Thomas"
+    FRAM 'Pick-up row' 33,400 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,400 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Pick-up"
+      FRAM 'Value' 121,400 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,400 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Sun 18 Oct · 7, 7:30 pm"
+    FRAM 'Return row' 33,430 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,430 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Return"
+      FRAM 'Value' 121,430 239x20 V gap=2.0 pad=0,0,0,0
+        TEXT 'Value' 121,430 239x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Mon 19 Oct · 9, 10, 10:30 am"
+    FRAM 'Meet at row' 33,460 327x20 H gap=12.0 pad=0,0,0,0
+      TEXT 'Label' 33,460 76x20 fill=#5E6561 Inter 400 14 lh=20.0 ls=0.0 L "Meet at"
+      FRAM 'Value' 121,460 239x20 V gap=2.0 pad=0,0,0,0
+        FRAM 'Meet at' 121,460 171x20 H gap=6.0 pad=0,0,0,0
+          FRAM 'Pin' 121,462 16x16
+            VECT 'Vector' 124,464 9x12 stroke=#12201A/1.3333333730697632
+            VECT 'Vector' 127,467 3x3 stroke=#12201A/1.3333333730697632
+          TEXT 'Value' 143,460 149x20 fill=#12201A Inter 600 14 lh=20.0 ls=0.0 L "Block A Security Desk"
+  FRAM 'Lender row' 16,507 361x40 H gap=12.0 pad=0,0,0,0
+    FRAM 'James avatar' 16,507 40x40 fill=img:778954769e:FILL r=20 H gap=0 pad=0,0,0,0
+    FRAM 'Name block' 68,509 222x36 V gap=0 pad=0,0,0,0
+      TEXT 'Name' 68,509 49x20 fill=#12201A Inter 700 15 lh=20.0 ls=0.0 L "James"
+      TEXT 'Rating' 68,529 106x16 fill=#5E6561 Inter 400 12 lh=16.0 ls=0.0 L "★ 3.5 · 45 reviews"
+    TEXT 'View profile' 302,518 75x18 fill=#2341DD Inter 600 13 lh=18.0 ls=0.0 L "View profile"
+FRAM 'Actions' 0,649 393x123 fill=#F6F6F3 stroke=#E4E4DF/1.0 V gap=8.0 pad=10.0,16.0,12.0,16.0
+  FRAM 'Secondary actions' 16,660 361x44 H gap=8.0 pad=0,0,0,0
+    FRAM 'Request changes' 16,660 176x44 fill=#FFFFFF stroke=#2341DD/1.5 r=22 H gap=6.0 pad=0,0,0,0
+      TEXT 'Label' 45,672 118x20 fill=#2341DD Inter 600 14 lh=20.0 ls=0.0 L "Request changes"
+    FRAM 'Chat with Arnold' 200,660 176x44 fill=#FFFFFF stroke=#2341DD/1.5 r=22 H gap=6.0 pad=0,0,0,0
+      FRAM 'Chat icon' 220,673 18x18
+        VECT 'Vector' 223,677 13x11 stroke=#2341DD/1.5
+      TEXT 'Label' 244,672 114x20 fill=#2341DD Inter 600 14 lh=20.0 ls=0.0 L "Chat with James"
+  FRAM 'Accept proposal' 16,712 361x48 fill=#2341DD r=99 H gap=0 pad=0,0,0,0
+    TEXT 'Label' 137,726 119x20 fill=#FFFFFF Inter 600 15 lh=20.0 ls=0.0 L "Accept proposal"
+FRAM 'Bottom nav' 0,772 393x80 fill=#FFFFFF stroke=#E4E4DF/1.0 V gap=0 pad=0,0,0,0
+  FRAM 'Tabs' 0,773 393x58 H gap=0 pad=6.0,8.0,0,8.0
+    FRAM 'Home' 8,779 80x52 V gap=2.0 pad=0,0,0,0 [tap]
+      FRAM 'Home icon' 36,784 24x24
+        VECT 'Vector' 39,787 18x18 stroke=#4A514D/1.7999999523162842
+      TEXT 'Label' 31,810 34x16 fill=#4A514D Inter 500 12 lh=16.0 ls=0.0 L "Home"
+    FRAM 'Borro' 88,779 80x52 V gap=2.0 pad=0,0,0,0 [tap]
+      FRAM 'Borro icon' 116,784 24x24
+        VECT 'Vector' 127,800 6x4 stroke=#2341DD/1.7999999523162842
+        VECT 'Vector' 123,787 14x14 stroke=#2341DD/1.7999999523162842
+        VECT 'Vector' 136,787 2x11 stroke=#2341DD/1.7999999523162842
+        VECT 'Vector' 118,787 10x18 stroke=#2341DD/1.7999999523162842
+        VECT 'Vector' 119,788 8x0 stroke=#2341DD/1.7999999523162842
+      TEXT 'Label' 112,810 33x16 fill=#2341DD Inter 700 12 lh=16.0 ls=0.0 L "Borro"
+    FRAM 'Lend' 168,779 80x52 V gap=2.0 pad=0,0,0,0 [tap]
+      FRAM 'Lend icon' 196,784 24x24
+        VECT 'Vector' 201,791 14x8 stroke=#4A514D/1.600000023841858
+        VECT 'Vector' 201,795 14x10 stroke=#4A514D/1.600000023841858
+        VECT 'Vector' 208,799 0x6 stroke=#4A514D/1.600000023841858
+        VECT 'Vector' 199,788 9x6 stroke=#4A514D/1.600000023841858
+        VECT 'Vector' 208,788 9x6 stroke=#4A514D/1.600000023841858
+      TEXT 'Label' 194,810 29x16 fill=#4A514D Inter 500 12 lh=16.0 ls=0.0 L "Lend"
+    FRAM 'You' 248,779 80x52 V gap=2.0 pad=0,0,0,0 [tap]
+      FRAM 'You icon' 276,784 24x24
+        VECT 'Vector' 284,788 8x8 stroke=#4A514D/1.7999999523162842
+        VECT 'Vector' 280,797 16x8 stroke=#4A514D/1.7999999523162842
+      TEXT 'Label' 277,810 22x16 fill=#4A514D Inter 500 12 lh=16.0 ls=0.0 L "You"
+  FRAM 'Home indicator' 0,831 393x21 H gap=0 pad=0,0,8.0,0
+    RECT 'Bar' 130,839 134x5 fill=#12201A r=3
+RECT 'Scrim' 0,0 393x852 fill=#12201A@0.50
+FRAM 'Time picker sheet' 0,432 393x420 fill=#FFFFFF r=24/24/0/0 V gap=16.0 pad=16.0,20.0,28.0,20.0
+  FRAM 'Sheet header' 20,448 353x50 H gap=0 pad=0,0,0,0
+    FRAM 'Heading' 20,448 258x50 V gap=4.0 pad=4.0,0,0,0
+      TEXT 'Sheet title' 20,452 184x24 fill=#12201A Inter 700 20 lh=24.0 ls=0.0 L "Choose your times"
+      TEXT 'Helper' 20,480 258x18 fill=#5E6561 Inter 400 13 lh=18.0 ls=0.0 L "Tap one pick-up time and one return time."
+  FRAM 'Pick-up options' 20,514 353x115 fill=#F6F6F3 stroke=#E4E4DF/1.0 r=16 V gap=2.0 pad=14.0,14.0,4.0,14.0
+    FRAM 'Group header' 35,529 323x28 H gap=8.0 pad=0,0,8.0,0
+      TEXT 'Group title' 35,529 61x20 fill=#12201A Inter 700 16 lh=20.0 ls=0.0 L "Pick-up"
+      TEXT 'Choose one' 288,532 70x15 fill=#5E6561 Inter 600 12 lh=14.5 ls=0.0 L "Choose one"
+    FRAM 'Thu 8 Oct row' 35,559 323x65 stroke=#E4E4DF/1.0 H gap=10.0 pad=10.0,0,10.0,0
+      TEXT 'Date' 35,583 84x18 fill=#12201A Inter 700 14 lh=18.0 ls=0.0 L "Sun 18 Oct"
+      FRAM 'Times' 129,570 157x44 H gap=8.0 pad=0,0,0,0
+        FRAM 'Time 6 pm' 129,570 63x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 142,582 36x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "7 pm"
+        FRAM 'Time 7 pm' 200,570 86x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 214,582 59x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "7:30 pm"
+  FRAM 'Return options' 20,645 353x115 fill=#F6F6F3 stroke=#E4E4DF/1.0 r=16 V gap=2.0 pad=14.0,14.0,4.0,14.0
+    FRAM 'Group header' 35,660 323x28 H gap=8.0 pad=0,0,8.0,0
+      TEXT 'Group title' 35,660 53x20 fill=#12201A Inter 700 16 lh=20.0 ls=0.0 L "Return"
+      TEXT 'Choose one' 288,662 70x15 fill=#5E6561 Inter 600 12 lh=14.5 ls=0.0 L "Choose one"
+    FRAM 'Wed 21 Oct row' 35,690 323x65 stroke=#E4E4DF/1.0 H gap=10.0 pad=10.0,0,10.0,0
+      TEXT 'Date' 35,714 84x18 fill=#12201A Inter 700 14 lh=18.0 ls=0.0 L "Mon 19 Oct"
+      FRAM 'Times' 129,701 245x44 H gap=8.0 pad=0,0,0,0
+        FRAM 'Time 7 pm' 129,701 63x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 142,713 36x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "9 am"
+        FRAM 'Time 8 pm' 200,701 71x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 214,713 44x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "10 am"
+        FRAM 'Time 10 pm' 279,701 95x44 fill=#FFFFFF stroke=#D5D8DD/1.5 r=22 H gap=0 pad=0,12.0,0,12.0 [tap]
+          TEXT 'Time' 292,713 68x20 fill=#1B33B8 Inter 600 15 lh=20.0 ls=0.0 L "10:30 am"
+  FRAM 'Choose pick-up and return' 20,776 353x48 fill=#EDF0EC r=99 H gap=0 pad=0,0,0,0 [tap]
+    TEXT 'Label' 99,790 195x20 fill=#6B726E Inter 600 15 lh=20.0 ls=0.0 L "Choose pick-up and return"
+  RECT 'Grabber' 178,448 36x4 fill=#B9BCBF r=2
+  RECT 'Close sheet (tap handle)' 136,438 120x32 fill=#FFFFFF@0.00 [tap]

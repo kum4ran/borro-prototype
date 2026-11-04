@@ -1,0 +1,67 @@
+# 5.5 James · Deposit paid  (691:6006)  section: 5 · Lending agreement
+FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+  TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+  FRAM 'Device status' 299,14 69x16 H gap=5.0 pad=0,0,0,0
+    FRAM 'ios-signal' 299,14 17x16
+      VECT 'Vector' 299,18 16x10 fill=#14231C
+    FRAM 'ios-wifi-signal' 321,14 17x16
+      VECT 'Vector' 322,17 15x10 fill=#14231C
+    FRAM 'ios-battery-full' 343,14 25x16
+      VECT 'Vector' 343,17 24x10 fill=#14231C
+FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+  FRAM 'chevron-left' 20,65 22x22
+    VECT 'Vector' 28,70 6x11 stroke=#14231C/1.7999999523162842
+  FRAM 'Page heading' 54,54 319x45 V gap=2.0 pad=0,0,0,0
+    TEXT 'Copy' 54,54 319x28 fill=#14231C Inter 700 21 lh=28.4 ls=0.0 L "Final Agreement"
+    TEXT 'Copy' 54,84 319x15 fill=#68766E Inter 400 11 lh=14.9 ls=0.0 L "James & Thomas · 18–19 Oct 2026"
+FRAM 'Scrollable content' 0,108 393x534 V gap=12.0 pad=8.0,20.0,18.0,20.0
+  FRAM 'Card' 20,116 353x106 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    TEXT 'Copy' 32,128 329x26 fill=#14231C Inter 700 19 lh=25.6 ls=0.0 L "Garment Steamer"
+    TEXT 'Copy' 32,164 329x18 fill=#14231C Inter 400 13 lh=17.6 ls=0.0 L "18 Oct, 7:30 pm → 19 Oct, 10:00 am"
+    TEXT 'Copy' 32,192 329x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "⌖ Block A Security Desk"
+  FRAM 'Deposit explanation' 20,234 353x103 V gap=8.0 pad=0,0,0,0
+    FRAM 'Deposit title row' 20,234 353x24 H gap=8.0 pad=0,0,0,0
+      TEXT 'Copy' 20,234 173x24 fill=#14231C Inter 700 18 lh=24.3 ls=0.0 L "Safety Deposit: $10"
+      FRAM 'info' 201,238 16x16
+        VECT 'Vector' 202,239 13x13 stroke=#68766E/2.0
+    FRAM 'Payment receipt' 20,266 353x71 fill=#E8F4EC stroke=#B7D9C5/1.0 r=12 V gap=6.0 pad=12.0,12.0,12.0,12.0
+      FRAM 'Success row' 32,278 329x22 H gap=10.0 pad=0,0,0,0
+        FRAM 'check-circle' 32,279 20x20
+          VECT 'Vector' 34,281 17x17 stroke=#1E8E5A/2.5
+        TEXT 'Copy' 62,278 299x22 fill=#000000 Inter 700 16 lh=21.6 ls=0.0 L "Deposit paid · $10 via PayNow"
+      TEXT 'Copy' 32,306 329x19 fill=#000000 Inter 700 14 lh=18.9 ls=0.0 L "Ref #BR-20481"
+  FRAM 'Card' 20,349 353x45 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 G gap=0 pad=14.0,14.0,14.0,14.0 shadow=#14231C@0.03 0,3 r12
+    TEXT 'Copy' 35,366 136x11 fill=#14231C Inter 700 11 lh=11.0 ls=0.0 L "Instructions From Lender "
+    INST 'External link' 342,364 16x16
+  INST 'Terms & Conditions card' 20,406 353x44 fill=#FFFFFF stroke=#E2E8E1/0.699999988079071 r=12 V gap=10.0 pad=12.0,12.0,12.0,12.0 shadow=#14231C@0.03 0,3 r12
+    FRAM 'Terms heading' 32,418 329x20 H gap=0 pad=0,0,0,0 [tap]
+      TEXT 'Title link' 32,419 134x19 fill=#2341DD [tap] Inter 700 14 lh=18.9 ls=0.0 L "Terms & Conditions"
+      FRAM 'Chevron' 341,418 20x20 [tap]
+        VECT 'Vector' 346,426 10x5 stroke=#68766E/1.6666666269302368
+  FRAM 'Consent' 20,462 353x44 H gap=12.0 pad=0,0,0,0
+    INST 'Check' 20,472 24x24 fill=#2341DD r=5
+    TEXT 'Copy' 56,465 317x38 fill=#14231C Inter 400 14 lh=18.9 ls=0.0 L "I agree to the Terms & Conditions and the lender's care instructions."
+FRAM 'Sticky actions' 0,642 393x132 fill=#F7F8F6 V gap=8.0 pad=10.0,20.0,18.0,20.0
+  FRAM 'Action' 20,652 353x48 fill=#2341DD r=99 H gap=0 pad=0,12.0,0,12.0 [tap]
+    TEXT 'Label' 132,668 129x17 fill=#FFFFFF Inter 700 14 lh=16.9 ls=0.0 L "Submit Agreement"
+  FRAM 'Action' 20,708 353x48 fill=#FFFFFF stroke=#2341DD/1.2000000476837158 r=99 H gap=0 pad=0,14.0,0,14.0 [tap]
+    TEXT 'Label' 170,723 52x18 fill=#2341DD Inter 700 15 lh=18.2 ls=0.0 L "Cancel"
+FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+  FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+    FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'house' 51,784 21x21
+        VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+    FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'handshake' 141,784 21x21
+        VECT 'Vector' 143,787 18x16 stroke=#2341DD/1.7999999523162842
+      TEXT 'Destination' 138,808 27x12 fill=#2341DD Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+    FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'package-open' 231,784 21x21
+        VECT 'Vector' 233,786 17x18 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 230,808 24x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+    FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+      FRAM 'user-round' 321,784 21x21
+        VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+      TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+  RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8

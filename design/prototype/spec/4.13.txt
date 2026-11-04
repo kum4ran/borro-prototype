@@ -1,0 +1,91 @@
+# 4.13 Thomas · Request changes (branch)  (701:1626)  section: 4 · Schedule and chat
+FRAM 'Scheduling content' 0,0 393x626 V gap=0 pad=0,0,0,0
+  FRAM 'Status bar' 0,0 393x44 H gap=0 pad=0,25.0,0,25.0
+    TEXT 'Time' 25,14 40x17 fill=#14231C Inter 700 14 lh=16.9 ls=0.0 L "10:00"
+    FRAM 'Device status' 303,17 65x10 H gap=5.0 pad=0,0,0,0
+      VECT 'Cellular signal' 303,17 16x10 fill=#14231C
+      VECT 'Wi-Fi' 324,17 15x10 fill=#14231C
+      VECT 'Battery' 344,17 24x10 fill=#14231C
+  FRAM 'App bar' 0,44 393x64 H gap=12.0 pad=0,20.0,0,20.0
+    FRAM 'Back' 20,65 22x22
+      VECT 'Back chevron' 28,70 6x11 stroke=#14231C/1.7999999523162842
+    FRAM 'Page heading' 54,52 319x49 V gap=2.0 pad=0,0,0,0
+      TEXT 'Title' 54,52 319x29 fill=#14231C Inter 700 22 lh=28.6 ls=0.0 L "Request changes"
+      TEXT 'Subtitle' 54,82 319x18 fill=#68766E Inter 400 13 lh=17.6 ls=0.0 L "James · Garment Steamer"
+  FRAM 'Completed form' 0,108 393x518 V gap=12.0 pad=8.0,16.0,0,16.0
+    FRAM 'Date selection section' 16,116 361x207 fill=#FFFFFF stroke=#E5E8E3/1.0 r=18 V gap=10.0 pad=12.0,12.0,12.0,12.0
+      FRAM 'Availability field' 28,128 337x87 fill=#FFFFFF stroke=#D1D6DB/1.0 r=14 V gap=6.0 pad=10.0,10.0,10.0,10.0
+        FRAM 'Field heading' 38,138 317x17 H gap=8.0 pad=0,0,0,0
+          VECT 'Calendar' 38,138 15x17 stroke=#3D49FF/1.7999999523162842
+          TEXT 'Availability label' 61,138 228x16 fill=#68766E Inter 700 12 lh=16.0 ls=0.0 L "Pick-up · 2026"
+          TEXT 'Selected count' 297,138 42x16 fill=#68766E Inter 400 12 lh=16.0 ls=0.0 L "2 times"
+          VECT 'Expand times' 347,144 8x4 stroke=#14231C/1.7999999523162842
+        FRAM 'Availability options' 38,161 317x24 V gap=4.0 pad=0,0,0,0
+          FRAM 'Date and availability' 38,161 317x24 H gap=8.0 pad=0,0,0,0
+            TEXT 'Date' 38,165 96x16 fill=#14231C Inter 700 13 lh=15.7 ls=0.0 L "Sun 18 Oct"
+            FRAM 'Selected times' 142,161 113x24 H gap=4.0 pad=0,0,0,0
+              FRAM 'Time option' 142,161 45x24 fill=#E8EAFF r=30 H gap=0 pad=0,8.0,0,8.0
+                TEXT 'Time' 150,165 29x15 fill=#233BDE Inter 600 12 lh=14.5 ls=0.0 L "7 pm"
+              FRAM 'Time option' 191,161 64x24 fill=#E8EAFF r=30 H gap=0 pad=0,8.0,0,8.0
+                TEXT 'Time' 199,165 48x15 fill=#233BDE Inter 600 12 lh=14.5 ls=0.0 L "7:30 pm"
+        TEXT 'Matching availability summary' 38,191 317x14 fill=#708187 Inter 400 11 lh=14.0 ls=0.0 L "2 selected · 2 match James"
+      FRAM 'Availability field' 28,225 337x87 fill=#FFFFFF stroke=#D1D6DB/1.0 r=14 V gap=6.0 pad=10.0,10.0,10.0,10.0
+        FRAM 'Field heading' 38,235 317x17 H gap=8.0 pad=0,0,0,0
+          VECT 'Calendar' 38,235 15x17 stroke=#3D49FF/1.7999999523162842
+          TEXT 'Availability label' 61,235 236x16 fill=#68766E Inter 700 12 lh=16.0 ls=0.0 L "Return · 2026"
+          TEXT 'Selected count' 305,235 34x16 fill=#68766E Inter 400 12 lh=16.0 ls=0.0 L "1 time"
+          VECT 'Expand times' 347,241 8x4 stroke=#14231C/1.7999999523162842
+        FRAM 'Availability options' 38,257 317x24 V gap=4.0 pad=0,0,0,0
+          FRAM 'Tue 3 Nov return availability' 38,257 317x24 H gap=8.0 pad=0,0,0,0
+            TEXT 'Date' 38,261 96x16 fill=#14231C Inter 700 13 lh=15.7 ls=0.0 L "Mon 19 Oct"
+            FRAM 'Selected times' 142,257 51x24 H gap=4.0 pad=0,0,0,0
+              FRAM 'Time option' 142,257 51x24 fill=#E8EAFF r=30 H gap=0 pad=0,8.0,0,8.0
+                TEXT 'Time' 150,262 35x15 fill=#233BDE Inter 600 12 lh=14.5 ls=0.0 L "10 am"
+        TEXT 'Matching availability summary' 38,287 317x14 fill=#708187 Inter 400 11 lh=14.0 ls=0.0 L "1 selected · 1 match James"
+    FRAM 'Meeting details' 16,335 361x291 V gap=12.0 pad=0,0,0,0
+      FRAM 'Meeting address' 16,335 361x73 V gap=7.0 pad=0,0,0,0
+        TEXT 'Address label' 16,335 361x18 fill=#162C32 Inter 700 15 lh=18.0 ls=0.0 L "Meeting address"
+        FRAM 'Address field' 16,360 361x48 fill=#FFFFFF stroke=#D1D6DB/1.0 r=14 H gap=14.0 pad=0,16.0,0,16.0
+          VECT 'Location pin' 32,376 13x17 stroke=#162C32/2.0
+          TEXT 'Selected map address' 59,376 302x17 fill=#162C32 Inter 500 14 lh=16.9 ls=0.0 L "Block A Security Desk"
+      FRAM 'Pick on map button' 16,420 361x44 fill=#FFFFFF stroke=#3D49FF/1.7000000476837158 r=30 H gap=0 pad=0,0,0,0
+        TEXT 'Button label' 152,433 89x18 fill=#3D49FF Inter 700 15 lh=18.2 ls=0.0 L "Pick on map"
+      FRAM 'Preferred meeting spot' 16,476 361x150 fill=#FFFFFF stroke=#E5E8E3/1.0 r=18 V gap=12.0 pad=12.0,16.0,16.0,16.0
+        TEXT 'Section heading' 32,488 329x18 fill=#162C32 Inter 700 15 lh=18.0 ls=0.0 L "Preferred meeting spot"
+        FRAM 'Meeting spot choices' 32,518 329x92 V gap=10.0 pad=0,0,0,0
+          FRAM 'Meeting spot option' 32,518 329x24 H gap=14.0 pad=0,0,0,0
+            FRAM 'Radio button' 32,518 24x24
+              ELLI 'Radio outline' 32,519 23x23 stroke=#3D49FF/2.0
+            TEXT 'Spot name' 70,521 291x18 fill=#162C32 Inter 400 15 lh=18.2 ls=0.0 L "West Wing Lobby"
+          FRAM 'Meeting spot option' 32,552 329x24 H gap=14.0 pad=0,0,0,0
+            FRAM 'Radio button' 32,552 24x24
+              ELLI 'Selected indicator' 40,560 8x8 fill=#3D49FF
+              ELLI 'Radio outline' 32,553 23x23 stroke=#3D49FF/2.0
+            TEXT 'Spot name' 70,555 291x18 fill=#162C32 Inter 400 15 lh=18.2 ls=0.0 L "Block A Security Desk"
+          FRAM 'Meeting spot option' 32,586 329x24 H gap=14.0 pad=0,0,0,0
+            FRAM 'Radio button' 32,586 24x24
+              ELLI 'Radio outline' 32,587 23x23 stroke=#3D49FF/2.0
+            TEXT 'Spot name' 70,589 291x18 fill=#162C32 Inter 400 15 lh=18.2 ls=0.0 L "Arrange via chat"
+FRAM 'Proposal and navigation' 0,720 393x132 V gap=6.0 pad=0,0,0,0
+  FRAM 'Proposal action' 0,720 393x48 V gap=8.0 pad=0,16.0,0,16.0
+    FRAM 'Send proposal button · Enabled' 16,720 361x48 fill=#2341DD r=99 H gap=0 pad=0,0,0,0 [tap]
+      TEXT 'Button label' 140,734 114x19 fill=#FFFFFF Inter 700 16 lh=19.4 ls=0.0 L "Send Changes"
+  FRAM 'Bottom navigation' 0,774 393x78 fill=#FFFFFF stroke=#E2E8E1/1.0 V gap=7.0 pad=10.0,16.0,8.0,16.0
+    FRAM 'Navigation destinations' 16,784 361x36 H gap=0 pad=0,0,0,0
+      FRAM 'Navigation item' 16,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'house' 51,784 21x21
+          VECT 'Vector' 53,786 16x17 stroke=#68766E/1.7999999523162842
+        TEXT 'Destination' 47,808 29x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "Home"
+      FRAM 'Navigation item' 106,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'handshake' 141,784 21x21
+          VECT 'Vector' 143,787 18x16 stroke=#68766E/1.7999999523162842
+        TEXT 'Destination' 138,808 27x12 fill=#68766E Inter 700 10 lh=12.1 ls=0.0 L "Borro"
+      FRAM 'Navigation item' 196,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'package-open' 231,784 21x21
+          VECT 'Vector' 233,786 17x18 stroke=#2341DD/1.7999999523162842
+        TEXT 'Destination' 230,808 24x12 fill=#2341DD Inter 500 10 lh=12.1 ls=0.0 L "Lend"
+      FRAM 'Navigation item' 287,784 90x36 V gap=3.0 pad=0,0,0,0 [tap]
+        FRAM 'user-round' 321,784 21x21
+          VECT 'Vector' 325,787 14x16 stroke=#68766E/1.7999999523162842
+        TEXT 'Destination' 323,808 18x12 fill=#68766E Inter 500 10 lh=12.1 ls=0.0 L "You"
+    RECT 'Home indicator' 132,827 130x4 fill=#14231C r=8
