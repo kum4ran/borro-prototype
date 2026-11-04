@@ -9,9 +9,9 @@ struct S4_12_ChooseTimesPopUpView: View {
     var body: some View {
         SheetContainer(title: "Choose your times", subtitle: "Tap one pick-up time and one return time.") {
             VStack(spacing: Space.x12) {
-                choiceGroup(title: "Pick-up", day: MockData.pickUpDay, options: MockData.pickUpOptions,
+                choiceGroup(title: "Pick-up", day: appState.pickUpDay.medium, options: appState.pickUpOffers,
                             selected: appState.pickUpChoice) { appState.choosePickUp($0) }
-                choiceGroup(title: "Return", day: MockData.returnDay, options: MockData.returnOptions,
+                choiceGroup(title: "Return", day: appState.returnDay.medium, options: appState.returnOffers,
                             selected: appState.returnChoice) { appState.chooseReturn($0) }
                 Spacer(minLength: 0)
                 PrimaryButton(title: appState.timesButtonLabel, enabled: appState.bothTimesChosen,
@@ -22,8 +22,8 @@ struct S4_12_ChooseTimesPopUpView: View {
         }
     }
 
-    private func choiceGroup(title: String, day: String, options: [TimeOption], selected: TimeOption?,
-                             choose: @escaping (TimeOption) -> Void) -> some View {
+    private func choiceGroup(title: String, day: String, options: [TimeOfDay], selected: TimeOfDay?,
+                             choose: @escaping (TimeOfDay) -> Void) -> some View {
         VStack(alignment: .leading, spacing: Space.x12) {
             HStack {
                 Text(title).font(.b(.s15)).foregroundStyle(Color.ink)
@@ -46,9 +46,9 @@ struct S4_12_ChooseTimesPopUpView: View {
         .panel(.surfaceSunk, padding: Space.x14, radius: Radius.r16)
     }
 
-    private func pills(_ options: [TimeOption], selected: TimeOption?, choose: @escaping (TimeOption) -> Void) -> some View {
+    private func pills(_ options: [TimeOfDay], selected: TimeOfDay?, choose: @escaping (TimeOfDay) -> Void) -> some View {
         ForEach(options) { option in
-            BigTimePill(label: option.label, selected: selected == option) { choose(option) }
+            BigTimePill(label: option.pill, selected: selected == option) { choose(option) }
         }
     }
 }

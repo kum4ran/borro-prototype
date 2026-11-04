@@ -7,7 +7,7 @@ struct S6_10_DropOffSavedShareCodeView: View {
 
     var body: some View {
         ScreenScaffold {
-            BackAppBar(title: "Drop-off saved", subtitle: "\(Scenario.meetUpPlace) · \(Scenario.reference)")
+            BackAppBar(title: "Drop-off saved", subtitle: "\(appState.meetUpPlace) · \(Scenario.reference)")
         } content: {
             ResultSeal(icon: .check, fill: .successMint, tint: .brand)
             VStack(spacing: Space.x8) {
@@ -38,9 +38,9 @@ struct AgreedRowsCard: View {
             Text("Garment Steamer").font(.b(.s16)).foregroundStyle(Color.ink)
             DotRow(label: "Borrower", value: MockData.james.name)
             DotRow(label: "Lender", value: MockData.thomas.name)
-            DotRow(label: "Pickup", value: "18 Oct · \(appState.pickUpTime)")
-            DotRow(label: "Return", value: "19 Oct · \(appState.returnTime)")
-            Text("⌖ \(Scenario.meetUpPlace)").font(.r(.s13)).foregroundStyle(Color.ink)
+            DotRow(label: "Pickup", value: appState.pickUpShort)
+            DotRow(label: "Return", value: appState.returnShort)
+            Text("⌖ \(appState.meetUpPlace)").font(.r(.s13)).foregroundStyle(Color.ink)
         }
         .cardStyle()
     }

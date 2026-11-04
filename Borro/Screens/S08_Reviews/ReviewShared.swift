@@ -2,6 +2,7 @@ import SwiftUI
 
 /// Rating form shared by 8.2, 8.3 (James rates Thomas) and 8.6 (Thomas rates James).
 struct RatePage: View {
+    @Environment(AppState.self) private var appState
     let person: User
     let comment: String?
     let stars: [String: Int]
@@ -18,7 +19,7 @@ struct RatePage: View {
                 VStack(alignment: .leading, spacing: Space.x2) {
                     Text("Rate \(person.name)").font(.b(.s21)).foregroundStyle(Color.ink)
                     Text("Garment Steamer").font(.r(.s12)).foregroundStyle(Color.inkSecondary)
-                    Text(Scenario.borrowDatesShort).font(.r(.s12)).foregroundStyle(Color.inkSecondary)
+                    Text(appState.borrowRange).font(.r(.s12)).foregroundStyle(Color.inkSecondary)
                 }
             }
             VStack(spacing: Space.x4) {
@@ -81,7 +82,10 @@ struct StarRow: View {
 
 /// "Thank you for your review!" (8.4, 8.7).
 struct ReviewSubmittedPage<Extra: View>: View {
+    @Environment(AppState.self) private var appState
     let person: String
+    /// The stars given per category, shown back as the saved review.
+    var stars: [String: Int] = [:]
     let action: String
     let actionID: String
     let perform: () -> Void
@@ -101,7 +105,19 @@ struct ReviewSubmittedPage<Extra: View>: View {
             .frame(maxWidth: .infinity)
             VStack(alignment: .leading, spacing: Space.x6) {
                 Text("\(person) · Garment Steamer").font(.b(.s15)).foregroundStyle(Color.ink)
-                Text("Your review has been saved · 19 Oct 2026").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
+                if !stars.isEmpty {
+                    let average = Double(stars.values.reduce(0, +)) / Double(stars.count)
+                    HStack(spacing: Space.x6) {
+                        StarRow(value: Int(average.rounded())) { _ in }
+                            .allowsHitTesting(false)
+                            .padding(.vertical, -Space.x10)
+                        Text(String(format: "%.1f", average)).font(.b(.s14)).foregroundStyle(Color.ink)
+                    }
+                    .accessibilityElement(children: .ignore)
+                    .accessibilityLabel(String(format: "You rated %@ %.1f out of 5", person, average))
+                    .accessibilityIdentifier("savedRating")
+                }
+                Text("Your review has been saved · \(appState.returnDay.withYear)").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
             }
             .cardStyle(shadow: false)
             extra()

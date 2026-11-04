@@ -7,7 +7,8 @@ struct S8_4_ReviewSubmittedView: View {
     @Environment(AppState.self) private var appState
 
     var body: some View {
-        ReviewSubmittedPage(person: "Thomas", action: "View deposit refund", actionID: "viewDepositRefundButton") {
+        ReviewSubmittedPage(person: "Thomas", stars: appState.thomasCategoryStars,
+                            action: "View deposit refund", actionID: "viewDepositRefundButton") {
             appState.depositRefunded()
             router.go(.s8_8)
         } extra: {

@@ -11,9 +11,28 @@
 | All 127 screens reachable | Yes. 111 by tapping from 1.1, 16 only from the demo menu because Figma has no link into them (table below). |
 | Every Figma link goes where Figma says | 791 / 791 link destinations wired (`python3 tools/check_links.py`, report in `Docs/link-check.md`). Exceptions on purpose are listed under "Deviations". |
 | Side-by-side comparison per screen | `Docs/screens/compare/<frame>.jpg`, Figma left, app right (iPhone 17 Pro). |
-| Unit tests and UI test pass | 19 unit tests, 2 UI tests, all passing (last full run 4 Nov 2026, iPhone 17 Pro, iOS 26.2). |
+| Unit tests and UI test pass | 30 unit tests, 5 UI tests (story path, chosen dates, chosen times, Apple Pay, countdown), all passing (last run 5 Nov 2026, iPhone 17 Pro, iOS 26.2). |
 | Conflicts listed | Below. |
 | iPhone SE, Dynamic Type xxxLarge | Checked, see "Small phone and Dynamic Type". |
+
+## Live choices (added 5 Nov 2026)
+
+Every choice on the story path now changes state, and every later screen shows what was picked. Figma only covers the default path; these extra outcomes are app behaviour.
+
+| Choice | Where you pick | Where it shows |
+|---|---|---|
+| Search radius (Current, 500 m, 1 km, 2 km, 5 km) | 1.4 slider (tap a stop or drag) | 1.4 "Searching within …", 1.3 Location value, 1.5 results and count |
+| Borrowing dates (18–27 Oct, up to 7 days; 15–17 Oct busy, earlier days past) | 2.2 calendar: first tap starts, a later day ends | 2.2 summary, 2.3/3.9 request card, 3.1/3.8 pushes, 3.2/3.3 requests and calendar, 3.7 dialog, 2.4/9.1 detail lines, 5.x agreement, T&C, receipts, 8.x pushes |
+| Pick-up day / return day (inside the borrowing range, return not before pick-up) | 4.2 / 4.4 calendars | 4.3/4.5 headers, 4.7, 4.8, 4.11, 4.12, 4.13, and every agreed date after 4.14 |
+| Pick-up / return times James offers | 4.3 / 4.5 wheel: "Add", tap a chip to remove, "Clear times"; same-day returns must come after pick-up | 4.7 fields, 4.8/4.11 rows, 4.12 pills, 4.13 fields |
+| The one time Thomas picks of each | 4.12 pills (from James's offers) | 4.14 and everything after: agreement, chat, timelines, handover, return, status lines on 2.4 and 9.1 |
+| Meeting spot (Block A Security Desk, Blk 12, Blk 48; Thomas can suggest West Wing Lobby or "Arrange via chat") | 4.6 list under the map; 4.13 radio | 4.1, 4.7, 4.8, 4.11, 4.14, chat, agreement, T&C, timelines, handover and return headers, status lines |
+| Deposit payment method (PayNow, Apple Pay) | 5.2 buttons | 5.2c, 5.2d receipt "Method", 5.5 deposit panel, 5.6, 5.1 |
+| Star ratings | 8.2 first tap fills every category with the stars tapped; 8.3 / 8.6 per row | 8.4 / 8.7 "saved review" with the average |
+
+New app-only frame: **5.2f Apple Pay (sheet)**, a simulated Apple Pay sheet (no Wallet, no charge) → 5.2c → 5.2d. Screen count is now 128 (127 Figma + 1).
+
+Not made live (side branches or outside the agreed scope): 1.3 Rating / Reviews / Availability filter rows, the 1.4 custom-radius field, Reject on 3.2/3.3, and every section 9–11 control.
 
 ## Decisions
 
@@ -34,12 +53,12 @@ Please confirm. Each one is one value in `Core/Constants.swift` or `Core/MockDat
 | # | Figma | What the app does | Where |
 |---|---|---|---|
 | 1 | Return time 10:00 am (5.2, status strings, Borro times default, T&C, 4.9 chat) | Monday 19 Oct, **11:00 pm** everywhere | `Scenario.returnTime` |
-| 2 | Return pills 9 am / 10 am / 10:30 am (4.5, 4.7, 4.11, 4.12) | 10 pm / **11 pm** / 11:30 pm; the middle one is `Scenario.returnTime`. Later screens show the pill Thomas picks | `MockData.returnOptions` |
+| 2 | Return pills 9 am / 10 am / 10:30 am (4.5, 4.7, 4.11, 4.12) | James's default offers are 10 pm / **11 pm** / 11:30 pm (11 pm is `Scenario.defaultReturnTime`); he can add or remove any time on 4.5, and later screens show the one Thomas picks | `MockData.defaultReturnOffers` |
 | 3 | 5.1 shows "Deposit paid" before James pays | "Awaiting deposit" until the deposit is held | `S5_1_AgreementSentView` |
-| 4 | Apple Pay on 5.2 has no link | Drawn, inert | `AgreementShared.swift` |
+| 4 | Apple Pay on 5.2 has no link | Wired to an app-only simulated sheet (5.2f) so the option has its own path | `S5_2f_ApplePaySheetView` |
 | 5 | 8482 on 6.3a, 6.3b, 6.5a, 6.6a (and 6.14a–d); 6767 on 7.1 | Handover shows 6767, return shows 8482 | `LenderCodeTop`, `S7_1_…` |
 | 6 | "Portable Steamer" / "Steamer Screen" over projector photos (11.4) | "Portable Projector" / "Projector Screen" | `MockData.wishlist` |
-| 7 | Calendar highlights don't match 18–19 Oct | 18 and 19 Oct highlighted | `CalendarMonth` |
+| 7 | Calendar highlights don't match 18–19 Oct | The chosen days are highlighted (18 and 19 Oct by default); 2.1 says "18–27 Oct · Free" to match the days you can pick | `CalendarMonth` |
 | 8 | Meet-up "reception" (scenario) vs Block A Security Desk; "West Wing Lobby" on 9.10 / 9.16 | Block A Security Desk everywhere | `Scenario.meetUpPlace` |
 | 9 | Status bar 10:00 on every frame | Real status bar | — |
 | 10 | 8.9 credibility after reviews | 72/100, as Figma shows | `MockData.james` |
@@ -58,6 +77,8 @@ Please confirm. Each one is one value in `Core/Constants.swift` or `Core/MockDat
 
 - Photo submit with front only (conflict 11): 6.4 → 6.9, 6.14a → 6.18 and 7.2a → 7.4 instead of no link / 6.17.
 - Unwired Figma buttons stay inert: 2.3 "Chat with Thomas", 3.2 Accept/Reject on cards, Reject on 3.3, 5.1 "Edit Agreement", 5.3 Copy/Download, timeline "View Agreement" and "Before / After", 9.5 "Mark as Important", 9.10 "Pick on map", 10.x "Request" buttons, "Search for other".
+- 4.13 "Arrange via chat" sends Thomas to the chat (4.9) instead of back to 4.11; the other spots keep Figma's 4.11 link.
+- 4.7 "Send Proposal" is disabled while James has removed every pick-up or return time.
 
 ## Added links (not in Figma)
 
@@ -128,6 +149,7 @@ Path labels are Figma layer names (often "Action" for a button). Shortest path f
 | 5.2c | James · PayNow · Processing payment | … 4.9 → *Action* · 5.2 → *image 3* · 5.2a → *Pay with PayNow* · 5.2b → *I've paid* |
 | 5.2d | James · Payment successful | … 5.2 → *image 3* · 5.2a → *Pay with PayNow* · 5.2b → *I've paid* · 5.2c → *5.2c James · PayNow · Processing payment* |
 | 5.2e | Both · Terms & Conditions | 1.1 → *Lend tab* · 9.1 → *Requests shortcut* · 3.2 → *Copy* · 3.3 → *Action* · 4.9 → *Action* · 5.2 → *Title link* |
+| 5.2f | James · Apple Pay (sheet) [app only] | 1.1 → *Lend tab* · 9.1 → *Requests shortcut* · 3.2 → *Copy* · 3.3 → *Action* · 4.9 → *Action* · 5.2 → *Apple Pay button* |
 | 5.3 | James · Lender care note | 1.1 → *Lend tab* · 9.1 → *Requests shortcut* · 3.2 → *Copy* · 3.3 → *Action* · 4.9 → *Action* · 5.2 → *Card* |
 | 5.4 | James · Deposit info | 1.1 → *Lend tab* · 9.1 → *Requests shortcut* · 3.2 → *Copy* · 3.3 → *Action* · 4.9 → *Action* · 5.2 → *Deposit title row* |
 | 5.5 | James · Deposit paid | … 5.2a → *Pay with PayNow* · 5.2b → *I've paid* · 5.2c → *5.2c James · PayNow · Processing payment* · 5.2d → *Continue* |
@@ -217,4 +239,4 @@ Path labels are Figma layer names (often "Action" for a button). Shortest path f
 | 11.4 | James · Wishlist | 1.1 → *heart* |
 | 11.5 | James · Ask Borro (AI chat) | 1.1 → *Lend tab* · 9.1 → *Requests shortcut* · 3.2 → *Copy* · 3.3 → *Action* · 4.9 → *Speech bubble* |
 
-111 of 127 frames are reachable by tapping from 1.1; 16 only from the demo menu: 5.1, 8.1, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9, 10.10, 10.11, 10.12, 10.13, 11.1.
+112 of 128 frames are reachable by tapping from 1.1; 16 only from the demo menu: 5.1, 8.1, 10.1, 10.2, 10.3, 10.4, 10.5, 10.6, 10.7, 10.8, 10.9, 10.10, 10.11, 10.12, 10.13, 11.1.

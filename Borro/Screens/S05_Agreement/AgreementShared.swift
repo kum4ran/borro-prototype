@@ -8,11 +8,11 @@ struct FinalAgreementPage: View {
     var body: some View {
         let paid = appState.deposit != .unpaid
         ScreenScaffold {
-            BackAppBar(title: "Final Agreement", subtitle: "James & Thomas · 18-19 Oct 2026", backTo: .s4_9) {
+            BackAppBar(title: "Final Agreement", subtitle: "James & Thomas · \(appState.borrowRange)", backTo: .s4_9) {
                 LinkButton(title: "Suggest changes") { router.go(.s4_9) }
             }
         } content: {
-            AgreementItemCard(dates: agreementDates(appState))
+            AgreementItemCard(dates: appState.agreementDates, place: appState.meetUpPlace)
             TapArea(accessibilityLabel: "Safety deposit \(Scenario.depositAmount), deposit info") { router.go(.s5_4) } label: {
                 HStack(spacing: Space.x8) {
                     Text("Safety Deposit: \(Scenario.depositAmount)").font(.b(.s18)).foregroundStyle(Color.ink)
@@ -21,7 +21,7 @@ struct FinalAgreementPage: View {
             }
             .accessibilityIdentifier("depositInfoRow")
             if paid {
-                DepositPaidPanel(paid: true)
+                DepositPaidPanel(paid: true, method: appState.paymentMethod)
             } else {
                 HStack(spacing: Space.x8) {
                     Button { router.go(.s5_2a) } label: {
@@ -34,16 +34,20 @@ struct FinalAgreementPage: View {
                     .buttonStyle(PressStyle())
                     .accessibilityLabel("Pay with PayNow")
                     .accessibilityIdentifier("payNowButton")
-                    // Apple Pay is drawn but not wired in Figma.
-                    HStack(spacing: Space.x2) {
-                        Image(systemName: "apple.logo").font(.b(.s18))
-                        Text("Pay").font(.inter(.semibold, .s20))
+                    // Not wired in Figma; the app adds an Apple Pay path (5.2f, app only).
+                    Button { router.go(.s5_2f) } label: {
+                        HStack(spacing: Space.x2) {
+                            Image(systemName: "apple.logo").font(.b(.s18))
+                            Text("Pay").font(.inter(.semibold, .s20))
+                        }
+                        .foregroundStyle(Color.inkBlack)
+                        .frame(maxWidth: .infinity, minHeight: Size.payButton)
+                        .overlay(Capsule().strokeBorder(Color.brand, lineWidth: Size.buttonStroke))
+                        .contentShape(Capsule())
                     }
-                    .foregroundStyle(Color.inkBlack)
-                    .frame(maxWidth: .infinity, minHeight: Size.payButton)
-                    .overlay(Capsule().strokeBorder(Color.brand, lineWidth: Size.buttonStroke))
-                    .accessibilityElement(children: .ignore)
-                    .accessibilityLabel("Apple Pay, not available in this prototype")
+                    .buttonStyle(PressStyle())
+                    .accessibilityLabel("Pay with Apple Pay")
+                    .accessibilityIdentifier("applePayButton")
                 }
                 Text("Selecting a payment method authorises your \(Scenario.depositAmount) deposit.")
                     .font(.r(.s11)).foregroundStyle(Color.inkSecondary)
@@ -68,6 +72,4 @@ struct FinalAgreementPage: View {
     }
 }
 
-@MainActor func agreementDates(_ state: AppState) -> String {
-    "18 Oct, \(state.pickUpTime) → 19 Oct, \(state.returnTime)"
-}
+

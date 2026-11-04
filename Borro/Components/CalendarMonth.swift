@@ -1,17 +1,22 @@
 import SwiftUI
 
-/// Month grid used by the date sheets (2.2, 4.2, 4.4, 11.2). Highlights the chosen days.
-/// October 2026 starts on a Thursday.
+/// October 2026 month grid used by the date sheets (2.2, 3.3, 4.2, 4.4, 9.11, 11.2).
+/// Chosen days are solid blue, days inside a chosen range light blue, unavailable days grey.
 struct CalendarMonth: View {
     var title = "October 2026"
+    var selected: Set<Int> = [Scenario.defaultBorrowStart.day, Scenario.defaultBorrowEnd.day]
+    /// Days between the chosen ends, tinted.
+    var inRange: Set<Int> = []
+    /// Background tint for days the other person is free (4.2 / 4.4 legend).
+    var highlighted: Set<Int> = []
+    var isEnabled: (Int) -> Bool = { _ in true }
+    var onTap: ((Int) -> Void)?
     /// Monday-first by default; 3.3 starts the week on Sunday.
     var startsSunday = false
-    var dayCount = 31
-    var selected: Set<Int> = [18, 19]
     var footnote: String? = "Select start and end dates"
 
     private var weekdays: [String] { startsSunday ? ["S", "M", "T", "W", "T", "F", "S"] : ["M", "T", "W", "T", "F", "S", "S"] }
-    private var leadingBlanks: Int { startsSunday ? 4 : 3 }
+    private var leadingBlanks: Int { startsSunday ? OctDay.firstWeekdayIndex + 1 : OctDay.firstWeekdayIndex }
     private let columns = Array(repeating: GridItem(.flexible(), spacing: 0), count: 7)
 
     var body: some View {
@@ -33,14 +38,8 @@ struct CalendarMonth: View {
                 ForEach((0..<leadingBlanks).map { "b\($0)" }, id: \.self) { _ in
                     Color.clear.frame(height: Size.calendarCell)
                 }
-                ForEach(1...dayCount, id: \.self) { day in
-                    let on = selected.contains(day)
-                    Text("\(day)")
-                        .font(.r(.s14_3))
-                        .foregroundStyle(on ? Color.surface : Color.ink)
-                        .frame(maxWidth: .infinity, minHeight: Size.calendarCell)
-                        .background(on ? Color.brand : Color.clear)
-                        .accessibilityLabel("\(day) October\(on ? ", selected" : "")")
+                ForEach(1...OctDay.daysInMonth, id: \.self) { day in
+                    dayCell(day)
                 }
             }
             if let footnote {
@@ -48,5 +47,33 @@ struct CalendarMonth: View {
             }
         }
         .cardStyle()
+    }
+
+    @ViewBuilder
+    private func dayCell(_ day: Int) -> some View {
+        let on = selected.contains(day)
+        let enabled = isEnabled(day)
+        let label = Text("\(day)")
+            .font(.r(.s14_3))
+            .foregroundStyle(on ? Color.surface : (enabled ? Color.ink : Color.greySilver))
+            .frame(maxWidth: .infinity, minHeight: Size.calendarCell)
+            .background(background(day, on: on))
+        if let onTap, enabled {
+            Button { onTap(day) } label: { label.contentShape(Rectangle()) }
+                .buttonStyle(.plain)
+                .accessibilityLabel("\(OctDay(day: day).medium)\(on ? ", selected" : "")")
+                .accessibilityAddTraits(on ? .isSelected : [])
+                .accessibilityIdentifier("day.\(day)")
+        } else {
+            label
+                .accessibilityLabel("\(OctDay(day: day).medium)\(on ? ", selected" : "")\(enabled ? "" : ", unavailable")")
+        }
+    }
+
+    private func background(_ day: Int, on: Bool) -> Color {
+        if on { return .brand }
+        if inRange.contains(day) { return .brandMist }
+        if highlighted.contains(day) { return .pendingFill }
+        return .clear
     }
 }

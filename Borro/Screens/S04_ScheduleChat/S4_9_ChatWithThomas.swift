@@ -13,6 +13,7 @@ struct S4_9_ChatWithThomasView: View {
 struct ChatPage: View {
     var onPlus: () -> Void = {}
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
     private let thomas = MockData.thomas
 
     var body: some View {
@@ -20,7 +21,7 @@ struct ChatPage: View {
             BackAppBar(title: thomas.name, subtitle: "★ \(thomas.rating) · \(thomas.reviewCount) reviews", backTo: .s4_14)
         } content: {
             Text("18 OCTOBER 2026").font(.m(.s11)).foregroundStyle(Color.inkSecondary).frame(maxWidth: .infinity)
-            ForEach(MockData.chat) { ChatBubble(message: $0) }
+            ForEach(MockData.chat(appState)) { ChatBubble(message: $0) }
             AgreementMessageCard { router.go(.s5_2) }
             HStack(spacing: Space.x8) {
                 ForEach(["On my way", "Thanks", "See you soon"], id: \.self) { reply in

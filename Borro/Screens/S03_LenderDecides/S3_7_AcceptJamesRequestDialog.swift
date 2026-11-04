@@ -10,7 +10,7 @@ struct S3_7_AcceptJamesRequestDialogView: View {
             VStack(alignment: .leading, spacing: Space.x18) {
                 Text("Accept James’ request?").font(.b(.s23)).foregroundStyle(Color.ink)
                     .accessibilityAddTraits(.isHeader)
-                Text("Accept James’ request for 18–19 Oct? You’ll arrange the pickup together after confirming.")
+                Text("Accept James’ request for \(appState.borrowRangeShort)? You’ll arrange the pickup together after confirming.")
                     .font(.b(.s16)).foregroundStyle(Color.inkSecondary)
                 VStack(spacing: Space.x18) {
                     PrimaryButton(title: "Confirm", identifier: "confirmAcceptButton") {

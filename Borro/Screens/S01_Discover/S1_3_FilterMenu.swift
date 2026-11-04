@@ -3,11 +3,12 @@ import SwiftUI
 /// Figma frame "1.3 James · Filter menu" (node 691:4365). Dropdown over 1.2.
 struct S1_3_FilterMenuView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
 
-    private let options: [(title: String, value: String)] = [
-        ("Location", "Within 1 km"), ("Rating", "4 stars & up"),
-        ("Reviews", "Most reviewed"), ("Availability", "18–19 Oct"),
-    ]
+    private var options: [(title: String, value: String)] {
+        [("Location", appState.radius.phrase.prefix(1).uppercased() + appState.radius.phrase.dropFirst()),
+         ("Rating", "4 stars & up"), ("Reviews", "Most reviewed"), ("Availability", appState.borrowRangeShort)]
+    }
 
     var body: some View {
         OverlayContainer(alignment: .topTrailing, dimmed: false) {

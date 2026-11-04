@@ -9,6 +9,7 @@ from collections import deque
 
 d = json.load(open("Docs/figma-links.json"))
 names = {s["code"]: s["name"] for s in d["screens"]}
+names["5.2f"] = "5.2f James · Apple Pay (sheet) [app only]"
 
 def dests(a):
     if a["type"] == "navigate" and not a.get("tickTwin") and ":" not in a["to"]:
@@ -31,7 +32,7 @@ for l in d["links"]:
 # Links the app adds on top of Figma (see Docs/PROGRESS.md, "Added links").
 EXTRA = [("6.11", "6.12", "type a wrong code"), ("6.12", "6.14", "type 6767"), ("6.11", "6.14", "type 6767"),
          ("8.4", "8.5", "Thomas push banner"), ("8.8", "8.5", "Thomas push banner"),
-         ("1.2", "1.1", "Need it Now toggle (off)")]
+         ("1.2", "1.1", "Need it Now toggle (off)"), ("5.2", "5.2f", "Apple Pay button")]
 for a, b, label in EXTRA:
     edges.setdefault(a, []).insert(0, (b, label))
 

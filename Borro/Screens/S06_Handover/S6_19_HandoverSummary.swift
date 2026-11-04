@@ -21,15 +21,15 @@ struct S6_19_HandoverSummaryView: View {
                         Chip(text: "Ongoing", fill: appState.status.chipFill, ink: appState.status.chipInk)
                     }
                 }
-                DotRow(label: "Pickup", value: "18 Oct 2026 · \(appState.pickUpTime)")
-                DotRow(label: "Return", value: "19 Oct 2026 · \(appState.returnTime)")
-                Text(Scenario.meetUpPlace).font(.r(.s11)).foregroundStyle(Color.inkSecondary)
+                DotRow(label: "Pickup", value: "\(appState.pickUpDay.withYear) · \(appState.pickUpTime)")
+                DotRow(label: "Return", value: "\(appState.returnDay.withYear) · \(appState.returnTime)")
+                Text(appState.meetUpPlace).font(.r(.s11)).foregroundStyle(Color.inkSecondary)
             }
             .cardStyle()
             VStack(alignment: .leading, spacing: Space.x10) {
                 Text("Condition records · Both confirmed").font(.b(.s13)).foregroundStyle(Color.ink)
-                conditionRecord(name: "Thomas", time: "18 Oct · 7:28 pm")
-                conditionRecord(name: "James", time: "18 Oct · 7:31 pm")
+                conditionRecord(name: "Thomas", time: "\(appState.pickUpDay.short) · \(Self.minutes(appState.pickUpChoice, -2))")
+                conditionRecord(name: "James", time: "\(appState.pickUpDay.short) · \(Self.minutes(appState.pickUpChoice, 1))")
             }
             .cardStyle()
             VStack(alignment: .leading, spacing: Space.x4) {
@@ -40,6 +40,13 @@ struct S6_19_HandoverSummaryView: View {
         } actions: {
             PrimaryButton(title: "View Timeline", identifier: "viewTimelineButton") { router.go(.s6_20) }
         }
+    }
+
+    /// Record times a couple of minutes either side of the agreed pick-up (Figma: 7:28 pm and 7:31 pm).
+    private static func minutes(_ time: TimeOfDay?, _ offset: Int) -> String {
+        let base = time ?? Scenario.defaultPickUpTime
+        let total = (base.hour * 60 + base.minute + offset + 24 * 60) % (24 * 60)
+        return TimeOfDay(hour: total / 60, minute: total % 60).label
     }
 
     private func conditionRecord(name: String, time: String) -> some View {

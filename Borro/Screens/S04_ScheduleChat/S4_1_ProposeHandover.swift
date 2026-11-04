@@ -3,6 +3,7 @@ import SwiftUI
 /// Figma frame "4.1 James · Propose handover" (node 701:203).
 struct S4_1_ProposeHandoverView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
 
     var body: some View {
         ScreenScaffold(gutter: Space.gutterNarrow) {
@@ -21,7 +22,7 @@ struct S4_1_ProposeHandoverView: View {
             }
             .cardStyle(padding: Space.x14, radius: Radius.r18)
             FieldLabel(text: "Meeting address")
-            AddressField(text: "Not set yet", placeholder: true)
+            AddressField(text: appState.meetUpChosen ? appState.meetUpPlace : "Not set yet", placeholder: !appState.meetUpChosen)
             PickOnMapButton { router.go(.s4_6) }
         } actions: {
             MutedButton(title: "Send Proposal") {}

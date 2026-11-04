@@ -23,44 +23,38 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXTargetDependency section */
-		67AE3F655C624AC2B55ABEE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A54A323AFB041E0A068F1C2 /* Borro */;
-			targetProxy = 65A9E8337C504BC5A60B3E8B /* PBXContainerItemProxy */;
-		};
-		F03488A550F349ADB9EE9552 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3A54A323AFB041E0A068F1C2 /* Borro */;
-			targetProxy = 6B254D100F8C40298F419D1F /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXFileReference section */
-		C0CA643664F745A8A0E839C8 /* Borro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		102EAC7FAA7E43BAB3A7D824 /* BorroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		925F2CCAA9B04BD0AB6E1F4F /* BorroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BorroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0CA643664F745A8A0E839C8 /* Borro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Borro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		10EB87F7B1D04CE38CCF54F5 /* Tests/BorroTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests/BorroTests;
+			sourceTree = "<group>";
+		};
+		A4452B609114417D92953680 /* Tests/BorroUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Tests/BorroUITests;
+			sourceTree = "<group>";
+		};
 		C032419A58FE4EBAB38C80A6 /* Borro */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Borro;
 			sourceTree = "<group>";
 		};
-		10EB87F7B1D04CE38CCF54F5 /* BorroTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tests/BorroTests;
-			sourceTree = "<group>";
-		};
-		A4452B609114417D92953680 /* BorroUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Tests/BorroUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		32AF0D887CFC4846B50FD039 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		69C218F7EB5E4E92B29F373B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,13 +69,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		32AF0D887CFC4846B50FD039 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -89,8 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				C032419A58FE4EBAB38C80A6 /* Borro */,
-				10EB87F7B1D04CE38CCF54F5 /* BorroTests */,
-				A4452B609114417D92953680 /* BorroUITests */,
+				10EB87F7B1D04CE38CCF54F5 /* Tests/BorroTests */,
+				A4452B609114417D92953680 /* Tests/BorroUITests */,
 				B3CD94BFDF4F45BF8536D2C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,6 +95,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		17E4E6F43E5C4C91955AC5E0 /* BorroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D3BD186DCC41A4AACF20CB /* Build configuration list for PBXNativeTarget "BorroUITests" */;
+			buildPhases = (
+				89018F4582FF4BB68D2A2FCF /* Sources */,
+				32AF0D887CFC4846B50FD039 /* Frameworks */,
+				0E4C3BDC9B41424D8CF92A57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F03488A550F349ADB9EE9552 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				A4452B609114417D92953680 /* Tests/BorroUITests */,
+			);
+			name = BorroUITests;
+			packageProductDependencies = (
+			);
+			productName = BorroUITests;
+			productReference = 925F2CCAA9B04BD0AB6E1F4F /* BorroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		3A54A323AFB041E0A068F1C2 /* Borro */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BC848000B9E4B729637F833 /* Build configuration list for PBXNativeTarget "Borro" */;
@@ -144,7 +154,7 @@
 				67AE3F655C624AC2B55ABEE6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				10EB87F7B1D04CE38CCF54F5 /* BorroTests */,
+				10EB87F7B1D04CE38CCF54F5 /* Tests/BorroTests */,
 			);
 			name = BorroTests;
 			packageProductDependencies = (
@@ -152,29 +162,6 @@
 			productName = BorroTests;
 			productReference = 102EAC7FAA7E43BAB3A7D824 /* BorroTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		17E4E6F43E5C4C91955AC5E0 /* BorroUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79D3BD186DCC41A4AACF20CB /* Build configuration list for PBXNativeTarget "BorroUITests" */;
-			buildPhases = (
-				89018F4582FF4BB68D2A2FCF /* Sources */,
-				32AF0D887CFC4846B50FD039 /* Frameworks */,
-				0E4C3BDC9B41424D8CF92A57 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F03488A550F349ADB9EE9552 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A4452B609114417D92953680 /* BorroUITests */,
-			);
-			name = BorroUITests;
-			packageProductDependencies = (
-			);
-			productName = BorroUITests;
-			productReference = 925F2CCAA9B04BD0AB6E1F4F /* BorroUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -213,7 +200,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A99E5AC933764AEE915DD9FF /* Resources */ = {
+		0E4C3BDC9B41424D8CF92A57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -227,7 +214,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0E4C3BDC9B41424D8CF92A57 /* Resources */ = {
+		A99E5AC933764AEE915DD9FF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -237,13 +224,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D35041EF2F9648D9BF31A87B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4FE502F2C6E44BB1816E182F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,9 +238,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D35041EF2F9648D9BF31A87B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		67AE3F655C624AC2B55ABEE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A54A323AFB041E0A068F1C2 /* Borro */;
+			targetProxy = 65A9E8337C504BC5A60B3E8B /* PBXContainerItemProxy */;
+		};
+		F03488A550F349ADB9EE9552 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A54A323AFB041E0A068F1C2 /* Borro */;
+			targetProxy = 6B254D100F8C40298F419D1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		0282F26A76F146D9991189AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro.BorroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Borro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Borro";
+			};
+			name = Debug;
+		};
 		06F0F8F9CB31494B910F9AB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -324,6 +342,41 @@
 			};
 			name = Debug;
 		};
+		0BD77A822CE6483CADC2C3BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro.BorroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Borro;
+			};
+			name = Release;
+		};
+		4C72285731314BAF91E0B5F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro.BorroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Borro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Borro";
+			};
+			name = Release;
+		};
 		7DA8D261256C4E5C88534992 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,42 +433,6 @@
 			};
 			name = Release;
 		};
-		C54736790AB040EFBC657050 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = Borro;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Borro uses your photos so you can add pictures of items you list.";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Debug;
-		};
 		AE1543A919D84F0C9BC473D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -425,6 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 75G75V57VR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Borro;
@@ -452,46 +470,46 @@
 			};
 			name = Release;
 		};
-		0282F26A76F146D9991189AF /* Debug */ = {
+		C54736790AB040EFBC657050 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Borro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Borro";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 75G75V57VR;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				INFOPLIST_KEY_CFBundleDisplayName = Borro;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Borro uses your photos so you can add pictures of items you list.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro.BorroTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
-		};
-		4C72285731314BAF91E0B5F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Borro.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Borro";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro.BorroTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
 		};
 		ECA9ACE2C81C402FB65C4CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				TEST_TARGET_NAME = Borro;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -502,34 +520,18 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = Borro;
 			};
 			name = Debug;
-		};
-		0BD77A822CE6483CADC2C3BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				TEST_TARGET_NAME = Borro;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tjandera.borro.BorroUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BD79CC098B9147D5A6A311C4 /* Build configuration list for PBXProject "Borro" */ = {
+		539B280622844D4EB65B096D /* Build configuration list for PBXNativeTarget "BorroTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				06F0F8F9CB31494B910F9AB8 /* Debug */,
-				7DA8D261256C4E5C88534992 /* Release */,
+				0282F26A76F146D9991189AF /* Debug */,
+				4C72285731314BAF91E0B5F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -543,20 +545,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		539B280622844D4EB65B096D /* Build configuration list for PBXNativeTarget "BorroTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0282F26A76F146D9991189AF /* Debug */,
-				4C72285731314BAF91E0B5F9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		79D3BD186DCC41A4AACF20CB /* Build configuration list for PBXNativeTarget "BorroUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECA9ACE2C81C402FB65C4CEE /* Debug */,
 				0BD77A822CE6483CADC2C3BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD79CC098B9147D5A6A311C4 /* Build configuration list for PBXProject "Borro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06F0F8F9CB31494B910F9AB8 /* Debug */,
+				7DA8D261256C4E5C88534992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

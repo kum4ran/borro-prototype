@@ -122,7 +122,7 @@ struct PhotoStepPage<Top: View>: View {
         let set = appState.photoSet(flow.set)
         let filled = set.has(slot) && !codeLocked
         ScreenScaffold {
-            BackAppBar(title: flow.title, subtitle: Scenario.meetUpPlace)
+            BackAppBar(title: flow.title, subtitle: appState.meetUpPlace)
         } content: {
             Text("Garment Steamer").font(.b(.s14)).foregroundStyle(Color.ink)
             top()

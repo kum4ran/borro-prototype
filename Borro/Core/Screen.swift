@@ -43,6 +43,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
     case s5_2c
     case s5_2d
     case s5_2e
+    case s5_2f
     case s5_3
     case s5_4
     case s5_5
@@ -175,6 +176,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: return "5.2c"
         case .s5_2d: return "5.2d"
         case .s5_2e: return "5.2e"
+        case .s5_2f: return "5.2f"
         case .s5_3: return "5.3"
         case .s5_4: return "5.4"
         case .s5_5: return "5.5"
@@ -307,6 +309,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: return "5.2c James · PayNow · Processing payment"
         case .s5_2d: return "5.2d James · Payment successful"
         case .s5_2e: return "5.2e Both · Terms & Conditions"
+        case .s5_2f: return "5.2f James · Apple Pay (sheet)"
         case .s5_3: return "5.3 James · Lender care note"
         case .s5_4: return "5.4 James · Deposit info"
         case .s5_5: return "5.5 James · Deposit paid"
@@ -439,6 +442,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: return "902:330"
         case .s5_2d: return "902:385"
         case .s5_2e: return "925:193"
+        case .s5_2f: return "app-only"
         case .s5_3: return "691:5836"
         case .s5_4: return "691:5930"
         case .s5_5: return "691:6006"
@@ -571,6 +575,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: return .james
         case .s5_2d: return .james
         case .s5_2e: return .both
+        case .s5_2f: return .james
         case .s5_3: return .james
         case .s5_4: return .james
         case .s5_5: return .james
@@ -703,6 +708,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: return .borro
         case .s5_2d: return .borro
         case .s5_2e: return .borro
+        case .s5_2f: return nil
         case .s5_3: return nil
         case .s5_4: return nil
         case .s5_5: return .borro
@@ -835,6 +841,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: return .page
         case .s5_2d: return .page
         case .s5_2e: return .page
+        case .s5_2f: return .sheet(height: 420)
         case .s5_3: return .sheet(height: 335)
         case .s5_4: return .sheet(height: 227)
         case .s5_5: return .page
@@ -968,6 +975,7 @@ enum Screen: String, CaseIterable, Hashable, Identifiable {
         case .s5_2c: S5_2c_PayNowProcessingPaymentView()
         case .s5_2d: S5_2d_PaymentSuccessfulView()
         case .s5_2e: S5_2e_TermsConditionsView()
+        case .s5_2f: S5_2f_ApplePaySheetView()
         case .s5_3: S5_3_LenderCareNoteView()
         case .s5_4: S5_4_DepositInfoView()
         case .s5_5: S5_5_DepositPaidView()

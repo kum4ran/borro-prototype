@@ -17,9 +17,21 @@ final class AppState {
     // Borro photos
     private(set) var photos: [PhotoSetID: PhotoSet] = [:]
 
-    // Borro times
-    private(set) var pickUpChoice: TimeOption?
-    private(set) var returnChoice: TimeOption?
+    // Borrowing dates (2.2) and the handover schedule (4.2–4.12, "Borro times")
+    private(set) var borrowStart = Scenario.defaultBorrowStart
+    private(set) var borrowEnd = Scenario.defaultBorrowEnd
+    private(set) var pickUpDay = Scenario.defaultBorrowStart
+    private(set) var returnDay = Scenario.defaultBorrowEnd
+    private(set) var pickUpOffers = MockData.defaultPickUpOffers
+    private(set) var returnOffers = MockData.defaultReturnOffers
+    private(set) var pickUpChoice: TimeOfDay?
+    private(set) var returnChoice: TimeOfDay?
+    private(set) var meetUpSpot = MeetingSpot.blockA
+    private(set) var meetUpChosen = false
+
+    // Search radius (1.4) and deposit payment method (5.2)
+    private(set) var radius = RadiusStop.km1
+    private(set) var paymentMethod = PaymentMethod.payNow
 
     // Code countdown ("refreshes in 0:45"), one timer for every code screen
     private(set) var codeSecondsLeft = Scenario.codeRefreshSeconds
@@ -50,8 +62,18 @@ final class AppState {
         currentUser = .james
         roleBanner = nil
         photos = [:]
+        borrowStart = Scenario.defaultBorrowStart
+        borrowEnd = Scenario.defaultBorrowEnd
+        pickUpDay = Scenario.defaultBorrowStart
+        returnDay = Scenario.defaultBorrowEnd
+        pickUpOffers = MockData.defaultPickUpOffers
+        returnOffers = MockData.defaultReturnOffers
         pickUpChoice = nil
         returnChoice = nil
+        meetUpSpot = .blockA
+        meetUpChosen = false
+        radius = .km1
+        paymentMethod = .payNow
         codeSecondsLeft = Scenario.codeRefreshSeconds
         codeAttemptFailed = false
         needItNow = false
@@ -74,10 +96,10 @@ final class AppState {
 
     /// Borrower line on My Borrowing (2.4). Strings from the Figma "borrower detail" variable.
     var borrowerDetail: String {
-        let place = Scenario.meetUpPlace
-        let ret = "Mon 19 Oct, \(returnTime)"
+        let place = meetUpPlace
+        let ret = "\(returnDay.medium), \(returnTime)"
         switch status {
-        case .pending, .handoverPending: return "Pick up: Sun 18 Oct, \(pickUpTime) · \(place)"
+        case .pending, .handoverPending: return "Pick up: \(pickUpDay.medium), \(pickUpTime) · \(place)"
         case .onLoan: return "Return by: \(ret) · \(place)"
         case .returnPending: return "Returning: \(ret) · \(place)"
         case .returned: return "Returned: \(ret) · \(place)"
@@ -86,10 +108,10 @@ final class AppState {
 
     /// Lender line on My Lending (9.x). Strings from the Figma "lender detail" variable.
     var lenderDetail: String {
-        let due = "Mon 19 Oct, \(returnTime.uppercased())"
+        let due = "\(returnDay.medium), \(returnTime.uppercased())"
         switch status {
-        case .pending: return "James requested \(Scenario.borrowDatesShort) · Awaiting your reply"
-        case .handoverPending: return "Handover to James · Sun 18 Oct, \(pickUpTime.uppercased()) · \(Scenario.meetUpPlace)"
+        case .pending: return "James requested \(borrowRange) · Awaiting your reply"
+        case .handoverPending: return "Handover to James · \(pickUpDay.medium), \(pickUpTime.uppercased()) · \(meetUpPlace)"
         case .onLoan: return "With James · Due \(due)"
         case .returnPending: return "Awaiting return from James · Due \(due)"
         case .returned: return "Returned by James · \(due)"
@@ -97,6 +119,8 @@ final class AppState {
     }
 
     // MARK: Deposit
+
+    func choosePaymentMethod(_ method: PaymentMethod) { paymentMethod = method }
 
     /// 5.2c → 5.2d. Paying also ticks the agreement box, as Figma's 5.5 shows.
     func depositPaid() {
@@ -179,19 +203,149 @@ final class AppState {
         photos[id] = set
     }
 
-    // MARK: Times
+    // MARK: Borrowing dates (2.2)
 
-    func choosePickUp(_ option: TimeOption) { pickUpChoice = option }
-    func chooseReturn(_ option: TimeOption) { returnChoice = option }
+    /// Days James can pick: from today (Sun 18 Oct) to the end of Thomas's availability, 7 days at most.
+    func canBorrow(_ day: OctDay) -> Bool {
+        Scenario.borrowableDays.contains(day.day)
+    }
+
+    /// Calendar tap: a first tap starts a new range, a later day extends it (7 days at most).
+    func selectBorrowDay(_ day: OctDay) {
+        guard canBorrow(day) else { return }
+        if borrowStart != borrowEnd || day < borrowStart || day.day - borrowStart.day > Scenario.maxBorrowDays {
+            borrowStart = day
+            borrowEnd = day
+        } else {
+            borrowEnd = day
+        }
+        resetSchedule()
+    }
+
+    var borrowNights: Int { borrowEnd.day - borrowStart.day }
+    /// "1 day", "3 days", "Same day"
+    var durationText: String {
+        switch borrowNights {
+        case 0: return "Same day"
+        case 1: return "1 day"
+        default: return "\(borrowNights) days"
+        }
+    }
+    /// "18–19 Oct 2026"
+    var borrowRange: String { borrowStart == borrowEnd ? borrowStart.withYear : "\(borrowStart.day)–\(borrowEnd.withYear)" }
+    /// "18–19 Oct"
+    var borrowRangeShort: String { borrowStart == borrowEnd ? borrowStart.short : "\(borrowStart.day)–\(borrowEnd.short)" }
+    /// "18 → 19 Oct 2026"
+    var borrowArrow: String { borrowStart == borrowEnd ? borrowStart.withYear : "\(borrowStart.day) → \(borrowEnd.withYear)" }
+    /// "18 Oct → 19 Oct · 1 day"
+    var borrowSummary: String {
+        borrowStart == borrowEnd ? "\(borrowStart.short) · \(durationText)" : "\(borrowStart.short) → \(borrowEnd.short) · \(durationText)"
+    }
+    var borrowDays: Set<Int> { Set(borrowStart.day...borrowEnd.day) }
+
+    // MARK: Handover schedule (4.2–4.12)
+
+    /// New dates clear the times and spot that were planned for the old ones.
+    private func resetSchedule() {
+        pickUpDay = borrowStart
+        returnDay = borrowEnd
+        pickUpOffers = MockData.defaultPickUpOffers
+        returnOffers = MockData.defaultReturnOffers
+        pickUpChoice = nil
+        returnChoice = nil
+    }
+
+    func choosePickUpDay(_ day: OctDay) {
+        guard borrowDays.contains(day.day) else { return }
+        pickUpDay = day
+        if returnDay < day { returnDay = day }
+        pickUpChoice = nil
+        returnChoice = nil
+    }
+
+    func chooseReturnDay(_ day: OctDay) {
+        guard borrowDays.contains(day.day), day >= pickUpDay else { return }
+        returnDay = day
+        returnChoice = nil
+    }
+
+    /// Return times on the pick-up day must come after the earliest pick-up time.
+    func canOfferReturn(_ time: TimeOfDay) -> Bool {
+        guard returnDay == pickUpDay, let earliest = pickUpOffers.min() else { return true }
+        return time > earliest
+    }
+
+    func addPickUpOffer(_ time: TimeOfDay) {
+        guard !pickUpOffers.contains(time) else { return }
+        pickUpOffers = (pickUpOffers + [time]).sorted()
+        returnOffers.removeAll { !canOfferReturn($0) }
+    }
+
+    func removePickUpOffer(_ time: TimeOfDay) {
+        pickUpOffers.removeAll { $0 == time }
+        if pickUpChoice == time { pickUpChoice = nil }
+    }
+
+    func clearPickUpOffers() {
+        pickUpOffers = []
+        pickUpChoice = nil
+    }
+
+    func addReturnOffer(_ time: TimeOfDay) {
+        guard !returnOffers.contains(time), canOfferReturn(time) else { return }
+        returnOffers = (returnOffers + [time]).sorted()
+    }
+
+    func removeReturnOffer(_ time: TimeOfDay) {
+        returnOffers.removeAll { $0 == time }
+        if returnChoice == time { returnChoice = nil }
+    }
+
+    func clearReturnOffers() {
+        returnOffers = []
+        returnChoice = nil
+    }
+
+    func choosePickUp(_ time: TimeOfDay) { if pickUpOffers.contains(time) { pickUpChoice = time } }
+    func chooseReturn(_ time: TimeOfDay) { if returnOffers.contains(time) { returnChoice = time } }
     var bothTimesChosen: Bool { pickUpChoice != nil && returnChoice != nil }
     var timesButtonLabel: String { bothTimesChosen ? "Confirm times" : "Choose pick-up and return" }
 
-    /// Agreed pick-up, shown on 4.14 and later. The scenario value until Thomas picks a pill.
-    var pickUpLabel: String { pickUpChoice?.value ?? Scenario.pickUp }
-    var pickUpTime: String { pickUpChoice?.time ?? Scenario.pickUpTime }
-    /// Agreed return. Scenario.returnTime until Thomas picks a pill.
-    var returnLabel: String { returnChoice?.value ?? Scenario.returnShort }
-    var returnTime: String { returnChoice?.time ?? Scenario.returnTime }
+    /// Agreed pick-up time. Scenario default (7:30 pm) until Thomas picks a pill.
+    var pickUpTime: String { (pickUpChoice ?? Scenario.defaultPickUpTime).label }
+    /// Agreed return time. CONFLICT default: Scenario.returnTime (11:00 pm) until Thomas picks a pill.
+    var returnTime: String { (returnChoice ?? Scenario.defaultReturnTime).label }
+    /// "Sun 18 Oct · 7:30 pm"
+    var pickUpLabel: String { "\(pickUpDay.medium) · \(pickUpTime)" }
+    /// "Mon 19 Oct · 11:00 pm"
+    var returnLabel: String { "\(returnDay.medium) · \(returnTime)" }
+    /// "18 Oct · 7:30 pm"
+    var pickUpShort: String { "\(pickUpDay.short) · \(pickUpTime)" }
+    var returnShort: String { "\(returnDay.short) · \(returnTime)" }
+    /// "18 Oct, 7:30 pm → 19 Oct, 11:00 pm"
+    var agreementDates: String { "\(pickUpDay.short), \(pickUpTime) → \(returnDay.short), \(returnTime)" }
+    /// James's offers in one line: "7, 7:30 pm"
+    var pickUpOfferText: String { TimeOfDay.compactList(pickUpOffers) }
+    var returnOfferText: String { TimeOfDay.compactList(returnOffers) }
+    var canSendProposal: Bool { !pickUpOffers.isEmpty && !returnOffers.isEmpty }
+
+    // MARK: Meet-up spot (4.6, 4.13)
+
+    var meetUpPlace: String { meetUpSpot.name }
+
+    func chooseMeetUpSpot(_ spot: MeetingSpot) {
+        meetUpSpot = spot
+        meetUpChosen = true
+    }
+
+    // MARK: Search radius (1.4)
+
+    func setRadius(_ stop: RadiusStop) { radius = stop }
+
+    /// Steamers within the chosen radius (1.5).
+    var steamerResults: [Listing] {
+        MockData.steamerListings.filter { $0.distanceMetres <= radius.metres }
+    }
 
     // MARK: Code countdown
 

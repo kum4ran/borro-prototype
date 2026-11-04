@@ -158,41 +158,6 @@ struct PersonStrip: View {
     }
 }
 
-/// Static time wheel from 4.3 / 4.5 (hour : minute, highlighted row).
-struct TimeWheel: View {
-    let hours: [String]
-    let minutes: [String]
-    var selectedRow = 2
-
-    var body: some View {
-        HStack(spacing: Space.x8) {
-            column(hours)
-            Text(":").font(.b(.s22)).foregroundStyle(Color.brand)
-            column(minutes)
-        }
-        .padding(.vertical, Space.x6)
-        .frame(maxWidth: .infinity)
-        .background(alignment: .center) {
-            RoundedRectangle(cornerRadius: Radius.r8).fill(Color.brandSoft).frame(height: Size.wheelRow)
-        }
-        .panel(.surfaceSunk, padding: Space.x4, radius: Radius.r14)
-        .accessibilityElement()
-        .accessibilityLabel("Time \(hours[selectedRow]):\(minutes[selectedRow])")
-    }
-
-    private func column(_ values: [String]) -> some View {
-        VStack(spacing: Space.x2) {
-            ForEach(values.indices, id: \.self) { i in
-                Text(values[i])
-                    .font(i == selectedRow ? .b(.s22) : .r(.s13))
-                    .foregroundStyle(i == selectedRow ? Color.brand : Color.greyLight)
-                    .frame(height: i == selectedRow ? Size.wheelRow : Size.wheelRowSmall)
-            }
-        }
-        .frame(width: Size.wheelColumn)
-    }
-}
-
 /// Removable chip in the time sheets ("7:00 pm ×").
 struct RemovableChip: View {
     let label: String
@@ -214,12 +179,15 @@ struct RemovableChip: View {
 struct SheetFooter: View {
     let summary: String
     let clear: String
+    var onClear: () -> Void = {}
 
     var body: some View {
         HStack {
             Text(summary).font(.m(.s12)).foregroundStyle(Color.ink)
             Spacer()
-            Text(clear).font(.s(.s12)).foregroundStyle(Color.brand)
+            LinkButton(title: clear, font: .s(.s12), action: onClear)
+                .padding(.vertical, -Space.x12)
+                .accessibilityIdentifier("sheetClearButton")
         }
         .padding(.top, Space.x10)
         .overlay(alignment: .top) { Divider1(color: .strokeSoft).padding(.horizontal, -Space.gutter) }

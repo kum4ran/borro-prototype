@@ -3,6 +3,7 @@ import SwiftUI
 /// Figma frame "4.11 Thomas · Review proposal" (node 701:1366).
 struct S4_11_ReviewProposalView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
     private let james = MockData.james
 
     var body: some View {
@@ -11,7 +12,7 @@ struct S4_11_ReviewProposalView: View {
         } content: {
             InfoBanner(title: "James is waiting for you",
                        message: "James sent you a proposal. Pick one pick-up and one return time to accept.")
-            HandoverSummaryCard(rows: ScheduleRows.offered)
+            HandoverSummaryCard(rows: ScheduleRows.offered(appState))
             PersonStrip(user: james, line: "★ \(james.rating) · \(james.reviewCount) reviews") { router.go(.s3_4) }
         } actions: {
             HStack(spacing: Space.x8) {

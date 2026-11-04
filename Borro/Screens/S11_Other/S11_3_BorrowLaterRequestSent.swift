@@ -20,7 +20,7 @@ struct S11_3_BorrowLaterRequestSentView: View {
                     .clipShape(RoundedRectangle(cornerRadius: Radius.r8))
                 VStack(alignment: .leading, spacing: Space.x4) {
                     Text("Garment Steamer").font(.b(.s15)).foregroundStyle(Color.ink)
-                    Text(Scenario.borrowDatesShort).font(.r(.s12)).foregroundStyle(Color.ink)
+                    Text(MockData.borrowLaterDates).font(.r(.s12)).foregroundStyle(Color.ink)
                     Chip(text: "Pending acceptance")
                 }
             }

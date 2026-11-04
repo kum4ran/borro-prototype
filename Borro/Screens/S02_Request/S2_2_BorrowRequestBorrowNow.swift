@@ -8,9 +8,10 @@ struct S2_2_BorrowRequestBorrowNowView: View {
     var body: some View {
         SheetContainer(title: "Choose your borrowing dates", subtitle: "Tap the days you want to borrow it.") {
             VStack(spacing: Space.x16) {
-                CalendarMonth()
+                BorrowDatesCalendar()
                 VStack(alignment: .leading, spacing: Space.x4) {
-                    Text("18 Oct → 19 Oct · 1 day").font(.b(.s14)).foregroundStyle(Color.ink)
+                    Text(appState.borrowSummary).font(.b(.s14)).foregroundStyle(Color.ink)
+                        .accessibilityIdentifier("borrowSummary")
                     Text("Urgent · Thomas gets an instant notification and must accept.")
                         .font(.r(.s13)).foregroundStyle(Color.inkSecondary)
                 }
@@ -21,6 +22,20 @@ struct S2_2_BorrowRequestBorrowNowView: View {
                 }
             }
         }
+    }
+}
+
+/// James picks the borrowing range: first tap starts it, a later day ends it (7 days at most).
+struct BorrowDatesCalendar: View {
+    @Environment(AppState.self) private var appState
+
+    var body: some View {
+        let start = appState.borrowStart.day, end = appState.borrowEnd.day
+        CalendarMonth(selected: [start, end],
+                      inRange: Set(start...end).subtracting([start, end]),
+                      isEnabled: { appState.canBorrow(OctDay(day: $0)) },
+                      onTap: { appState.selectBorrowDay(OctDay(day: $0)) },
+                      footnote: start == end ? "Tap a later day to set the return date" : "Tap any day to start again · up to \(Scenario.maxBorrowDays) days")
     }
 }
 

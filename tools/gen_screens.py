@@ -26,6 +26,10 @@ def camel(title):
     return "".join(w[:1].upper() + w[1:] for w in words)
 
 d = json.load(open("Docs/figma-links.json"))
+# Screens the app adds that Figma does not have (listed in Docs/PROGRESS.md).
+APP_ONLY = [{"code": "5.2f", "name": "5.2f James · Apple Pay (sheet)", "id": "app-only"}]
+SHEETS["5.2f"] = 420
+d["screens"] = d["screens"] + APP_ONLY
 def key(s):
     m = re.match(r"(\d+)\.(\d+)([a-z]?)", s["code"])
     return (int(m.group(1)), int(m.group(2)), m.group(3))

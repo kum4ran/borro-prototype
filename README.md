@@ -31,6 +31,7 @@ tools/build.sh --no-assets
 
 - **Demo menu**: long-press the status bar. Jump to the first screen of any section, or to any frame. The app state is set to match that point in the story. **Reset demo** restores the launch state.
 - **Role switch**: the phone plays both James and Thomas. When the story moves to the other person a banner says "Now viewing as Thomas".
+- **Every story choice is live**: radius (1.4), borrowing dates (2.2), pick-up and return days and times (4.2–4.5), the meeting spot (4.6), Thomas's pick (4.12), PayNow or Apple Pay (5.2) and star ratings (8.2). Later screens show what you chose; the list is in `Docs/PROGRESS.md`.
 - **Open a frame directly**: `xcrun simctl launch booted com.tjandera.borro -startScreen 5.2`.
 
 The story path: Home → Need it Now → Filter → 1 km → steamer → Borrow Now → My Borrowing → tap the card (Thomas's phone) → accept → arrange handover → PayNow → handover codes and photos (6767, then 8482 at return) → reviews → refund.

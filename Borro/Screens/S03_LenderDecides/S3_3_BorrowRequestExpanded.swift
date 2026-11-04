@@ -3,6 +3,7 @@ import SwiftUI
 /// Figma frame "3.3 Thomas · Borrow request expanded" (node 700:198).
 struct S3_3_BorrowRequestExpandedView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
     private let james = MockData.james
 
     var body: some View {
@@ -27,11 +28,13 @@ struct S3_3_BorrowRequestExpandedView: View {
                         .clipShape(RoundedRectangle(cornerRadius: Radius.photo))
                     VStack(alignment: .leading, spacing: Space.x5) {
                         Text("Garment Steamer").font(.b(.s16)).foregroundStyle(Color.ink)
-                        Text(Scenario.borrowDatesShort).font(.r(.s13)).foregroundStyle(Color.ink)
+                        Text(appState.borrowRange).font(.r(.s13)).foregroundStyle(Color.ink)
                         Chip(text: "⚡ URGENT – Borrow Now")
                     }
                 }
-                CalendarMonth(startsSunday: true, footnote: nil)
+                CalendarMonth(selected: [appState.borrowStart.day, appState.borrowEnd.day],
+                              inRange: appState.borrowDays.subtracting([appState.borrowStart.day, appState.borrowEnd.day]),
+                              startsSunday: true, footnote: nil)
                     .padding(-Space.x12)
                     .padding(.vertical, Space.x4)
                 HStack(spacing: Space.x16) {

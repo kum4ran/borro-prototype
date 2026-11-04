@@ -100,6 +100,40 @@ final class StoryPathUITests: XCTestCase {
         tap("tab.you"); expectScreen("8.9")
     }
 
+    func testChosenTimesShowOnHandoverConfirmed() throws {
+        app.terminate()
+        app.launchArguments = ["-startScreen", "4.12"]
+        app.launch()
+        expectScreen("4.12")
+        tap("timePill.7 pm")
+        tap("timePill.10 pm")
+        tap("confirmTimesButton"); expectScreen("4.14")
+        XCTAssertTrue(app.staticTexts["Sun 18 Oct · 7:00 pm"].waitForExistence(timeout: 3))
+        XCTAssertTrue(app.staticTexts["Mon 19 Oct · 10:00 pm"].exists)
+    }
+
+    func testChosenBorrowDatesShowOnRequestSent() throws {
+        app.terminate()
+        app.launchArguments = ["-startScreen", "2.2"]
+        app.launch()
+        expectScreen("2.2")
+        tap("day.21")
+        tap("day.23")
+        expectLabel("borrowSummary", contains: "21 Oct → 23 Oct · 2 days")
+        tap("sendRequestButton"); expectScreen("2.3")
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "21 → 23 Oct 2026")).firstMatch.exists)
+    }
+
+    func testApplePayPath() throws {
+        app.terminate()
+        app.launchArguments = ["-startScreen", "5.2"]
+        app.launch()
+        tap("applePayButton"); expectScreen("5.2f")
+        tap("confirmApplePayButton"); expectScreen("5.2c")
+        expectScreen("5.2d", timeout: 6)
+        XCTAssertTrue(app.staticTexts.containing(NSPredicate(format: "label CONTAINS %@", "Apple Pay")).firstMatch.exists)
+    }
+
     func testCodeCountdownTicks() throws {
         app.terminate()
         app.launchArguments = ["-startScreen", "6.1"]

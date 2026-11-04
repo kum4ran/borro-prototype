@@ -28,12 +28,13 @@ struct QRCodeView: View {
 /// Item, dates and place at the top of the agreement frames.
 struct AgreementItemCard: View {
     let dates: String
+    var place: String = Scenario.meetUpPlace
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.x6) {
             Text("Garment Steamer").font(.b(.s18)).foregroundStyle(Color.ink)
             Text(dates).font(.r(.s13)).foregroundStyle(Color.ink)
-            Text("⌖ \(Scenario.meetUpPlace)").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
+            Text("⌖ \(place)").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
         }
         .cardStyle(padding: Space.x14)
     }
@@ -42,12 +43,13 @@ struct AgreementItemCard: View {
 /// Green "Deposit paid · $10 via PayNow" panel, or the amber "Awaiting deposit" state.
 struct DepositPaidPanel: View {
     let paid: Bool
+    var method: PaymentMethod = .payNow
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.x6) {
             HStack(spacing: Space.x8) {
                 IconView(icon: paid ? .checkCircle : .clock, size: Size.icon)
-                Text(paid ? "Deposit paid · \(Scenario.depositAmount) via PayNow" : "Awaiting deposit · \(Scenario.depositAmount)")
+                Text(paid ? "Deposit paid · \(Scenario.depositAmount) via \(method.rawValue)" : "Awaiting deposit · \(Scenario.depositAmount)")
                     .font(.b(.s14))
             }
             .foregroundStyle(paid ? Color.successDeep : Color.pendingInk)
@@ -84,8 +86,8 @@ struct TermsCard: View {
                 .padding(.trailing, -Space.x12)
             }
             if expanded {
-                ForEach(TermsContent.sections, id: \.title) { section in
-                    Text(section.title).font(.s(.s12)).foregroundStyle(Color.ink)
+                ForEach(TermsContent.titles, id: \.self) { title in
+                    Text(title).font(.s(.s12)).foregroundStyle(Color.ink)
                 }
             }
         }
@@ -122,18 +124,28 @@ struct CheckboxRow: View {
 enum TermsContent {
     struct Section { let title: String; let body: String }
 
-    static let intro = "These terms apply to every borrowing on Borro, including James borrowing Thomas's Garment Steamer (\(Scenario.borrowDatesShort)). Submitting the Final Agreement means both members accept them."
+    @MainActor static func intro(_ state: AppState) -> String {
+        "These terms apply to every borrowing on Borro, including James borrowing Thomas's Garment Steamer (\(state.borrowRange)). Submitting the Final Agreement means both members accept them."
+    }
 
-    static let sections = [
+    /// Section titles (the expandable card on 5.2 shows only these).
+    @MainActor static var titles: [String] { sections(nil).map(\.title) }
+
+    @MainActor static func sections(_ state: AppState?) -> [Section] {
+        let returnAt = state.map { "\($0.returnDay.short), \($0.returnTime), \($0.meetUpPlace)" }
+            ?? "the agreed time, \(Scenario.meetUpPlace)"
+        return [
+
         Section(title: "1. Using the item", body: "Use the item only as described in the listing, and follow the lender's care instructions in the agreement."),
         // CONFLICT: Figma says "19 Oct, 10:00 am"; the scenario return time wins.
-        Section(title: "2. Returning on time", body: "Return the item at the agreed place and time (19 Oct, \(Scenario.returnTime), \(Scenario.meetUpPlace)) with all accessories, such as the heat-resistant mitt. Late returns lower the borrower's credibility score."),
+        Section(title: "2. Returning on time", body: "Return the item at the agreed place and time (\(returnAt)) with all accessories, such as the heat-resistant mitt. Late returns lower the borrower's credibility score."),
         Section(title: "3. Photos and handover codes", body: "Both members photograph the item at pick-up and at return. Share one-time codes only when you meet in person. Codes refresh every few minutes."),
         Section(title: "4. Safety deposit", body: "The \(Scenario.depositAmount) deposit is held by Borro. It is refunded within 1 working day after a successful return, or in full if the borrowing is cancelled or the lender does not show up."),
         Section(title: "5. Damage and repairs", body: "Report damage in the app as soon as it happens. Borro compares both members' photos. If damage is confirmed, the deposit goes toward the repair quote, and any remaining balance needs the borrower's separate payment consent."),
         Section(title: "6. Cancellations", body: "Either member can cancel before the handover. The other member is told why, and the deposit is returned."),
         Section(title: "7. Disputes", body: "If members cannot agree, Borro reviews the photo records, chat and agreement, and shares a decision within 3 working days."),
-    ]
+        ]
+    }
 
     static let updated = "Last updated 1 Oct 2026"
 

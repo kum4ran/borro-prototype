@@ -7,8 +7,9 @@ struct S8_2_RateThomasView: View {
 
     var body: some View {
         RatePage(person: MockData.thomas, comment: nil, stars: appState.thomasCategoryStars,
-                 complete: false, onStar: { _, _ in
-                     appState.rateThomas(Review.maxStars)
+                 complete: false, onStar: { stars, _ in
+                     // Figma: the first tap fills the form (8.3); every category takes the stars tapped.
+                     appState.rateThomas(stars)
                      router.go(.s8_3)
                  }, onSubmit: {})
     }

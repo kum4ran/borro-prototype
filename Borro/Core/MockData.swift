@@ -31,7 +31,7 @@ enum MockData {
     static let steamer = Listing(
         id: "steamer", title: "Garment Steamer", owner: thomas, photo: .steamerDesk,
         rating: "★ 5.0 (10 reviews)", area: Scenario.area, availableDates: "13–27 Oct 2026",
-        availabilityLabel: "⚡ 120 m | available now", needItNow: true, withinOneKm: true)
+        availabilityLabel: "⚡ 120 m | available now", needItNow: true, distanceMetres: 120)
 
     static let jbl = Listing(
         id: "jbl", title: "JBL Speaker", owner: kumaran, photo: .speakerConcert,
@@ -53,7 +53,7 @@ enum MockData {
     static let xiaomiSteamer = Listing(
         id: "xiaomi", title: "Xiaomi Steamer", owner: mei, photo: .steamerTravel,
         rating: "★ 4.7 (18 reviews)", area: "Tampines Hub", availableDates: "16–24 Oct 2026",
-        availabilityLabel: "⚡ 16.8 km | available now", needItNow: true)
+        availabilityLabel: "⚡ 16.8 km | available now", needItNow: true, distanceMetres: 16_800)
 
     static let camera = Listing(
         id: "camera", title: "Digital Camera", owner: andrew, photo: .camera,
@@ -64,18 +64,13 @@ enum MockData {
     static let homeFeed = [jbl, projector, projectorScreen, football]
     /// 1.2 Need it Now on.
     static let needItNowFeed = [jbl, xiaomiSteamer, steamer, camera]
-    /// 1.5 Results within 1 km.
-    static let resultsFeed = [steamer]
+    /// Steamers for the 1.5 search, filtered by the 1.4 radius.
+    static let steamerListings = [steamer, xiaomiSteamer]
 
     // MARK: The borrowing
 
     static let request = BorrowRequest(
-        reference: Scenario.reference, listing: steamer, borrower: james, lender: thomas,
-        dates: Scenario.borrowDatesShort, mode: "Borrow Now")
-
-    static let agreement = Agreement(
-        request: request, pickUp: Scenario.pickUp, returnBy: Scenario.returnShort,
-        place: Scenario.meetUpPlace, deposit: Scenario.depositAmount)
+        reference: Scenario.reference, listing: steamer, borrower: james, lender: thomas, mode: "Borrow Now")
 
     /// Other requests on 3.2 (only James's leads anywhere).
     static let otherRequests: [(user: User, dates: String, urgent: Bool)] = [
@@ -163,6 +158,10 @@ enum MockData {
 
     static let alternatives: [(user: User, distance: String)] = [(leon, "564 m"), (meiLin, "200 m"), (priya, "350 m")]
 
+    // MARK: Borrow Later (11.x, side branch: keeps the Figma dates)
+
+    static let borrowLaterDates = "18–19 Oct 2026"
+
     // MARK: Wishlist (11.4)
 
     // CONFLICT: Figma titles read "Portable Steamer" and "Steamer Screen" over projector photos
@@ -194,32 +193,21 @@ enum MockData {
 
     // MARK: Chat (4.9)
 
-    static let chat = [
-        ChatMessage(id: "c1", text: "Hi James! Meet at \(Scenario.meetUpPlace) at \(Scenario.pickUpTime) for the steamer?", time: "6:42 pm", mine: false),
-        // CONFLICT: Figma says "return it tomorrow by 10 am"; the scenario return time wins.
-        ChatMessage(id: "c2", text: "Sure, see you there! I’ll return it tomorrow by \(Scenario.returnTime).", time: "6:43 pm", mine: true, read: true),
-        ChatMessage(id: "c3", text: "Lovely, please take a look at this agreement!", time: "6:44 pm", mine: false),
-    ]
+    /// The chat thread follows the agreed time and spot.
+    @MainActor static func chat(_ state: AppState) -> [ChatMessage] {
+        [
+            ChatMessage(id: "c1", text: "Hi James! Meet at \(state.meetUpPlace) at \(state.pickUpTime) for the steamer?", time: "6:42 pm", mine: false),
+            // CONFLICT: Figma says "return it tomorrow by 10 am"; the scenario return time wins.
+            ChatMessage(id: "c2", text: "Sure, see you there! I’ll return it on \(state.returnDay.medium) by \(state.returnTime).", time: "6:43 pm", mine: true, read: true),
+            ChatMessage(id: "c3", text: "Lovely, please take a look at this agreement!", time: "6:44 pm", mine: false),
+        ]
+    }
 
-    // MARK: Meet-up time pills (Figma collection "Borro times")
+    // MARK: Times James offers by default (Figma "Borro times")
 
-    static let pickUpDay = "Sun 18 Oct"
-    static let returnDay = "Mon 19 Oct"
-
-    static let pickUpOptions = [
-        TimeOption(id: "up0", label: "7 pm", day: pickUpDay, time: "7:00 pm"),
-        TimeOption(id: "up1", label: "7:30 pm", day: pickUpDay, time: "7:30 pm"),
-    ]
+    static let defaultPickUpOffers = [TimeOfDay(hour: 19, minute: 0), TimeOfDay(hour: 19, minute: 30)]
 
     // CONFLICT: Figma offers 9 am, 10 am and 10:30 am. The scenario return is Monday 11:00 pm,
-    // so the middle pill is the scenario time (Scenario.returnTime) with one slot either side.
-    static let returnOptions = [
-        TimeOption(id: "rt0", label: "10 pm", day: returnDay, time: "10:00 pm"),
-        TimeOption(id: "rt1", label: Scenario.returnPill, day: returnDay, time: Scenario.returnTime),
-        TimeOption(id: "rt2", label: "11:30 pm", day: returnDay, time: "11:30 pm"),
-    ]
-
-    /// Pill lists as one line ("7, 7:30 pm" / "10, 11, 11:30 pm").
-    static let pickUpOffer = "7, 7:30 pm"
-    static let returnOffer = "10, 11, 11:30 pm"
+    // so the default offer is the scenario time (Scenario.defaultReturnTime) with one slot either side.
+    static let defaultReturnOffers = [TimeOfDay(hour: 22, minute: 0), Scenario.defaultReturnTime, TimeOfDay(hour: 23, minute: 30)]
 }

@@ -3,6 +3,7 @@ import SwiftUI
 /// Figma frame "1.4 James · Location map · 1 km" (node 691:4492). Sheet over 1.2.
 struct S1_4_LocationMap1KmView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
 
     var body: some View {
         SheetContainer(title: "Find it close to you", showsClose: true) {
@@ -14,10 +15,12 @@ struct S1_4_LocationMap1KmView: View {
                 MapCard()
                 VStack(alignment: .leading, spacing: Space.x16) {
                     Text("Search radius").font(.b(.s13)).foregroundStyle(Color.ink)
-                    RadiusSlider(stops: ["Current", "500 m", Scenario.radiusKm, "2 km", "5 km"], selected: 2)
+                    RadiusSlider(stops: RadiusStop.allCases.map(\.label), selected: appState.radius.rawValue) {
+                        if let stop = RadiusStop(rawValue: $0) { appState.setRadius(stop) }
+                    }
                 }
                 InputBox(text: "Custom radius, e.g. 1.5", trailing: "km")
-                Text("✓ Searching within \(Scenario.radiusKm) of \(Scenario.area)")
+                Text("✓ Searching \(appState.radius.phrase) of \(Scenario.area)")
                     .font(.r(.s13)).foregroundStyle(Color.inkSecondary)
                 VStack(spacing: Space.x16) {
                     PrimaryButton(title: "Search", identifier: "locationSearchButton") { router.go(.s1_5) }

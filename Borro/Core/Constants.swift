@@ -15,26 +15,23 @@ enum Scenario {
     static let payNowExpiry = "04:59"
     static let paymentProcessingSeconds: Double = 2
 
-    static let meetUpPlace = "Block A Security Desk"   // CONFLICT: scenario says "reception"; Figma and brief say Block A Security Desk.
+    static let meetUpPlace = MeetingSpot.blockA.name   // CONFLICT: scenario says "reception"; Figma and brief say Block A Security Desk.
     static let area = "Bencoolen St"
-    static let borrowDates = "18 Oct to 19 Oct 2026"
-    static let borrowDatesShort = "18–19 Oct 2026"
-    static let pickUp = "Sun 18 Oct · 7:30 pm"
-    static let pickUpTime = "7:30 pm"
-    static let pickUpLong = "Sunday 18 Oct 2026, 7:30 pm"
+
+    // Default schedule: borrow Sun 18 to Mon 19 Oct 2026, pick-up 7:30 pm. James can change all of it.
+    static let defaultBorrowStart = OctDay(day: 18)
+    static let defaultBorrowEnd = OctDay(day: 19)
+    /// Today is Sun 18 Oct; Thomas's steamer is free until 27 Oct (9.11) and busy 15–17 Oct.
+    static let borrowableDays = 18...27
+    static let maxBorrowDays = 7
+    static let requestDay = OctDay(day: 18)
+    static let defaultPickUpTime = TimeOfDay(hour: 19, minute: 30)
 
     // CONFLICT: Figma shows 10:00 am on 5.2, the status strings and the Borro times default.
     // The scenario says Monday 19 Oct, 11:00 pm. Team has not decided. Change it here, in one line.
-    static let returnTime = "11:00 pm"
-    static let returnTimeCaps = "11:00 PM"
-    static let returnPill = "11 pm"
-    static let returnTime24 = "23"
-    static let returnShort = "Mon 19 Oct · \(returnTime)"
-    static let returnLong = "Monday 19 Oct 2026, \(returnTime)"
+    static let defaultReturnTime = TimeOfDay(hour: 23, minute: 0)
+    static let returnTime = defaultReturnTime.label
 
-    static let reviewPushDate = "Monday 19 October"
     static let reviewPushTime = "11:05"
     static let statusBarTime = "10:00"
-
-    static let radiusKm = "1 km"
 }

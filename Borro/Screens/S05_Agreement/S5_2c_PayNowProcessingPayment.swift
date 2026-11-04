@@ -19,7 +19,7 @@ struct S5_2c_PayNowProcessingPaymentView: View {
                 .accessibilityIdentifier("paymentSpinner")
             VStack(spacing: Space.x12) {
                 Text("Confirming your payment").font(.b(.s22)).foregroundStyle(Color.ink)
-                Text("Waiting for PayNow to confirm your \(Scenario.depositAmountExact) deposit. Please don't close the app.")
+                Text("Waiting for \(appState.paymentMethod.rawValue) to confirm your \(Scenario.depositAmountExact) deposit. Please don't close the app.")
                     .font(.r(.s13)).foregroundStyle(Color.inkSecondary)
             }
             .multilineTextAlignment(.center)

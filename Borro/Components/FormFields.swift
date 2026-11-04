@@ -28,10 +28,11 @@ struct InputBox: View {
     }
 }
 
-/// Stepped radius slider from 1.4 (Current, 500 m, 1 km, 2 km, 5 km). Static at 1 km.
+/// Stepped radius slider from 1.4 (Current, 500 m, 1 km, 2 km, 5 km). Tap a stop or drag the thumb.
 struct RadiusSlider: View {
     let stops: [String]
     let selected: Int
+    var onSelect: (Int) -> Void = { _ in }
 
     var body: some View {
         VStack(spacing: Space.x12) {
@@ -52,19 +53,37 @@ struct RadiusSlider: View {
                         .offset(x: step * CGFloat(selected) - Size.icon / 2)
                 }
                 .frame(maxHeight: .infinity)
+                .contentShape(Rectangle())
+                .gesture(DragGesture(minimumDistance: 0).onEnded { value in
+                    let index = Int((value.location.x / step).rounded())
+                    onSelect(min(max(index, 0), stops.count - 1))
+                })
             }
-            .frame(height: Size.icon)
+            .frame(height: Size.hitTarget)
             HStack {
                 ForEach(stops.indices, id: \.self) { i in
-                    Text(stops[i])
-                        .font(i == selected ? .b(.s9) : .m(.s9))
-                        .foregroundStyle(i == selected ? Color.brand : Color.inkMuted)
+                    Button { onSelect(i) } label: {
+                        Text(stops[i])
+                            .font(i == selected ? .b(.s9) : .m(.s9))
+                            .foregroundStyle(i == selected ? Color.brand : Color.inkMuted)
+                            .frame(minHeight: Size.hitTarget)
+                    }
+                    .buttonStyle(.plain)
+                    .accessibilityIdentifier("radius.\(stops[i])")
                     if i < stops.count - 1 { Spacer(minLength: 0) }
                 }
             }
+            .padding(.top, -Space.x16)
         }
-        .accessibilityElement()
+        .accessibilityElement(children: .contain)
         .accessibilityLabel("Search radius")
         .accessibilityValue(stops[selected])
+        .accessibilityAdjustableAction { direction in
+            switch direction {
+            case .increment: onSelect(min(selected + 1, stops.count - 1))
+            case .decrement: onSelect(max(selected - 1, 0))
+            @unknown default: break
+            }
+        }
     }
 }

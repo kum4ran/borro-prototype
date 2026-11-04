@@ -10,9 +10,10 @@ struct S5_1_AgreementSentView: View {
         ScreenScaffold {
             BackAppBar(title: "Final Agreement", subtitle: "James · Borrower / Thomas · Lender")
         } content: {
-            AgreementItemCard(dates: "18 Oct 2026, \(appState.pickUpTime) → 19 Oct, \(appState.returnTime)")
+            AgreementItemCard(dates: "\(appState.pickUpDay.withYear), \(appState.pickUpTime) → \(appState.returnDay.short), \(appState.returnTime)",
+                              place: appState.meetUpPlace)
             Text("Safety Deposit: \(Scenario.depositAmount)").font(.b(.s18)).foregroundStyle(Color.ink)
-            DepositPaidPanel(paid: appState.deposit != .unpaid)
+            DepositPaidPanel(paid: appState.deposit != .unpaid, method: appState.paymentMethod)
             VStack(alignment: .leading, spacing: Space.x6) {
                 Text("Thomas's care instructions").font(.b(.s13)).foregroundStyle(Color.ink)
                 Text(TermsContent.careNoteShort).font(.r(.s12)).foregroundStyle(Color.inkSecondary)

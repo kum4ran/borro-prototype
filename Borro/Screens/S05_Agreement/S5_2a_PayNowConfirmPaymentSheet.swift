@@ -3,6 +3,7 @@ import SwiftUI
 /// Figma frame "5.2a James · PayNow · Confirm payment (sheet)" (node 902:185). Sheet over 5.2.
 struct S5_2a_PayNowConfirmPaymentSheetView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
 
     var body: some View {
         SheetContainer(title: "Pay deposit with PayNow") {
@@ -11,6 +12,7 @@ struct S5_2a_PayNowConfirmPaymentSheetView: View {
                     .font(.r(.s14)).foregroundStyle(Color.inkSecondary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                 PrimaryButton(title: "Pay \(Scenario.depositAmountExact) with PayNow", identifier: "payWithPayNowButton") {
+                    appState.choosePaymentMethod(.payNow)
                     router.go(.s5_2b)
                 }
                 SecondaryButton(title: "Cancel") { router.go(.s5_2) }

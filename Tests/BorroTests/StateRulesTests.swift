@@ -37,7 +37,7 @@ final class StateRulesTests: XCTestCase {
         XCTAssertEqual(state.lenderDetail, "Handover to James · Sun 18 Oct, 7:30 PM · Block A Security Desk")
         state.setStatus(.onLoan)
         XCTAssertEqual(state.borrowerDetail, "Return by: Mon 19 Oct, \(Scenario.returnTime) · Block A Security Desk")
-        XCTAssertEqual(state.lenderDetail, "With James · Due Mon 19 Oct, \(Scenario.returnTimeCaps)")
+        XCTAssertEqual(state.lenderDetail, "With James · Due Mon 19 Oct, \(Scenario.defaultReturnTime.caps)")
     }
 
     func testMyBorrowingCardOpensPushWhilePendingThenHandover() {
@@ -122,13 +122,122 @@ final class StateRulesTests: XCTestCase {
     func testConfirmTimesNeedsBothChoices() {
         XCTAssertEqual(state.timesButtonLabel, "Choose pick-up and return")
         XCTAssertFalse(state.bothTimesChosen)
-        state.choosePickUp(MockData.pickUpOptions[1])
+        state.choosePickUp(MockData.defaultPickUpOffers[1])
         XCTAssertFalse(state.bothTimesChosen)
-        state.chooseReturn(MockData.returnOptions[1])
+        state.chooseReturn(MockData.defaultReturnOffers[1])
         XCTAssertTrue(state.bothTimesChosen)
         XCTAssertEqual(state.timesButtonLabel, "Confirm times")
         XCTAssertEqual(state.pickUpLabel, "Sun 18 Oct · 7:30 pm")
         XCTAssertEqual(state.returnLabel, "Mon 19 Oct · \(Scenario.returnTime)")
+    }
+
+    // MARK: Option-driven schedule
+
+    func testOctoberWeekdaysAreComputedFromTheFixedMonth() {
+        XCTAssertEqual(OctDay(day: 1).medium, "Thu 1 Oct")
+        XCTAssertEqual(OctDay(day: 18).medium, "Sun 18 Oct")
+        XCTAssertEqual(OctDay(day: 19).lockScreen, "Monday, 19 October")
+        XCTAssertEqual(OctDay(day: 31).medium, "Sat 31 Oct")
+    }
+
+    func testTimeFormats() {
+        XCTAssertEqual(TimeOfDay(hour: 19, minute: 30).label, "7:30 pm")
+        XCTAssertEqual(TimeOfDay(hour: 23, minute: 0).pill, "11 pm")
+        XCTAssertEqual(TimeOfDay(hour: 0, minute: 5).label, "12:05 am")
+        XCTAssertEqual(TimeOfDay.compactList([TimeOfDay(hour: 19, minute: 30), TimeOfDay(hour: 19, minute: 0)]), "7, 7:30 pm")
+        XCTAssertEqual(TimeOfDay.compactList([TimeOfDay(hour: 9, minute: 0), TimeOfDay(hour: 19, minute: 0)]), "9 am, 7 pm")
+    }
+
+    func testBorrowDatesFlowIntoEveryLaterLabel() {
+        XCTAssertEqual(state.borrowSummary, "18 Oct → 19 Oct · 1 day")
+        state.selectBorrowDay(OctDay(day: 21))     // a new first tap starts a new range
+        XCTAssertEqual(state.borrowSummary, "21 Oct · Same day")
+        state.selectBorrowDay(OctDay(day: 23))     // a later day ends it
+        XCTAssertEqual(state.borrowRange, "21–23 Oct 2026")
+        XCTAssertEqual(state.borrowSummary, "21 Oct → 23 Oct · 2 days")
+        XCTAssertEqual(state.pickUpDay, OctDay(day: 21))
+        XCTAssertEqual(state.returnDay, OctDay(day: 23))
+        XCTAssertEqual(state.borrowerDetail, "Pick up: Wed 21 Oct, 7:30 pm · Block A Security Desk")
+        XCTAssertTrue(state.lenderDetail.contains("21–23 Oct 2026"))
+    }
+
+    func testUnavailableAndTooLongRangesAreRefused() {
+        state.selectBorrowDay(OctDay(day: 16))     // Thomas is busy 15–17 Oct
+        XCTAssertEqual(state.borrowRange, "18–19 Oct 2026")
+        state.selectBorrowDay(OctDay(day: 30))     // after his availability
+        XCTAssertEqual(state.borrowRange, "18–19 Oct 2026")
+        state.selectBorrowDay(OctDay(day: 18))
+        state.selectBorrowDay(OctDay(day: 27))     // 9 days: starts a new range instead
+        XCTAssertEqual(state.borrowRange, "27 Oct 2026")
+    }
+
+    func testPickUpAndReturnDaysStayInsideTheRange() {
+        state.selectBorrowDay(OctDay(day: 20))
+        state.selectBorrowDay(OctDay(day: 24))
+        state.choosePickUpDay(OctDay(day: 22))
+        XCTAssertEqual(state.pickUpDay.day, 22)
+        state.chooseReturnDay(OctDay(day: 21))     // before pick-up: ignored
+        XCTAssertEqual(state.returnDay.day, 24)
+        state.chooseReturnDay(OctDay(day: 23))
+        XCTAssertEqual(state.returnLabel, "Fri 23 Oct · 11:00 pm")
+        state.choosePickUpDay(OctDay(day: 26))     // outside the range: ignored
+        XCTAssertEqual(state.pickUpDay.day, 22)
+    }
+
+    func testOfferedTimesDriveThomasChoices() {
+        state.addPickUpOffer(TimeOfDay(hour: 18, minute: 0))
+        XCTAssertEqual(state.pickUpOfferText, "6, 7, 7:30 pm")
+        state.choosePickUp(TimeOfDay(hour: 21, minute: 0))   // not offered: ignored
+        XCTAssertNil(state.pickUpChoice)
+        state.choosePickUp(TimeOfDay(hour: 18, minute: 0))
+        XCTAssertEqual(state.pickUpLabel, "Sun 18 Oct · 6:00 pm")
+        state.removePickUpOffer(TimeOfDay(hour: 18, minute: 0))
+        XCTAssertNil(state.pickUpChoice, "removing the chosen time clears the choice")
+        state.clearReturnOffers()
+        XCTAssertFalse(state.canSendProposal)
+        state.addReturnOffer(TimeOfDay(hour: 22, minute: 30))
+        XCTAssertTrue(state.canSendProposal)
+        XCTAssertEqual(state.returnOfferText, "10:30 pm")
+    }
+
+    func testSameDayReturnMustFollowPickUp() {
+        state.selectBorrowDay(OctDay(day: 20))     // single-day borrow
+        XCTAssertEqual(state.pickUpDay, state.returnDay)
+        XCTAssertFalse(state.canOfferReturn(TimeOfDay(hour: 18, minute: 0)))
+        XCTAssertTrue(state.canOfferReturn(TimeOfDay(hour: 21, minute: 0)))
+    }
+
+    func testMeetUpSpotFlowsIntoLabelsAndChat() {
+        XCTAssertFalse(state.meetUpChosen)
+        state.chooseMeetUpSpot(.blk12)
+        XCTAssertTrue(state.meetUpChosen)
+        XCTAssertTrue(state.borrowerDetail.hasSuffix("· Blk 12"))
+        XCTAssertTrue(MockData.chat(state)[0].text.contains("Blk 12"))
+    }
+
+    func testRadiusFiltersSteamerResults() {
+        state.setRadius(.current)
+        XCTAssertEqual(state.steamerResults.map(\.id), ["steamer"])
+        state.setRadius(.km5)
+        XCTAssertEqual(state.steamerResults.map(\.id), ["steamer"], "the Xiaomi steamer is 16.8 km away")
+        XCTAssertEqual(state.radius.phrase, "within 5 km")
+    }
+
+    func testPaymentMethodIsRemembered() {
+        XCTAssertEqual(state.paymentMethod, .payNow)
+        state.choosePaymentMethod(.applePay)
+        state.depositPaid()
+        XCTAssertEqual(state.paymentMethod, .applePay)
+        state.reset()
+        XCTAssertEqual(state.paymentMethod, .payNow)
+    }
+
+    func testRatingsKeepTheStarsTapped() {
+        state.rateThomas(3)
+        XCTAssertEqual(state.thomasCategoryStars.values.sorted(), [3, 3, 3, 3, 3])
+        state.rateThomas(5, category: "Punctuality")
+        XCTAssertEqual(state.thomasCategoryStars["Punctuality"], 5)
+        XCTAssertEqual(state.jamesRatingOfThomas, 3)
     }
 
     // MARK: Roles
@@ -211,7 +320,7 @@ final class StateRulesTests: XCTestCase {
         XCTAssertEqual(Scenario.borrowerCode, "8482")
         XCTAssertEqual(Scenario.depositAmount, "$10")
         XCTAssertEqual(Scenario.meetUpPlace, "Block A Security Desk")
-        XCTAssertEqual(Screen.allCases.count, 127)
+        XCTAssertEqual(Screen.allCases.count, 128, "127 Figma frames plus the app-only Apple Pay sheet")
     }
 
     func testPayNowQRCodeIsGenerated() {

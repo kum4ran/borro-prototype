@@ -36,7 +36,7 @@ struct Listing: Identifiable, Hashable {
     let availableDates: String
     var availabilityLabel: String = "Available"
     var needItNow: Bool = false
-    var withinOneKm: Bool = false
+    var distanceMetres: Int = 0
 }
 
 struct BorrowRequest: Hashable {
@@ -44,16 +44,7 @@ struct BorrowRequest: Hashable {
     let listing: Listing
     let borrower: User
     let lender: User
-    let dates: String
     let mode: String
-}
-
-struct Agreement: Hashable {
-    let request: BorrowRequest
-    let pickUp: String
-    let returnBy: String
-    let place: String
-    let deposit: String
 }
 
 struct Review: Identifiable, Hashable {
@@ -132,15 +123,4 @@ enum BorrowStatus: String, CaseIterable, Hashable {
 
 enum DepositState: Hashable {
     case unpaid, held, refunded
-}
-
-/// A pill in the meet-up time sheets (4.2–4.5, 4.12).
-struct TimeOption: Identifiable, Hashable {
-    let id: String
-    let label: String     // pill text ("7:30 pm")
-    let day: String       // "Sun 18 Oct"
-    let time: String      // "7:30 pm"
-
-    /// Shown on 4.7 and later: "Sun 18 Oct · 7:30 pm".
-    var value: String { "\(day) · \(time)" }
 }

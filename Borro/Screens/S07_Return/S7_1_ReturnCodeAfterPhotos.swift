@@ -8,7 +8,7 @@ struct S7_1_ReturnCodeAfterPhotosView: View {
 
     var body: some View {
         ScreenScaffold {
-            BackAppBar(title: "Return handover", subtitle: Scenario.meetUpPlace)
+            BackAppBar(title: "Return handover", subtitle: appState.meetUpPlace)
         } content: {
             VStack(alignment: .leading, spacing: Space.x4) {
                 Text("Garment Steamer").font(.b(.s14)).foregroundStyle(Color.ink)
@@ -24,7 +24,7 @@ struct S7_1_ReturnCodeAfterPhotosView: View {
             }
             Text("＋ ADDITIONAL · Optional").font(.r(.s11)).foregroundStyle(Color.ink)
                 .cardStyle(padding: Space.x10, shadow: false)
-            Text("Return · 19 Oct 2026 · \(appState.returnTime) · \(PhotoRules.requirementLine)")
+            Text("Return · \(appState.returnDay.withYear) · \(appState.returnTime) · \(PhotoRules.requirementLine)")
                 .font(.r(.s10)).foregroundStyle(Color.inkSecondary)
         } actions: {
             PrimaryButton(title: "Confirm Return Drop-off", identifier: "confirmReturnDropOffButton") { router.go(.s7_2) }

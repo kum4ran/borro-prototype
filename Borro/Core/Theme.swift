@@ -248,6 +248,8 @@ enum Size {
     static let listingStepBar: CGFloat = 4
     static let guideThumb = CGSize(width: 64, height: 48)
     static let titleMinScale: CGFloat = 0.7
+    static let wheelHeight: CGFloat = 132
+    static let defaultPickUpWheelHour = 18
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70

@@ -27,6 +27,7 @@ struct S3_9_RequestAcceptedView: View {
 /// Photo, title, urgency chip and the four request rows (2.3, 3.9).
 struct RequestSummaryCard: View {
     let request: BorrowRequest
+    @Environment(AppState.self) private var appState
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.x10) {
@@ -37,8 +38,8 @@ struct RequestSummaryCard: View {
             Chip(text: "URGENT - Borrow Now", fill: .brand, ink: .surface)
             DotRow(label: "Borrower", value: request.borrower.name)
             DotRow(label: "Lender", value: request.lender.name)
-            DotRow(label: "Requested dates", value: "18 → 19 Oct 2026")
-            DotRow(label: "Duration", value: "1 day")
+            DotRow(label: "Requested dates", value: appState.borrowArrow)
+            DotRow(label: "Duration", value: appState.durationText)
         }
         .cardStyle()
     }

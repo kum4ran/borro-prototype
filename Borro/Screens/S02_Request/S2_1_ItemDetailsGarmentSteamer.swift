@@ -58,7 +58,8 @@ struct ItemDetailsBody: View {
             HStack(spacing: Space.x8) {
                 Text("15–17 Oct · Busy").font(.r(.s12)).foregroundStyle(Color.inkSecondary)
                     .panel(.track, padding: Space.x8, radius: Radius.r8)
-                Text("18–19 Oct · Free").font(.r(.s12)).foregroundStyle(Color.brand)
+                // Free range follows the dates James can actually pick on 2.2.
+                Text("\(Scenario.borrowableDays.lowerBound)–\(Scenario.borrowableDays.upperBound) Oct · Free").font(.r(.s12)).foregroundStyle(Color.brand)
                     .panel(.successFill, padding: Space.x8, radius: Radius.r8)
             }
             .frame(minHeight: Size.hitTarget)

@@ -46,9 +46,9 @@ struct BorrowTimeline: View {
             .cardStyle(padding: Space.x8, shadow: false)
             PersonStrip(user: thomas, line: "★ \(thomas.rating) · \(thomas.reviewCount) reviews")
             VStack(alignment: .leading, spacing: Space.x6) {
-                DotRow(label: "Pickup", value: "18 Oct · \(appState.pickUpTime)")
-                DotRow(label: "Return", value: "19 Oct · \(appState.returnTime)")
-                Text("⌖ \(Scenario.meetUpPlace)").font(.r(.s13)).foregroundStyle(Color.ink)
+                DotRow(label: "Pickup", value: appState.pickUpShort)
+                DotRow(label: "Return", value: appState.returnShort)
+                Text("⌖ \(appState.meetUpPlace)").font(.r(.s13)).foregroundStyle(Color.ink)
             }
             .cardStyle(shadow: false)
             // Not wired in Figma.
@@ -91,12 +91,12 @@ struct TimelineCopy {
     let perform: @MainActor (AppState, Router) -> Void
 
     @MainActor static func make(_ state: AppState) -> TimelineCopy {
-        let place = Scenario.meetUpPlace
+        let place = state.meetUpPlace
         switch state.timelineStage {
         case .agreed:
             return TimelineCopy(
                 headline: "Handover pending",
-                note: "Agreement signed and deposit paid. Meet Thomas at \(place) on Sun 18 Oct, \(state.pickUpTime).",
+                note: "Agreement signed and deposit paid. Meet Thomas at \(place) on \(state.pickUpDay.medium), \(state.pickUpTime).",
                 action: "Go to handover") { _, router in router.go(.s6_1) }
         case .meetUp:
             return TimelineCopy(

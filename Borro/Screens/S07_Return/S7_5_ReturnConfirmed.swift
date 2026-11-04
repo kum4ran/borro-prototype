@@ -7,7 +7,7 @@ struct S7_5_ReturnConfirmedView: View {
 
     var body: some View {
         ScreenScaffold {
-            BackAppBar(title: "Return · Lender", subtitle: Scenario.meetUpPlace)
+            BackAppBar(title: "Return · Lender", subtitle: appState.meetUpPlace)
         } content: {
             IconView(icon: .check, size: Size.sealIcon)
                 .foregroundStyle(Color.brand)
@@ -24,7 +24,7 @@ struct S7_5_ReturnConfirmedView: View {
                     .frame(height: Size.returnPhoto)
                     .clipShape(RoundedRectangle(cornerRadius: Radius.photo))
                 KeyValueRow(key: "Condition photos", value: "Front ✓ · Back ✓")
-                KeyValueRow(key: "Time", value: "19 Oct · \(appState.returnTime)")
+                KeyValueRow(key: "Time", value: appState.returnShort)
             }
             .cardStyle()
             VStack(alignment: .leading, spacing: Space.x4) {
