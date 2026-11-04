@@ -91,6 +91,7 @@ final class Router {
 
     /// Demo menu: open any frame directly. Builds a sensible page underneath sheets and overlays.
     func jump(to screen: Screen) {
+        appState?.prepareForDemo(screen)
         sheet = nil
         overlay = nil
         path.removeAll()

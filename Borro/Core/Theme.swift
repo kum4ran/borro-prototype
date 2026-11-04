@@ -37,6 +37,7 @@ extension Color {
     static let surfaceSunk = Color(rgb: 0xF6F6F3)
     static let surfaceWarm = Color(rgb: 0xEEEEE9)
     static let peachFill = Color(rgb: 0xFCE3D0)
+    static let payNowPurple = Color(rgb: 0x7B2A8C)
     static let track = Color(rgb: 0xEDF0EC)          // progress tracks, muted fills
     static let stroke = Color(rgb: 0xE2E8E1)         // card and field borders
     static let strokeSoft = Color(rgb: 0xE5E8E3)
@@ -210,6 +211,12 @@ enum Size {
     static let bubbleMaxWidth: CGFloat = 250
     static let fab: CGFloat = 50
     static let attachmentTile: CGFloat = 48
+    static let checkbox: CGFloat = 22
+    static let qr: CGFloat = 180
+    static let spinner: CGFloat = 50
+    static let payButton: CGFloat = 40
+    static let payLogo: CGFloat = 26
+    static let stepBar: CGFloat = 3
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70
@@ -219,6 +226,7 @@ enum Size {
     static let factorLabel: CGFloat = 141
     static let factorValue: CGFloat = 34
     static let thumbHeight: CGFloat = 80
+    static let thumbSquare: CGFloat = 64
     static let detailPhoto: CGFloat = 145
     static let cardPhoto: CGFloat = 110
     static let seal: CGFloat = 76

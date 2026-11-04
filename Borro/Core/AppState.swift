@@ -31,6 +31,11 @@ final class AppState {
     private(set) var needItNow = false
     private(set) var likedListingIDs: Set<String> = []
 
+    // Agreement and handover progress
+    private(set) var agreedToTerms = false
+    private(set) var dropOffSaved = false
+    private(set) var collected = false
+
     // Reviews
     private(set) var jamesRatingOfThomas = 0
     private(set) var thomasRatingOfJames = 0
@@ -52,6 +57,9 @@ final class AppState {
         likedListingIDs = []
         jamesRatingOfThomas = 0
         thomasRatingOfJames = 0
+        agreedToTerms = false
+        dropOffSaved = false
+        collected = false
     }
 
     // MARK: Status
@@ -84,7 +92,50 @@ final class AppState {
 
     // MARK: Deposit
 
-    func depositPaid() { deposit = .held }
+    /// 5.2c → 5.2d. Paying also ticks the agreement box, as Figma's 5.5 shows.
+    func depositPaid() {
+        deposit = .held
+        agreedToTerms = true
+    }
+
+    func toggleAgreedToTerms() { agreedToTerms.toggle() }
+
+    var canSubmitAgreement: Bool { deposit == .held && agreedToTerms }
+
+    /// Deposit line on the timelines.
+    var depositStatusText: String {
+        switch deposit {
+        case .unpaid: return "Awaiting deposit"
+        case .held: return status == .returned ? "Refund processing" : "Held safely"
+        case .refunded: return "Refunded"
+        }
+    }
+
+    // MARK: Handover progress
+
+    func saveDropOff() { dropOffSaved = true }
+    func markCollected() { collected = true }
+
+    enum TimelineStage: Int, CaseIterable {
+        case agreed, meetUp, lending, returned
+
+        var title: String {
+            switch self {
+            case .agreed: return "Agreed"
+            case .meetUp: return "Meet-up"
+            case .lending: return "Lending"
+            case .returned: return "Return"
+            }
+        }
+    }
+
+    var timelineStage: TimelineStage {
+        switch status {
+        case .pending, .handoverPending: return dropOffSaved ? .meetUp : .agreed
+        case .onLoan, .returnPending: return .lending
+        case .returned: return .returned
+        }
+    }
     func depositRefunded() { deposit = .refunded }
 
     // MARK: Role

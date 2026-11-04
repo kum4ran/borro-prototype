@@ -51,6 +51,8 @@ enum Photo: String, CaseIterable, Hashable {
 
     // UI art
     case payNow = "paynow"
+    /// PayNow mark with the black background keyed out (Figma draws it on white).
+    case payNowLogo = "paynow_logo"
     case lockScreen = "lockscreen"
     case blackFrame = "black_frame"
 
