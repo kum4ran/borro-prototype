@@ -144,6 +144,48 @@ enum MockData {
     static let listingAvailability = "13–27 Oct 2026"
     static let maxBorrowDays = "7 days"
 
+    // MARK: Damage and cancellation (section 10)
+
+    // CONFLICT: Figma's damage photos show a black speaker; the borrowed item is the steamer.
+    static let damageAngles: [(String, Photo)] = [
+        ("Front", .steamerShirt), ("Back", .steamerDesk), ("Left", .steamerMain),
+        ("Right", .listPhoto2), ("Top", .listPhoto3), ("Bottom", .listPhoto5),
+    ]
+    static let damageDescription = "The steamer slipped against the table edge. There is a dent on the left side of the body. It still powers on."
+    static let repairQuote = "$100"
+    static let depositApplied = "−$10"
+    static let repairBalance = "$90"
+
+    static let priya = User(id: "priya", name: "Priya", fullName: "Priya", photo: .womanFour, credibility: 91, credibilityLabel: "High")
+    static let leon = User(id: "leon", name: "Leon", fullName: "Leon", photo: .manTwo, credibility: 89, credibilityLabel: "High")
+    static let meiLin = User(id: "meilin", name: "Mei Lin", fullName: "Mei Lin", photo: .mei, credibility: 87, credibilityLabel: "High")
+
+    static let alternatives: [(user: User, distance: String)] = [(leon, "564 m"), (meiLin, "200 m"), (priya, "350 m")]
+
+    // MARK: Wishlist (11.4)
+
+    // CONFLICT: Figma titles read "Portable Steamer" and "Steamer Screen" over projector photos
+    // (find-and-replace damage). The listings keep their real titles.
+    static let wishlist = [steamer, projector, projectorScreen, football]
+
+    // MARK: Ask Borro (11.5), scripted replies only
+
+    static let askBorroQuestion = "How do I use the Garment Steamer?"
+    static let askBorroAnswer = """
+    1. Fill the tank with clean water up to the MAX line.
+    2. Plug in, switch on and wait about 30 seconds for the ready light.
+    3. Hang the blazer and steam from top to bottom, 2–3 cm away.
+    4. Switch off, let it cool, then empty the tank.
+    """
+    static let askBorroReplies: [(keywords: [String], reply: String)] = [
+        (["deposit", "refund", "money"], "Your \(Scenario.depositAmount) deposit is held by Borro and refunded within 1 working day after Thomas confirms the return."),
+        (["return", "when", "time"], "Return the steamer to \(Scenario.meetUpPlace) on Mon 19 Oct by \(Scenario.returnTime). Thomas enters your return code to confirm."),
+        (["code", "pin"], "Show your return code only when you meet Thomas in person. It refreshes every 45 seconds."),
+        (["clean", "care", "water"], "Use clean water only, let it cool, empty the tank and return the heat-resistant mitt."),
+        (["damage", "broke", "dent"], "Report damage from your timeline with clear photos. Borro compares both sides’ condition records."),
+    ]
+    static let askBorroFallback = "I can help with using the steamer, the return, your code or your deposit. Try asking about one of those."
+
     // MARK: Review comments (8.3, 8.6)
 
     static let reviewOfThomas = "So helpful and clear with the arrangements. Thank you!"

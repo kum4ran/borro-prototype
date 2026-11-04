@@ -64,6 +64,7 @@ final class AppState {
         returnCodeVerified = false
         thomasCategoryStars = [:]
         jamesCategoryStars = [:]
+        wishlistRemoved = []
     }
 
     // MARK: Status
@@ -235,6 +236,29 @@ final class AppState {
     }
 
     func isLiked(_ listing: Listing) -> Bool { likedListingIDs.contains(listing.id) }
+
+    /// Wishlist (11.4): Figma's saved items plus anything liked since, minus anything unliked there.
+    private(set) var wishlistRemoved: Set<String> = []
+
+    var wishlist: [Listing] {
+        let liked = (MockData.homeFeed + MockData.needItNowFeed).filter { isLiked($0) }
+        var seen = Set<String>()
+        return (MockData.wishlist + liked).filter { seen.insert($0.id).inserted }
+    }
+
+    func isWished(_ listing: Listing) -> Bool {
+        !wishlistRemoved.contains(listing.id) && (MockData.wishlist.contains(listing) || isLiked(listing))
+    }
+
+    func toggleWish(_ listing: Listing) {
+        if isWished(listing) {
+            wishlistRemoved.insert(listing.id)
+            likedListingIDs.remove(listing.id)
+        } else {
+            wishlistRemoved.remove(listing.id)
+            likedListingIDs.insert(listing.id)
+        }
+    }
 
     // MARK: Reviews
 

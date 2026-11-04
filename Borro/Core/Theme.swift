@@ -235,6 +235,8 @@ enum Size {
     static let multilineField: CGFloat = 96
     static let listingHero: CGFloat = 150
     static let listingThumb: CGFloat = 60
+    static let damageTile: CGFloat = 62
+    static let checkpoint: CGFloat = 28
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70
