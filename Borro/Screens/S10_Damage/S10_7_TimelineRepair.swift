@@ -1,7 +1,6 @@
 import SwiftUI
 
 /// Figma frame "10.7 Both · Timeline · repair" (node 708:2234).
-/// CONFLICT: Figma shows Thomas as "★ 4.7 · 47 reviews" here; everywhere else he is 5.0 (10 reviews).
 struct S10_7_TimelineRepairView: View {
     @Environment(Router.self) private var router
     @Environment(AppState.self) private var appState

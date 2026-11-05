@@ -313,16 +313,16 @@ final class AppState {
 
     /// Agreed pick-up time. Scenario default (7:30 pm) until Thomas picks a pill.
     var pickUpTime: String { (pickUpChoice ?? Scenario.defaultPickUpTime).label }
-    /// Agreed return time. CONFLICT default: Scenario.returnTime (11:00 pm) until Thomas picks a pill.
+    /// Agreed return time. Defaults to Scenario.returnTime (10:30 am) until Thomas picks a pill.
     var returnTime: String { (returnChoice ?? Scenario.defaultReturnTime).label }
     /// "Sun 18 Oct · 7:30 pm"
     var pickUpLabel: String { "\(pickUpDay.medium) · \(pickUpTime)" }
-    /// "Mon 19 Oct · 11:00 pm"
+    /// "Mon 19 Oct · 10:30 am"
     var returnLabel: String { "\(returnDay.medium) · \(returnTime)" }
     /// "18 Oct · 7:30 pm"
     var pickUpShort: String { "\(pickUpDay.short) · \(pickUpTime)" }
     var returnShort: String { "\(returnDay.short) · \(returnTime)" }
-    /// "18 Oct, 7:30 pm → 19 Oct, 11:00 pm"
+    /// "18 Oct, 7:30 pm → 19 Oct, 10:30 am"
     var agreementDates: String { "\(pickUpDay.short), \(pickUpTime) → \(returnDay.short), \(returnTime)" }
     /// James's offers in one line: "7, 7:30 pm"
     var pickUpOfferText: String { TimeOfDay.compactList(pickUpOffers) }

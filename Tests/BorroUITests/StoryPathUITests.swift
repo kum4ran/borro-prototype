@@ -46,7 +46,7 @@ final class StoryPathUITests: XCTestCase {
         tap("acceptProposalButton"); expectScreen("4.12")
         XCTAssertFalse(element("confirmTimesButton").isEnabled)
         tap("timePill.7:30 pm")
-        tap("timePill.11 pm")
+        tap("timePill.10:30 am")
         tap("confirmTimesButton"); expectScreen("4.14")
 
         // 5 Agreement and PayNow
@@ -106,10 +106,10 @@ final class StoryPathUITests: XCTestCase {
         app.launch()
         expectScreen("4.12")
         tap("timePill.7 pm")
-        tap("timePill.10 pm")
+        tap("timePill.9 am")
         tap("confirmTimesButton"); expectScreen("4.14")
         XCTAssertTrue(app.staticTexts["Sun 18 Oct · 7:00 pm"].waitForExistence(timeout: 3))
-        XCTAssertTrue(app.staticTexts["Mon 19 Oct · 10:00 pm"].exists)
+        XCTAssertTrue(app.staticTexts["Mon 19 Oct · 9:00 am"].exists)
     }
 
     func testChosenBorrowDatesShowOnRequestSent() throws {

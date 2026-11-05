@@ -6,8 +6,7 @@ struct S1_2_HomeNeedItNowOnView: View {
     @Environment(AppState.self) private var appState
 
     var body: some View {
-        DiscoverPage(needItNow: true, heading: "Available right now",
-                     count: "\(MockData.needItNowFeed.count) results · all of Singapore") {
+        DiscoverPage(needItNow: true, heading: "Available right now") {
             appState.setNeedItNow(false)
             router.go(.s1_1)
         } onFilter: {

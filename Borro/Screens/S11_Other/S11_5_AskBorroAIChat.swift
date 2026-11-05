@@ -10,9 +10,8 @@ struct S11_5_AskBorroAIChatView: View {
 
     var body: some View {
         ScreenScaffold {
-            BackAppBar(title: "B · Ask me", subtitle: "About this item: Garment Steamer")
+            BackAppBar(title: "Borro · Ask me")
         } content: {
-            Chip(text: "Your item companion", fill: .successFill, ink: .success, font: .s(.s11))
             ForEach(messages) { message in
                 if message.mine {
                     ChatBubble(message: message)

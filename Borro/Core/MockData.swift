@@ -82,7 +82,7 @@ enum MockData {
     static let jamesReviews = [
         Review(id: "r1", author: "Kumaran", stars: 4, text: "Returned the item cleaned.", date: "12 Oct 2026"),
         Review(id: "r2", author: "Maria", stars: 3, text: "Good communication, but the return was a little late.", date: "8 Oct 2026"),
-        Review(id: "r3", author: "Regen", stars: 4, text: "Careful with my drill. He would lend the item again.", date: "2 Oct 2026"),
+        Review(id: "r3", author: "Regen", stars: 4, text: "Careful with my drill. I would lend the item again.", date: "2 Oct 2026"),
     ]
 
     static let jamesCredibility = [
@@ -118,10 +118,9 @@ enum MockData {
                    detail: "With John · Due 16 Oct"),
     ]
 
-    // CONFLICT: Figma's past loans say "Lent to Thomas" on Thomas's own list. Borrower changed to Kumaran.
     static let pastLending = [
         LendingRow(id: "bottle", title: "Water Bottle", photo: .bottle, chip: "Returned", chipTone: .green,
-                   detail: "Lent to Kumaran · 14–21 Oct", person: .kumaran),
+                   detail: "Lent to Jessica · 14–21 Oct", person: .jessica),
         LendingRow(id: "speaker", title: "Speaker", photo: .extraC8e, chip: "Returned", chipTone: .green,
                    detail: "Lent to Maria · 12–19 Oct", person: .mei),
         LendingRow(id: "camera", title: "Camera", photo: .camera, chip: "Cancelled", chipTone: nil,
@@ -164,8 +163,6 @@ enum MockData {
 
     // MARK: Wishlist (11.4)
 
-    // CONFLICT: Figma titles read "Portable Steamer" and "Steamer Screen" over projector photos
-    // (find-and-replace damage). The listings keep their real titles.
     static let wishlist = [steamer, projector, projectorScreen, football]
 
     // MARK: Ask Borro (11.5), scripted replies only
@@ -197,8 +194,7 @@ enum MockData {
     @MainActor static func chat(_ state: AppState) -> [ChatMessage] {
         [
             ChatMessage(id: "c1", text: "Hi James! Meet at \(state.meetUpPlace) at \(state.pickUpTime) for the steamer?", time: "6:42 pm", mine: false),
-            // CONFLICT: Figma says "return it tomorrow by 10 am"; the scenario return time wins.
-            ChatMessage(id: "c2", text: "Sure, see you there! I’ll return it on \(state.returnDay.medium) by \(state.returnTime).", time: "6:43 pm", mine: true, read: true),
+            ChatMessage(id: "c2", text: "Sure, see you there! I’ll return it \(state.returnDay.day == state.pickUpDay.day + 1 ? "tomorrow" : "on \(state.returnDay.medium)") by \(state.returnTime).", time: "6:43 pm", mine: true, read: true),
             ChatMessage(id: "c3", text: "Lovely, please take a look at this agreement!", time: "6:44 pm", mine: false),
         ]
     }
@@ -207,7 +203,6 @@ enum MockData {
 
     static let defaultPickUpOffers = [TimeOfDay(hour: 19, minute: 0), TimeOfDay(hour: 19, minute: 30)]
 
-    // CONFLICT: Figma offers 9 am, 10 am and 10:30 am. The scenario return is Monday 11:00 pm,
-    // so the default offer is the scenario time (Scenario.defaultReturnTime) with one slot either side.
-    static let defaultReturnOffers = [TimeOfDay(hour: 22, minute: 0), Scenario.defaultReturnTime, TimeOfDay(hour: 23, minute: 30)]
+    // Figma 4.5 / 4.7: James offers 9 am, 10 am and 10:30 am; Thomas picks 10:30 am (Scenario.defaultReturnTime).
+    static let defaultReturnOffers = [TimeOfDay(hour: 9, minute: 0), TimeOfDay(hour: 10, minute: 0), Scenario.defaultReturnTime]
 }

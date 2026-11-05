@@ -250,6 +250,7 @@ enum Size {
     static let titleMinScale: CGFloat = 0.7
     static let wheelHeight: CGFloat = 132
     static let defaultPickUpWheelHour = 18
+    static let defaultReturnWheelHour = 10
     static let lockIcon: CGFloat = 24
     static let appIcon: CGFloat = 28
     static let avatarProfile: CGFloat = 70

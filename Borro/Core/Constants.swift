@@ -27,9 +27,8 @@ enum Scenario {
     static let requestDay = OctDay(day: 18)
     static let defaultPickUpTime = TimeOfDay(hour: 19, minute: 30)
 
-    // CONFLICT: Figma shows 10:00 am on 5.2, the status strings and the Borro times default.
-    // The scenario says Monday 19 Oct, 11:00 pm. Team has not decided. Change it here, in one line.
-    static let defaultReturnTime = TimeOfDay(hour: 23, minute: 0)
+    // Scenario text and Figma (updated 4 Nov 2026) agree: return Monday 19 Oct, 10:30 am.
+    static let defaultReturnTime = TimeOfDay(hour: 10, minute: 30)
     static let returnTime = defaultReturnTime.label
 
     static let reviewPushTime = "11:05"

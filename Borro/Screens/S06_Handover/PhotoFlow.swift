@@ -198,7 +198,7 @@ struct PhotoNameSheet: View {
     var body: some View {
         SheetContainer(title: editing ? "Edit Name" : "Name of picture") {
             VStack(spacing: Space.x16) {
-                Text(editing ? "Right Side - steamer" : "Example: Left Side  - speaker")
+                Text(editing ? "Right Side - steamer" : "Example: Left side · Steamer")
                     .font(.r(.s14))
                     .foregroundStyle(editing ? Color.ink : Color.inkSecondary)
                     .frame(maxWidth: .infinity, minHeight: Size.nameField, alignment: .topLeading)

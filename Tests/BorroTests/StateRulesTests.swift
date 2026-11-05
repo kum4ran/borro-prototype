@@ -124,7 +124,7 @@ final class StateRulesTests: XCTestCase {
         XCTAssertFalse(state.bothTimesChosen)
         state.choosePickUp(MockData.defaultPickUpOffers[1])
         XCTAssertFalse(state.bothTimesChosen)
-        state.chooseReturn(MockData.defaultReturnOffers[1])
+        state.chooseReturn(Scenario.defaultReturnTime)
         XCTAssertTrue(state.bothTimesChosen)
         XCTAssertEqual(state.timesButtonLabel, "Confirm times")
         XCTAssertEqual(state.pickUpLabel, "Sun 18 Oct · 7:30 pm")
@@ -179,7 +179,7 @@ final class StateRulesTests: XCTestCase {
         state.chooseReturnDay(OctDay(day: 21))     // before pick-up: ignored
         XCTAssertEqual(state.returnDay.day, 24)
         state.chooseReturnDay(OctDay(day: 23))
-        XCTAssertEqual(state.returnLabel, "Fri 23 Oct · 11:00 pm")
+        XCTAssertEqual(state.returnLabel, "Fri 23 Oct · 10:30 am")
         state.choosePickUpDay(OctDay(day: 26))     // outside the range: ignored
         XCTAssertEqual(state.pickUpDay.day, 22)
     }
@@ -205,6 +205,15 @@ final class StateRulesTests: XCTestCase {
         XCTAssertEqual(state.pickUpDay, state.returnDay)
         XCTAssertFalse(state.canOfferReturn(TimeOfDay(hour: 18, minute: 0)))
         XCTAssertTrue(state.canOfferReturn(TimeOfDay(hour: 21, minute: 0)))
+    }
+
+    func testScenarioReturnIsMondayMorning() {
+        XCTAssertEqual(MockData.defaultReturnOffers.map(\.pill), ["9 am", "10 am", "10:30 am"])
+        state.choosePickUp(Scenario.defaultPickUpTime)
+        state.chooseReturn(Scenario.defaultReturnTime)
+        XCTAssertEqual(state.returnLabel, "Mon 19 Oct · 10:30 am")
+        XCTAssertEqual(MockData.chat(state)[1].text, "Sure, see you there! I’ll return it tomorrow by 10:30 am.")
+        XCTAssertEqual(MockData.jamesReviews.last?.text, "Careful with my drill. I would lend the item again.")
     }
 
     func testMeetUpSpotFlowsIntoLabelsAndChat() {

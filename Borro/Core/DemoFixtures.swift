@@ -13,7 +13,7 @@ extension AppState {
         if reached(.s4_14) {
             chooseMeetUpSpot(.blockA)
             choosePickUp(MockData.defaultPickUpOffers[1])
-            chooseReturn(MockData.defaultReturnOffers[1])
+            chooseReturn(Scenario.defaultReturnTime)
         }
         if reached(.s5_2d) { depositPaid() }
         if reached(.s6_4) { addPhoto(.front, to: .dropOff) }

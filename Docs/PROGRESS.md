@@ -52,12 +52,12 @@ Please confirm. Each one is one value in `Core/Constants.swift` or `Core/MockDat
 
 | # | Figma | What the app does | Where |
 |---|---|---|---|
-| 1 | Return time 10:00 am (5.2, status strings, Borro times default, T&C, 4.9 chat) | Monday 19 Oct, **11:00 pm** everywhere | `Scenario.returnTime` |
-| 2 | Return pills 9 am / 10 am / 10:30 am (4.5, 4.7, 4.11, 4.12) | James's default offers are 10 pm / **11 pm** / 11:30 pm (11 pm is `Scenario.defaultReturnTime`); he can add or remove any time on 4.5, and later screens show the one Thomas picks | `MockData.defaultReturnOffers` |
+| 1 | ~~Return time 10:00 am vs scenario 11:00 pm~~ **Resolved 5 Nov 2026**: the scenario text and Figma (edited 4 Nov) both say Mon 19 Oct, **10:30 am** | 10:30 am everywhere | `Scenario.defaultReturnTime` |
+| 2 | ~~Return pills vs scenario time~~ **Resolved**: pills 9 am / 10 am / 10:30 am (4.5, 4.7, 4.11, 4.12) | Same default offers; Thomas's default pick is 10:30 am | `MockData.defaultReturnOffers` |
 | 3 | 5.1 shows "Deposit paid" before James pays | "Awaiting deposit" until the deposit is held | `S5_1_AgreementSentView` |
 | 4 | Apple Pay on 5.2 has no link | Wired to an app-only simulated sheet (5.2f) so the option has its own path | `S5_2f_ApplePaySheetView` |
-| 5 | 8482 on 6.3a, 6.3b, 6.5a, 6.6a (and 6.14a–d); 6767 on 7.1 | Handover shows 6767, return shows 8482 | `LenderCodeTop`, `S7_1_…` |
-| 6 | "Portable Steamer" / "Steamer Screen" over projector photos (11.4) | "Portable Projector" / "Projector Screen" | `MockData.wishlist` |
+| 5 | ~~8482 on the drop-off frames, 6767 on 7.1~~ **Fixed in Figma 4 Nov** | Handover shows 6767, return shows 8482 | `LenderCodeTop`, `S7_1_…` |
+| 6 | ~~"Portable Steamer" / "Steamer Screen" (11.4)~~ **Fixed in Figma 4 Nov** | "Portable Projector" / "Projector Screen" | `MockData.wishlist` |
 | 7 | Calendar highlights don't match 18–19 Oct | The chosen days are highlighted (18 and 19 Oct by default); 2.1 says "18–27 Oct · Free" to match the days you can pick | `CalendarMonth` |
 | 8 | Meet-up "reception" (scenario) vs Block A Security Desk; "West Wing Lobby" on 9.10 / 9.16 | Block A Security Desk everywhere | `Scenario.meetUpPlace` |
 | 9 | Status bar 10:00 on every frame | Real status bar | — |
@@ -66,12 +66,14 @@ Please confirm. Each one is one value in `Core/Constants.swift` or `Core/MockDat
 | 12 | 5.7 and 6.10a buttons set status to "Return pending" (copy of 6.20) | Only 6.20 sets Return pending | `TimelineCopy` |
 | 13 | 8.4's button goes to 8.8; the brief's jump is 8.4 → 8.5 | Button keeps 8.8. A "Meanwhile, on Thomas's phone" banner on 8.4 and 8.8 makes the jump to 8.5 | `S8_4_…`, `BorrowTimeline` |
 | 14 | Avatars reused across lenders; 1.3 labels the JBL lender "Thomas" | One fixed avatar per person, JBL is Kumaran's | `MockData` |
-| 15 | 9.3 past loans "Lent to Thomas" on Thomas's own list | "Lent to Kumaran" | `MockData.pastLending` |
+| 15 | 9.3 past loans: Figma now says "Lent to Jessica" (was "Lent to Thomas") | "Lent to Jessica" | `MockData.pastLending` |
 | 16 | 9.13 amount field "$ 50" while $10 is selected | $10 | `S9_13_…` |
-| 17 | 10.7 Thomas "★ 4.7 · 47 reviews" | ★ 5.0 · 10 reviews | `S10_7_…` |
+| 17 | ~~10.7 Thomas "★ 4.7 · 47 reviews"~~ **Fixed in Figma 4 Nov** | ★ 5.0 · 10 reviews | `S10_7_…` |
 | 18 | Damage photos (10.x) show a black speaker | Steamer photos | `MockData.damageAngles` |
 | 19 | 7.2 shows the borrower code already verified | Thomas types 8482 (brief) | `BorrowerCodeEntryTop` |
 | 20 | Figma page has 127 frames in 13 sections (brief says 126 / 11) | All 127 built | — |
+| 21 | Figma 4 Nov: 1.1's Need it Now toggle now links straight to 1.3 (filter menu), and the new 1.2 frame (1071:349) has no links except the tab bar | Keeps the scenario order 1.1 → 1.2 → filter (1.3) → map (1.4) | `S1_1_…`, `S1_2_…` |
+| 22 | Figma 4 Nov added 11.5a (Ask Borro · typing) and 11.5b (reply with video) | Not built yet; 11.5 answers inline | `S11_5_…` |
 
 ## Deviations from Figma links (on purpose)
 

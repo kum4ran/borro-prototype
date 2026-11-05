@@ -121,8 +121,8 @@ struct TimeSheet: View {
 
     init(kind: ScheduleKind) {
         self.kind = kind
-        // Figma's wheels open on 6:00 pm (pick-up) and the scenario return hour.
-        _hour = State(initialValue: kind == .pickUp ? Size.defaultPickUpWheelHour : Scenario.defaultReturnTime.hour)
+        // Figma's wheels open on 6:00 pm (pick-up, 4.3) and 10:00 am (return, 4.5).
+        _hour = State(initialValue: kind == .pickUp ? Size.defaultPickUpWheelHour : Size.defaultReturnWheelHour)
     }
 
     var body: some View {
@@ -140,7 +140,7 @@ struct TimeSheet: View {
                     VStack(alignment: .leading, spacing: Space.x4) {
                         Text(isPickUp ? "Pick-up times" : "Return times").font(.b(.s20)).foregroundStyle(Color.ink)
                         Text(isPickUp ? "Pick a day, then add the times you can do."
-                                      : "After your first pick-up (\(appState.pickUpDay.medium) · \(appState.pickUpOffers.min()?.label ?? "no time yet")).")
+                                      : "After your first pick-up (\(appState.pickUpDay.medium)).")
                             .font(.r(.s12)).foregroundStyle(Color.inkSecondary)
                     }
                 }
@@ -188,7 +188,7 @@ struct TimeSheet: View {
                                 .accessibilityIdentifier("offer.\(offer.label)")
                         }
                     }
-                    Text(offers.isEmpty ? "Add at least one time." : "Tap a time to remove it.")
+                    Text(offers.isEmpty ? "Add at least one time." : "Tap a time to add or remove it.")
                         .font(.r(.s11)).foregroundStyle(offers.isEmpty ? Color.danger : Color.inkSecondary)
                 }
                 .panel(.surfaceSunk, padding: Space.x12, radius: Radius.r14)
