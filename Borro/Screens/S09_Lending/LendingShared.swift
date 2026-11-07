@@ -8,68 +8,95 @@ struct MyLendingPage: View {
     @Environment(Router.self) private var router
     @Environment(AppState.self) private var appState
 
+    var isJames: Bool { appState.activeUser.id == "james" }
+
     var body: some View {
         ScreenScaffold {
             BrandAppBar(title: "My Lending")
         } content: {
             PrimaryButton(title: "+ List an Item", identifier: "listAnItemButton") { router.go(.s9_8) }
-            TapArea(accessibilityLabel: "Borrow Requests, 3 new") { router.go(.s3_2) } label: {
-                HStack(spacing: Space.x10) {
-                    IconView(icon: .inbox, size: Size.icon).foregroundStyle(Color.brand)
-                    Text("Borrow Requests").font(.b(.s15)).foregroundStyle(Color.ink)
-                    Spacer()
-                    Chip(text: "3", font: .b(.s11))
-                    IconView(icon: .chevronRight, size: Size.iconSmall).foregroundStyle(Color.ink)
+
+            if !isJames {
+                TapArea(accessibilityLabel: "Borrow Requests, 3 new") { router.go(.s3_2) } label: {
+                    HStack(spacing: Space.x10) {
+                        IconView(icon: .inbox, size: Size.icon).foregroundStyle(Color.brand)
+                        Text("Borrow Requests").font(.b(.s15)).foregroundStyle(Color.ink)
+                        Spacer()
+                        Chip(text: "3", font: .b(.s11))
+                        IconView(icon: .chevronRight, size: Size.iconSmall).foregroundStyle(Color.ink)
+                    }
+                    .cardStyle()
                 }
-                .cardStyle()
+                .accessibilityIdentifier("borrowRequestsShortcut")
             }
-            .accessibilityIdentifier("borrowRequestsShortcut")
+
             SegmentHeader(tabs: ["Active", "Past loans", "Paused"], selected: past ? 1 : 0,
                           onSelect: { router.go($0 == 1 ? .s9_3 : .s9_1) },
                           onFilter: { router.go(past ? .s9_4 : .s9_2) })
-            if past {
-                HStack(spacing: Space.x8) {
-                    Chip(text: "All time", fill: .brandMist, ink: .brand, font: .s(.s12))
-                    ForEach(["Oct 2026", "Sep 2026", "Aug 2026"], id: \.self) {
-                        Chip(text: $0, fill: .surface, ink: .inkSecondary, font: .r(.s12))
-                    }
+
+            if isJames && appState.customListings.filter({ $0.owner.id == "james" }).isEmpty {
+                VStack(spacing: Space.x12) {
+                    IconView(icon: .packageOpen, size: Size.avatarLarge).foregroundStyle(Color.inkSecondary)
+                    Text("You have no listed items").font(.b(.s16)).foregroundStyle(Color.ink)
+                    Text("Turn items you rarely use into extra cash by sharing them with your campus community.")
+                        .font(.r(.s13)).foregroundStyle(Color.inkSecondary).multilineTextAlignment(.center)
+                    Text("Tap the user icon at the top right to switch to Thomas (Lender).")
+                        .font(.s(.s12)).foregroundStyle(Color.brand).multilineTextAlignment(.center)
                 }
-                ForEach(MockData.pastLending) { row in
-                    LendingRowCard(title: row.title, photo: row.photo, chip: row.chipView, detail: row.detail, person: row.person)
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, Space.x32)
+                .padding(.horizontal, Space.x16)
+                .cardStyle()
+            } else if past {
+                if isJames {
+                    Text("No past loans").font(.r(.s14)).foregroundStyle(Color.inkSecondary)
+                        .padding(.vertical, Space.x24)
+                } else {
+                    HStack(spacing: Space.x8) {
+                        Chip(text: "All time", fill: .brandMist, ink: .brand, font: .s(.s12))
+                        ForEach(["Oct 2026", "Sep 2026", "Aug 2026"], id: \.self) {
+                            Chip(text: $0, fill: .surface, ink: .inkSecondary, font: .r(.s12))
+                        }
+                    }
+                    ForEach(MockData.pastLending) { row in
+                        LendingRowCard(title: row.title, photo: row.photo, chip: row.chipView, detail: row.detail, person: row.person)
+                    }
                 }
             } else {
-                TapArea(accessibilityLabel: "\(MockData.steamer.title), \(appState.status.rawValue)") {
-                    switch appState.status {
-                    case .pending:
-                        router.go(.s3_2)
-                    case .handoverPending:
-                        router.go(.s6_1)
-                    case .onLoan:
-                        router.go(.s6_20)
-                    case .returnPending:
-                        router.go(.s7_2)
-                    case .returned:
-                        router.go(.s8_6)
-                    }
-                } label: {
-                    LendingRowCard(title: MockData.steamer.title, photo: .steamerMain,
-                                   chip: Chip(text: appState.status.rawValue, fill: appState.status.chipFill, ink: appState.status.chipInk),
-                                   detail: appState.lenderDetail)
-                }
-                .accessibilityIdentifier("lendingSteamerCard")
-                ForEach(appState.customListings) { row in
+                ForEach(appState.customListings.filter { $0.owner.id == appState.activeUser.id }) { row in
                     LendingRowCard(title: row.title, photo: row.photo,
                                    chip: Chip(text: "Active", fill: .successFill, ink: .success),
                                    detail: "Listed by you · Available now") {
                         router.go(.s9_5)
                     }
                 }
-                ForEach(MockData.activeLending) { row in
-                    let paused = pausedBottle && row.id == "bottle"
-                    LendingRowCard(title: row.title, photo: row.photo,
-                                   chip: paused ? Chip(text: "Paused", fill: .track, ink: .inkSecondary) : row.chipView,
-                                   detail: paused ? "Hidden from discovery" : row.detail) {
-                        if row.id == "bottle" { router.go(.s9_6) } else { router.go(.s9_5) }
+                if !isJames {
+                    TapArea(accessibilityLabel: "\(MockData.steamer.title), \(appState.status.rawValue)") {
+                        switch appState.status {
+                        case .pending:
+                            router.go(.s3_2)
+                        case .handoverPending:
+                            router.go(.s6_1)
+                        case .onLoan:
+                            router.go(.s6_20)
+                        case .returnPending:
+                            router.go(.s7_2)
+                        case .returned:
+                            router.go(.s8_6)
+                        }
+                    } label: {
+                        LendingRowCard(title: MockData.steamer.title, photo: .steamerMain,
+                                       chip: Chip(text: appState.status.rawValue, fill: appState.status.chipFill, ink: appState.status.chipInk),
+                                       detail: appState.lenderDetail)
+                    }
+                    .accessibilityIdentifier("lendingSteamerCard")
+                    ForEach(MockData.activeLending) { row in
+                        let paused = pausedBottle && row.id == "bottle"
+                        LendingRowCard(title: row.title, photo: row.photo,
+                                       chip: paused ? Chip(text: "Paused", fill: .track, ink: .inkSecondary) : row.chipView,
+                                       detail: paused ? "Hidden from discovery" : row.detail) {
+                            if row.id == "bottle" { router.go(.s9_6) } else { router.go(.s9_5) }
+                        }
                     }
                 }
             }

@@ -45,9 +45,10 @@ struct NeedItNowToggle: View {
     var body: some View {
         Button(action: action) {
             Text("⚡ Need it Now \(isOn ? "●" : "○")")
-                .font(.b(.s10))
-                .foregroundStyle(isOn ? Color.surface : Color.inkBlack)
-                .padding(Space.x8)
+                .font(.b(.s11))
+                .foregroundStyle(isOn ? Color.white : Color.inkBlack)
+                .padding(.horizontal, Space.x10)
+                .padding(.vertical, Space.x8)
                 .background(isOn ? Color.brandRoyal : Color.toggleOff, in: Capsule())
                 .frame(minHeight: Size.hitTarget)
                 .contentShape(Rectangle())

@@ -13,7 +13,13 @@ struct BackAppBar<Trailing: View>: View {
     var body: some View {
         HStack(alignment: .center, spacing: Space.x12) {
             IconButton(icon: .chevronLeft, label: "Back") {
-                if router.path.count > 1 { router.back() } else if let backTo { router.go(backTo) } else { router.back() }
+                if !router.path.isEmpty {
+                    router.back()
+                } else if let backTo {
+                    router.go(backTo)
+                } else {
+                    router.back()
+                }
             }
             .padding(.leading, -Space.x12)
             .padding(.trailing, -Space.x10)
@@ -36,6 +42,9 @@ struct BackAppBar<Trailing: View>: View {
             }
             Spacer(minLength: 0)
             trailing()
+            if Trailing.self == EmptyView.self {
+                UserSwitcherButton()
+            }
         }
         .padding(.horizontal, Space.gutter)
         .frame(minHeight: Size.appBar)
@@ -57,7 +66,7 @@ struct BrandAppBar: View {
     @Environment(Router.self) private var router
 
     var body: some View {
-        HStack(spacing: Space.x12) {
+        HStack(spacing: Space.x10) {
             BorroLogo()
             if let title {
                 Text(title)
@@ -68,13 +77,56 @@ struct BrandAppBar: View {
                     .accessibilityAddTraits(.isHeader)
             }
             Spacer(minLength: 0)
-            IconButton(icon: .heart, tint: .brand, label: "Wishlist") {
-                if let heartTarget { router.go(heartTarget) }
+            UserSwitcherButton()
+            if heartTarget != nil {
+                IconButton(icon: .heart, tint: .brand, label: "Wishlist") {
+                    if let heartTarget { router.go(heartTarget) }
+                }
+                .padding(.trailing, -Space.x6)
             }
-            .padding(.trailing, -Space.x10)
         }
         .padding(.horizontal, Space.gutter)
         .frame(minHeight: Size.appBar)
+    }
+}
+
+/// Quick user switcher in the top right: Yellow/Amber for Borrower (James), Red for Lender (Thomas).
+struct UserSwitcherButton: View {
+    @Environment(AppState.self) private var appState
+
+    var isThomas: Bool { appState.activeUser.id == "thomas" }
+
+    var body: some View {
+        Button {
+            withAnimation(.spring(response: 0.35, dampingFraction: 0.75)) {
+                if isThomas {
+                    appState.setActiveUser(MockData.james)
+                } else {
+                    appState.setActiveUser(MockData.thomas)
+                }
+            }
+        } label: {
+            HStack(spacing: Space.x4) {
+                Avatar(photo: appState.activeUser.photo, size: Size.avatarTiny)
+                VStack(alignment: .leading, spacing: 0) {
+                    Text(appState.activeUser.name)
+                        .font(.b(.s11))
+                        .foregroundStyle(isThomas ? Color.danger : Color.brand)
+                    Text(isThomas ? "Lender" : "Borrower")
+                        .font(.s(.s9))
+                        .foregroundStyle(isThomas ? Color.danger : Color.pendingInk)
+                }
+                IconView(icon: .moreHorizontal, size: Size.iconTiny)
+                    .foregroundStyle(Color.inkSecondary)
+            }
+            .padding(.horizontal, Space.x6)
+            .padding(.vertical, Space.x4)
+            .background(isThomas ? Color.dangerFill : Color.pendingFill, in: Capsule())
+            .overlay(Capsule().strokeBorder(isThomas ? Color.danger.opacity(0.3) : Color.pendingInk.opacity(0.3), lineWidth: Size.stroke))
+            .shadow(color: Color.black.opacity(0.04), radius: 2, y: 1)
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Active user: \(appState.activeUser.name). Tap to switch role.")
     }
 }
 

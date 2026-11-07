@@ -87,7 +87,6 @@ final class Router {
         overlay = nil
         root = tab.root
         path.removeAll()
-        appState?.switchRole(to: root.role)
     }
 
     /// Demo menu: open any frame directly. Builds a sensible page underneath sheets and overlays.

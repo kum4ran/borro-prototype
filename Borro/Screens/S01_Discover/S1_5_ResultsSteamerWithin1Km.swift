@@ -4,9 +4,10 @@ import SwiftUI
 struct S1_5_ResultsSteamerWithin1KmView: View {
     @Environment(Router.self) private var router
     @Environment(AppState.self) private var appState
+    @State private var queryText = "Garment steamer"
 
     var body: some View {
-        DiscoverPage(query: "Garment steamer", needItNow: true, heading: "Steamers near Bencoolen",
+        DiscoverPage(searchText: $queryText, needItNow: true, heading: "Steamers near Bencoolen",
                      count: "\(appState.steamerResults.count) result\(appState.steamerResults.count == 1 ? "" : "s") · \(appState.radius.phrase)") {
             router.go(.s1_1)
         } onFilter: {
