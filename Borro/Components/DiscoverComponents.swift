@@ -1,29 +1,54 @@
 import SwiftUI
 
-/// Figma "Search": pill field plus blue Search button.
+/// Figma "Search": pill field plus blue Search button with live search & keyboard.
 struct SearchBar: View {
-    var query: String?
-    var placeholder = "What do you need?"
-    var onSearch: () -> Void = {}
+    @Binding var text: String
+    var placeholder: String = "What do you need?"
+    var onSearch: (() -> Void)? = nil
+    @FocusState private var isFocused: Bool
+
+    init(text: Binding<String>, placeholder: String = "What do you need?", onSearch: (() -> Void)? = nil) {
+        self._text = text
+        self.placeholder = placeholder
+        self.onSearch = onSearch
+    }
+
+    init(query: String? = nil, placeholder: String = "What do you need?", onSearch: (() -> Void)? = nil) {
+        self._text = .constant(query ?? "")
+        self.placeholder = placeholder
+        self.onSearch = onSearch
+    }
 
     var body: some View {
         HStack(spacing: Space.x8) {
             HStack(spacing: Space.x8) {
                 IconView(icon: .search, size: Size.iconSmall).foregroundStyle(Color.ink)
-                Text(query ?? placeholder)
+                TextField(placeholder, text: $text)
                     .font(.r(.s14))
-                    .foregroundStyle(query == nil ? Color.inkSecondary : Color.ink)
-                    .lineLimit(1)
-                Spacer(minLength: 0)
+                    .foregroundStyle(Color.ink)
+                    .focused($isFocused)
+                    .submitLabel(.search)
+                    .onSubmit { onSearch?() }
+                if !text.isEmpty {
+                    Button {
+                        text = ""
+                    } label: {
+                        IconView(icon: .x, size: Size.iconTiny).foregroundStyle(Color.inkSecondary)
+                    }
+                    .buttonStyle(.plain)
+                }
             }
             .padding(.horizontal, Space.x12)
             .frame(minHeight: Size.field)
             .background(Color.surface, in: Capsule())
             .overlay(Capsule().strokeBorder(Color.stroke, lineWidth: Size.stroke))
             .accessibilityElement(children: .combine)
-            .accessibilityLabel(query.map { "Search: \($0)" } ?? placeholder)
+            .accessibilityLabel(text.isEmpty ? placeholder : "Search: \(text)")
 
-            Button(action: onSearch) {
+            Button {
+                isFocused = false
+                onSearch?()
+            } label: {
                 Text("Search")
                     .font(.b(.s13))
                     .foregroundStyle(Color.surface)
