@@ -3,10 +3,13 @@ import SwiftUI
 /// Figma frame "2.1 James · Item details · Garment Steamer" (node 691:4767).
 struct S2_1_ItemDetailsGarmentSteamerView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
 
     var body: some View {
         ScreenScaffold {
-            BackAppBar(title: "Item description", subtitle: "Need it Now · 120 m away", backTo: .s1_5)
+            BackAppBar(title: "Item description",
+                       subtitle: "\(appState.selectedListing.needItNow ? "Need it Now · " : "")\(appState.selectedListing.distanceMetres > 0 ? "\(appState.selectedListing.distanceMetres) m away" : (appState.selectedListing.area.isEmpty ? "120 m away" : appState.selectedListing.area))",
+                       backTo: .s1_5)
         } content: {
             ItemDetailsBody()
         } actions: {
@@ -20,12 +23,13 @@ struct S2_1_ItemDetailsGarmentSteamerView: View {
 
 /// Content shared by 2.1 and 11.1.
 struct ItemDetailsBody: View {
+    @Environment(Router.self) private var router
     @Environment(AppState.self) private var appState
-    private let listing = MockData.steamer
-    private let lender = MockData.thomas
+    private var listing: Listing { appState.selectedListing }
+    private var lender: User { listing.owner }
 
     var body: some View {
-        PhotoView(photo: .steamerMain)
+        PhotoView(photo: listing.photo)
             .frame(height: Size.detailPhoto)
             .clipShape(RoundedRectangle(cornerRadius: Radius.photo))
         Text("● ○ ○ · 1 / 3").font(.r(.s11)).foregroundStyle(Color.brand)
@@ -36,18 +40,24 @@ struct ItemDetailsBody: View {
             Spacer()
             HeartToggle(liked: appState.isLiked(listing), size: Size.icon) { appState.toggleLike(listing) }
         }
-        Text(MockData.steamerDescription).font(.r(.s13)).foregroundStyle(Color.inkSecondary)
-        VStack(alignment: .leading, spacing: Space.x8) {
-            HStack(spacing: Space.x10) {
-                Avatar(photo: lender.photo, size: Size.avatarMedium)
-                VStack(alignment: .leading, spacing: Space.x2) {
-                    Text("\(lender.name) ✓").font(.b(.s15)).foregroundStyle(Color.brand)
-                    Text("\(lender.credibility)/100 · \(lender.credibilityLabel)").font(.r(.s11)).foregroundStyle(Color.ink)
+        Text(listing.resolvedDescription).font(.r(.s13)).foregroundStyle(Color.inkSecondary)
+        TapArea(accessibilityLabel: "\(lender.name), \(lender.credibilityLabel)") {
+            router.go(.s3_4)
+        } label: {
+            VStack(alignment: .leading, spacing: Space.x8) {
+                HStack(spacing: Space.x10) {
+                    Avatar(photo: lender.photo, size: Size.avatarMedium)
+                    VStack(alignment: .leading, spacing: Space.x2) {
+                        Text("\(lender.name) ✓").font(.b(.s15)).foregroundStyle(Color.brand)
+                        Text("\(lender.credibility)/100 · \(lender.credibilityLabel)").font(.r(.s11)).foregroundStyle(Color.ink)
+                    }
+                    Spacer()
+                    IconView(icon: .chevronRight, size: Size.iconSmall).foregroundStyle(Color.inkSecondary)
                 }
+                Text("Lender approval required · No instant booking").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
             }
-            Text("Lender approval required · No instant booking").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
+            .cardStyle()
         }
-        .cardStyle()
         VStack(alignment: .leading, spacing: Space.x4) {
             Text("Pickup · \(Scenario.meetUpPlace)").font(.b(.s14)).foregroundStyle(Color.ink)
             Text("120 m away · Bencoolen").font(.r(.s11)).foregroundStyle(Color.inkSecondary)

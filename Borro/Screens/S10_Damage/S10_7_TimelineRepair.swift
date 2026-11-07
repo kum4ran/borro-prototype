@@ -26,7 +26,7 @@ struct S10_7_TimelineRepairView: View {
             }
             .cardStyle(shadow: false)
             SecondaryButton(title: "View Agreement") { router.go(.s5_2) }
-            SecondaryButton(title: "Before / After · View condition photos") {}
+            SecondaryButton(title: "Before / After · View condition photos") { router.go(.s10_8) }
             Text("Deposit Status · Used for repair").font(.b(.s13)).foregroundStyle(Color.ink)
                 .panel(.successFill, padding: Space.x10, radius: Radius.r8)
             LinkButton(title: "View damage outcome →") { router.go(.s10_8) }

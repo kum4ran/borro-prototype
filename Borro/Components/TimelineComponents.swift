@@ -51,9 +51,17 @@ struct BorrowTimeline: View {
                 Text("⌖ \(appState.meetUpPlace)").font(.r(.s13)).foregroundStyle(Color.ink)
             }
             .cardStyle(shadow: false)
-            // Not wired in Figma.
-            SecondaryButton(title: "View Agreement") {}
-            SecondaryButton(title: "Before / After · View condition photos") {}
+            SecondaryButton(title: "View Agreement") {
+                router.go(appState.currentUser == .thomas ? .s5_1 : .s5_2)
+            }
+            SecondaryButton(title: "Before / After · View condition photos") {
+                router.go(.s6_19)
+            }
+            if appState.status == .onLoan || appState.status == .returnPending {
+                SecondaryButton(title: "Report Damage or Issue", tint: .danger) {
+                    router.go(.s10_1)
+                }
+            }
             Text("Deposit Status · \(appState.depositStatusText)")
                 .font(.b(.s13)).foregroundStyle(Color.ink)
                 .panel(.successFill, padding: Space.x10, radius: Radius.r8)

@@ -12,7 +12,7 @@ struct S2_2_BorrowRequestBorrowNowView: View {
                 VStack(alignment: .leading, spacing: Space.x4) {
                     Text(appState.borrowSummary).font(.b(.s14)).foregroundStyle(Color.ink)
                         .accessibilityIdentifier("borrowSummary")
-                    Text("Urgent · Thomas gets an instant notification and must accept.")
+                    Text("Urgent · \(appState.selectedListing.owner.name) gets an instant notification and must accept.")
                         .font(.r(.s13)).foregroundStyle(Color.inkSecondary)
                 }
                 .panel(.successFill)

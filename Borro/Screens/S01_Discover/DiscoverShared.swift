@@ -2,6 +2,7 @@ import SwiftUI
 
 /// Shared body of the Home frames 1.1, 1.2 and 1.5: logo bar, search, controls, heading, grid.
 struct DiscoverPage<Grid: View>: View {
+    @Environment(Router.self) private var router
     var query: String?
     let needItNow: Bool
     let heading: String
@@ -14,7 +15,7 @@ struct DiscoverPage<Grid: View>: View {
         ScreenScaffold {
             BrandAppBar(heartTarget: .s11_4)
         } content: {
-            SearchBar(query: query)
+            SearchBar(query: query, onSearch: { router.go(.s1_5) })
             DiscoveryControls(needItNow: needItNow, onToggle: onToggle, onFilter: onFilter)
             HStack(alignment: .firstTextBaseline) {
                 SectionTitle(text: heading)
@@ -29,8 +30,8 @@ struct DiscoverPage<Grid: View>: View {
 }
 
 extension Router {
-    /// Only the garment steamer has a details page in Figma.
     func openListing(_ listing: Listing) {
-        if listing.id == MockData.steamer.id { go(.s2_1) }
+        appState?.selectListing(listing)
+        go(.s2_1)
     }
 }

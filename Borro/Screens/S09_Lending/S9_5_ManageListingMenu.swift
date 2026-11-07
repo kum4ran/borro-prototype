@@ -9,8 +9,8 @@ struct S9_5_ManageListingMenuView: View {
             VStack(alignment: .leading, spacing: 0) {
                 row(.pencil, "Edit Listing") { router.go(.s9_9) }
                 row(.pause, "Pause Listing") { router.go(.s9_6) }
-                row(.star, "Mark as Important") {}
-                row(.trash2, "Delete", muted: true) { router.go(.s9_7) }
+                row(.star, "Mark as Important") { router.dismissSheet() }
+                row(.trash2, "Delete", muted: false) { router.go(.s9_7) }
                 Text("You can delete this item after it’s returned.").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
                     .padding(.top, Space.x8)
             }

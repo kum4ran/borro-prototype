@@ -13,7 +13,7 @@ struct BackAppBar<Trailing: View>: View {
     var body: some View {
         HStack(alignment: .center, spacing: Space.x12) {
             IconButton(icon: .chevronLeft, label: "Back") {
-                if let backTo { router.go(backTo) } else { router.back() }
+                if router.path.count > 1 { router.back() } else if let backTo { router.go(backTo) } else { router.back() }
             }
             .padding(.leading, -Space.x12)
             .padding(.trailing, -Space.x10)

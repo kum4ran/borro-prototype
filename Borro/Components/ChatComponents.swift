@@ -50,19 +50,40 @@ struct AgreementMessageCard: View {
 /// Message composer pill ("Message Thomas…") with plus and send icons.
 struct ChatComposer: View {
     let placeholder: String
-    let onPlus: () -> Void
+    var onPlus: () -> Void = {}
+    var onSend: ((String) -> Void)? = nil
+    @State private var text: String = ""
 
     var body: some View {
         HStack(spacing: Space.x10) {
             IconButton(icon: .plus, size: Size.iconSmall, tint: .inkSecondary, label: "Add attachment", action: onPlus)
                 .accessibilityIdentifier("addAttachmentButton")
-            Text(placeholder).font(.r(.s14)).foregroundStyle(Color.inkSecondary)
-            Spacer()
-            IconView(icon: .send, size: Size.iconSmall).foregroundStyle(Color.inkSecondary)
+            TextField(placeholder, text: $text)
+                .font(.r(.s14))
+                .foregroundStyle(Color.ink)
+                .onSubmit { send() }
+            if !text.isEmpty {
+                Button(action: send) {
+                    IconView(icon: .send, size: Size.iconSmall)
+                        .foregroundStyle(Color.brand)
+                }
+                .buttonStyle(.plain)
+            } else {
+                IconView(icon: .send, size: Size.iconSmall)
+                    .foregroundStyle(Color.inkSecondary)
+            }
         }
         .padding(.horizontal, Space.x6)
         .padding(.trailing, Space.x10)
+        .padding(.vertical, Space.x4)
         .background(Color.surface, in: Capsule())
         .overlay(Capsule().strokeBorder(Color.stroke, lineWidth: Size.stroke))
+    }
+
+    private func send() {
+        let trimmed = text.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        onSend?(trimmed)
+        text = ""
     }
 }

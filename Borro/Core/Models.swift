@@ -37,6 +37,29 @@ struct Listing: Identifiable, Hashable {
     var availabilityLabel: String = "Available"
     var needItNow: Bool = false
     var distanceMetres: Int = 0
+    var itemDescription: String = ""
+
+    var resolvedDescription: String {
+        if !itemDescription.isEmpty { return itemDescription }
+        switch id {
+        case "steamer":
+            return "Freshen up your outfit in minutes. Lightweight handheld steamer, ready in 30 seconds. Includes a heat-resistant mitt."
+        case "jbl":
+            return "Powerful portable Bluetooth speaker with deep bass and 12-hour battery life. Waterproof and dustproof."
+        case "projector":
+            return "Full HD 1080p portable mini projector with built-in speaker and HDMI/USB inputs. Perfect for movie nights."
+        case "screen":
+            return "100-inch foldable anti-crease projection screen with stand. Quick 5-minute setup for indoor and outdoor use."
+        case "camera":
+            return "Compact 4K vlogging camera with flip screen, fast autofocus, and clean HDMI output."
+        case "football":
+            return "Official size 5 match football. High-durability composite leather, pumped and ready to play."
+        case "xiaomiSteamer":
+            return "Compact handheld garment steamer. Heats up in 30 seconds with constant steam pressure."
+        default:
+            return "Available for borrow in \(area). Well-maintained and verified before handover."
+        }
+    }
 }
 
 struct BorrowRequest: Hashable {

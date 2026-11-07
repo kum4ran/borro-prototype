@@ -9,9 +9,15 @@ struct S3_2_BorrowRequestsView: View {
         ScreenScaffold {
             BackAppBar(title: "Borrow Requests", subtitle: "Thomas · 3 new requests")
         } content: {
-            RequestCard(requester: MockData.james, dates: appState.borrowRange, onOpen: { router.go(.s3_3) })
+            RequestCard(requester: MockData.james, dates: appState.borrowRange,
+                        onOpen: { router.go(.s3_3) },
+                        onAccept: { router.go(.s3_7) },
+                        onReject: { router.back() })
             ForEach(MockData.otherRequests, id: \.user.id) { request in
-                RequestCard(requester: request.user, dates: request.dates, urgent: request.urgent)
+                RequestCard(requester: request.user, dates: request.dates, urgent: request.urgent,
+                            onOpen: { router.go(.s3_3) },
+                            onAccept: { router.go(.s3_7) },
+                            onReject: { router.back() })
             }
         }
     }

@@ -39,9 +39,15 @@ final class AppState {
     // Lender code entry on 6.11 / 6.12
     private(set) var codeAttemptFailed = false
 
+    // Active user session & general multi-user support
+    private(set) var activeUser: User = MockData.james
+    private(set) var customListings: [Listing] = []
+    private(set) var customChatMessages: [ChatMessage] = []
+
     // Discover
     private(set) var needItNow = false
     private(set) var likedListingIDs: Set<String> = []
+    private(set) var selectedListing: Listing = MockData.steamer
 
     // Agreement and handover progress
     private(set) var agreedToTerms = false
@@ -88,6 +94,10 @@ final class AppState {
         jamesCategoryStars = [:]
         wishlistRemoved = []
         thomasReviewSubmitted = false
+        selectedListing = MockData.steamer
+        activeUser = MockData.james
+        customListings = []
+        customChatMessages = []
     }
 
     // MARK: Status
@@ -174,7 +184,46 @@ final class AppState {
     func switchRole(to role: Role) {
         guard role != .both, role != currentUser else { return }
         currentUser = role
+        if role == .thomas {
+            activeUser = MockData.thomas
+        } else if role == .james {
+            activeUser = MockData.james
+        }
         roleBanner = "Now viewing as \(role.displayName)"
+    }
+
+    func setActiveUser(_ user: User) {
+        activeUser = user
+        if user.id == "thomas" {
+            currentUser = .thomas
+        } else if user.id == "james" {
+            currentUser = .james
+        }
+        roleBanner = "Now viewing as \(user.name)"
+    }
+
+    func publishListing(title: String, owner: User, photo: Photo, rating: String, area: String) {
+        let newListing = Listing(
+            id: "custom-\(UUID().uuidString.prefix(6))",
+            title: title,
+            owner: owner,
+            photo: photo,
+            rating: rating,
+            area: area,
+            availableDates: "Oct 2026",
+            availabilityLabel: "⚡ Available now",
+            needItNow: true,
+            distanceMetres: 100
+        )
+        customListings.append(newListing)
+    }
+
+    func sendChatMessage(_ text: String, mine: Bool = true) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        let timeString = formatter.string(from: Date()).lowercased()
+        let msg = ChatMessage(id: "msg-\(UUID().uuidString)", text: text, time: timeString, mine: mine)
+        customChatMessages.append(msg)
     }
 
     func clearRoleBanner() { roleBanner = nil }
@@ -382,6 +431,8 @@ final class AppState {
     func clearCodeError() { codeAttemptFailed = false }
 
     // MARK: Discover
+
+    func selectListing(_ listing: Listing) { selectedListing = listing }
 
     func setNeedItNow(_ on: Bool) { needItNow = on }
 

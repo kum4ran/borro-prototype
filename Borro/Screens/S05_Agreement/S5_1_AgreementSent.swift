@@ -21,7 +21,7 @@ struct S5_1_AgreementSentView: View {
             .cardStyle(shadow: false)
             TermsCard { router.go(.s5_2e) }
         } actions: {
-            PrimaryButton(title: "Edit Agreement") {}
+            PrimaryButton(title: "Edit Agreement") { router.go(.s4_13) }
             SecondaryButton(title: "Chat with James") { router.go(.s4_9) }
         }
     }

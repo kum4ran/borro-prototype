@@ -114,6 +114,7 @@ struct CheckpointList: View {
 struct AlternativeCard: View {
     let user: User
     let distance: String
+    @Environment(Router.self) private var router
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.x10) {
@@ -132,7 +133,7 @@ struct AlternativeCard: View {
                 VStack(alignment: .leading, spacing: Space.x4) {
                     Text("Garment Steamer").font(.b(.s13)).foregroundStyle(Color.ink)
                     Text("★ 4.9 · Available 18–19 Oct").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
-                    SecondaryButton(title: "Request") {}
+                    SecondaryButton(title: "Request") { router.go(.s2_2) }
                 }
             }
         }

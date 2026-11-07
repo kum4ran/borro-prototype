@@ -160,6 +160,7 @@ struct RequestCard: View {
     var urgent = true
     var onOpen: (() -> Void)?
     var onAccept: (() -> Void)?
+    var onReject: (() -> Void)?
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.x10) {
@@ -181,7 +182,7 @@ struct RequestCard: View {
             if urgent { Chip(text: "⚡ URGENT – Borrow Now") }
             HStack(spacing: Space.x16) {
                 PrimaryButton(title: "Accept") { onAccept?() }
-                SecondaryButton(title: "Reject", tint: .danger) {}
+                SecondaryButton(title: "Reject", tint: .danger) { onReject?() }
             }
         }
         .cardStyle()

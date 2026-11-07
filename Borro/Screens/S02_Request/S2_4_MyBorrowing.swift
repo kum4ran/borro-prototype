@@ -4,23 +4,44 @@ import SwiftUI
 struct S2_4_MyBorrowingView: View {
     @Environment(Router.self) private var router
     @Environment(AppState.self) private var appState
+    @State private var selectedTab = 0
 
     var body: some View {
         ScreenScaffold {
             BrandAppBar(title: "My Borrowing")
         } content: {
-            SegmentHeader(tabs: ["Active", "Past Borrow"], selected: 0)
+            SegmentHeader(tabs: ["Active", "Past Borrow"], selected: selectedTab, onSelect: { selectedTab = $0 }, onFilter: { router.go(.s9_2) })
             Text("Every borrow, from first hello to safe return.")
                 .font(.r(.s14)).foregroundStyle(Color.inkSecondary)
-            TapArea(accessibilityLabel: "Garment Steamer, \(appState.status.rawValue)") {
-                // Figma: Pending opens Thomas's push (simulated jump), any later status opens the handover.
-                router.go(appState.status == .pending ? .s3_1 : .s6_1)
-            } label: {
-                BorrowingCard(listing: MockData.steamer, detail: appState.borrowerDetail,
-                              person: MockData.thomas, personLine: "Borrowed from Thomas",
-                              status: appState.status)
+            if selectedTab == 0 {
+                TapArea(accessibilityLabel: "Garment Steamer, \(appState.status.rawValue)") {
+                    switch appState.status {
+                    case .pending:
+                        router.go(.s3_1)
+                    case .handoverPending:
+                        router.go(appState.dropOffSaved ? .s6_11 : .s6_1)
+                    case .onLoan:
+                        router.go(.s6_20)
+                    case .returnPending:
+                        router.go(.s7_1)
+                    case .returned:
+                        router.go(.s8_8)
+                    }
+                } label: {
+                    BorrowingCard(listing: MockData.steamer, detail: appState.borrowerDetail,
+                                  person: MockData.thomas, personLine: "Borrowed from Thomas",
+                                  status: appState.status)
+                }
+                .accessibilityIdentifier("steamerCard")
+            } else {
+                ForEach(MockData.pastLending) { row in
+                    BorrowingCard(listing: Listing(id: row.id, title: row.title, owner: MockData.thomas, photo: row.photo, rating: "★ 5.0", area: Scenario.area, availableDates: ""),
+                                  detail: row.detail,
+                                  person: MockData.thomas, personLine: "Borrowed from Thomas",
+                                  status: .returned,
+                                  photo: row.photo)
+                }
             }
-            .accessibilityIdentifier("steamerCard")
         }
     }
 }

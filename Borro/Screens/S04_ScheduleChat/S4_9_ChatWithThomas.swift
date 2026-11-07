@@ -14,18 +14,23 @@ struct ChatPage: View {
     var onPlus: () -> Void = {}
     @Environment(Router.self) private var router
     @Environment(AppState.self) private var appState
-    private let thomas = MockData.thomas
+    private var chatPartner: User { appState.selectedListing.owner }
 
     var body: some View {
         ScreenScaffold(contentSpacing: Space.x12) {
-            BackAppBar(title: thomas.name, subtitle: "★ \(thomas.rating) · \(thomas.reviewCount) reviews", backTo: .s4_14)
+            BackAppBar(title: chatPartner.name, subtitle: "★ \(chatPartner.rating) · \(chatPartner.reviewCount) reviews", backTo: .s4_14)
         } content: {
             Text("18 OCTOBER 2026").font(.m(.s11)).foregroundStyle(Color.inkSecondary).frame(maxWidth: .infinity)
-            ForEach(MockData.chat(appState)) { ChatBubble(message: $0) }
+            ForEach(MockData.chat(appState) + appState.customChatMessages) { ChatBubble(message: $0) }
             AgreementMessageCard { router.go(.s5_2) }
             HStack(spacing: Space.x8) {
                 ForEach(["On my way", "Thanks", "See you soon"], id: \.self) { reply in
-                    Chip(text: reply, fill: .successFill, ink: .success, font: .s(.s11))
+                    Button {
+                        appState.sendChatMessage(reply, mine: true)
+                    } label: {
+                        Chip(text: reply, fill: .successFill, ink: .success, font: .s(.s11))
+                    }
+                    .buttonStyle(.plain)
                 }
             }
             HStack(spacing: Space.x10) {
@@ -42,7 +47,9 @@ struct ChatPage: View {
                 .accessibilityIdentifier("askBorroButton")
             }
         } actions: {
-            ChatComposer(placeholder: "Message Thomas…", onPlus: onPlus)
+            ChatComposer(placeholder: "Message \(chatPartner.name)…", onPlus: onPlus, onSend: { text in
+                appState.sendChatMessage(text, mine: true)
+            })
         }
     }
 }

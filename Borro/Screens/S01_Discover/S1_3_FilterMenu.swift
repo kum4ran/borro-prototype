@@ -15,8 +15,13 @@ struct S1_3_FilterMenuView: View {
             VStack(spacing: Space.x2) {
                 ForEach(options, id: \.title) { option in
                     TapArea(accessibilityLabel: "\(option.title), \(option.value)") {
-                        // Figma wires Location only.
-                        if option.title == "Location" { router.go(.s1_4) }
+                        if option.title == "Location" {
+                            router.go(.s1_4)
+                        } else if option.title == "Availability" {
+                            router.go(.s2_2)
+                        } else {
+                            router.go(.s1_5)
+                        }
                     } label: {
                         HStack {
                             VStack(alignment: .leading, spacing: Space.x2) {

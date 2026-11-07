@@ -9,8 +9,10 @@ struct S1_1_HomeView: View {
         DiscoverPage(needItNow: false, heading: "Good things, nearby") {
             appState.setNeedItNow(true)
             router.go(.s1_2)
+        } onFilter: {
+            router.go(.s1_3)
         } grid: {
-            ListingGrid(listings: MockData.homeFeed) { router.openListing($0) }
+            ListingGrid(listings: MockData.homeFeed + appState.customListings) { router.openListing($0) }
         }
     }
 }

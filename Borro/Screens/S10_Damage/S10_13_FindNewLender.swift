@@ -39,7 +39,7 @@ struct S10_13_FindNewLenderView: View {
                 }
                 .accessibilityIdentifier("recommended.\(alt.user.id)")
             }
-            PrimaryButton(title: "Search for other") {}
+            PrimaryButton(title: "Search for other") { router.go(.s1_5) }
             Text("New results nearby").font(.b(.s15)).foregroundStyle(Color.ink)
             VStack(alignment: .leading, spacing: Space.x2) {
                 Text("Portable steamer · Daniel").font(.b(.s13)).foregroundStyle(Color.ink)

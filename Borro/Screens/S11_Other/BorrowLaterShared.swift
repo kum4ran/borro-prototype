@@ -3,6 +3,7 @@ import SwiftUI
 /// Borrow Later date sheet (11.1, 11.2).
 struct BorrowLaterSheet: View {
     let subtitle: String
+    var onNext: (() -> Void)? = nil
     @Environment(Router.self) private var router
 
     var body: some View {
@@ -14,7 +15,9 @@ struct BorrowLaterSheet: View {
                     Text("Normal priority · Thomas must accept your request.").font(.r(.s13)).foregroundStyle(Color.inkSecondary)
                 }
                 .panel(.successFill)
-                PrimaryButton(title: "Send Request", identifier: "borrowLaterSendButton") { router.go(.s11_3) }
+                PrimaryButton(title: "Send Request", identifier: "borrowLaterSendButton") {
+                    if let onNext { onNext() } else { router.go(.s11_3) }
+                }
             }
         }
     }

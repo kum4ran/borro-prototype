@@ -38,17 +38,38 @@ struct MyLendingPage: View {
                     LendingRowCard(title: row.title, photo: row.photo, chip: row.chipView, detail: row.detail, person: row.person)
                 }
             } else {
-                LendingRowCard(title: MockData.steamer.title, photo: .steamerMain,
-                               chip: Chip(text: appState.status.rawValue, fill: appState.status.chipFill, ink: appState.status.chipInk),
-                               detail: appState.lenderDetail)
-                    .accessibilityIdentifier("lendingSteamerCard")
+                TapArea(accessibilityLabel: "\(MockData.steamer.title), \(appState.status.rawValue)") {
+                    switch appState.status {
+                    case .pending:
+                        router.go(.s3_2)
+                    case .handoverPending:
+                        router.go(.s6_1)
+                    case .onLoan:
+                        router.go(.s6_20)
+                    case .returnPending:
+                        router.go(.s7_2)
+                    case .returned:
+                        router.go(.s8_6)
+                    }
+                } label: {
+                    LendingRowCard(title: MockData.steamer.title, photo: .steamerMain,
+                                   chip: Chip(text: appState.status.rawValue, fill: appState.status.chipFill, ink: appState.status.chipInk),
+                                   detail: appState.lenderDetail)
+                }
+                .accessibilityIdentifier("lendingSteamerCard")
+                ForEach(appState.customListings) { row in
+                    LendingRowCard(title: row.title, photo: row.photo,
+                                   chip: Chip(text: "Active", fill: .successFill, ink: .success),
+                                   detail: "Listed by you · Available now") {
+                        router.go(.s9_5)
+                    }
+                }
                 ForEach(MockData.activeLending) { row in
                     let paused = pausedBottle && row.id == "bottle"
                     LendingRowCard(title: row.title, photo: row.photo,
                                    chip: paused ? Chip(text: "Paused", fill: .track, ink: .inkSecondary) : row.chipView,
                                    detail: paused ? "Hidden from discovery" : row.detail) {
-                        // Figma wires the Water Bottle menu to 9.6 and the Speaker menu to 9.5.
-                        if row.id == "bottle" { router.go(.s9_6) } else if row.id == "speaker" { router.go(.s9_5) }
+                        if row.id == "bottle" { router.go(.s9_6) } else { router.go(.s9_5) }
                     }
                 }
             }

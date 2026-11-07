@@ -31,7 +31,7 @@ struct RequestSummaryCard: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: Space.x10) {
-            PhotoView(photo: .steamerMain)
+            PhotoView(photo: request.listing.photo)
                 .frame(height: Size.cardPhoto)
                 .clipShape(RoundedRectangle(cornerRadius: Radius.photo))
             Text(request.listing.title).font(.b(.s19)).foregroundStyle(Color.ink)

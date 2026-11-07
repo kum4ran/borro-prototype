@@ -1,0 +1,60 @@
+name: Build Borro for iPhone
+
+on:
+  push:
+    branches: [ "**" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-14
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode
+        run: |
+          sudo xcode-select -s /Applications/Xcode_16.0.app || sudo xcode-select -s /Applications/Xcode_15.4.app || true
+          xcodebuild -version
+
+      - name: Build IPA for iPhone (Sideloading)
+        run: |
+          xcodebuild clean build \
+            -project Borro.xcodeproj \
+            -scheme Borro \
+            -sdk iphoneos \
+            -configuration Release \
+            -derivedDataPath derived_data \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=""
+
+          mkdir -p Payload
+          cp -R derived_data/Build/Products/Release-iphoneos/Borro.app Payload/
+          zip -r Borro.ipa Payload
+
+      - name: Build Simulator App (for Appetize.io browser test)
+        run: |
+          xcodebuild clean build \
+            -project Borro.xcodeproj \
+            -scheme Borro \
+            -sdk iphonesimulator \
+            -configuration Release \
+            -derivedDataPath sim_data \
+            CODE_SIGNING_ALLOWED=NO
+
+          cd sim_data/Build/Products/Release-iphonesimulator
+          zip -r ../../../../Borro-Simulator.zip Borro.app
+          cd ../../../..
+
+      - name: Upload iPhone IPA (for Sideloadly install)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Borro-iPhone-IPA
+          path: Borro.ipa
+
+      - name: Upload Simulator Zip (for Appetize.io)
+        uses: actions/upload-artifact@v4
+        with:
+          name: Borro-Simulator-Zip
+          path: Borro-Simulator.zip

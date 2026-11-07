@@ -39,7 +39,7 @@ struct S3_3_BorrowRequestExpandedView: View {
                     .padding(.vertical, Space.x4)
                 HStack(spacing: Space.x16) {
                     PrimaryButton(title: "Accept", identifier: "acceptRequestButton") { router.go(.s3_7) }
-                    SecondaryButton(title: "Reject", tint: .danger) {}
+                    SecondaryButton(title: "Reject", tint: .danger) { router.go(.s3_2) }
                 }
                 HStack(spacing: Space.x12) {
                     SecondaryButton(title: "Chat") { router.go(.s4_9) }

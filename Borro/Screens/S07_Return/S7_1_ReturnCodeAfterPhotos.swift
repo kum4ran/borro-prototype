@@ -28,6 +28,7 @@ struct S7_1_ReturnCodeAfterPhotosView: View {
                 .font(.r(.s10)).foregroundStyle(Color.inkSecondary)
         } actions: {
             PrimaryButton(title: "Confirm Return Drop-off", identifier: "confirmReturnDropOffButton") { router.go(.s7_2) }
+            SecondaryButton(title: "Report Damage", tint: .danger) { router.go(.s10_1) }
         }
     }
 

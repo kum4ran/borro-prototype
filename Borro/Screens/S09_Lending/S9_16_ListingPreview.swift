@@ -3,6 +3,7 @@ import SwiftUI
 /// Figma frame "9.16 Thomas · Listing preview" (node 708:1634).
 struct S9_16_ListingPreviewView: View {
     @Environment(Router.self) private var router
+    @Environment(AppState.self) private var appState
 
     var body: some View {
         ScreenScaffold {
@@ -23,7 +24,16 @@ struct S9_16_ListingPreviewView: View {
             .cardStyle()
             Text("3 photos · 3 care instructions · Terms accepted").font(.r(.s11)).foregroundStyle(Color.inkSecondary)
         } actions: {
-            PrimaryButton(title: "Publish", identifier: "publishButton") { router.go(.s9_17) }
+            PrimaryButton(title: "Publish", identifier: "publishButton") {
+                appState.publishListing(
+                    title: "Garment Steamer (Self-Clean)",
+                    owner: appState.activeUser,
+                    photo: .listPhoto3,
+                    rating: "★ New",
+                    area: Scenario.area
+                )
+                router.go(.s9_17)
+            }
         }
     }
 }
