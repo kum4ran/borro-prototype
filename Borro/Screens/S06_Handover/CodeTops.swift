@@ -59,9 +59,32 @@ struct LenderCodeEntryTop: View {
                       input: $typed,
                       onTapWhenLocked: appState.dropOffSaved ? nil : { router.go(.s6_13) })
             Text("Please enter the 4-digit code from your lender.").font(.r(.s10)).foregroundStyle(Color.inkSecondary)
-            Text(failed ? "ⓘ Incorrect code. 2 attempts remaining." : "ⓘ A code is required before you can confirm collection.")
+            Text(failed ? "ⓘ Code doesn't match. Ask lender for the 4-digit code." : "ⓘ A code is required before you can confirm collection.")
                 .font(.r(.s12)).foregroundStyle(Color.danger)
                 .accessibilityIdentifier("codeMessage")
+            if !failed {
+                Button {
+                    router.go(.s6_12)
+                } label: {
+                    Text("Simulate wrong code (1234)")
+                        .font(.r(.s11))
+                        .foregroundStyle(Color.inkSecondary)
+                        .underline()
+                }
+                .buttonStyle(.plain)
+            } else {
+                Button {
+                    _ = appState.submitLenderCode(Scenario.lenderCode)
+                    appState.markCollected()
+                    router.go(.s6_14)
+                } label: {
+                    Text("Enter correct code (6767)")
+                        .font(.s(.s12))
+                        .foregroundStyle(Color.brand)
+                        .underline()
+                }
+                .buttonStyle(.plain)
+            }
         }
         .onChange(of: typed) { _, code in
             guard code.count == Scenario.codeLength else { return }
@@ -89,6 +112,15 @@ struct BorrowerCodeEntryTop: View {
                 CodeEntryLabel(title: "Enter borrower code")
                 CodeBoxes(digits: typed, style: .empty, input: $typed)
                 Text("Ask James to show his return code.").font(.r(.s10)).foregroundStyle(Color.inkSecondary)
+                Button {
+                    _ = appState.submitBorrowerCode(Scenario.borrowerCode)
+                } label: {
+                    Text("Enter James's return code (4545)")
+                        .font(.s(.s12))
+                        .foregroundStyle(Color.brand)
+                        .underline()
+                }
+                .buttonStyle(.plain)
             }
             .onChange(of: typed) { _, code in
                 if code.count == Scenario.codeLength, !appState.submitBorrowerCode(code) { typed = "" }

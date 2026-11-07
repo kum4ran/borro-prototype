@@ -25,6 +25,7 @@ struct S6_10_DropOffSavedShareCodeView: View {
             .panel(.successFill)
         } actions: {
             PrimaryButton(title: "Hand over to James", identifier: "handOverButton") { router.go(.s6_10a) }
+            SecondaryButton(title: "Cancel Drop-off (Simulate)", tint: .danger) { router.go(.s10_10) }
         }
     }
 }

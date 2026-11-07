@@ -67,7 +67,16 @@ struct FinalAgreementPage: View {
         } actions: {
             PrimaryButton(title: "Submit Agreement", enabled: appState.canSubmitAgreement,
                           identifier: "submitAgreementButton") { router.go(.s5_6) }
-            SecondaryButton(title: "Cancel") { router.go(.s5_2) }
+            SecondaryButton(title: "Cancel") {
+                if paid {
+                    // Figma link 5.5 -> 5.2 (Cancel paid agreement back to unpaid)
+                    router.go(.s5_2)
+                } else if !router.path.isEmpty {
+                    router.back()
+                } else {
+                    router.go(.s4_9)
+                }
+            }
         }
     }
 }

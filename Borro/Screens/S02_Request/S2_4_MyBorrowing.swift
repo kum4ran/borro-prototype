@@ -13,7 +13,20 @@ struct S2_4_MyBorrowingView: View {
             SegmentHeader(tabs: ["Active", "Past Borrow"], selected: selectedTab, onSelect: { selectedTab = $0 }, onFilter: { router.go(.s9_2) })
             Text("Every borrow, from first hello to safe return.")
                 .font(.r(.s14)).foregroundStyle(Color.inkSecondary)
-            if selectedTab == 0 {
+            if appState.activeUser.id == "thomas" {
+                VStack(spacing: Space.x12) {
+                    IconView(icon: .handshake, size: Size.avatarLarge).foregroundStyle(Color.inkSecondary)
+                    Text("No active borrowings").font(.b(.s16)).foregroundStyle(Color.ink)
+                    Text("Thomas is lending items in this scenario. Manage your active listings and borrow requests in My Lending.")
+                        .font(.r(.s13)).foregroundStyle(Color.inkSecondary).multilineTextAlignment(.center)
+                    Text("Tap the user badge at the top right to switch to James (Borrower).")
+                        .font(.s(.s12)).foregroundStyle(Color.brand).multilineTextAlignment(.center)
+                }
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, Space.x32)
+                .padding(.horizontal, Space.x16)
+                .cardStyle()
+            } else if selectedTab == 0 {
                 TapArea(accessibilityLabel: "Garment Steamer, \(appState.status.rawValue)") {
                     switch appState.status {
                     case .pending:
